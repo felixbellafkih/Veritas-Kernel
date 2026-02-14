@@ -1,6 +1,6 @@
 {
   "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-  "version": "6.3.3",
+  "version": "6.5.0",
   "status": "Stable",
   "universal_functions": [
     { "root": "ه-و (H-W-A/Huwa)", "logic_function": "System_Identity" },
@@ -20,6 +20,11 @@
     { "root": "ق-و-m (Q-W-M/Qawm)", "logic_function": "Infrastructure_Support" },
     { "root": "ك-ت-ب (K-T-B)", "logic_function": "Data_Encoding" },
     { "root": "ن-ز-ل (N-Z-L)", "logic_function": "Signal_Download" },
-    { "root": "ق-ر-أ (Q-R-A)", "logic_function": "System_Execution" }
+    { "root": "ق-ر-أ (Q-R-A)", "logic_function": "System_Execution" },
+    { "root": "ف-ل-ق (F-L-Q/Falaq)", "logic_function": "Logical_Partitioning" },
+    { "root": "ش-r-r (SH-R-R/Sharr)", "logic_function": "Systemic_Entropy" },
+    { "root": "غ-س-ق (GH-S-Q/Ghasaq)", "logic_function": "Unpredictable_Input" },
+    { "root": "ن-ف-ث (N-F-TH/Naffathat)", "logic_function": "Code_Injection" },
+    { "root": "ح-س-د (H-S-D/Hasad)", "logic_function": "Resource_Contention" }
   ]
 }
