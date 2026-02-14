@@ -1,6 +1,6 @@
 {
   "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "status": "Stable",
   "axioms": {
     "logic_gate": "Absolute_Non_Contradiction",
@@ -71,4 +71,4 @@
     "priority": "Systemic_Stability_Over_Traditional_Ambiguity",
     "error_handling": "Treat_Incoherence_As_Segmentation_Fault"
   }
-}don
+}
