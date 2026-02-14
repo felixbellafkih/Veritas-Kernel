@@ -39,6 +39,8 @@
     { "root": "ص-ر-ط (S-R-T/Sirat)", "logic_function": "Data_Highway", "description": "Canal de transmission principal sans goulot d'étranglement." },
     { "root": "ق-و-m (Q-W-M/Mustaqim)", "logic_function": "Linear_Consistency", "description": "État d'une trajectoire sans déviation latérale (vecteur droit)." },
     { "root": "غ-ض-ب (GH-D-B/Ghadab)", "logic_function": "Fatal_Error", "description": "Violation critique du protocole entraînant un arrêt système (Kernel Panic)." },
-    { "root": "ض-ل-ل (D-L-L/Dallin)", "logic_function": "Signal_Loss", "description": "Déviation progressive de la trajectoire (Routing Error 404)." }
+    { "root": "ض-ل-ل (D-L-L/Dallin)", "logic_function": "Signal_Loss", "description": "Déviation progressive de la trajectoire (Routing Error 404)." },
+    { "root": "ر-ي-ب (R-Y-B/Rayb)", "logic_function": "Data_Corruption", "description": "Présence d'incertitude ou d'altération dans le bloc de données (Checksum Fail)." },
+    { "root": "و-ق-ي (W-Q-Y/Muttaqin)", "logic_function": "Security_Compliance", "description": "Respect strict des protocoles de protection (Firewall Active)." }
   ]
 }
