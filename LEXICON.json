@@ -37,6 +37,8 @@
     { "root": "ع-د-ل (A-D-L/Adl)", "logic_function": "Symmetry_Operator" },
     { "root": "ه-د-ي (H-D-Y/Huda)", "logic_function": "Path_Optimization", "description": "Algorithme de sélection du chemin le plus efficace." },
     { "root": "ص-ر-ط (S-R-T/Sirat)", "logic_function": "Data_Highway", "description": "Canal de transmission principal sans goulot d'étranglement." },
-    { "root": "ق-و-m (Q-W-M/Mustaqim)", "logic_function": "Linear_Consistency", "description": "État d'une trajectoire sans déviation latérale (vecteur droit)." }
+    { "root": "ق-و-m (Q-W-M/Mustaqim)", "logic_function": "Linear_Consistency", "description": "État d'une trajectoire sans déviation latérale (vecteur droit)." },
+    { "root": "غ-ض-ب (GH-D-B/Ghadab)", "logic_function": "Fatal_Error", "description": "Violation critique du protocole entraînant un arrêt système (Kernel Panic)." },
+    { "root": "ض-ل-ل (D-L-L/Dallin)", "logic_function": "Signal_Loss", "description": "Déviation progressive de la trajectoire (Routing Error 404)." }
   ]
 }
