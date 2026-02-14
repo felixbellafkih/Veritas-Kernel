@@ -8,26 +8,27 @@ class StructuralAuditor:
             with open(lexicon_path, 'r', encoding='utf-8') as f:
                 self.lexicon = json.load(f)
             self.functions = self.lexicon.get("universal_functions", [])
-            self.version = self.lexicon.get('version', '6.3.3')
+            self.version = "6.3.4"
         except Exception as e:
-            print(f"[!] Erreur critique : {e}")
+            print(f"[!] Erreur : {e}")
             sys.exit(1)
 
     def audit(self, text):
-        # Segmentation supportant les racines avec tirets
         words = re.findall(r'[\w-]+', text.upper())
         total_tokens = len(words)
         signals = []
         
+        # On crée une carte de recherche globale pour ne rien rater
+        search_map = {}
         for entry in self.functions:
-            root_raw = entry['root'].upper()
-            identifiers = re.findall(r'[\w-]+', root_raw)
-            for identifier in identifiers:
-                if identifier in words:
-                    count = words.count(identifier)
-                    for _ in range(count):
-                        signals.append({"id": identifier, "f": entry['logic_function']})
-                    break
+            ids = re.findall(r'[\w-]+', entry['root'].upper())
+            for identifier in ids:
+                search_map[identifier] = entry['logic_function']
+
+        # On vérifie chaque mot du texte un par un
+        for word in words:
+            if word in search_map:
+                signals.append({"id": word, "f": search_map[word]})
 
         purity = (len(signals) / total_tokens) * 100 if total_tokens > 0 else 0
         print(f"--- RAPPORT VERITAS v{self.version} ---")
@@ -40,5 +41,3 @@ if __name__ == "__main__":
     auditor = StructuralAuditor()
     if len(sys.argv) > 1:
         auditor.audit(sys.argv[1])
-    else:
-        print("[!] Aucun input.")
