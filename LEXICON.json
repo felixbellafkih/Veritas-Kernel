@@ -163,6 +163,21 @@
     { "root": "س-ل-m (S-L-M/Salam)", "logic_function": "System_Peace", "description": "État de stabilité réseau où tous les conflits sont résolus." },
     { "root": "ه-ج-ر (H-J-R/Muhajirun)", "logic_function": "Process_Migration", "description": "Déplacement massif de nœuds vers un nouvel environnement sécurisé." },
     { "root": "خ-و-ف (KH-W-F/Khawf)", "logic_function": "Threat_Awareness", "description": "État de vigilance système face à un risque détecté (Crainte)." },
-    { "root": "ح-ر-ص (H-R-S/Hirs)", "logic_function": "Optimization_Drive", "description": "Tentative d'atteindre une perfection de traitement (Obsession/Désir de bien faire)." }
+    { "root": "ح-ر-ص (H-R-S/Hirs)", "logic_function": "Optimization_Drive", "description": "Tentative d'atteindre une perfection de traitement (Obsession/Désir de bien faire)." },
+    { "root": "ع-ق-د (A-Q-D/Uqud)", "logic_function": "Smart_Contract", "description": "Engagements contractuels immuables entre les nœuds (Pactes/Contrats)." },
+    { "root": "ح-ل-ل (H-L-L/Halal)", "logic_function": "Authorized_Access", "description": "Données ou processus autorisés par la politique de sécurité (Permis)." },
+    { "root": "ح-ر-m (H-R-M/Haram)", "logic_function": "Access_Denied", "description": "Données ou processus strictement interdits (Prohibé/Locked)." },
+    { "root": "م-ا-ئ-د-ة (M-I-D/Ma'ida)", "logic_function": "Data_Table", "description": "Table de ressources servie pour la consommation finale (La Table/Le Festin)." },
+    { "root": "أ-ك-م-ل (K-M-L/Akmal)", "logic_function": "Build_Completion", "description": "État de parachèvement total du code source (Perfectionnement)." },
+    { "root": "ر-ض-ي (R-D-Y/Radi)", "logic_function": "Status_Accepted", "description": "Validation finale de l'état du système par l'Administrateur (Agrément)." },
+    { "root": "و-ض-أ (W-D-A/Wudu)", "logic_function": "Input_Sanitization", "description": "Nettoyage des entrées avant l'exécution d'un processus critique (Ablutions)." },
+    { "root": "ي-م-م (Y-M-M/Tayammum)", "logic_function": "Fallback_Sanitization", "description": "Méthode de nettoyage de secours en cas d'absence de ressource principale." },
+    { "root": "س-ر-ق (S-R-Q/Saraqa)", "logic_function": "Data_Theft", "description": "Interception ou vol de ressources au sein du réseau (Vol)." },
+    { "root": "ب-غ-ي (B-G-H/Baghy)", "logic_function": "Unauthorized_Overrun", "description": "Dépassement de privilèges ou agression sur un autre nœud (Injustice/Excès)." },
+    { "root": "ك-ف-ر (K-F-R/Kaffara)", "logic_function": "Error_Compensation", "description": "Action corrective pour compenser une violation de contrat (Expiation)." },
+    { "root": "ه-د-ي (H-D-Y/Hady)", "logic_function": "Target_Resource", "description": "Ressource dédiée à un objectif spécifique du noyau (Offrande)." },
+    { "root": "ق-ل-ا-د (Q-L-D/Qala'id)", "logic_function": "Token_Identifier", "description": "Marquage spécifique pour identifier une ressource prioritaire (Colliers)." },
+    { "root": "ب-ح-ر (B-H-R/Bahr)", "logic_function": "Global_Buffer", "description": "Espace de stockage massif et fluide (Mer)." },
+    { "root": "ص-ي-د (S-Y-D/Sayd)", "logic_function": "Data_Capture", "description": "Extraction de données brutes depuis l'environnement externe (Chasse)." }
   ]
 }
