@@ -75,6 +75,18 @@
     { "root": "ك-ب-ر (K-B-R/Istakbara)", "logic_function": "Privilege_Escalation", "description": "Tentative illégale d'augmenter ses droits (Orgueil)." },
     { "root": "ز-ل-ل (Z-L-L/Zalla)", "logic_function": "Runtime_Exception", "description": "Erreur d'exécution momentanée ou glissement (Bug/Faute)." },
     { "root": "ق-ر-ب (Q-R-B/Qaraba)", "logic_function": "Proximity_Alert", "description": "Tentative d'accès à une zone mémoire restreinte (Approcher l'arbre)." },
-    { "root": "ه-ب-ط (H-B-T/Habata)", "logic_function": "System_Downgrade", "description": "Rétrogradation vers un niveau inférieur suite à une erreur (Descendre)." }
+    { "root": "ه-ب-ط (H-B-T/Habata)", "logic_function": "System_Downgrade", "description": "Rétrogradation vers un niveau inférieur suite à une erreur (Descendre)." },
+    { "root": "ف-ض-ل (F-D-L/Faddala)", "logic_function": "Priority_Access", "description": "Attribution de privilèges élevés à un groupe d'utilisateurs (Favor)." },
+    { "root": "ن-ع-m (N-A-M/Ni'ma)", "logic_function": "System_Resource", "description": "Ressources allouées par l'Administrateur (Grace/Bienfait)." },
+    { "root": "ع-ه-د (A-H-D/Ahd)", "logic_function": "Protocol_Agreement", "description": "Contrat de service standard (Engagement)." },
+    { "root": "م-ي-ث-ق (M-Y-TH-Q/Mithaq)", "logic_function": "Binding_SLA", "description": "Accord de niveau de service critique et inviolable (Alliance)." },
+    { "root": "و-ف-ي (W-F-Y/Awfu)", "logic_function": "Contract_Fulfillment", "description": "Exécution complète des termes du contrat (Respecter)." },
+    { "root": "ن-س-خ (N-S-KH/Naskh)", "logic_function": "Version_Deprecation", "description": "Remplacement d'une ancienne instruction par une nouvelle (Abrogation)." },
+    { "root": "ب-د-ل (B-D-L/Baddala)", "logic_function": "Unauthorized_Modification", "description": "Modification illégale du code ou des paramètres (Changement)." },
+    { "root": "ح-ر-f (H-R-F/Harrafa)", "logic_function": "Code_Tampering", "description": "Altération délibérée de la logique du script (Falsification)." },
+    { "root": "ك-ت-m (K-T-M/Katama)", "logic_function": "Data_Suppression", "description": "Masquage d'une partie du code source pour tromper l'utilisateur (Cacher)." },
+    { "root": "ق-س-و (Q-S-W/Qaswa)", "logic_function": "Core_Rigidity", "description": "Durcissement du noyau empêchant les nouvelles écritures (Cœurs durs)." },
+    { "root": "س-ب-ت (S-B-T/Sabt)", "logic_function": "Maintenance_Window", "description": "Période d'arrêt obligatoire pour maintenance système (Sabbat)." },
+    { "root": "ن-س-ي (N-S-Y/Nasiya)", "logic_function": "Data_Loss", "description": "Perte d'information critique par négligence ou écrasement (Oubli)." }
   ]
 }
