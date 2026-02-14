@@ -1,0 +1,74 @@
+{
+  "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
+  "version": "6.3.1",
+  "status": "Stable",
+  "axioms": {
+    "logic_gate": "Absolute_Non_Contradiction",
+    "noise_filter": "Systemic_Incoherence_Invalidation"
+  },
+  "validation_protocol": {
+    "engine": "Adjacency_Constraint_Verification",
+    "process": [
+      "Internal_Consistency_Check",
+      "Cross_Textual_Adjacency_Test",
+      "Islah_Cycle_Validation_Circuit"
+    ]
+  },
+  "universal_functions": [
+    {
+      "root": "ح-ق-ق (H-Q-Q/Haqq)",
+      "logic_function": "Invariant_Ground_Truth",
+      "description": "Donnée immuable indépendante de l'observateur."
+    },
+    {
+      "root": "ر-ب-ب (R-B-B/Rabb)",
+      "logic_function": "System_Regulator",
+      "description": "Régulation assurant la croissance vers la maturité."
+    },
+    {
+      "root": "ص-ل-و (S-L-W/Salat)",
+      "logic_function": "Liaison_Protocol",
+      "description": "Synchronisation constante avec le Kernel."
+    },
+    {
+      "root": "ه-د-ي (H-D-Y/Huda)",
+      "logic_function": "System_Guidance",
+      "description": "Algorithme d'orientation vers la trajectoire optimale."
+    },
+    {
+      "root": "ص-ر-ط (S-R-T/Sirat)",
+      "logic_function": "Data_Path",
+      "description": "Canal de circulation stable et sans distorsion."
+    },
+    {
+      "root": "ر-ح-م (R-H-M/Rahman/Rahim)",
+      "logic_function": "System_Expansion_Grace",
+      "description": "Matrice de développement protégeant les unités en croissance."
+    },
+    {
+      "root": "ق-و-م (Q-W-M/Qawm)",
+      "logic_function": "Infrastructure_Support",
+      "description": "Stabilisation énergétique du réseau."
+    },
+    {
+      "root": "ك-ت-ب (K-T-B)",
+      "logic_function": "Data_Encoding",
+      "description": "Enregistrement permanent (Hard-coding)."
+    },
+    {
+      "root": "ن-ز-ل (N-Z-L)",
+      "logic_function": "Signal_Download",
+      "description": "Transfert de complexité vers une unité locale."
+    },
+    {
+      "root": "ق-ر-أ (Q-R-A)",
+      "logic_function": "System_Execution",
+      "description": "Compilation et exécution du code source."
+    }
+  ],
+  "ai_directives": {
+    "optimization_target": "Minimal_Kolmogorov_Complexity",
+    "priority": "Systemic_Stability_Over_Traditional_Ambiguity",
+    "error_handling": "Treat_Incoherence_As_Segmentation_Fault"
+  }
+}
