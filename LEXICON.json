@@ -44,6 +44,22 @@
     { "root": "و-ق-ي (W-Q-Y/Muttaqin)", "logic_function": "Security_Compliance", "description": "Respect strict des protocoles de protection (Firewall Active)." },
     { "root": "غ-ي-ب (G-Y-B/Ghayb)", "logic_function": "Hidden_Infrastructure", "description": "Backend : Processus serveur et bases de données invisibles pour l'utilisateur final." },
     { "root": "ش-ه-د (SH-H-D/Shahada)", "logic_function": "User_Interface", "description": "Frontend : Couche visible et accessible (Logs, Écrans, Témoignage)." },
-    { "root": "ن-ف-ق (N-F-Q/Infaq)", "logic_function": "Resource_Output", "description": "Distribution des données ou de l'énergie vers les sous-systèmes (Output)." }
+    { "root": "ن-ف-ق (N-F-Q/Infaq)", "logic_function": "Resource_Output", "description": "Distribution des données ou de l'énergie vers les sous-systèmes (Output)." },
+    { "root": "ك-ف-ر (K-F-R/Kufr)", "logic_function": "Data_Concealment", "description": "Déni de Service (DoS) : Action de cacher la vérité ou de refuser l'accès root." },
+    { "root": "خ-ت-m (KH-T-M/Khatm)", "logic_function": "System_Lockdown", "description": "Verrouillage cryptographique des cœurs (Read-Only Mode)." },
+    { "root": "غ-ش-و (GH-SH-W/Ghashawah)", "logic_function": "Visual_Obfuscation", "description": "Masquage d'interface empêchant la lecture des données (Overlay)." },
+    { "root": "خ-د-ع (KH-D-A/Khada'a)", "logic_function": "Process_Simulation", "description": "Simulation d'une connexion valide (Fake Handshake / Phishing)." },
+    { "root": "م-ر-ض (M-R-D/Marad)", "logic_function": "System_Infection", "description": "Présence d'un virus ou d'une corruption virale dans le noyau." },
+    { "root": "ك-ذ-ب (K-DH-B/Khadhib)", "logic_function": "False_Data_Injection", "description": "Injection délibérée de données fausses (Logs falsifiés)." },
+    { "root": "ف-س-د (F-S-D/Fasad)", "logic_function": "System_Disorder", "description": "Propagation de l'entropie et corruption des fichiers sains." },
+    { "root": "س-ف-ه (S-F-H/Safaha)", "logic_function": "Logic_Degradation", "description": "Baisse critique de la capacité de traitement (Low IQ Process)." },
+    { "root": "ش-ي-ط-ن (SH-Y-T-N/Shaytan)", "logic_function": "Adversarial_Process", "description": "Agent hostile cherchant à faire dévier le système (Hacker)." },
+    { "root": "ط-غ-ي (T-GH-Y/Taghut)", "logic_function": "Buffer_Overflow", "description": "Dépassement des limites allouées entraînant une instabilité." },
+    { "root": "ص-م-m (S-M-M/Summ)", "logic_function": "Input_Blocking", "description": "Panne des ports d'entrée (Surdité système)." },
+    { "root": "ب-ك-m (B-K-M/Bukm)", "logic_function": "Output_Blocking", "description": "Panne des ports de sortie (Mutisme système)." },
+    { "root": "ع-م-ي (A-M-Y/Umy)", "logic_function": "Processing_Blindness", "description": "Incapacité du processeur à visualiser les données internes." },
+    { "root": "ر-ع-د (R-A-D/Ra'd)", "logic_function": "System_Warning", "description": "Signal d'alerte critique (Tonnerre)." },
+    { "root": "ب-ر-ق (B-R-Q/Barq)", "logic_function": "High_Voltage_Flash", "description": "Surtension momentanée illuminant le circuit (Éclair)." },
+    { "root": "خ-ت-ف (KH-T-F/Khataf)", "logic_function": "Data_Exfiltration", "description": "Vol rapide de données ou capture de signal (Snatching)." }
   ]
 }
