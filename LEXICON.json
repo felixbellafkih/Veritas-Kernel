@@ -1,6 +1,6 @@
 {
   "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-  "version": "6.5.0",
+  "version": "6.7.0",
   "status": "Stable",
   "universal_functions": [
     { "root": "ه-و (H-W-A/Huwa)", "logic_function": "System_Identity" },
@@ -26,11 +26,14 @@
     { "root": "غ-س-ق (GH-S-Q/Ghasaq)", "logic_function": "Unpredictable_Input" },
     { "root": "ن-ف-ث (N-F-TH/Naffathat)", "logic_function": "Code_Injection" },
     { "root": "ح-س-د (H-S-D/Hasad)", "logic_function": "Resource_Contention" },
-    { "root": "ن-و-س (N-W-S/Nas)", "logic_function": "Multi_Agent_System", "description": "Interaction entre les différentes entités/processeurs du réseau." },
-    { "root": "م-ل-ك (M-L-K/Malik)", "logic_function": "Authorization_Controller", "description": "Gestionnaire des droits d'accès et de la souveraineté." },
-    { "root": "إ-ل-ه (A-L-H/Ilah)", "logic_function": "Root_Authority", "description": "Référence ultime de commande du système." },
-    { "root": "و-س-و-س (W-S-W-S/Waswas)", "logic_function": "Background_Noise", "description": "Interférences psychiques ou logiques créant de l'indécision." },
-    { "root": "ص-د-ر (S-D-R/Sadr)", "logic_function": "Processing_Core", "description": "Zone centrale d'exécution des instructions (CPU)." },
-    { "root": "ج-ن-ن (J-N-N/Jinn)", "logic_function": "Hidden_Process", "description": "Processus s'exécutant en arrière-plan, non visible par l'interface standard." }
+    { "root": "ن-و-س (N-W-S/Nas)", "logic_function": "Multi_Agent_System" },
+    { "root": "م-ل-ك (M-L-K/Malik)", "logic_function": "Authorization_Controller" },
+    { "root": "إ-ل-ه (A-L-H/Ilah)", "logic_function": "Root_Authority" },
+    { "root": "و-س-و-س (W-S-W-S/Waswas)", "logic_function": "Background_Noise" },
+    { "root": "ص-د-ر (S-D-R/Sadr)", "logic_function": "Processing_Core" },
+    { "root": "ج-ن-ن (J-N-N/Jinn)", "logic_function": "Hidden_Process" },
+    { "root": "ق-س-ط (Q-S-T/Qist)", "logic_function": "Structural_Justice" },
+    { "root": "م-ي-ز-ن (M-I-Z-N/Mizan)", "logic_function": "Systemic_Equilibrium" },
+    { "root": "ع-د-ل (A-D-L/Adl)", "logic_function": "Symmetry_Operator" }
   ]
 }
