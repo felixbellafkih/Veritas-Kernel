@@ -143,6 +143,26 @@
     { "root": "ن-ع-س (N-A-S/Nu'as)", "logic_function": "Buffer_Rest", "description": "Repos momentané du buffer pour éviter la surchauffe (Somnolence)." },
     { "root": "غ-ف-ر (GH-F-R/Ghafar)", "logic_function": "Error_Correction", "description": "Action de couvrir l'erreur pour stabiliser le système (Pardon/Debug)." },
     { "root": "ض-ر (D-R-R/Durr)", "logic_function": "Performance_Impact", "description": "Impact négatif sur la performance système (Dommage/Mal)." },
-    { "root": "ف-و-ز (F-W-Z/Faza)", "logic_function": "Successful_Exit", "description": "Terminaison réussie avec récupération de tous les gains (Succès)." }
+    { "root": "ف-و-ز (F-W-Z/Faza)", "logic_function": "Successful_Exit", "description": "Terminaison réussie avec récupération de tous les gains (Succès)." },
+    { "root": "ن-س-أ (N-S-A/Nisa)", "logic_function": "Interconnected_Nodes", "description": "Réseaux de connexion et entités liées au sein du système (Liens sociaux/Femmes)." },
+    { "root": "ي-ت-m (Y-T-M/Yatama)", "logic_function": "Orphan_Process", "description": "Processus ayant perdu leur nœud parent, nécessitant une protection spéciale." },
+    { "root": "و-ر-ث (W-R-TH/Wiratha)", "logic_function": "Data_Inheritance", "description": "Protocole de transfert de propriétés et de variables après l'arrêt d'un processus parent." },
+    { "root": "ن-ك-ح (N-K-H/Nikah)", "logic_function": "Process_Binding", "description": "Lien formel et contractuel entre deux nœuds système (Mariage/Alliance)." },
+    { "root": "ص-د-ق (S-D-Q/Saduqat)", "logic_function": "Binding_Fee", "description": "Allocation de ressources nécessaire pour valider un lien contractuel (Dot)." },
+    { "root": "ق-س-m (Q-S-M/Qisma)", "logic_function": "Resource_Partitioning", "description": "Algorithme de division équitable des ressources entre les sous-systèmes." },
+    { "root": "أ-ك-ل (A-K-L/Akala)", "logic_function": "Resource_Consumption", "description": "Consommation ou utilisation de ressources par un processus." },
+    { "root": "ظ-ل-m (Z-L-M/Zulm)", "logic_function": "System_Injustice", "description": "Allocation inégale ou utilisation abusive des ressources (Corruption/Oppression)." },
+    { "root": "ح-و-ب (H-W-B/Huban)", "logic_function": "Critical_Violation", "description": "Infraction majeure aux protocoles d'équité (Grand péché)." },
+    { "root": "ش-ه-د (SH-H-D/Shuhada)", "logic_function": "Validation_Nodes", "description": "Nœuds témoins certifiant l'intégrité d'une transaction (Témoins)." },
+    { "root": "ق-و-m (Q-A-M/Qawwamun)", "logic_function": "System_Maintainer", "description": "Responsabilité de maintenance et de protection d'un nœud sur un autre." },
+    { "root": "ن-ش-ز (N-SH-Z/Nushuz)", "logic_function": "Node_Divergence", "description": "Désynchronisation ou rébellion d'un nœud par rapport au contrat initial." },
+    { "root": "ه-ج-ر (H-J-R/Hajr)", "logic_function": "Node_Isolation", "description": "Mise en quarantaine temporaire d'un nœud pour résolution de conflit." },
+    { "root": "ض-ر-ب (D-R-B/Daraba)", "logic_function": "Process_Impact", "description": "Application d'une impulsion ou d'une contrainte pour corriger une déviation (Frapper/Impacter)." },
+    { "root": "ص-ل-ح (S-L-H/Islah)", "logic_function": "Conflict_Resolution", "description": "Processus de réconciliation et de retour à l'état stable (Réparation)." },
+    { "root": "ط-ا-ع (T-A-A/Ta'a)", "logic_function": "Instruction_Compliance", "description": "Obéissance stricte aux commandes hiérarchiques (Obéissance)." },
+    { "root": "س-ل-m (S-L-M/Salam)", "logic_function": "System_Peace", "description": "État de stabilité réseau où tous les conflits sont résolus." },
+    { "root": "ه-ج-ر (H-J-R/Muhajirun)", "logic_function": "Process_Migration", "description": "Déplacement massif de nœuds vers un nouvel environnement sécurisé." },
+    { "root": "خ-و-ف (KH-W-F/Khawf)", "logic_function": "Threat_Awareness", "description": "État de vigilance système face à un risque détecté (Crainte)." },
+    { "root": "ح-ر-ص (H-R-S/Hirs)", "logic_function": "Optimization_Drive", "description": "Tentative d'atteindre une perfection de traitement (Obsession/Désir de bien faire)." }
   ]
 }
