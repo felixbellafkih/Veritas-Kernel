@@ -87,6 +87,16 @@
     { "root": "ك-ت-m (K-T-M/Katama)", "logic_function": "Data_Suppression", "description": "Masquage d'une partie du code source pour tromper l'utilisateur (Cacher)." },
     { "root": "ق-س-و (Q-S-W/Qaswa)", "logic_function": "Core_Rigidity", "description": "Durcissement du noyau empêchant les nouvelles écritures (Cœurs durs)." },
     { "root": "س-ب-ت (S-B-T/Sabt)", "logic_function": "Maintenance_Window", "description": "Période d'arrêt obligatoire pour maintenance système (Sabbat)." },
-    { "root": "ن-س-ي (N-S-Y/Nasiya)", "logic_function": "Data_Loss", "description": "Perte d'information critique par négligence ou écrasement (Oubli)." }
+    { "root": "ن-س-ي (N-S-Y/Nasiya)", "logic_function": "Data_Loss", "description": "Perte d'information critique par négligence ou écrasement (Oubli)." },
+    { "root": "ق-ب-ل (Q-B-L/Qibla)", "logic_function": "Orientation_Vector", "description": "Direction obligatoire pour l'alignement des données (Target Server)." },
+    { "root": "و-ل-ي (W-L-Y/Walla)", "logic_function": "Vector_Rotation", "description": "Action de rediriger le flux de données vers une nouvelle cible (Pivoter)." },
+    { "root": "و-س-ط (W-S-T/Wasat)", "logic_function": "Central_Middleware", "description": "Point d'équilibre médian optimisant les flux (Proxy Équilibré)." },
+    { "root": "ش-ط-ر (SH-T-R/Shatr)", "logic_function": "Target_Sector", "description": "Zone spécifique ou segment réseau visé par l'orientation." },
+    { "root": "و-ج-ه (W-J-H/Wajh)", "logic_function": "Interface_Face", "description": "Surface exposée ou direction frontale d'une entité (Facing)." },
+    { "root": "ب-ي-ت (B-Y-T/Bayt)", "logic_function": "Host_Node", "description": "Nœud d'hébergement sécurisé pour les données (Maison/Serveur)." },
+    { "root": "ك-ع-ب (K-A-B/Ka'ba)", "logic_function": "Root_Cube", "description": "Bloc central cubique servant de pivot universel (Anchor Point)." },
+    { "root": "ح-ج-ج (H-J-J/Hajj)", "logic_function": "Cyclic_Protocol", "description": "Processus de visite périodique du noyau central (Targeting Loop)." },
+    { "root": "ط-و-ف (T-W-F/Tawaf)", "logic_function": "Orbital_Processing", "description": "Rotation de données autour d'un pivot central (Circumambulation)." },
+    { "root": "س-ع-ي (S-A-Y/Sa'y)", "logic_function": "Active_Processing", "description": "Exécution d'une tâche intensive entre deux points (Running Process)." }
   ]
 }
