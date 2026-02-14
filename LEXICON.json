@@ -99,6 +99,21 @@
       "root": "ق-و-م (Qawm/Qawwama)",
       "logic_function": "Infrastructure_Support",
       "description": "Fonction de maintenance et de stabilisation énergétique du réseau."
+    },
+    {
+      "root": "ك-ت-ب (K-T-B)",
+      "logic_function": "Data_Encoding",
+      "description": "Processus d'enregistrement permanent d'une information sur un support (Hard-coding)."
+    },
+    {
+      "root": "ن-ز-ل (N-Z-L)",
+      "logic_function": "Signal_Download",
+      "description": "Transfert de données d'un niveau de complexité supérieur vers une unité de traitement locale."
+    },
+    {
+      "root": "ق-ر-أ (Q-R-A)",
+      "logic_function": "System_Execution",
+      "description": "Compilation et exécution du code source pour manifester le signal."
     }
   ],
  "ai_directives": {
