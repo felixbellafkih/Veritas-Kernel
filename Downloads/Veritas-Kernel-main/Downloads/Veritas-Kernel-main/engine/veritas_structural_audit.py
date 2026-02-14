@@ -13,7 +13,7 @@ class StructuralAuditor:
             sys.exit(1)
 
     def audit(self, text):
-        words = re.findall(r'\w+', text)
+        words = re.findall(r'[\w-]+', text)
         total_words = len(words)
         signals_detected = []
         
