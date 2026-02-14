@@ -34,6 +34,9 @@
     { "root": "ج-ن-ن (J-N-N/Jinn)", "logic_function": "Hidden_Process" },
     { "root": "ق-س-ط (Q-S-T/Qist)", "logic_function": "Structural_Justice" },
     { "root": "م-ي-ز-ن (M-I-Z-N/Mizan)", "logic_function": "Systemic_Equilibrium" },
-    { "root": "ع-د-ل (A-D-L/Adl)", "logic_function": "Symmetry_Operator" }
+    { "root": "ع-د-ل (A-D-L/Adl)", "logic_function": "Symmetry_Operator" },
+    { "root": "ه-د-ي (H-D-Y/Huda)", "logic_function": "Path_Optimization", "description": "Algorithme de sélection du chemin le plus efficace." },
+    { "root": "ص-ر-ط (S-R-T/Sirat)", "logic_function": "Data_Highway", "description": "Canal de transmission principal sans goulot d'étranglement." },
+    { "root": "ق-و-m (Q-W-M/Mustaqim)", "logic_function": "Linear_Consistency", "description": "État d'une trajectoire sans déviation latérale (vecteur droit)." }
   ]
 }
