@@ -97,6 +97,22 @@
     { "root": "ك-ع-ب (K-A-B/Ka'ba)", "logic_function": "Root_Cube", "description": "Bloc central cubique servant de pivot universel (Anchor Point)." },
     { "root": "ح-ج-ج (H-J-J/Hajj)", "logic_function": "Cyclic_Protocol", "description": "Processus de visite périodique du noyau central (Targeting Loop)." },
     { "root": "ط-و-ف (T-W-F/Tawaf)", "logic_function": "Orbital_Processing", "description": "Rotation de données autour d'un pivot central (Circumambulation)." },
-    { "root": "س-ع-ي (S-A-Y/Sa'y)", "logic_function": "Active_Processing", "description": "Exécution d'une tâche intensive entre deux points (Running Process)." }
+    { "root": "س-ع-ي (S-A-Y/Sa'y)", "logic_function": "Active_Processing", "description": "Exécution d'une tâche intensive entre deux points (Running Process)." },
+    { "root": "ق-ص-ص (Q-S-S/Qisas)", "logic_function": "Equilibrium_Restoration", "description": "Loi du Talion : Algorithme de restauration de la balance après destruction (Zero Sum Game)." },
+    { "root": "و-ص-ي (W-S-Y/Wasiyya)", "logic_function": "Legacy_Instruction", "description": "Instructions testamentaires exécutées à la fermeture du processus (Will)." },
+    { "root": "ص-و-m (S-Y-M/Siyam)", "logic_function": "System_Throttling", "description": "Réduction volontaire de la consommation énergétique pour optimisation (Jeûne/Mode Eco)." },
+    { "root": "ق-ت-ل (Q-T-L/Qital)", "logic_function": "Active_Defense", "description": "Protocole de combat contre les processus hostiles (Antivirus/Firewall Action)." },
+    { "root": "ف-ت-ن (F-T-N/Fitna)", "logic_function": "System_Sedition", "description": "Chaos interne ou persécution visant à corrompre le noyau (Entropie Sociale)." },
+    { "root": "ه-ل-ك (H-L-K/Halak)", "logic_function": "Process_Termination", "description": "Destruction totale et irréversible d'une entité (Kill Process)." },
+    { "root": "ص-د-ق (S-D-Q/Sadaqa)", "logic_function": "Resource_Redistribution", "description": "Transfert volontaire de ressources vers des nœuds déficitaires (Partage)." },
+    { "root": "ر-ب-و (R-B-W/Riba)", "logic_function": "Resource_Inflation", "description": "Gain illicite généré sans travail processeur (Usure/Bulle Spéculative)." },
+    { "root": "د-ي-ن (D-Y-N/Dayn)", "logic_function": "Deferred_Transaction", "description": "Opération enregistrée avec une exécution différée (Dette/Crédit)." },
+    { "root": "ك-ر-ه (K-R-H/Ikrah)", "logic_function": "Forced_Execution", "description": "Contrainte exercée sur un système contre son protocole (Nulle contrainte)." },
+    { "root": "ط-غ-ت (T-GH-T/Taghut)", "logic_function": "False_Root", "description": "Entité usurpant les privilèges Root sans autorisation (Tyran/Idole)." },
+    { "root": "ح-ي-ي (H-Y-Y/Hayy)", "logic_function": "Eternal_Runtime", "description": "État du Vivant Absolu, ne subissant aucun arrêt (Uptime Infini)." },
+    { "root": "ق-و-m (Q-Y-M/Qayyum)", "logic_function": "Self_Sustaining", "description": "Auto-subsistance absolue, gérant toutes les dépendances (Celui qui subsiste)." },
+    { "root": "س-ن-ه (S-N-H/Sinah)", "logic_function": "Micro_Lag", "description": "Somnolence ou latence momentanée (Interdit pour le Root)." },
+    { "root": "ن-و-m (N-W-M/Nawm)", "logic_function": "Hibernation_Mode", "description": "Arrêt temporaire des processus conscients (Sommeil)." },
+    { "root": "ك-ر-س (K-R-S/Kursi)", "logic_function": "Command_Center", "description": "Siège de l'autorité englobant tout le système (Repose-Pied/Trône)." }
   ]
 }
