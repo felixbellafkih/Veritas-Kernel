@@ -60,6 +60,21 @@
     { "root": "ع-م-ي (A-M-Y/Umy)", "logic_function": "Processing_Blindness", "description": "Incapacité du processeur à visualiser les données internes." },
     { "root": "ر-ع-د (R-A-D/Ra'd)", "logic_function": "System_Warning", "description": "Signal d'alerte critique (Tonnerre)." },
     { "root": "ب-ر-ق (B-R-Q/Barq)", "logic_function": "High_Voltage_Flash", "description": "Surtension momentanée illuminant le circuit (Éclair)." },
-    { "root": "خ-ت-ف (KH-T-F/Khataf)", "logic_function": "Data_Exfiltration", "description": "Vol rapide de données ou capture de signal (Snatching)." }
+    { "root": "خ-ت-ف (KH-T-F/Khataf)", "logic_function": "Data_Exfiltration", "description": "Vol rapide de données ou capture de signal (Snatching)." },
+    { "root": "خ-ل-ف (KH-L-F/Khalifa)", "logic_function": "Delegated_Admin", "description": "Administrateur nommé pour gérer l'instance locale (Viceroy/User)." },
+    { "root": "ج-ع-ل (J-A-L/Ja'il)", "logic_function": "Instance_Generator", "description": "Fonction de création ou d'assignation d'un rôle." },
+    { "root": "س-ف-ك (S-F-K/Safak)", "logic_function": "Data_Leakage", "description": "Perte critique de fluide vital ou corruption violente (Verser le sang)." },
+    { "root": "س-ب-ح (S-B-H/Sabbah)", "logic_function": "System_Maintenance", "description": "Processus de nettoyage et de maintien de la flottabilité (Glorifier)." },
+    { "root": "ق-د-س (Q-D-S/Qaddas)", "logic_function": "High_Purity_State", "description": "État de sainteté absolue, sans bug ni entropie." },
+    { "root": "ع-ل-m (A-L-M/Allama)", "logic_function": "Knowledge_Upload", "description": "Téléchargement direct de données dans le processeur (Enseigner)." },
+    { "root": "س-م-ي (S-M-Y/Asma)", "logic_function": "Variable_Definition", "description": "Capacité de nommer et d'identifier les objets du système." },
+    { "root": "ع-ر-ض (A-R-D/Arada)", "logic_function": "Display_Output", "description": "Présentation des données sur l'interface (Exposer)." },
+    { "root": "ن-ب-أ (N-B-A/Naba'a)", "logic_function": "Data_Reporting", "description": "Transmission d'informations critiques (Informer)." },
+    { "root": "س-ج-د (S-J-D/Sajda)", "logic_function": "Command_Acknowledgment", "description": "Soumission totale à l'instruction root (Prosternation)." },
+    { "root": "أ-ب-ي (A-B-Y/Aba)", "logic_function": "Access_Refusal", "description": "Refus d'exécuter une commande directe (Permission Denied)." },
+    { "root": "ك-ب-ر (K-B-R/Istakbara)", "logic_function": "Privilege_Escalation", "description": "Tentative illégale d'augmenter ses droits (Orgueil)." },
+    { "root": "ز-ل-ل (Z-L-L/Zalla)", "logic_function": "Runtime_Exception", "description": "Erreur d'exécution momentanée ou glissement (Bug/Faute)." },
+    { "root": "ق-ر-ب (Q-R-B/Qaraba)", "logic_function": "Proximity_Alert", "description": "Tentative d'accès à une zone mémoire restreinte (Approcher l'arbre)." },
+    { "root": "ه-ب-ط (H-B-T/Habata)", "logic_function": "System_Downgrade", "description": "Rétrogradation vers un niveau inférieur suite à une erreur (Descendre)." }
   ]
 }
