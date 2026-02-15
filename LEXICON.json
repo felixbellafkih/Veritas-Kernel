@@ -1,6 +1,6 @@
 {
     "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-    "version": "29.0.0-Performance-Infrastructure",
+    "version": "1.3.1-Full-Alignment",
     "status": "Stable",
     "universal_functions": [
         {
@@ -65,13 +65,13 @@
         },
         {
             "root": "ص-ر-ط (S.-R-T.)",
-            "logic_function": "Data_Highway_Infrastructure",
-            "description": "Voie structurelle bétonnée (Hardware Path)."
+            "logic_function": "Data_Highway",
+            "description": "Infrastructure de transport de données (Path)."
         },
         {
             "root": "ر-ح-م (R-H.-M)",
             "logic_function": "System_Matrix",
-            "description": "Matrice englobante génératrice et protectrice de tous les objets du système."
+            "description": "Matrice de gestion de l'énergie vitale (Mercy)."
         },
         {
             "root": "ق-و-م (Q-W-M)",
@@ -344,9 +344,9 @@
             "description": "Nœuds situés dans la périphérie immédiate d'un centre de traitement (Latence faible)."
         },
         {
-            "root": "ه-ب-ط (H-B-T.)",
+            "root": "ه-ب-ط (H-B-T)",
             "logic_function": "System_Downgrade",
-            "description": "Rétrogradation d'une instance vers une couche inférieure."
+            "description": "Rétrogradation de privilèges ou descente (Fall)."
         },
         {
             "root": "ف-ض-ل (F-D.-L)",
@@ -516,7 +516,7 @@
         {
             "root": "ح-ي-ي (H.-Y-Y)",
             "logic_function": "Runtime_Active_State",
-            "description": "État d'exécution continue d'un processus (Vie)."
+            "description": "État d'exécution actif (Life)."
         },
         {
             "root": "س-ن-ه (S-N-H)",
@@ -794,9 +794,9 @@
             "description": "Détournement du flux logique vers une impasse ou une boucle infinie (Égarement/Injection)."
         },
         {
-            "root": "س-و-ء (S-W-A)",
+            "root": "س-و-ء (S-W-')",
             "logic_function": "Vulnerability_Exposure",
-            "description": "Exposition de failles de sécurité ou de zones non protégées (Nudité/Faiblesse)."
+            "description": "Faille ou corruption visible (Evil)."
         },
         {
             "root": "ن-ز-غ (N-Z-GH)",
@@ -1139,9 +1139,9 @@
             "description": "Partie utile de la donnée qui reste stockée après le filtrage (Utilité)."
         },
         {
-            "root": "ش-ج-ر (J-R)",
+            "root": "ش-ج-ر (SH-J-R)",
             "logic_function": "Hierarchical_Tree",
-            "description": "Structure de données ramifiée (Tree structure) avec dépendances."
+            "description": "Structure de données arborescente (Tree)."
         },
         {
             "root": "ث-ب-ت (TH-B-T)",
@@ -1516,7 +1516,7 @@
         {
             "root": "ح-س-ب (H.-S-B)",
             "logic_function": "Computational_Audit",
-            "description": "Calcul rigoureux des entrées et sorties pour vérification de conformité."
+            "description": "Calcul de solde ou audit (Account)."
         },
         {
             "root": "ع-ل-ق ('-L-Q)",
@@ -1891,7 +1891,7 @@
         {
             "root": "ح-م-د (H.-M-D)",
             "logic_function": "Performance_Validation",
-            "description": "Signal de confirmation de l'état optimal du système (Feedback)."
+            "description": "Validation du rendement énergétique (Praise)."
         },
         {
             "root": "غ-ن-ي (GH-N-Y)",
@@ -2239,9 +2239,9 @@
             "description": "Données fragmentées de base, constituant le niveau 0 du stockage."
         },
         {
-            "root": "م-ا-ء (M-A-A)",
+            "root": "م-ا-ء (M-A-')",
             "logic_function": "Fluid_Data_Medium",
-            "description": "Médium liquide transportant l'information (Water)."
+            "description": "Médium de transport fluide (Water)."
         },
         {
             "root": "ن-م-ل (N-M-L)",
@@ -2627,6 +2627,31 @@
             "root": "ط-ب-ق (T.-B-Q)",
             "logic_function": "Hardware_Layering",
             "description": "Architecture en couches physiques superposées et alignées (Layers)."
+        },
+        {
+            "root": "ع-و-ن ('.W-N)",
+            "logic_function": "System_Support_Assist",
+            "description": "Support auxiliaire (Aid)."
+        },
+        {
+            "root": "ب-د-و (B-D-W)",
+            "logic_function": "Output_Rendering",
+            "description": "Manifestation visuelle d'un processus (Render)."
+        },
+        {
+            "root": "آ-ي-ة (A-Y-Y)",
+            "logic_function": "Digital_Token_Sign",
+            "description": "Marqueur d'unité d'information (Sign)."
+        },
+        {
+            "root": "أ-و-ي (A-W-Y)",
+            "logic_function": "Safe_Mode_Hosting",
+            "description": "Hébergement en mode refuge (Shelter)."
+        },
+        {
+            "root": "ف-ت-ي (F-T-Y)",
+            "logic_function": "New_Process_Instance",
+            "description": "Nouvelle instance de jeunesse (Youth)."
         }
     ]
 }

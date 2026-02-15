@@ -36,7 +36,7 @@ def run_benchmark():
         "SCENARIO_A [BOOT_SEQUENCE]": {
             "description": "Al-Fatiha (Precision Mode)",
             # Notez l'usage précis de ' (Ain) vs A (Alif)
-            "sequence": "H-M-D R-B-B '-L-M R-H-M M-L-K D-Y-N '-B-D '-W-N H-D-Y S-R-T Q-W-M",
+            "sequence": "H-M-D R-B-B '-L-M R-H.-M M-L-K D-Y-N '-B-D '.W-N H-D-Y S.-R-T. Q-W-M",
         },
         "SCENARIO_B [SYSTEM_CRASH]": {
             "description": "Adam & Iblis (Precision Mode)",
@@ -44,11 +44,11 @@ def run_benchmark():
         },
         "SCENARIO_C [PHYSICS_ENGINE]": {
             "description": "Big Bang (Precision Mode)",
-            "sequence": "K-F-R R-T-Q F-T-Q M-A-' H-Y-Y J-B-L R-S-Y F-J-J",
+            "sequence": "K-F-R R-T-Q F-T-Q M-A-' H.-Y-Y J-B-L R-S-Y F-J-J",
         },
         "SCENARIO_D [DATA_ENCRYPTION]": {
             "description": "Kahf (Precision Mode)",
-            "sequence": "H-S-B K-H-F R-Q-M A-Y-Y A-W-Y F-T-Y R-H-M H-Y-Y",
+            "sequence": "H-S-B K-H-F R-Q-M A-Y-Y A-W-Y F-T-Y R-H.-M H-Y-Y",
         }
     }
 
