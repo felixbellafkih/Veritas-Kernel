@@ -1,0 +1,6 @@
+# System junk
+NTUSER.DAT
+*.log
+*.blf
+*.regtrans-ms
+*.ini

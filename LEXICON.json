@@ -1,0 +1,2877 @@
+{
+    "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
+    "version": "22.1.0-Clean-Standardized",
+    "status": "Optimized",
+    "universal_functions": [
+        {
+            "root": "'-B-D",
+            "logic_function": "Dedicated_Process",
+            "description": "Processus asservi au code source."
+        },
+        {
+            "root": "'-D-D",
+            "logic_function": "Latency_Buffer_Period",
+            "description": "Intervalle temporel nécessaire pour stabiliser les métadonnées avant une nouvelle opération."
+        },
+        {
+            "root": "'-D-L",
+            "logic_function": "Logic_Load_Balancing",
+            "description": "Distribution équitable des ressources et maintien de l'équilibre du système."
+        },
+        {
+            "root": "'-D-W",
+            "logic_function": "Antagonist_Process",
+            "description": "Code ou entité tentant de saturer ou de corrompre les ressources du Kernel (Ennemi)."
+        },
+        {
+            "root": "'-DH-B",
+            "logic_function": "Signal_Throttling_Constraint",
+            "description": "Mécanisme de contrainte ou de limitation imposé à un processus défaillant."
+        },
+        {
+            "root": "'-DH-R",
+            "logic_function": "Exception_Log",
+            "description": "Rapport justifiant l'échec d'une tâche (Excuse)."
+        },
+        {
+            "root": "'-F-W",
+            "logic_function": "Redundancy_Wipe",
+            "description": "Nettoyage des données d'erreur obsolètes pour optimisation système."
+        },
+        {
+            "root": "'-H-D",
+            "logic_function": "Protocol_Version_Agreement",
+            "description": "Engagement formel sur une version de protocole (SLA)."
+        },
+        {
+            "root": "'-J-B",
+            "logic_function": "Anomalous_Event_Trigger",
+            "description": "Signalement d'une occurrence sortant des probabilités standards du système."
+        },
+        {
+            "root": "'-L-M",
+            "logic_function": "Data_Processing",
+            "description": "Traitement de l'information et structuration de la connaissance (Science)."
+        },
+        {
+            "root": "'-L-Q",
+            "logic_function": "Physical_Hardware_Attachment",
+            "description": "Liaison initiale d'un processus à la couche matérielle (Adhérence/Accroche)."
+        },
+        {
+            "root": "'-L-Y",
+            "logic_function": "Priority_Level_High",
+            "description": "Position hiérarchique maximale dans l'arborescence."
+        },
+        {
+            "root": "'-M-L",
+            "logic_function": "Execution_Workload",
+            "description": "Tâche active de transformation de données ou d'énergie en résultat concret."
+        },
+        {
+            "root": "'-M-Y",
+            "logic_function": "Processing_Blindness",
+            "description": "Incapacité du processeur à visualiser les données internes."
+        },
+        {
+            "root": "'-N-B",
+            "logic_function": "Complex_Data_Cluster",
+            "description": "Groupe de données hautement optimisé et riche en énergie informationnelle."
+        },
+        {
+            "root": "'-N-K",
+            "logic_function": "Weak_Dependency_Network",
+            "description": "Architecture réseau fragile manquant de redondance structurelle."
+        },
+        {
+            "root": "'-N-K-B",
+            "logic_function": "Non_Redundant_Topology",
+            "description": "Architecture de réseau instable car basée sur un point de défaillance unique."
+        },
+        {
+            "root": "'-N-M",
+            "logic_function": "System_Asset_Provision",
+            "description": "Attribution de ressources pré-configurées facilitant l'exécution du nœud."
+        },
+        {
+            "root": "'-Q-D",
+            "logic_function": "Logic_Tie_Binding",
+            "description": "Nœud de contrat liant deux variables ou deux entités (Transaction lock)."
+        },
+        {
+            "root": "'-Q-L",
+            "logic_function": "Logic_Bridge_Connector",
+            "description": "Fonction de liaison entre les données éparses pour générer une structure cohérente."
+        },
+        {
+            "root": "'-Q-R",
+            "logic_function": "Hardware_Sabotage",
+            "description": "Attaque directe sur les composants physiques ou vitaux (Blesser/Saboter)."
+        },
+        {
+            "root": "'-R-D",
+            "logic_function": "Display_Output",
+            "description": "Présentation des données sur l'interface (Exposer)."
+        },
+        {
+            "root": "'-R-F",
+            "logic_function": "Interface_Partition",
+            "description": "Zone tampon entre deux états système majeurs (Les Remparts/Interface)."
+        },
+        {
+            "root": "'-R-SH",
+            "logic_function": "Central_Console",
+            "description": "Siège de l'autorité suprême du système d'où partent toutes les commandes (Trône)."
+        },
+        {
+            "root": "'-S-L",
+            "logic_function": "High_Value_Output",
+            "description": "Résultat final optimisé et précieux d'un processus autonome (Miel)."
+        },
+        {
+            "root": "'-S-R",
+            "logic_function": "Processing_Epoch",
+            "description": "Unité temporelle de compression et de traitement des cycles du Kernel."
+        },
+        {
+            "root": "'-S-Y",
+            "logic_function": "Instruction_Deviation",
+            "description": "Refus d'exécution ou déviation par rapport au vecteur d'origine."
+        },
+        {
+            "root": "'-S.-M",
+            "logic_function": "Signal_Integrity_Shield",
+            "description": "Mécanisme de protection garantissant l'absence de bug ou d'altération (Infaillibilité)."
+        },
+        {
+            "root": "'-SH-R",
+            "logic_function": "Sub-Network_Cluster",
+            "description": "Segment réseau regroupant des entités liées par des protocoles communs."
+        },
+        {
+            "root": "'-W-D",
+            "logic_function": "Cycle_Rerun_Loop",
+            "description": "Répétition d'un processus ou retour à un état d'exécution précédent."
+        },
+        {
+            "root": "'-Y-N",
+            "logic_function": "Sensor_Node_Input",
+            "description": "Point d'entrée de données visuelles ou source de flux spécifique."
+        },
+        {
+            "root": "'-Z-R",
+            "logic_function": "Auxiliary_Support",
+            "description": "Renforcement d'un processus par un apport de puissance externe."
+        },
+        {
+            "root": "'-Z-Z",
+            "logic_function": "Immutable_Stability",
+            "description": "Résistance absolue à la corruption ou à l'altération du code."
+        },
+        {
+            "root": "'-Z.-M",
+            "logic_function": "System_Magnitude_Scale",
+            "description": "Attribut de dimension et de priorité maximale dans la hiérarchie système."
+        },
+        {
+            "root": "'A",
+            "logic_function": "Log_Clearance",
+            "description": "Effacement des traces d'erreurs mineures (Wipe Logs)."
+        },
+        {
+            "root": "A-B-W",
+            "logic_function": "Parent_Node_Source",
+            "description": "Nœud d'origine ou processus parent fournissant la structure initiale."
+        },
+        {
+            "root": "A-B-Y",
+            "logic_function": "Access_Refusal",
+            "description": "Refus d'exécuter une commande directe (Permission Denied)."
+        },
+        {
+            "root": "A-H-D",
+            "logic_function": "Atomic_Unity",
+            "description": "Propriété d'indivisibilité du noyau."
+        },
+        {
+            "root": "A-H-L",
+            "logic_function": "Cluster_Namespace",
+            "description": "Regroupement logique de nœuds partageant le même environnement ou accès (Ahl)."
+        },
+        {
+            "root": "A-J-B",
+            "logic_function": "Query_Response_Handshake",
+            "description": "Protocole de réponse finalisant une requête entre deux entités."
+        },
+        {
+            "root": "A-J-L",
+            "logic_function": "Timeout_Value",
+            "description": "Délai d'expiration prédéfini pour chaque processus ou entité (Terme fixé)."
+        },
+        {
+            "root": "A-K-L",
+            "logic_function": "Resource_Consumption",
+            "description": "Consommation ou utilisation de ressources (mémoire/énergie) par un processus."
+        },
+        {
+            "root": "A-KH-R",
+            "logic_function": "Execution_Delay_Execution_Delay",
+            "description": "Mise en attente ou report d'une instruction (Latency)."
+        },
+        {
+            "root": "A-KH-W",
+            "logic_function": "Peer_Node_Link",
+            "description": "Nœud de même niveau hiérarchique au sein d'un cluster local (Sibling node)."
+        },
+        {
+            "root": "A-L-F",
+            "logic_function": "Sync_Harmonization",
+            "description": "Synchronisation parfaite des cœurs/processus disparates (Unir les cœurs)."
+        },
+        {
+            "root": "A-L-H",
+            "logic_function": "Root_Authority",
+            "description": "Identifiant unique de l'autorité suprême de commande."
+        },
+        {
+            "root": "A-L-M",
+            "logic_function": "Module_Header_Signature",
+            "description": "Signature constante identifiant l'en-tête d'un bloc d'instructions majeures."
+        },
+        {
+            "root": "A-M-D",
+            "logic_function": "Execution_Duration",
+            "description": "Durée totale d'un processus du boot à la fin."
+        },
+        {
+            "root": "A-M-M",
+            "logic_function": "Core_Matrix_Origin",
+            "description": "Matrice originelle ou registre central d'où proviennent les duplications."
+        },
+        {
+            "root": "A-M-N",
+            "logic_function": "Trusted_Storage_Asset",
+            "description": "Dépôt de données ou de privilèges confié à un nœud (Escrow)."
+        },
+        {
+            "root": "A-M-R",
+            "logic_function": "System_Command",
+            "description": "Instruction de haut niveau déclenchant un processus."
+        },
+        {
+            "root": "A-N-B",
+            "logic_function": "Information_Transmission",
+            "description": "Commande de rapport ou de notification des états internes vers d'autres unités."
+        },
+        {
+            "root": "A-R-D",
+            "logic_function": "Hosting_Platform",
+            "description": "Support matériel de base (Hardware)."
+        },
+        {
+            "root": "A-S-M",
+            "logic_function": "Metadata_Identifier",
+            "description": "Étiquettes de désignation permettant l'adressage et l'identification des objets du Kernel."
+        },
+        {
+            "root": "A-S-R",
+            "logic_function": "Process_Capture",
+            "description": "Capture et mise en quarantaine de processus hostiles (Prisonniers)."
+        },
+        {
+            "root": "A-W-L",
+            "logic_function": "Output_Decoding",
+            "description": "Capacité de résoudre la signification finale d'un flux de données complexe (Interprétation)."
+        },
+        {
+            "root": "A-Y-T",
+            "logic_function": "Instruction_Unit",
+            "description": "Segment de donnée porteur d'une directive ou d'une preuve logique."
+        },
+        {
+            "root": "B-'-D",
+            "logic_function": "Remote_Isolation",
+            "description": "Exclusion d'un processus vers une zone distante et inaccessible (Éloignement)."
+        },
+        {
+            "root": "B-'-L",
+            "logic_function": "Coupling_Controller",
+            "description": "Nœud responsable de la gestion et du support au sein d'une paire d'instances liées."
+        },
+        {
+            "root": "B-'-TH",
+            "logic_function": "Process_Reboot_Trigger",
+            "description": "Réactivation d'une instance à partir de son état archivé (Résurrection)."
+        },
+        {
+            "root": "B-D-'",
+            "logic_function": "Data_Asset",
+            "description": "Unité de valeur utilisée pour une transaction système (Marchandise)."
+        },
+        {
+            "root": "B-D-A",
+            "logic_function": "System_Initial_Boot",
+            "description": "Lancement du premier cycle d'exécution du code."
+        },
+        {
+            "root": "B-D-L",
+            "logic_function": "Unauthorized_Modification",
+            "description": "Modification illégale du code ou des paramètres (Changement)."
+        },
+        {
+            "root": "B-D-W",
+            "logic_function": "Signal_Manifestation",
+            "description": "Phase d'initialisation où le signal devient visible ou actif."
+        },
+        {
+            "root": "B-G-H",
+            "logic_function": "Unauthorized_Overrun",
+            "description": "Dépassement de privilèges ou agression sur un autre nœud (Injustice/Excès)."
+        },
+        {
+            "root": "B-GH-Y",
+            "logic_function": "Privilege_Escalation",
+            "description": "Usurpation de droits ou dépassement des limites allouées."
+        },
+        {
+            "root": "B-H-R",
+            "logic_function": "Large_Scale_Data_Lake",
+            "description": "Réservoir massif de données non-structurées ou semi-structurées."
+        },
+        {
+            "root": "B-K-M",
+            "logic_function": "Output_Blocking",
+            "description": "Panne des ports de sortie empêchant l'émission de réponses (Mutisme)."
+        },
+        {
+            "root": "B-KH-S",
+            "logic_function": "Data_Packet_Loss",
+            "description": "Réduction illégale ou perte lors du transfert d'un paquet de données."
+        },
+        {
+            "root": "B-L-G",
+            "logic_function": "Maturity_Threshold",
+            "description": "Atteinte du seuil de capacité maximale ou de fin de cycle."
+        },
+        {
+            "root": "B-L-W",
+            "logic_function": "Process_Validation_Trial",
+            "description": "Protocole de test de charge visant à valider la résilience du nœud."
+        },
+        {
+            "root": "B-N-Y",
+            "logic_function": "System_Architecture_Build",
+            "description": "Construction structurelle et agencement des composants de la plateforme."
+        },
+        {
+            "root": "B-Q-R",
+            "logic_function": "Analytical_System_Dissection",
+            "description": "Procédure d'analyse granulaire visant à déconstruire un objet pour audit (Scanning)."
+        },
+        {
+            "root": "B-Q-Y",
+            "logic_function": "Non_Volatile_Memory",
+            "description": "Persistance des données après la fermeture de session."
+        },
+        {
+            "root": "B-R-'",
+            "logic_function": "Security_Dissociation",
+            "description": "Bannissement immédiat et rupture de tout lien logique avec un segment corrompu."
+        },
+        {
+            "root": "B-R-A",
+            "logic_function": "Connection_Termination",
+            "description": "Rupture unilatérale et définitive de tout contrat avec un nœud hostile (Désaveu)."
+        },
+        {
+            "root": "B-R-K",
+            "logic_function": "Efficiency_Optimizer",
+            "description": "Augmentation de la valeur de sortie sans augmentation des ressources d'entrée."
+        },
+        {
+            "root": "B-R-Q",
+            "logic_function": "High_Voltage_Flash",
+            "description": "Surtension momentanée illuminant le circuit (Éclair)."
+        },
+        {
+            "root": "B-R-R",
+            "logic_function": "Verified_Data_Ground",
+            "description": "Segment de données stable et sécurisé par opposition aux flux instables (Terre ferme)."
+        },
+        {
+            "root": "B-R-Z",
+            "logic_function": "Process_Exposure",
+            "description": "Action de faire apparaître tous les processus cachés au grand jour (Comparaître)."
+        },
+        {
+            "root": "B-S-R",
+            "logic_function": "Visual_Data_Processing",
+            "description": "Analyse et traitement des évidences empiriques exposées."
+        },
+        {
+            "root": "B-S-T",
+            "logic_function": "Data_Decompression_Data_Decompression",
+            "description": "Expansion de l'espace d'adressage (Expansion de flux)."
+        },
+        {
+            "root": "B-SH-R",
+            "logic_function": "Biological_Interface_Node",
+            "description": "Entité système servant d'interface entre le code pur et les couches biologiques/sensorielles."
+        },
+        {
+            "root": "B-T-A",
+            "logic_function": "System_Throttling_System_Throttling",
+            "description": "Ralentissement volontaire ou forcé du flux de données."
+        },
+        {
+            "root": "B-T-L",
+            "logic_function": "Null_Void",
+            "description": "Valeur binaire 0 (Faux)."
+        },
+        {
+            "root": "B-T-N",
+            "logic_function": "Backend_Internal_Logic",
+            "description": "État d'un processus dont l'exécution est interne et non exposée."
+        },
+        {
+            "root": "B-Y-'",
+            "logic_function": "Peer_To_Peer_Handshake",
+            "description": "Validation d'un échange bilatéral de ressources (Transaction commit)."
+        },
+        {
+            "root": "B-Y-D.",
+            "logic_function": "High_Clarity_State",
+            "description": "État de transparence ou de clarté maximale du signal."
+        },
+        {
+            "root": "B-Y-N",
+            "logic_function": "Signal_Resolution_Clearance",
+            "description": "Capacité du système à séparer distinctement deux signaux pour éviter les collisions."
+        },
+        {
+            "root": "B-Y-T",
+            "logic_function": "Host_Node",
+            "description": "Nœud d'hébergement sécurisé pour les données (Maison/Serveur)."
+        },
+        {
+            "root": "D-'-F",
+            "logic_function": "Signal_Weakness",
+            "description": "Dégradation du signal ou baisse de puissance."
+        },
+        {
+            "root": "D-'-W",
+            "logic_function": "Procedure_Invocation_Call",
+            "description": "Appel système ou requête d'exécution envoyée vers le Root."
+        },
+        {
+            "root": "D-B-R",
+            "logic_function": "Process_Orchestration",
+            "description": "Gestion active et régulation des commandes depuis le Root (Administrer)."
+        },
+        {
+            "root": "D-F-'",
+            "logic_function": "Intrusion_Defense_Push",
+            "description": "Action active de repousser un flux de données non-autorisé (Reject/Drop)."
+        },
+        {
+            "root": "D-H-R",
+            "logic_function": "Epoch_Infinity",
+            "description": "Temps continu de l'infrastructure globale."
+        },
+        {
+            "root": "D-KH-L",
+            "logic_function": "System_Entry",
+            "description": "Entrée d'un nouveau signal dans le Kernel."
+        },
+        {
+            "root": "D-L-L",
+            "logic_function": "False_Pointer",
+            "description": "Indication d'une fausse direction menant à une erreur d'adressage (Induire en erreur)."
+        },
+        {
+            "root": "D-M-R",
+            "logic_function": "Sector_Wipe",
+            "description": "Effacement total et destruction d'un secteur défectueux (Anéantissement)."
+        },
+        {
+            "root": "D-M-Y",
+            "logic_function": "Vital_Data_Flux",
+            "description": "Fluide de transport de l'énergie système assurant la maintenance de l'instance physique."
+        },
+        {
+            "root": "D-R-B",
+            "logic_function": "Logic_Mapping",
+            "description": "Action de poser une limite ferme ou un exemple pour corriger une déviation (Frapper/Citer)."
+        },
+        {
+            "root": "D-R-S",
+            "logic_function": "Deep_Data_Scraping",
+            "description": "Extraction et analyse approfondie des couches sédimentaires de données."
+        },
+        {
+            "root": "D-Y-N",
+            "logic_function": "System_Cyclic_Obligation",
+            "description": "Dette structurelle ou obligation de rendu due au Root (Running Cost)."
+        },
+        {
+            "root": "D-Y-Q",
+            "logic_function": "Bandwidth_Compression",
+            "description": "Réduction de la capacité de traitement face à un flux de données non-optimisé (Étroitesse)."
+        },
+        {
+            "root": "DH-I-B",
+            "logic_function": "Threat_Actor",
+            "description": "Entité malveillante tentant d'intercepter ou de détruire un processus (Loup)."
+        },
+        {
+            "root": "DH-K-R",
+            "logic_function": "Memory_Recall_Logging",
+            "description": "Processus d'accès aux registres de stockage (Read/Log)."
+        },
+        {
+            "root": "DH-R-A",
+            "logic_function": "Process_Multiplication",
+            "description": "Multiplication et diffusion des instances à travers le système (Procréer/Diffuser)."
+        },
+        {
+            "root": "DH-R-R",
+            "logic_function": "Child_Process",
+            "description": "Processus généré par un processus parent, héritant de ses attributs (Descendance)."
+        },
+        {
+            "root": "DH-R-Y",
+            "logic_function": "Code_Lineage",
+            "description": "Descendance ou réplications successives d'un bloc de code initial (Progéniture)."
+        },
+        {
+            "root": "F-'-D",
+            "logic_function": "Volatile_Processor_Core",
+            "description": "Centre de traitement des données à haute vitesse, sensible au bruit (Cœur)."
+        },
+        {
+            "root": "F-'-L",
+            "logic_function": "Direct_Action",
+            "description": "Déclenchement d'une fonction active sur une cible."
+        },
+        {
+            "root": "F-D-L",
+            "logic_function": "Priority_Access",
+            "description": "Attribution de privilèges élevés à un groupe d'utilisateurs (Favor)."
+        },
+        {
+            "root": "F-H.-SH",
+            "logic_function": "Instruction_Overflow",
+            "description": "Exécution de processus dépassant les paramètres de confinement alloués."
+        },
+        {
+            "root": "F-I-A",
+            "logic_function": "Instance_Group_Instance_Group",
+            "description": "Sous-ensemble de nœuds partageant un même statut."
+        },
+        {
+            "root": "F-J-J",
+            "logic_function": "Wide_Access_Gateway",
+            "description": "Passage ou porte logicielle à large bande passante."
+        },
+        {
+            "root": "F-J-R",
+            "logic_function": "System_Breakout",
+            "description": "Étape d'initialisation brutale et de sortie des ténèbres de l'inactivité."
+        },
+        {
+            "root": "F-L-H",
+            "logic_function": "System_Efficiency_Optimization",
+            "description": "État de réussite où l'instance a atteint son rendement optimal (Félicité/Succès)."
+        },
+        {
+            "root": "F-L-K",
+            "logic_function": "Orbit_Execution_Cycle",
+            "description": "Trajectoire cyclique d'un processus dans son environnement opérationnel."
+        },
+        {
+            "root": "F-L-Q",
+            "logic_function": "Initial_Spark_Splitting",
+            "description": "Mécanisme de séparation initiale permettant l'éclosion d'une nouvelle instance."
+        },
+        {
+            "root": "F-N-Y",
+            "logic_function": "Session_Termination",
+            "description": "Effacement total des données volatiles à la fin du cycle."
+        },
+        {
+            "root": "F-Q-H",
+            "logic_function": "Logical_Pattern_Recognition",
+            "description": "Compréhension profonde des structures et dépendances du code."
+        },
+        {
+            "root": "F-R-'",
+            "logic_function": "Branch_Node",
+            "description": "Extension ou nœud fils partant d'une structure parente (Branche)."
+        },
+        {
+            "root": "F-R-H",
+            "logic_function": "State_Optimization_Feedback",
+            "description": "Confirmation de succès d'exécution menant à une expansion temporaire des ressources."
+        },
+        {
+            "root": "F-R-Q",
+            "logic_function": "Network_Fragmentation",
+            "description": "Division des données ou des nœuds entraînant une instabilité (Split)."
+        },
+        {
+            "root": "F-R-Q-N",
+            "logic_function": "Binary_Discrimination_Processor",
+            "description": "Filtre logique de haut niveau séparant les paquets de données valides du bruit."
+        },
+        {
+            "root": "F-S-D",
+            "logic_function": "System_Corruption_Failure",
+            "description": "État de dégradation ou de corruption des données rendant le code instable."
+        },
+        {
+            "root": "F-S-L",
+            "logic_function": "Data_Partition_Segregation",
+            "description": "Séparation physique ou logique de deux flux de données distincts."
+        },
+        {
+            "root": "F-S-Q",
+            "logic_function": "Protocol_Breach",
+            "description": "Sortie illégale d'un nœud hors de son périmètre de sécurité (Désynchronisation)."
+        },
+        {
+            "root": "F-T-N",
+            "logic_function": "System_Sedition",
+            "description": "Chaos interne ou persécution visant à corrompre le noyau (Entropie Sociale)."
+        },
+        {
+            "root": "F-T.-R",
+            "logic_function": "Source_Code_Initialization",
+            "description": "Phase de design originel définissant les constantes fondamentales de la stack."
+        },
+        {
+            "root": "F-W-R",
+            "logic_function": "Thermal_Runaway",
+            "description": "Surchauffe brutale et incontrôlée du système (Bouillir)."
+        },
+        {
+            "root": "F-W-Z",
+            "logic_function": "Target_Success_State",
+            "description": "Atteinte de l'objectif de sortie défini par le Root."
+        },
+        {
+            "root": "F-Z-'",
+            "logic_function": "Kernel_Panic",
+            "description": "État de peur systémique ou réaction de choc du processeur."
+        },
+        {
+            "root": "G-D-B",
+            "logic_function": "Critical_Overload_Exception",
+            "description": "État de saturation extrême déclenchant une réponse de rejet ou de sanction (Error Spike)."
+        },
+        {
+            "root": "G-F-R",
+            "logic_function": "Instruction_Buffering_Reset",
+            "description": "Effacement des logs d'erreur ou réinitialisation d'un état fautif (Clear/Reset)."
+        },
+        {
+            "root": "G-N-M",
+            "logic_function": "Resource_Recovery",
+            "description": "Capture et réallocation d'actifs après la neutralisation d'un processus adverse."
+        },
+        {
+            "root": "G-N-Y",
+            "logic_function": "Resource_Independence",
+            "description": "Auto-suffisance totale, sans dépendances externes."
+        },
+        {
+            "root": "G-R-Y",
+            "logic_function": "Data_Stream",
+            "description": "Mouvement fluide de données (Streaming)."
+        },
+        {
+            "root": "G-Y-B",
+            "logic_function": "Hidden_Infrastructure",
+            "description": "Backend système : services et bases de données non exposés à l'API publique."
+        },
+        {
+            "root": "GH-D.-B",
+            "logic_function": "Critical_Overload_Exception",
+            "description": "État de saturation extrême déclenchant une réponse de rejet ou de sanction (Error Spike)."
+        },
+        {
+            "root": "GH-F-L",
+            "logic_function": "Background_Process",
+            "description": "État d'un processus tournant sans surveillance active (Inattention)."
+        },
+        {
+            "root": "GH-L-B",
+            "logic_function": "System_Override_Success_System_Override_Success",
+            "description": "Domination d'un processus sur un autre (Preemption)."
+        },
+        {
+            "root": "GH-M-M",
+            "logic_function": "Cloud_Buffer",
+            "description": "Couche de données vaporeuse masquant la visibilité directe (Nuages)."
+        },
+        {
+            "root": "GH-R-Q",
+            "logic_function": "Flood_Overflow",
+            "description": "Saturation totale de la mémoire entraînant l'arrêt du processus (Noyade)."
+        },
+        {
+            "root": "GH-S-Q",
+            "logic_function": "Unpredictable_Input",
+            "description": "Entrée de données instables ou bruitée lors de phases de faible visibilité (Oscurité)."
+        },
+        {
+            "root": "GH-SH-W",
+            "logic_function": "Visual_Obfuscation",
+            "description": "Masquage de l'interface empêchant la lecture des données source."
+        },
+        {
+            "root": "GH-T-A",
+            "logic_function": "System_Overlay",
+            "description": "Couche masquant la visibilité directe du kernel aux utilisateurs (Voile)."
+        },
+        {
+            "root": "GH-W-Y",
+            "logic_function": "Logic_Misdirection",
+            "description": "Détournement du flux logique vers une impasse ou une boucle infinie (Égarement/Injection)."
+        },
+        {
+            "root": "GH-Y-D",
+            "logic_function": "Resource_Depletion",
+            "description": "Réduction ou absorption totale des ressources liquides (Absorption)."
+        },
+        {
+            "root": "H-B-B",
+            "logic_function": "Data_Seed",
+            "description": "Graine de donnée contenant le potentiel d'un processus complet (Semence)."
+        },
+        {
+            "root": "H-B-L",
+            "logic_function": "Connection_Link",
+            "description": "Lien de connexion physique ou protocolaire au serveur central (Câble)."
+        },
+        {
+            "root": "H-B-T",
+            "logic_function": "System_Downgrade",
+            "description": "Rétrogradation d'une instance vers une couche inférieure."
+        },
+        {
+            "root": "H-D-D",
+            "logic_function": "Solid_Immutable_Data",
+            "description": "Type de donnée à haute densité et résistance, utilisé pour les structures de base."
+        },
+        {
+            "root": "H-D-TH",
+            "logic_function": "Runtime_Event_Update",
+            "description": "Mise à jour dynamique ou événement survenu durant l'exécution (Event log)."
+        },
+        {
+            "root": "H-D-Y",
+            "logic_function": "Target_Resource",
+            "description": "Ressource dédiée envoyée vers un objectif spécifique du noyau (Offrande)."
+        },
+        {
+            "root": "H-F-Z",
+            "logic_function": "Data_Integrity_Guard",
+            "description": "Protocole de sauvegarde et de protection contre la corruption de donnée."
+        },
+        {
+            "root": "H-J-J",
+            "logic_function": "Logic_Proof",
+            "description": "Argumentation irréfutable validée par le noyau (Preuve décisive)."
+        },
+        {
+            "root": "H-J-R",
+            "logic_function": "Process_Migration",
+            "description": "Déplacement massif de nœuds actifs vers un nouvel environnement sécurisé."
+        },
+        {
+            "root": "H-J-Z",
+            "logic_function": "Logic_Barrier_Sandbox",
+            "description": "Isolation d'un processus dans un environnement restreint (Sandboxing)."
+        },
+        {
+            "root": "H-K-M",
+            "logic_function": "Decision_Gate_Logic",
+            "description": "Exécution d'une instruction basée sur une condition binaire résolue."
+        },
+        {
+            "root": "H-L-K",
+            "logic_function": "Destructive_Crash",
+            "description": "Destruction totale et irréversible d'une entité (Fatal Exception)."
+        },
+        {
+            "root": "H-L-L",
+            "logic_function": "Authorized_Access",
+            "description": "Données ou processus marqués comme valides par la politique de sécurité (Permis)."
+        },
+        {
+            "root": "H-M-D",
+            "logic_function": "Performance_Validation",
+            "description": "Signal de confirmation de l'état optimal du système (Feedback)."
+        },
+        {
+            "root": "H-M-L",
+            "logic_function": "Payload_Carrier",
+            "description": "Transport de charge utile (Buffer)."
+        },
+        {
+            "root": "H-Q-Q",
+            "logic_function": "Absolute_Truth",
+            "description": "Invariant systémique (Vrai/1)."
+        },
+        {
+            "root": "H-R-F",
+            "logic_function": "Code_Tampering",
+            "description": "Altération délibérée de la logique du script (Falsification)."
+        },
+        {
+            "root": "H-R-M",
+            "logic_function": "Privileged_Access_Only",
+            "description": "Zone système dont l'accès est restreint aux instances disposant de jetons spécifiques."
+        },
+        {
+            "root": "H-R-S",
+            "logic_function": "Optimization_Drive",
+            "description": "Tentative intense d'atteindre une perfection de traitement (Avidité/Désir)."
+        },
+        {
+            "root": "H-R-TH",
+            "logic_function": "Storage_Tilling",
+            "description": "Préparation de l'espace de stockage."
+        },
+        {
+            "root": "H-S-B",
+            "logic_function": "Computational_Audit",
+            "description": "Calcul rigoureux des entrées et sorties pour vérification de conformité."
+        },
+        {
+            "root": "H-S-D",
+            "logic_function": "Resource_Contention",
+            "description": "Conflit d'allocation où un processus tente d'intercepter ou de dégrader les ressources d'un autre."
+        },
+        {
+            "root": "H-S-N",
+            "logic_function": "Hardware_Fortification",
+            "description": "Renforcement structurel d'un nœud pour résister aux intrusions (Hardening)."
+        },
+        {
+            "root": "H-SH-R",
+            "logic_function": "Data_Gathering_Aggregation",
+            "description": "Collecte forcée de tous les nœuds pour un audit centralisé."
+        },
+        {
+            "root": "H-W-A",
+            "logic_function": "System_Identity",
+            "description": "Variable d'identification du Root/Admin unique."
+        },
+        {
+            "root": "H-W-B",
+            "logic_function": "Critical_Violation",
+            "description": "Infraction majeure aux protocoles d'équité (Grand péché)."
+        },
+        {
+            "root": "H-W-L",
+            "logic_function": "State_Migration",
+            "description": "Désir ou action de changer d'état ou de localisation (Changement)."
+        },
+        {
+            "root": "H-W-R",
+            "logic_function": "Collapse_Risk",
+            "description": "État instable d'une structure sur le point de s'effondrer (Précipice)."
+        },
+        {
+            "root": "H-Y-N",
+            "logic_function": "Temporal_Segment",
+            "description": "Fenêtre d'exécution temporelle."
+        },
+        {
+            "root": "H-Y-Y",
+            "logic_function": "Runtime_Active_State",
+            "description": "État d'exécution continue d'un processus (Vie)."
+        },
+        {
+            "root": "H-Z-M",
+            "logic_function": "Process_Defeat_Process_Defeat",
+            "description": "Échec et démantèlement d'une instance concurrente."
+        },
+        {
+            "root": "H-Z-N",
+            "logic_function": "Performance_Loss_Signal",
+            "description": "Signal de dégradation suite à une perte de données ou un échec d'exécution passé."
+        },
+        {
+            "root": "H.-Z-B",
+            "logic_function": "Adversarial_Clustering",
+            "description": "Formation de groupes d'instances pour saturer ou défendre le système."
+        },
+        {
+            "root": "I-DH-N",
+            "logic_function": "Access_Authorization_Token",
+            "description": "Jeton d'autorisation requis pour l'exécution d'un processus ou l'accès à un segment."
+        },
+        {
+            "root": "I-M-R-N",
+            "logic_function": "System_Continuity",
+            "description": "Architecture de lignée permettant la transmission du code sans perte (Héritage)."
+        },
+        {
+            "root": "J-'-L",
+            "logic_function": "Instance_Generator",
+            "description": "Fonction de création ou d'assignation d'un rôle à une entité."
+        },
+        {
+            "root": "J-B-B",
+            "logic_function": "Deep_Stack_Buffer",
+            "description": "Zone de stockage temporaire profonde et isolée (Puits/Buffer)."
+        },
+        {
+            "root": "J-B-L",
+            "logic_function": "Primary_Anchor_Node",
+            "description": "Point d'ancrage fixe garantissant la stabilité de la plateforme (Hardware mountains)."
+        },
+        {
+            "root": "J-D-L",
+            "logic_function": "Recursive_Conflict",
+            "description": "Boucle infinie de contention ou d'argumentation sans sortie."
+        },
+        {
+            "root": "J-H-D",
+            "logic_function": "Computation_Effort",
+            "description": "Dépense de ressources pour surmonter une résistance système ou une corruption de données."
+        },
+        {
+            "root": "J-H-N-M",
+            "logic_function": "Thermal_Collapse",
+            "description": "État de surchauffe systémique menant à une dégradation irréversible des données (Entropie)."
+        },
+        {
+            "root": "J-H-R",
+            "logic_function": "Signal_Broadcasting",
+            "description": "Publication explicite d'un état ou d'une donnée sur le réseau."
+        },
+        {
+            "root": "J-M-'",
+            "logic_function": "Full_System_Assembly",
+            "description": "Regroupement de tous les composants en un seul cluster cohérent."
+        },
+        {
+            "root": "J-N-D",
+            "logic_function": "Task_Force_Array_Task_Force_Array",
+            "description": "Matrice de processus dédiés à une opération de défense."
+        },
+        {
+            "root": "J-N-H",
+            "logic_function": "State_Inclination",
+            "description": "Tendance d'un processus à basculer vers un état (paix/guerre)."
+        },
+        {
+            "root": "J-N-N",
+            "logic_function": "Data_Encryption_Shield",
+            "description": "État d'une donnée ou d'un processus dont le code est occulté/chiffré (Hidden/Encrypted)."
+        },
+        {
+            "root": "J-R-M",
+            "logic_function": "Criminal_Log_Entry",
+            "description": "Enregistrement d'une action illégale majeure dans le journal système (Crime)."
+        },
+        {
+            "root": "J-W-'",
+            "logic_function": "Energy_Starvation_State",
+            "description": "Carence critique en alimentation système entraînant une baisse de performance."
+        },
+        {
+            "root": "J-W-D",
+            "logic_function": "Recovery_Partition",
+            "description": "Point de montage stable après un formatage massif (Mont Judi)."
+        },
+        {
+            "root": "J-Z-A",
+            "logic_function": "Output_Result",
+            "description": "Le signal de sortie final renvoyé après une action (Return)."
+        },
+        {
+            "root": "K-'-B",
+            "logic_function": "Root_Cube",
+            "description": "Bloc central cubique servant de pivot universel (Anchor Point)."
+        },
+        {
+            "root": "K-B-R",
+            "logic_function": "Privilege_Escalation",
+            "description": "Tentative illégale d'augmenter ses droits (Orgueil)."
+        },
+        {
+            "root": "K-DH-B",
+            "logic_function": "False_Positive",
+            "description": "Signal de sortie contradictoire avec la réalité interne du noyau (Bruit)."
+        },
+        {
+            "root": "K-F-L",
+            "logic_function": "Process_Sponsorship",
+            "description": "Garantie d'exécution d'un processus par un nœud tiers (Proxy guarantee)."
+        },
+        {
+            "root": "K-F-R",
+            "logic_function": "Data_Masking",
+            "description": "Obscurcissement ou déni du signal."
+        },
+        {
+            "root": "K-F-W",
+            "logic_function": "System_Equivalence",
+            "description": "Test de parité ou de correspondance entre deux entités."
+        },
+        {
+            "root": "K-H-F",
+            "logic_function": "Security_Sandbox",
+            "description": "Environnement isolé protégeant les processus critiques des menaces externes (Caverne)."
+        },
+        {
+            "root": "K-L-B",
+            "logic_function": "Watchdog_Daemon",
+            "description": "Processus de surveillance posté à l'entrée/seuil du système (Chien)."
+        },
+        {
+            "root": "K-L-L",
+            "logic_function": "Universal_Quantifier",
+            "description": "Opérateur de boucle s'appliquant à tous les éléments d'un set."
+        },
+        {
+            "root": "K-L-M",
+            "logic_function": "Instruction_Command_Unit",
+            "description": "Unité de base du langage machine (Verbe) déclenchant une action spécifique."
+        },
+        {
+            "root": "K-M-L",
+            "logic_function": "Build_Completion",
+            "description": "État de parachèvement total du code source (Perfectionnement)."
+        },
+        {
+            "root": "K-R-H",
+            "logic_function": "Forced_Execution",
+            "description": "Contrainte exercée sur un système contre son protocole (Nulle contrainte en Deen)."
+        },
+        {
+            "root": "K-R-S",
+            "logic_function": "Command_Center",
+            "description": "Siège de l'autorité englobant tout le système (Repose-Pied/Trône)."
+        },
+        {
+            "root": "K-S-B",
+            "logic_function": "Data_Credit_Accumulation",
+            "description": "Résultat net d'une opération générant un crédit ou une valeur dans le registre."
+        },
+        {
+            "root": "K-S-L",
+            "logic_function": "Process_Latency",
+            "description": "Lourdeur ou délai excessif dans l'exécution d'une tâche."
+        },
+        {
+            "root": "K-SH-F",
+            "logic_function": "Debug_View",
+            "description": "Affichage clair de l'erreur ou du problème caché (Dévoiler)."
+        },
+        {
+            "root": "K-T-B",
+            "logic_function": "Data_Encoding_Script",
+            "description": "Action de fixer une instruction dans une mémoire permanente (ROM)."
+        },
+        {
+            "root": "K-T-M",
+            "logic_function": "Data_Suppression",
+            "description": "Masquage d'une partie du code source pour tromper l'utilisateur (Cacher)."
+        },
+        {
+            "root": "K-W-K-B",
+            "logic_function": "High_Intensity_Node",
+            "description": "Instance de données à forte luminance servant de repère dans la topologie réseau."
+        },
+        {
+            "root": "K-W-N",
+            "logic_function": "Manifestation_Existence_State",
+            "description": "État final d'un processus devenu actif et visible dans l'environnement."
+        },
+        {
+            "root": "K-Y-D",
+            "logic_function": "Algorithm_Subterfuge",
+            "description": "Manipulation logique complexe pour atteindre un but (Stratagème)."
+        },
+        {
+            "root": "K-Y-L",
+            "logic_function": "Quota_Allocation_Volume_Measurement_Volume_Measurement",
+            "description": "Mesure précise des ressources allouées à un nœud (Mesure)."
+        },
+        {
+            "root": "KH-B-R",
+            "logic_function": "Deep_Trace_Log",
+            "description": "Donnée d'expertise provenant de l'analyse profonde des métadonnées (Log expert)."
+        },
+        {
+            "root": "KH-D-'",
+            "logic_function": "Process_Simulation",
+            "description": "Faux handshake simulant une légitimité pour tromper le récepteur."
+        },
+        {
+            "root": "KH-F-F",
+            "logic_function": "Load_Balancing",
+            "description": "Allègement de la charge processeur pour optimiser la vitesse (Alléger)."
+        },
+        {
+            "root": "KH-F-Y",
+            "logic_function": "Encrypted_Hidden_State",
+            "description": "Donnée ou processus en état d'occultation ou de cryptage."
+        },
+        {
+            "root": "KH-L-D",
+            "logic_function": "Infinite_Persistence",
+            "description": "État de maintien sans fin d'une instance (Loop)."
+        },
+        {
+            "root": "KH-L-F",
+            "logic_function": "System_Operator",
+            "description": "Administrateur délégué de l'instance."
+        },
+        {
+            "root": "KH-L-Q",
+            "logic_function": "Instance_Creation",
+            "description": "Initialisation d'un nouvel objet."
+        },
+        {
+            "root": "KH-L-S",
+            "logic_function": "Signal_Filtration",
+            "description": "Filtrage du signal sans aucun bruit résiduel."
+        },
+        {
+            "root": "KH-M-R",
+            "logic_function": "Logic_Scrambling",
+            "description": "Obfuscation de la couche de discernement empêchant le traitement rationnel des instructions."
+        },
+        {
+            "root": "KH-N-S",
+            "logic_function": "Signal_Retraction",
+            "description": "Processus qui se retire ou se cache après une injection de bruit (furtivité)."
+        },
+        {
+            "root": "KH-R-J",
+            "logic_function": "System_Exit",
+            "description": "Sortie d'un processus hors de l'environnement."
+        },
+        {
+            "root": "KH-R-Q",
+            "logic_function": "Logic_Breach",
+            "description": "Invention de fausses dépendances sans preuve logique (Déchirer/Inventer)."
+        },
+        {
+            "root": "KH-R-R",
+            "logic_function": "System_Crash_Log",
+            "description": "Chute brutale d'un système ou d'une structure (Tomber)."
+        },
+        {
+            "root": "KH-S-R",
+            "logic_function": "Negative_Margin_Loss",
+            "description": "Perte de ressources ou dégradation de la valeur suite à une exécution non-optimisée."
+        },
+        {
+            "root": "KH-T-A",
+            "logic_function": "Runtime_Error",
+            "description": "Faute d'exécution ou bug logique grave dans le code utilisateur (Erreur)."
+        },
+        {
+            "root": "KH-T-F",
+            "logic_function": "Packet_Interception",
+            "description": "Capture et analyse d'un signal en transit pour vérification d'intégrité."
+        },
+        {
+            "root": "KH-T-M",
+            "logic_function": "Execution_Seal_End",
+            "description": "Verrouillage final d'un segment de mémoire ou d'une session (Seal)."
+        },
+        {
+            "root": "KH-W-F",
+            "logic_function": "Security_Threat_Alert",
+            "description": "Signal d'alerte anticipant une possible perte d'intégrité ou un dommage système."
+        },
+        {
+            "root": "KH-Y-N",
+            "logic_function": "Internal_Data_Leak",
+            "description": "Violation de confiance ou fuite de données par un nœud interne (Trahison)."
+        },
+        {
+            "root": "KH-Y-R",
+            "logic_function": "System_Efficiency",
+            "description": "Optimisation maximale de l'exécution."
+        },
+        {
+            "root": "KH-Z-N",
+            "logic_function": "Secure_Vault_Storage",
+            "description": "Stockage haute sécurité pour les variables sensibles et les clés de chiffrement."
+        },
+        {
+            "root": "KH-Z-Y",
+            "logic_function": "Logic_Interface_Error",
+            "description": "Exposition publique d'une erreur système (Error Exposure)."
+        },
+        {
+            "root": "L-'-N",
+            "logic_function": "Access_Denied_Expulsion",
+            "description": "Bannissement définitif et déconnexion forcée du flux de la matrice Root."
+        },
+        {
+            "root": "L-B-N",
+            "logic_function": "Pure_Data_Output",
+            "description": "Sortie de données filtrée et nutritive sans résidus (Lait)."
+        },
+        {
+            "root": "L-B-S",
+            "logic_function": "Data_Wrapper",
+            "description": "Couche de protection ou d'encapsulation des données (Vêtement/Wrapper)."
+        },
+        {
+            "root": "L-B-TH",
+            "logic_function": "Time_Dilation",
+            "description": "Persistance temporelle d'un processus dans un état donné (Demeurer)."
+        },
+        {
+            "root": "L-GH-W",
+            "logic_function": "Null_Data_Stream",
+            "description": "Flux de données vide de sens ou bruit statique."
+        },
+        {
+            "root": "L-M",
+            "logic_function": "Negative_Operator",
+            "description": "Opérateur logique de négation/exclusion."
+        },
+        {
+            "root": "L-Q-Y",
+            "logic_function": "Handshake",
+            "description": "Rencontre et échange entre deux flux."
+        },
+        {
+            "root": "L-S-N",
+            "logic_function": "Protocol_Language",
+            "description": "Interface de communication spécifique à un cluster."
+        },
+        {
+            "root": "L-W-H",
+            "logic_function": "Primary_Storage_Medium",
+            "description": "Support d'écriture originel et immuable des données (Tablette)."
+        },
+        {
+            "root": "L-Y-L",
+            "logic_function": "System_Idle_Cycle",
+            "description": "Phase de basse activité favorisant la maintenance et le repos des processeurs."
+        },
+        {
+            "root": "M-A-'",
+            "logic_function": "Dynamic_Data_Stream",
+            "description": "Vecteur de transport d'information fluide, essentiel au rafraîchissement du système."
+        },
+        {
+            "root": "M-A-A",
+            "logic_function": "Data_Fluid",
+            "description": "Vecteur de vie/initialisation."
+        },
+        {
+            "root": "M-A-D-H",
+            "logic_function": "Data_Provisioning_Table",
+            "description": "Interface de distribution et d'allocation des ressources prêtes à l'emploi."
+        },
+        {
+            "root": "M-D-D",
+            "logic_function": "Storage_Expansion",
+            "description": "Extension de l'espace adressable ou de la surface de données (Étendre)."
+        },
+        {
+            "root": "M-H-K-M",
+            "logic_function": "Modular_Static_Code",
+            "description": "Instructions explicites et fixes formant le noyau de l'architecture."
+        },
+        {
+            "root": "M-H-L",
+            "logic_function": "Processing_Power",
+            "description": "Force de calcul brute et implacable du Root (Puissance)."
+        },
+        {
+            "root": "M-H-W",
+            "logic_function": "Cache_Wipe",
+            "description": "Effacement complet des données d'une session ou d'un cycle (Effacer)."
+        },
+        {
+            "root": "M-I-D",
+            "logic_function": "Data_Table",
+            "description": "Table de ressources servie pour la consommation finale (Table/Festin)."
+        },
+        {
+            "root": "M-K-A",
+            "logic_function": "Empty_Signal",
+            "description": "Bruit ou signal vide de sens, simple sifflement (Sifflement)."
+        },
+        {
+            "root": "M-K-N",
+            "logic_function": "Resource_Hosting",
+            "description": "Installation et établissement stable sur un serveur ou un support (Établir)."
+        },
+        {
+            "root": "M-L-K",
+            "logic_function": "Access_Controller",
+            "description": "Gestionnaire des droits de propriété."
+        },
+        {
+            "root": "M-R-D",
+            "logic_function": "System_Infection",
+            "description": "État de vulnérabilité suite à la présence de segments de code corrompus."
+        },
+        {
+            "root": "M-R-W",
+            "logic_function": "Hardware_Resilience_Node",
+            "description": "Nœud de contrôle mesurant la robustesse matérielle d'une instance."
+        },
+        {
+            "root": "M-S.-B-H.",
+            "logic_function": "Primary_Emitter_Core",
+            "description": "Composant central générant le flux de données lumineuses."
+        },
+        {
+            "root": "M-SH-K-W",
+            "logic_function": "Source_Containment_Niche",
+            "description": "Logement architectural focalisant la source d'un signal pour éviter sa dispersion."
+        },
+        {
+            "root": "M-SH-Y",
+            "logic_function": "Linear_Sequence_Step_Linear_Sequence_Step",
+            "description": "Exécution séquentielle pas à pas d'un processus."
+        },
+        {
+            "root": "M-T-N",
+            "logic_function": "Structural_Density_Integrity",
+            "description": "Solidité extrême des liaisons logiques empêchant toute rupture (Firmware lock)."
+        },
+        {
+            "root": "M-T-R",
+            "logic_function": "Data_Torrent",
+            "description": "Flux massif de données descendantes, souvent destructeur (Pluie)."
+        },
+        {
+            "root": "M-T-SH-B-H",
+            "logic_function": "Simulated_Analog_Code",
+            "description": "Code utilisant des vecteurs de similarité pour représenter des fonctions de backend."
+        },
+        {
+            "root": "M-TH-Q",
+            "logic_function": "Atomic_Mass_Unit",
+            "description": "Poids unitaire d'une particule de donnée (Dharra)."
+        },
+        {
+            "root": "M-W-J",
+            "logic_function": "Data_Surge",
+            "description": "Vagues de données massives et chaotiques (Vagues)."
+        },
+        {
+            "root": "M-W-T",
+            "logic_function": "Process_Termination_Idle",
+            "description": "Arrêt d'exécution et mise en état de repos/archivage (Mort)."
+        },
+        {
+            "root": "M-Y-S-R",
+            "logic_function": "Probabilistic_Gamble",
+            "description": "Méthode d'exécution basée sur l'incertitude et le hasard, proscrite pour son instabilité."
+        },
+        {
+            "root": "M-Y-T",
+            "logic_function": "Null_Pointer",
+            "description": "Référence à un processus mort ou inexistant (Cadavre)."
+        },
+        {
+            "root": "M-Y-TH-Q",
+            "logic_function": "Binding_Smart_Contract",
+            "description": "Accord scellé à haut niveau d'intégrité, inviolable sans crash système."
+        },
+        {
+            "root": "M-Y-Z",
+            "logic_function": "System_Load_Balancer",
+            "description": "Mécanisme de pesée assurant l'équilibre des entrées/sorties."
+        },
+        {
+            "root": "M-Y-Z-N",
+            "logic_function": "Systemic_Equilibrium",
+            "description": "Point d'équilibre optimal des variables pour éviter le crash (Standardisation de M-I-Z-N)."
+        },
+        {
+            "root": "N-'-M",
+            "logic_function": "System_Asset_Provision",
+            "description": "Attribution de ressources pré-configurées facilitant l'exécution du nœud."
+        },
+        {
+            "root": "N-A-R",
+            "logic_function": "Thermal_Energy",
+            "description": "Énergie thermique/Entropie destructrice."
+        },
+        {
+            "root": "N-A-S",
+            "logic_function": "End_User_Interface",
+            "description": "Interface finale d'interaction entre le système et les agents utilisateurs (Consolidation de N-W-S)."
+        },
+        {
+            "root": "N-B-A",
+            "logic_function": "Critical_Data_Reporting",
+            "description": "Transmission d'informations à haute priorité concernant l'état du système."
+        },
+        {
+            "root": "N-B-DH",
+            "logic_function": "Packet_Discard",
+            "description": "Action de rejeter ou d'ignorer un segment de donnée jugé non conforme (Drop)."
+        },
+        {
+            "root": "N-B-T",
+            "logic_function": "Structural_Growth_Init",
+            "description": "Phase initiale de développement d'une structure à partir d'un germe de donnée."
+        },
+        {
+            "root": "N-D-Y",
+            "logic_function": "System_Call_Invocation_System_Call_Invocation",
+            "description": "Appel d'une instance distante ou d'un utilisateur."
+        },
+        {
+            "root": "N-DH-R",
+            "logic_function": "System_Alert_Trigger",
+            "description": "Émission d'un signal d'alerte critique avant une défaillance ou une sanction."
+        },
+        {
+            "root": "N-F-'",
+            "logic_function": "Value_Payload",
+            "description": "Partie utile de la donnée qui reste stockée après le filtrage (Utilité)."
+        },
+        {
+            "root": "N-F-D",
+            "logic_function": "Resource_Exhaustion",
+            "description": "Épuisement total des ressources disponibles (Épuiser)."
+        },
+        {
+            "root": "N-F-DH",
+            "logic_function": "Data_Penetration",
+            "description": "Traversée d'une barrière système."
+        },
+        {
+            "root": "N-F-KH",
+            "logic_function": "System_Inflation_Boot",
+            "description": "Initialisation du flux vital dans une instance ou un processus inerte."
+        },
+        {
+            "root": "N-F-L",
+            "logic_function": "Resource_Recovery",
+            "description": "Récupération et redistribution des ressources après une opération de nettoyage (Butin)."
+        },
+        {
+            "root": "N-F-Q",
+            "logic_function": "Parasitic_Inconsistency",
+            "description": "Comportement d'un processus créant des tunnels de sortie non déclarés (Hypocrisie)."
+        },
+        {
+            "root": "N-F-S",
+            "logic_function": "Execution_Instance",
+            "description": "Instance individuelle d'un programme (Entité)."
+        },
+        {
+            "root": "N-F-TH",
+            "logic_function": "Code_Injection",
+            "description": "Tentative d'injection de scripts malveillants dans les nœuds de liaison."
+        },
+        {
+            "root": "N-H-L",
+            "logic_function": "Decentralized_Swarm_Intelligence",
+            "description": "Protocole de travail collaboratif optimisé pour la collecte de données."
+        },
+        {
+            "root": "N-H-R",
+            "logic_function": "System_Active_Cycle",
+            "description": "Phase de haute activité et d'exposition maximale des données (Runtime)."
+        },
+        {
+            "root": "N-H-Y",
+            "logic_function": "Process_Restriction",
+            "description": "Interdiction ou blocage d'un vecteur d'exécution."
+        },
+        {
+            "root": "N-J-M",
+            "logic_function": "Navigation_Markers",
+            "description": "Points de repère fixes pour l'orientation dans le flux de données (Étoiles)."
+        },
+        {
+            "root": "N-J-S",
+            "logic_function": "Incompatible_Object",
+            "description": "Objet déclaré impropre à l'intégration dans le noyau (Impureté)."
+        },
+        {
+            "root": "N-J-Y",
+            "logic_function": "Data_Recovery",
+            "description": "Extraction réussie d'un processus avant le crash du système (Sauvetage)."
+        },
+        {
+            "root": "N-K-H",
+            "logic_function": "Process_Binding",
+            "description": "Lien formel et contractuel entre deux nœuds système (Mariage/Couplage)."
+        },
+        {
+            "root": "N-M-L",
+            "logic_function": "Micro_Agent_Coordination",
+            "description": "Coordination de multiples petits processus pour des tâches d'infrastructure."
+        },
+        {
+            "root": "N-Q-B",
+            "logic_function": "Tunneling_Protocol",
+            "description": "Action de percer un tunnel de communication à travers des segments protégés."
+        },
+        {
+            "root": "N-Q-D",
+            "logic_function": "Contract_Breach_Rupture",
+            "description": "Rupture unilatérale d'un protocole d'accord (Link Break)."
+        },
+        {
+            "root": "N-Q-S.",
+            "logic_function": "Resource_Depletion_Metric",
+            "description": "Indicateur de perte ou de réduction des actifs (données, énergie, instances)."
+        },
+        {
+            "root": "N-S-A",
+            "logic_function": "Interconnected_Nodes",
+            "description": "Réseaux de connexion et entités liées ayant des dépendances retardées (Femmes/Liens)."
+        },
+        {
+            "root": "N-S-B",
+            "logic_function": "Relational_Pointer_Hierarchy",
+            "description": "Structure d'adressage basée sur les liens de dépendance entre instances."
+        },
+        {
+            "root": "N-S-KH",
+            "logic_function": "Version_Control_Overwrite",
+            "description": "Remplacement d'une instruction par une version mise à jour ou supérieure."
+        },
+        {
+            "root": "N-S-R",
+            "logic_function": "System_Assistance_Protocol",
+            "description": "Apport de ressources de support pour valider le succès d'un processus."
+        },
+        {
+            "root": "N-S-Y",
+            "logic_function": "Data_Loss",
+            "description": "Perte d'information critique par négligence ou écrasement (Oubli)."
+        },
+        {
+            "root": "N-SH-R",
+            "logic_function": "Data_Deployment_Scattering",
+            "description": "Diffusion et déploiement de paquets de données sur le réseau."
+        },
+        {
+            "root": "N-SH-Z",
+            "logic_function": "Node_Divergence",
+            "description": "Désynchronisation ou rébellion d'un nœud par rapport au contrat initial."
+        },
+        {
+            "root": "N-W-M",
+            "logic_function": "Hibernation_Mode",
+            "description": "Arrêt temporaire des processus conscients pour récupération (Sommeil)."
+        },
+        {
+            "root": "N-W-R",
+            "logic_function": "Photon_Signal_Luminance",
+            "description": "Vecteur de transmission de données par flux lumineux (Signal pur)."
+        },
+        {
+            "root": "N-W-Y",
+            "logic_function": "Core_Nucleus",
+            "description": "Noyau central durci d'une unité de donnée (Noyau/Intention)."
+        },
+        {
+            "root": "N-Z-G",
+            "logic_function": "Interrupt_Trigger",
+            "description": "Interruption brusque causée par un agent externe (Incitations)."
+        },
+        {
+            "root": "N-Z-L",
+            "logic_function": "Signal_Downlink",
+            "description": "Descente de données vers les couches applicatives."
+        },
+        {
+            "root": "Q-'-D",
+            "logic_function": "Idle_Process",
+            "description": "Processus refusant de s'exécuter lors d'une demande de ressources (Assis)."
+        },
+        {
+            "root": "Q-B-D",
+            "logic_function": "Data_Compression_Data_Compression",
+            "description": "Réduction de l'espace d'adressage (Contraction de flux)."
+        },
+        {
+            "root": "Q-B-L",
+            "logic_function": "Orientation_Vector",
+            "description": "Direction obligatoire pour l'alignement des données (Target Server)."
+        },
+        {
+            "root": "Q-D-M",
+            "logic_function": "Priority_Scheduling_Priority_Scheduling",
+            "description": "Envoi d'un processus en tête de file d'attente."
+        },
+        {
+            "root": "Q-D-R",
+            "logic_function": "Resource_Capacity",
+            "description": "Détermination de la puissance de calcul et limites d'allocation des ressources."
+        },
+        {
+            "root": "Q-D-S",
+            "logic_function": "High_Purity_State",
+            "description": "État de sainteté absolue, sans bug ni entropie."
+        },
+        {
+            "root": "Q-D-Y",
+            "logic_function": "Final_Verdict",
+            "description": "Exécution irrévocable d'une décision du noyau."
+        },
+        {
+            "root": "Q-H-R",
+            "logic_function": "Overriding_Command_Force",
+            "description": "Capacité du Root à forcer un état système en écrasant les variables locales."
+        },
+        {
+            "root": "Q-L-B",
+            "logic_function": "Central_Logic_Processor",
+            "description": "Unité centrale de traitement de la logique et du discernement émotionnel/rationnel."
+        },
+        {
+            "root": "Q-L-D",
+            "logic_function": "Token_Identifier",
+            "description": "Marquage spécifique (Token) pour identifier une ressource prioritaire (Colliers)."
+        },
+        {
+            "root": "Q-L-L",
+            "logic_function": "Minimal_Data",
+            "description": "Quantité de données restreinte ou insuffisante pour une compréhension totale (Peu)."
+        },
+        {
+            "root": "Q-L-M",
+            "logic_function": "Logic_Writer_Recorder",
+            "description": "Outil d'enregistrement et de persistance des données sur un support de stockage."
+        },
+        {
+            "root": "Q-M-R",
+            "logic_function": "Secondary_Signal_Reflector",
+            "description": "Unité de réflexion du signal pour les cycles de basse luminosité."
+        },
+        {
+            "root": "Q-M-S",
+            "logic_function": "Data_Packet_Wrapper",
+            "description": "Enveloppe de données servant de preuve ou d'identifiant (Chemise)."
+        },
+        {
+            "root": "Q-N-T",
+            "logic_function": "Steady_State_Compliance",
+            "description": "Exécution ininterrompue des protocoles en mode de soumission active."
+        },
+        {
+            "root": "Q-R-A",
+            "logic_function": "System_Execution",
+            "description": "Commande de lecture, de compilation et d'exécution du code source."
+        },
+        {
+            "root": "Q-R-B",
+            "logic_function": "Proximity_Node_Access",
+            "description": "Nœuds situés dans la périphérie immédiate d'un centre de traitement (Latence faible)."
+        },
+        {
+            "root": "Q-R-D",
+            "logic_function": "Temporary_Resource_Allocation",
+            "description": "Allocation temporaire de ressources devant être restituée (Loan)."
+        },
+        {
+            "root": "Q-R-N",
+            "logic_function": "Data_Aggregation_Cluster",
+            "description": "Compilation de multiples instructions en un seul bloc cohérent."
+        },
+        {
+            "root": "Q-R-R",
+            "logic_function": "Final_Runtime_State",
+            "description": "État final et stable d'un processus après exécution (Demeure)."
+        },
+        {
+            "root": "Q-S-M",
+            "logic_function": "Resource_Partitioning",
+            "description": "Algorithme de division équitable des ressources entre les sous-systèmes."
+        },
+        {
+            "root": "Q-S-S",
+            "logic_function": "Sequential_Logic_Trace",
+            "description": "Suivi pas à pas de la trace d'exécution d'un processus pour en extraire la logique."
+        },
+        {
+            "root": "Q-S-T",
+            "logic_function": "Structural_Equity",
+            "description": "Répartition mathématiquement exacte des ressources."
+        },
+        {
+            "root": "Q-S-W",
+            "logic_function": "Core_Rigidity",
+            "description": "Durcissement du noyau empêchant les nouvelles écritures (Cœurs durs)."
+        },
+        {
+            "root": "Q-S.-R",
+            "logic_function": "Instruction_Truncation",
+            "description": "Procédure de raccourcissement d'une routine pour maintenance ou urgence."
+        },
+        {
+            "root": "Q-T-'",
+            "logic_function": "Link_Termination",
+            "description": "Rupture forcée d'une connexion ou d'un segment de code (Interrompre)."
+        },
+        {
+            "root": "Q-T-L",
+            "logic_function": "Process_Termination",
+            "description": "Arrêt forcé et définitif d'un processus hostile ou buggé (Neutralisation/Kill)."
+        },
+        {
+            "root": "Q-T-R",
+            "logic_function": "Thermal_Compound",
+            "description": "Matériau conducteur versé pour sceller une structure (Cuivre fondu)."
+        },
+        {
+            "root": "Q-W-L",
+            "logic_function": "Logic_Statement_Output",
+            "description": "Chaîne de caractères finale produite par un calcul logique (Output)."
+        },
+        {
+            "root": "Q-W-M",
+            "logic_function": "System_Persistence_Stability",
+            "description": "Maintenance de l'état opérationnel et stabilité structurelle du noyau."
+        },
+        {
+            "root": "Q-W-Y",
+            "logic_function": "System_Power_Capacity",
+            "description": "Capacité énergétique brute disponible pour l'exécution des processus."
+        },
+        {
+            "root": "Q-Y-M",
+            "logic_function": "System_Persistence_Stability",
+            "description": "Maintenance de l'état opérationnel et stabilité structurelle du noyau."
+        },
+        {
+            "root": "R-'-D",
+            "logic_function": "System_Warning",
+            "description": "Signal d'alerte critique acoustique (Tonnerre/Alarme)."
+        },
+        {
+            "root": "R-'-Y",
+            "logic_function": "Simulated_Data_Stream",
+            "description": "Traitement de flux de données simulées ou virtuelles (Backend Rendering)."
+        },
+        {
+            "root": "R-A-Y",
+            "logic_function": "Logic_Observation",
+            "description": "Perception directe d'un état système ou d'une vérité binaire."
+        },
+        {
+            "root": "R-B-B",
+            "logic_function": "System_Regulator",
+            "description": "Contrôleur de gestion et d'optimisation des ressources système."
+        },
+        {
+            "root": "R-B-T",
+            "logic_function": "Network_Bonding",
+            "description": "Renforcement des liens entre les nœuds pour stabiliser le cluster (Fortifier)."
+        },
+        {
+            "root": "R-B-W",
+            "logic_function": "Inflationary_Gain_Glitch",
+            "description": "Accroissement artificiel d'une variable sans travail machine correspondant (System Bubble)."
+        },
+        {
+            "root": "R-D-F",
+            "logic_function": "Sequential_Backup",
+            "description": "Unités de sauvegarde arrivant en file indienne derrière le flux principal."
+        },
+        {
+            "root": "R-D-M",
+            "logic_function": "Layered_Defense",
+            "description": "Construction multicouche compacte pour combler une brèche de sécurité (Remblai)."
+        },
+        {
+            "root": "R-D-Y",
+            "logic_function": "Status_Accepted",
+            "description": "Validation finale de l'état du système par l'Administrateur (Agrément)."
+        },
+        {
+            "root": "R-D.-'",
+            "logic_function": "Resource_Feedback_Flow",
+            "description": "Flux de transfert de ressources vitales entre une instance parente et une instance dépendante."
+        },
+        {
+            "root": "R-F-'",
+            "logic_function": "Privilege_Elevation",
+            "description": "Augmentation du niveau hiérarchique d'un nœud ou d'un signal."
+        },
+        {
+            "root": "R-H-B",
+            "logic_function": "Deterrence_Signal",
+            "description": "Signal de puissance dissuasif pour prévenir les attaques (Dissuader)."
+        },
+        {
+            "root": "R-H-M",
+            "logic_function": "System_Matrix",
+            "description": "Matrice englobante génératrice et protectrice de tous les objets du système."
+        },
+        {
+            "root": "R-H-N",
+            "logic_function": "Security_Collateral_Lock",
+            "description": "Verrouillage d'une ressource en garantie d'une transaction (Collateral)."
+        },
+        {
+            "root": "R-J-F",
+            "logic_function": "System_Vibration",
+            "description": "Instabilité sismique du hardware entraînant un crash (Tremblement)."
+        },
+        {
+            "root": "R-J-L",
+            "logic_function": "Mobile_Compute_Unit",
+            "description": "Entités système caractérisées par leur mobilité et leur capacité d'exécution hors-site."
+        },
+        {
+            "root": "R-J-M",
+            "logic_function": "Access_Denied_Expulsion",
+            "description": "Expulsion violente d'un nœud malveillant avec marquage d'erreur (Ban/Blacklist)."
+        },
+        {
+            "root": "R-J-S",
+            "logic_function": "Corrupted_Cache",
+            "description": "Données impures ou malveillantes devant être purgées (Souillure)."
+        },
+        {
+            "root": "R-K-'",
+            "logic_function": "Logic_Alignment",
+            "description": "Phase d'inclinaison et de synchronisation des processus avant exécution (Inclinaison)."
+        },
+        {
+            "root": "R-K-B",
+            "logic_function": "Module_Mounting_Module_Mounting",
+            "description": "Montage d'une instance sur une plateforme de transport."
+        },
+        {
+            "root": "R-K-N",
+            "logic_function": "Support_Dependency",
+            "description": "Dépendance vers un module de soutien externe solide (Pilier)."
+        },
+        {
+            "root": "R-K-Z",
+            "logic_function": "Trace_Residual",
+            "description": "Trace infime ou bruit de fond restant après l'arrêt d'un processus (Murmure)."
+        },
+        {
+            "root": "R-M-Y",
+            "logic_function": "Target_Projection",
+            "description": "Envoi d'une charge utile vers une cible spécifique (Lancer/Tir)."
+        },
+        {
+            "root": "R-Q-B",
+            "logic_function": "Real_Time_Monitoring",
+            "description": "Surveillance continue d'un nœud pour détecter toute déviation de protocole."
+        },
+        {
+            "root": "R-Q-D",
+            "logic_function": "Hibernation_Mode",
+            "description": "État de veille prolongée avec conservation de l'état mémoire sur disque (Sommeil)."
+        },
+        {
+            "root": "R-Q-M",
+            "logic_function": "Immutable_Digital_Record",
+            "description": "Marquage numérique indélébile assurant la traçabilité et l'intégrité."
+        },
+        {
+            "root": "R-S-D",
+            "logic_function": "Strategic_Monitoring_Post",
+            "description": "Point de surveillance fixe pour détecter les vecteurs d'attaque."
+        },
+        {
+            "root": "R-S-L",
+            "logic_function": "Transmission_Protocol",
+            "description": "Vecteur de transmission de données entre le Root et les terminaux (Messager)."
+        },
+        {
+            "root": "R-W-D",
+            "logic_function": "Unauthorized_Request",
+            "description": "Tentative de sollicitation d'un processus par un nœud non autorisé (Sollicitation)."
+        },
+        {
+            "root": "R-W-H",
+            "logic_function": "System_Animation_Code",
+            "description": "Le code moteur qui donne l'impulsion aux instances."
+        },
+        {
+            "root": "R-W-M",
+            "logic_function": "Signal_Refraction_Dynamics",
+            "description": "Analyse de la propagation et de la dégradation des signaux dans la Sandbox."
+        },
+        {
+            "root": "R-Y-B",
+            "logic_function": "Data_Corruption",
+            "description": "Incertitude structurelle dans le bloc de données (Checksum Failure)."
+        },
+        {
+            "root": "R-Y-H",
+            "logic_function": "Data_Carrier_Vector",
+            "description": "Vecteur de transport atmosphérique (Vent)."
+        },
+        {
+            "root": "R-Z-Q",
+            "logic_function": "Resource_Allocation_Flow",
+            "description": "Distribution de paquets de données ou d'énergie nécessaire au fonctionnement d'un nœud."
+        },
+        {
+            "root": "S-'-D",
+            "logic_function": "High_Performance_State",
+            "description": "État d'exécution fluide avec un rendement énergétique optimal."
+        },
+        {
+            "root": "S-'-N",
+            "logic_function": "Resource_Assistance_Protocol",
+            "description": "Appel à une puissance de calcul externe pour soutenir l'exécution d'un processus."
+        },
+        {
+            "root": "S-'-T",
+            "logic_function": "System_Clock_Event",
+            "description": "Interruption déclenchée par l'horloge système."
+        },
+        {
+            "root": "S-'-Y",
+            "logic_function": "Active_Processing",
+            "description": "Exécution d'une tâche intensive entre deux points de contrôle (Running Process)."
+        },
+        {
+            "root": "S-B-'",
+            "logic_function": "Cycle_Constant",
+            "description": "Valeur itérative utilisée pour la planification temporelle (Sept)."
+        },
+        {
+            "root": "S-B-B",
+            "logic_function": "Protocol_Abuse",
+            "description": "Action d'envoyer des requêtes corrompues ou insultantes au protocole (Insulte)."
+        },
+        {
+            "root": "S-B-GH",
+            "logic_function": "Primary_Identity_Encoding",
+            "description": "Signature ou codage d'identité originel permettant d'identifier les instances conformes au noyau."
+        },
+        {
+            "root": "S-B-H",
+            "logic_function": "System_Maintenance",
+            "description": "Processus de nettoyage et de maintien de la flottabilité (Glorifier)."
+        },
+        {
+            "root": "S-B-L",
+            "logic_function": "Routing_Paths",
+            "description": "Chemins de routage divers pour la circulation des données (Sentiers)."
+        },
+        {
+            "root": "S-B-R",
+            "logic_function": "Buffer_Endurance_Latency",
+            "description": "Capacité du système à maintenir l'intégrité sous haute pression ou latence."
+        },
+        {
+            "root": "S-B-T",
+            "logic_function": "Maintenance_Window",
+            "description": "Période d'arrêt obligatoire pour maintenance système (Sabbat)."
+        },
+        {
+            "root": "S-D-D",
+            "logic_function": "Firewall_Barrier",
+            "description": "Obstacle physique ou logique bloquant un flux de données (Barrage)."
+        },
+        {
+            "root": "S-D-I",
+            "logic_function": "Corrosive_Output",
+            "description": "Flux de données toxiques en cas de corruption totale (Pus)."
+        },
+        {
+            "root": "S-D-Q",
+            "logic_function": "Binding_Fee",
+            "description": "Allocation de ressources obligatoire pour valider un lien contractuel (Dot)."
+        },
+        {
+            "root": "S-D-R",
+            "logic_function": "Processing_Core",
+            "description": "Cœur de traitement où les instructions sont analysées avant exécution."
+        },
+        {
+            "root": "S-F-F",
+            "logic_function": "Array_Alignment_Array_Alignment",
+            "description": "Alignement ordonné des données en registres (Indexing)."
+        },
+        {
+            "root": "S-F-H",
+            "logic_function": "Unstructured_Data_Spill",
+            "description": "Flux de ressources gaspillé ou émis sans structure de rétention ou de finalité productive."
+        },
+        {
+            "root": "S-F-K",
+            "logic_function": "Data_Leakage",
+            "description": "Perte critique de fluide vital ou corruption violente (Verser le sang)."
+        },
+        {
+            "root": "S-F-R",
+            "logic_function": "Data_Migration_Travel_Data_Migration_Travel",
+            "description": "Déplacement de données entre clusters distants."
+        },
+        {
+            "root": "S-G-D",
+            "logic_function": "Hardware_Submission",
+            "description": "Alignement total des ressources matérielles sur les exigences du noyau (Prosternation)."
+        },
+        {
+            "root": "S-H-R",
+            "logic_function": "Visual_Glitch",
+            "description": "Illusion d'optique ou code trompeur modifiant la perception utilisateur (Magie)."
+        },
+        {
+            "root": "S-J-N",
+            "logic_function": "Process_Sandbox",
+            "description": "Environnement d'exécution restreint et isolé pour un long terme (Prison)."
+        },
+        {
+            "root": "S-K-N",
+            "logic_function": "Idle_Stable_State",
+            "description": "Retour à un état de basse consommation et de stabilité maximale (Tranquillité)."
+        },
+        {
+            "root": "S-K-R",
+            "logic_function": "Logic_Scrambling",
+            "description": "Obfuscation de la logique ou perte de contrôle (Ivresse)."
+        },
+        {
+            "root": "S-L-H",
+            "logic_function": "System_Repair_Optimization",
+            "description": "Action de corriger une erreur ou d'optimiser une structure pour la performance."
+        },
+        {
+            "root": "S-L-M",
+            "logic_function": "Total_System_Integrity",
+            "description": "État de paix logicielle où tous les composants sont synchronisés sans collision."
+        },
+        {
+            "root": "S-L-T",
+            "logic_function": "Authorized_Power_Vector",
+            "description": "Vecteur d'autorité permettant d'agir sur un segment réseau protégé."
+        },
+        {
+            "root": "S-L-W",
+            "logic_function": "Liaison_Protocol",
+            "description": "Maintien de la connexion active (Keep-alive)."
+        },
+        {
+            "root": "S-M-'",
+            "logic_function": "Audio_Input_Sensor",
+            "description": "Capteur d'entrée pour les flux de données acoustiques ou instructions verbales."
+        },
+        {
+            "root": "S-M-D",
+            "logic_function": "Atomic_Singleton",
+            "description": "Unité de donnée absolue, sans dépendances et servant de point de convergence unique (Dependency_Sink purgé)."
+        },
+        {
+            "root": "S-M-M",
+            "logic_function": "Input_Blocking",
+            "description": "Panne des ports d'entrée empêchant la réception de données (Surdité)."
+        },
+        {
+            "root": "S-M-W",
+            "logic_function": "Cloud_Storage_Layer",
+            "description": "Couche de stockage haute, volatile ou persistante, surplombant la plateforme."
+        },
+        {
+            "root": "S-M-Y",
+            "logic_function": "Variable_Definition",
+            "description": "Capacité de nommer et d'identifier les objets du système."
+        },
+        {
+            "root": "S-N-'",
+            "logic_function": "System_Manufacturing",
+            "description": "Construction complexe de structures."
+        },
+        {
+            "root": "S-N-H",
+            "logic_function": "Micro_Lag",
+            "description": "Somnolence ou latence momentanée (Interdit pour le Root)."
+        },
+        {
+            "root": "S-Q-Y",
+            "logic_function": "Resource_Routing",
+            "description": "Distribution ciblée de flux (données/énergie) vers des nœuds spécifiques."
+        },
+        {
+            "root": "S-R-'",
+            "logic_function": "High_Speed_Clock_High_Speed_Clock",
+            "description": "Accélération de la cadence d'exécution."
+        },
+        {
+            "root": "S-R-M",
+            "logic_function": "Infinite_Loop",
+            "description": "Continuité perpétuelle d'un état sans interruption (Éternité)."
+        },
+        {
+            "root": "S-R-Q",
+            "logic_function": "Data_Theft",
+            "description": "Interception ou vol de ressources au sein du réseau (Vol)."
+        },
+        {
+            "root": "S-R-T",
+            "logic_function": "Data_Highway",
+            "description": "Canal de transmission principal (Backbone) sans goulot d'étranglement."
+        },
+        {
+            "root": "S-R-Y",
+            "logic_function": "Secure_Tunneling",
+            "description": "Transfert de données crypté et instantané via un canal nocturne dédié (Voyage nocturne)."
+        },
+        {
+            "root": "S-T-K-B-R",
+            "logic_function": "Privilege_Overstack_Violation",
+            "description": "Tentative d'un processus de s'élever artificiellement dans la hiérarchie système."
+        },
+        {
+            "root": "S-T-R",
+            "logic_function": "Masking_Protocol",
+            "description": "Protocole de masquage des métadonnées pour éviter le traçage (Obfuscation)."
+        },
+        {
+            "root": "S-T-W",
+            "logic_function": "State_Equilibrium",
+            "description": "Atteinte d'un état de stabilité parfaite ou d'alignement sur un plan (Stabilisation)."
+        },
+        {
+            "root": "S-W-'",
+            "logic_function": "Bad_Sector",
+            "description": "Détérioration générique d'une zone mémoire ou d'une action."
+        },
+        {
+            "root": "S-W-D",
+            "logic_function": "High_Intensity_State",
+            "description": "État de saturation ou d'intensité maximale du signal."
+        },
+        {
+            "root": "S-W-M",
+            "logic_function": "System_Throttling",
+            "description": "Réduction de charge pour optimisation."
+        },
+        {
+            "root": "S-W-R",
+            "logic_function": "Perimeter_Wall_Isolation",
+            "description": "Barrière logique isolant un segment système du reste du réseau."
+        },
+        {
+            "root": "S-Y-D",
+            "logic_function": "Data_Capture",
+            "description": "Extraction de données brutes depuis l'environnement externe (Chasse)."
+        },
+        {
+            "root": "S-Y-H",
+            "logic_function": "Network_Scanning",
+            "description": "Parcours du réseau pour audit ou exploration (Itinérance)."
+        },
+        {
+            "root": "S.-D-Q",
+            "logic_function": "Signal_Validity_Integrity",
+            "description": "Validation de la véracité du signal par alignement strict avec le noyau (Sidq)."
+        },
+        {
+            "root": "S.-F-W",
+            "logic_function": "System_Filtering_Node",
+            "description": "Nœud de contrôle pour le filtrage et la purification du signal entrant."
+        },
+        {
+            "root": "S.-J-D",
+            "logic_function": "Physical_Layer_Compliance",
+            "description": "Protocole de synchronisation forcée du hardware avec les cycles du Kernel."
+        },
+        {
+            "root": "S.-R-F",
+            "logic_function": "Signal_Modulation",
+            "description": "Variation dynamique des vecteurs d'un signal pour test ou démonstration."
+        },
+        {
+            "root": "S.-W-R",
+            "logic_function": "Instance_Rendering",
+            "description": "Formatage et définition de la forme structurelle d'une instance (Sura)."
+        },
+        {
+            "root": "SH-'-R",
+            "logic_function": "System_Signaling_Markers",
+            "description": "Marqueurs d'interface identifiant l'appartenance aux protocoles du Root."
+        },
+        {
+            "root": "SH-D-D",
+            "logic_function": "Instruction_Intensity_Peak",
+            "description": "Augmentation de la force ou de la rigueur d'un protocole d'exécution (Intensité)."
+        },
+        {
+            "root": "SH-F-'",
+            "logic_function": "Signal_Coupling_Permission",
+            "description": "Mécanisme de validation par couplage pour l'accès aux privilèges du Root."
+        },
+        {
+            "root": "SH-H-B",
+            "logic_function": "Intrusion_Countermeasure",
+            "description": "Décharge d'énergie visant à détruire un processus tentant une interception (Météore)."
+        },
+        {
+            "root": "SH-H-D",
+            "logic_function": "Event_Logging",
+            "description": "Monitoring et observation des états en temps réel."
+        },
+        {
+            "root": "SH-J-R",
+            "logic_function": "Hierarchical_Tree",
+            "description": "Structure de données ramifiée (Tree structure) avec dépendances."
+        },
+        {
+            "root": "SH-K-R",
+            "logic_function": "Feedback_Optimization_Loop",
+            "description": "Signal de retour positif validant la réception et augmentant l'efficacité du lien."
+        },
+        {
+            "root": "SH-M-S",
+            "logic_function": "Primary_Energy_Source",
+            "description": "Source d'énergie centrale alimentant le cluster local."
+        },
+        {
+            "root": "SH-Q-Y",
+            "logic_function": "Critical_Failure_State",
+            "description": "État d'exécution pénible avec une consommation de ressources excessive."
+        },
+        {
+            "root": "SH-R-'-'",
+            "logic_function": "API_Access_Protocol",
+            "description": "Cadre de règles définissant l'accès et l'interaction avec le Kernel."
+        },
+        {
+            "root": "SH-R-B",
+            "logic_function": "Resource_Absorption",
+            "description": "Consommation interne de flux par une instance."
+        },
+        {
+            "root": "SH-R-K",
+            "logic_function": "Parallel_Root_Error",
+            "description": "Tentative d'exécution de processus concurrents avec des privilèges Root non autorisés."
+        },
+        {
+            "root": "SH-R-R",
+            "logic_function": "Systemic_Entropy",
+            "description": "Mesure du désordre et de la dégradation de l'énergie au sein du réseau."
+        },
+        {
+            "root": "SH-R-Y",
+            "logic_function": "Resource_Acquisition",
+            "description": "Action d'acquérir une ressource externe en échange d'un crédit interne."
+        },
+        {
+            "root": "SH-T-R",
+            "logic_function": "Target_Sector",
+            "description": "Zone spécifique ou segment réseau visé par l'orientation."
+        },
+        {
+            "root": "SH-W-K",
+            "logic_function": "Power_Spike",
+            "description": "Pic de puissance ou force de frappe d'une entité (Piquant/Force)."
+        },
+        {
+            "root": "SH-Y-A",
+            "logic_function": "Object_Instantiation",
+            "description": "Création d'une instance matérielle ou logicielle identifiable."
+        },
+        {
+            "root": "SH-Y-T",
+            "logic_function": "Adversarial_Agent",
+            "description": "Source de bruit et de déviation (Hacker)."
+        },
+        {
+            "root": "SH-Y-T-N",
+            "logic_function": "Adversarial_Process",
+            "description": "Agent hostile cherchant à faire dévier le système (Hacker)."
+        },
+        {
+            "root": "T-'-'",
+            "logic_function": "Instruction_Compliance",
+            "description": "Obéissance stricte aux commandes hiérarchiques (Obéissance)."
+        },
+        {
+            "root": "T-'-M",
+            "logic_function": "Energy_Feed",
+            "description": "Alimentation en ressources du nœud."
+        },
+        {
+            "root": "T-'-W-L",
+            "logic_function": "Final_Output_Resolution",
+            "description": "Phase de résolution finale où le code source produit son résultat concret."
+        },
+        {
+            "root": "T-F-F",
+            "logic_function": "Calibration_Error_Bias",
+            "description": "Fraude légère ou biais dans l'algorithme de mesure (Calibration Drift)."
+        },
+        {
+            "root": "T-GH-T",
+            "logic_function": "False_Root",
+            "description": "Entité usurpant les privilèges Root sans autorisation (Idole/Tyran)."
+        },
+        {
+            "root": "T-H-D",
+            "logic_function": "Stress_Test_Challenge",
+            "description": "Défi lancé aux sous-systèmes pour prouver leur capacité (Défier)."
+        },
+        {
+            "root": "T-J-R",
+            "logic_function": "Data_Traffic_Loop",
+            "description": "Flux continu d'échange de données générant une plus-value (Traffic)."
+        },
+        {
+            "root": "T-L-W",
+            "logic_function": "Instruction_Sequence_Reading",
+            "description": "Lecture séquentielle des instructions dans l'ordre de leur dépendance."
+        },
+        {
+            "root": "T-M-A-N",
+            "logic_function": "Core_Integrity_Validation",
+            "description": "Validation profonde de l'alignement du processeur central avec le code source."
+        },
+        {
+            "root": "T-M-M",
+            "logic_function": "Process_Finalization",
+            "description": "Achèvement complet d'un cycle d'instruction (Task Completed)."
+        },
+        {
+            "root": "T-R-B",
+            "logic_function": "Unprocessed_Dust_Data",
+            "description": "Données fragmentées de base, constituant le niveau 0 du stockage."
+        },
+        {
+            "root": "T-R-D",
+            "logic_function": "Process_Eviction",
+            "description": "Action de sortir un processus de la file d'attente pour non-conformité."
+        },
+        {
+            "root": "T-R-Q",
+            "logic_function": "Logic_Path_Routing",
+            "description": "Définition d'un chemin de routage entre deux points du réseau."
+        },
+        {
+            "root": "T-W-'",
+            "logic_function": "Native_Compliance",
+            "description": "Exécution fluide et volontaire des protocoles système sans résistance."
+        },
+        {
+            "root": "T-W-B",
+            "logic_function": "Logic_Rollback_Protocol",
+            "description": "Retour à un point de restauration stable après une déviation (Rollback)."
+        },
+        {
+            "root": "T-W-F",
+            "logic_function": "Orbital_Processing",
+            "description": "Rotation de données autour d'un pivot central (Circumambulation/Orbit)."
+        },
+        {
+            "root": "T-Y-N",
+            "logic_function": "Malleable_Raw_Input",
+            "description": "État initial de la donnée brute avant formatage et cuisson (Instanciation)."
+        },
+        {
+            "root": "T-Y-R",
+            "logic_function": "Packet_Broadcast_Packet_Broadcast",
+            "description": "Vecteur de transmission aérien/haute vitesse (Broadcasting)."
+        },
+        {
+            "root": "T.-'-T",
+            "logic_function": "Command_Adherence_Protocol",
+            "description": "Exécution conforme d'une directive émanant d'une autorité supérieure."
+        },
+        {
+            "root": "T.-GH-Y",
+            "logic_function": "Buffer_Overflow",
+            "description": "Dépassement critique des limites de capacité (Tyrannie)."
+        },
+        {
+            "root": "T.-L-Q",
+            "logic_function": "Session_Split_Divorce",
+            "description": "Action de désynchroniser et de rompre définitivement un lien contractuel entre deux nœuds."
+        },
+        {
+            "root": "T.-S.-M",
+            "logic_function": "Segment_Header_Transmission",
+            "description": "Signal d'en-tête identifiant un bloc d'instructions de haute priorité."
+        },
+        {
+            "root": "TH-B-T",
+            "logic_function": "Static_Address",
+            "description": "Variable ou adresse mémoire immuable et stable (Ferme)."
+        },
+        {
+            "root": "TH-KH-N",
+            "logic_function": "Heavy_Processing",
+            "description": "Traitement intensif nécessaire pour subjuguer une résistance système (Épais/Dominé)."
+        },
+        {
+            "root": "TH-M-R",
+            "logic_function": "Process_Output",
+            "description": "Résultat tangible et exploitable produit par un cycle d'exécution (Fruit)."
+        },
+        {
+            "root": "TH-Q-L",
+            "logic_function": "Mass_Weight_Priority_Mass_Weight_Priority",
+            "description": "Indicateur de poids ou de charge de calcul élevée."
+        },
+        {
+            "root": "TH-R-W",
+            "logic_function": "Legacy_System_Logs",
+            "description": "Traces historiques et journaux de bord des cycles d'exécution passés."
+        },
+        {
+            "root": "TH-R-Y",
+            "logic_function": "Ground_Layer",
+            "description": "Couche physique la plus basse du système (Sol humide)."
+        },
+        {
+            "root": "W-D-A",
+            "logic_function": "Input_Sanitization",
+            "description": "Nettoyage obligatoire des entrées avant l'exécution d'un processus critique (Ablutions)."
+        },
+        {
+            "root": "W-F-Y",
+            "logic_function": "Contract_Full_Execution",
+            "description": "Exécution totale et parfaite d'une instruction ou d'une promesse."
+        },
+        {
+            "root": "W-H-Y",
+            "logic_function": "Direct_Instruction_Stream",
+            "description": "Flux d'instructions directes injecté dans l'instinct d'un nœud (Inspiration)."
+        },
+        {
+            "root": "W-J-H",
+            "logic_function": "Interface_Orientation",
+            "description": "Direction vers laquelle le flux de données est pointé."
+        },
+        {
+            "root": "W-J-L",
+            "logic_function": "Alert_State",
+            "description": "État d'alerte haute fréquence du noyau face à une entrée critique (Crainte/Vibration)."
+        },
+        {
+            "root": "W-K-L",
+            "logic_function": "Proxy_Controller",
+            "description": "Entité gérant les ressources pour le compte d'un autre nœud (Gérant/Mandataire)."
+        },
+        {
+            "root": "W-L-D",
+            "logic_function": "Recursive_Cloning",
+            "description": "Action de générer une copie dépendante (Fils/Clone)."
+        },
+        {
+            "root": "W-L-G",
+            "logic_function": "Data_Insertion",
+            "description": "Insertion d'un signal dans un autre (Injection)."
+        },
+        {
+            "root": "W-L-Y",
+            "logic_function": "Proxy_Controller_Guardian",
+            "description": "Instance déléguée pour la gestion et la protection d'un nœud subalterne."
+        },
+        {
+            "root": "W-Q-'-'",
+            "logic_function": "Event_Termination_Logic",
+            "description": "Exécution d'un événement critique marquant la fin irréversible d'une session."
+        },
+        {
+            "root": "W-Q-B",
+            "logic_function": "Data_Infiltration",
+            "description": "Pénétration ou établissement d'un signal externe dans un segment local."
+        },
+        {
+            "root": "W-Q-T",
+            "logic_function": "Timestamp_Marker",
+            "description": "Marquage précis d'un état à l'instant T."
+        },
+        {
+            "root": "W-Q-Y",
+            "logic_function": "Protocol_Shielding",
+            "description": "Mise en place d'une barrière de protection contre les erreurs d'exécution."
+        },
+        {
+            "root": "W-R-TH",
+            "logic_function": "Data_Inheritance",
+            "description": "Transfert des attributs et ressources d'un nœud parent à un nœud fils."
+        },
+        {
+            "root": "W-S-'",
+            "logic_function": "System_Vast_Capacity",
+            "description": "Capacité d'allocation et de traitement infinie du noyau, englobant tous les sous-systèmes."
+        },
+        {
+            "root": "W-S-L",
+            "logic_function": "Network_Connection_Link",
+            "description": "Établissement d'un pont de données physique ou logique entre deux nœuds."
+        },
+        {
+            "root": "W-S-T",
+            "logic_function": "Central_Middleware",
+            "description": "Point d'équilibre médian optimisant les flux (Proxy Équilibré)."
+        },
+        {
+            "root": "W-S-W-S",
+            "logic_function": "Background_Noise",
+            "description": "Signaux parasites de bas niveau tentant d'influencer l'exécution sans commande Root."
+        },
+        {
+            "root": "W-S-Y",
+            "logic_function": "Legacy_Instruction",
+            "description": "Instructions testamentaires exécutées automatiquement à la fermeture du processus."
+        },
+        {
+            "root": "W-S-Y-D",
+            "logic_function": "System_Threshold",
+            "description": "Zone tampon ou seuil d'entrée/sortie physique d'un serveur (Seuil)."
+        },
+        {
+            "root": "W-Y-L",
+            "logic_function": "Fatal_Exception_Warning",
+            "description": "Alerte de destruction imminente ou erreur fatale."
+        },
+        {
+            "root": "W-Z-N",
+            "logic_function": "Load_Balancing",
+            "description": "Mesure de l'équilibre des charges sur le système."
+        },
+        {
+            "root": "Y-M-M",
+            "logic_function": "Fallback_Sanitization",
+            "description": "Méthode de nettoyage de secours (Dry Clean) en cas d'absence de ressource principale."
+        },
+        {
+            "root": "Y-Q-N",
+            "logic_function": "Data_Integrity_Validation",
+            "description": "État de certitude absolue du signal, sans aucune interférence ou probabilité."
+        },
+        {
+            "root": "Y-S",
+            "logic_function": "Kernel_Core_Master_Prompt",
+            "description": "Signal d'activation du cœur du système, gérant la vie et la mort des processus."
+        },
+        {
+            "root": "Y-T-M",
+            "logic_function": "Orphan_Process",
+            "description": "Processus ayant perdu leur nœud parent, nécessitant une réassignation de ressources."
+        },
+        {
+            "root": "Z-B-D",
+            "logic_function": "Data_Scum",
+            "description": "Données inutiles ou résidus de calcul flottant à la surface (Écume)."
+        },
+        {
+            "root": "Z-B-R",
+            "logic_function": "Hardware_Block",
+            "description": "Blocs de matériel brut (fer) utilisés pour renforcer l'infrastructure (Blocs)."
+        },
+        {
+            "root": "Z-H-F",
+            "logic_function": "Slow_Advance",
+            "description": "Avancée progressive et inéluctable d'un processus vers sa cible (Marche)."
+        },
+        {
+            "root": "Z-H-R",
+            "logic_function": "Frontend_Public_Interface",
+            "description": "État d'un processus dont les variables sont exposées et visibles."
+        },
+        {
+            "root": "Z-J-J",
+            "logic_function": "Refraction_Interface",
+            "description": "Matériau de haute pureté assurant la transmission et la clarté du signal."
+        },
+        {
+            "root": "Z-K-W",
+            "logic_function": "Signal_Optimization",
+            "description": "Purge des ressources pour fluidité."
+        },
+        {
+            "root": "Z-K-Y",
+            "logic_function": "Code_Refinement_Purity",
+            "description": "Processus d'épuration et d'optimisation de l'instance pour un rendement optimal."
+        },
+        {
+            "root": "Z-L-L",
+            "logic_function": "Runtime_Exception",
+            "description": "Erreur d'exécution momentanée ou glissement (Bug/Faute)."
+        },
+        {
+            "root": "Z-L-M",
+            "logic_function": "System_Entropy",
+            "description": "Déséquilibre et perte de signal."
+        },
+        {
+            "root": "Z-L-Z-L",
+            "logic_function": "Seismic_Data_Flush",
+            "description": "Processus de vibration et de purge forcée de la couche physique avant reset."
+        },
+        {
+            "root": "Z-M-A",
+            "logic_function": "Thirst_Error",
+            "description": "Manque critique de flux de données ou d'hydratation système (Soif)."
+        },
+        {
+            "root": "Z-N-Y",
+            "logic_function": "Unauthorized_Pairing_Protocol",
+            "description": "Tentative de couplage ou d'échange de ressources entre deux instances sans protocole d'accord (Handshake) valide."
+        },
+        {
+            "root": "Z-R-'",
+            "logic_function": "Data_Seeding",
+            "description": "Action d'implanter un code ou une ressource dans un support pour exécution future."
+        },
+        {
+            "root": "Z-W-J",
+            "logic_function": "Process_Coupling_Pairing",
+            "description": "Complémentarité fonctionnelle liant deux entités pour une opération binaire."
+        },
+        {
+            "root": "Z-Y-GH",
+            "logic_function": "Vector_Drift",
+            "description": "Déviation angulaire par rapport à la trajectoire calculée (Bug)."
+        },
+        {
+            "root": "ب-ي-ض (Bayad)",
+            "logic_function": "State_Clear_White",
+            "description": "État neutre, purifié ou initialisé (Blank/Clean)."
+        },
+        {
+            "root": "ت-ح-ت (Taht)",
+            "logic_function": "Stack_Pointer_Down",
+            "description": "Pointeur vers une couche inférieure (Sub-directory)."
+        },
+        {
+            "root": "ج-د-ل (Jadala)",
+            "logic_function": "Protocol_Conflict",
+            "description": "Collision de protocoles ou boucle de négociation (Dispute)."
+        },
+        {
+            "root": "ح-م-ر (Humar)",
+            "logic_function": "State_Alert_Red",
+            "description": "Indicateur de haute température ou d'alerte intensité."
+        },
+        {
+            "root": "خ-ر-د (Khardal)",
+            "logic_function": "Atomic_Bit_Unit",
+            "description": "La plus petite unité de donnée adressable (Bit/Grain)."
+        },
+        {
+            "root": "خ-ض-ر (Khadar)",
+            "logic_function": "State_Stable_Green",
+            "description": "Indicateur de fonctionnement optimal et de croissance (Live)."
+        },
+        {
+            "root": "ذ-ه-b (Dhahab)",
+            "logic_function": "High_Value_Conductor",
+            "description": "Matériau à haute valeur de transfert, inaltérable (Gold Standard)."
+        },
+        {
+            "root": "ذ-و-ق (Dhaqa)",
+            "logic_function": "Data_Sampling_Taste",
+            "description": "Lecture d'un échantillon pour test avant exécution complète."
+        },
+        {
+            "root": "ر-ت-ق (Ratq)",
+            "logic_function": "Data_Compression_Zip",
+            "description": "État fusionné ou compressé de multiples fichiers (Merged)."
+        },
+        {
+            "root": "ز-ج-ج (Zujaj)",
+            "logic_function": "Transparent_Interface",
+            "description": "Surface d'affichage transparente ou fibre optique (Glass)."
+        },
+        {
+            "root": "ز-ر-ق (Zurqa)",
+            "logic_function": "State_Cold_Blue",
+            "description": "Indicateur de basse entropie ou d'hypoxie système (Terror/Cold)."
+        },
+        {
+            "root": "س-أ-ل (Sa'ala)",
+            "logic_function": "Query_Request_Get",
+            "description": "Envoi d'une requête d'information au système (GET request)."
+        },
+        {
+            "root": "س-ب-ق (Sabaqa)",
+            "logic_function": "Race_Condition_Priority",
+            "description": "Processus tentant de dépasser les autres pour l'accès ressource."
+        },
+        {
+            "root": "س-غ-ب (Saghab)",
+            "logic_function": "Energy_Starvation",
+            "description": "Carence critique en alimentation (Hunger)."
+        },
+        {
+            "root": "س-ك-ر (Sakara)",
+            "logic_function": "System_Drunkenness",
+            "description": "Désynchronisation temporaire des capteurs (Glitch/Stupor)."
+        },
+        {
+            "root": "س-و-د (Sawad)",
+            "logic_function": "State_Error_Black",
+            "description": "État critique, éteint ou corrompu (Shutdown/Void)."
+        },
+        {
+            "root": "ش-ر-ق (Sharq/Mashriq)",
+            "logic_function": "Signal_Origin_East",
+            "description": "Point d'origine du flux lumineux (Input Source)."
+        },
+        {
+            "root": "ش-م-ل (Shimal)",
+            "logic_function": "Negative_Handshake_Left",
+            "description": "Vecteur d'erreur, priorité basse ou processus sinistre."
+        },
+        {
+            "root": "ص-ف-ر (Sufra)",
+            "logic_function": "State_Warning_Yellow",
+            "description": "Indicateur de transition ou d'attention (Decay/Warning)."
+        },
+        {
+            "root": "ض-ي-ف (Dayf)",
+            "logic_function": "Guest_User_Access",
+            "description": "Accès temporaire invité avec privilèges limités."
+        },
+        {
+            "root": "ط-ل-ق (Talaq)",
+            "logic_function": "Session_Split_Divorce",
+            "description": "Rupture formelle et irréversible d'un couplage (Unpair)."
+        },
+        {
+            "root": "غ-ر-ب (Gharb/Maghrib)",
+            "logic_function": "Signal_Exit_West",
+            "description": "Point de terminaison ou de stockage du flux (Output Sink)."
+        },
+        {
+            "root": "غ-ش-ي (Ghashiya)",
+            "logic_function": "System_Overlay_Cover",
+            "description": "Recouvrement total de l'interface (Full Screen Overlay)."
+        },
+        {
+            "root": "غ-ل-ق (Ghalaqa)",
+            "logic_function": "Port_Closing",
+            "description": "Fermeture et verrouillage d'un accès (Lock)."
+        },
+        {
+            "root": "غ-ي-ر (Ghayr)",
+            "logic_function": "Variable_Modifier_Patch",
+            "description": "Instruction de modification d'une valeur ou d'un chemin (Change/Non)."
+        },
+        {
+            "root": "ف-ت-ح (Fataha)",
+            "logic_function": "Port_Opening",
+            "description": "Ouverture d'un port ou d'une socket de communication."
+        },
+        {
+            "root": "ف-ت-ق (Fataqa)",
+            "logic_function": "Data_Decompression_Unzip",
+            "description": "Action de séparer ou d'extraire des données compressées (Split)."
+        },
+        {
+            "root": "ف-ز-ع (Faza'a)",
+            "logic_function": "Kernel_Panic_Interrupt",
+            "description": "Signal d'arrêt d'urgence déclenché par une peur système (Terror)."
+        },
+        {
+            "root": "ف-ض-ض (Fidda)",
+            "logic_function": "Standard_Conductor",
+            "description": "Matériau de transmission standard à haute efficacité (Silver)."
+        },
+        {
+            "root": "ف-و-ق (Fawq)",
+            "logic_function": "Stack_Pointer_Up",
+            "description": "Pointeur vers une couche supérieure (Parent Directory)."
+        },
+        {
+            "root": "ق-ت-م (Qitmir)",
+            "logic_function": "Data_Wrapper_Membrane",
+            "description": "Enveloppe fine protégeant le noyau de donnée (Wrapper)."
+        },
+        {
+            "root": "ق-م-م (Qama)",
+            "logic_function": "Process_Activation",
+            "description": "Lancement ou redressement d'un processus (Stand/Run)."
+        },
+        {
+            "root": "ك-س-ل (Kasal)",
+            "logic_function": "High_Latency_Lag",
+            "description": "Lenteur d'exécution due à une résistance interne (Lag)."
+        },
+        {
+            "root": "ك-ش-ط (Kashata)",
+            "logic_function": "Surface_Scraping",
+            "description": "Enlèvement de la couche superficielle (Peel)."
+        },
+        {
+            "root": "ل-ؤ-ل (Lu'lu')",
+            "logic_function": "Encapsulated_Data_Pearl",
+            "description": "Unité de donnée précieuse protégée par une coque (Shell)."
+        },
+        {
+            "root": "ل-ح-ق (Lahaqa)",
+            "logic_function": "Process_Append_Join",
+            "description": "Action de rejoindre une file d'exécution ou d'attacher un fichier."
+        },
+        {
+            "root": "ل-غ-ب (Laghab)",
+            "logic_function": "CPU_Throttling_Fatigue",
+            "description": "Baisse de performance due à une surchauffe ou une utilisation prolongée."
+        },
+        {
+            "root": "ل-غ-و (Laghw)",
+            "logic_function": "Null_Packet_Noise",
+            "description": "Paquet de données vide de sens ou bruit de fond à ignorer."
+        },
+        {
+            "root": "ل-م-س (Lamasa)",
+            "logic_function": "Haptic_Input_Touch",
+            "description": "Interaction directe ou détection de contact (Probe)."
+        },
+        {
+            "root": "ن-ح-س (Nuhas)",
+            "logic_function": "Thermal_Wiring_Copper",
+            "description": "Câblage de base pour le transfert d'énergie thermique ou électrique."
+        },
+        {
+            "root": "ن-ص-b (Nasab)",
+            "logic_function": "System_Strain_Load",
+            "description": "État de tension extrême sur les bus de communication."
+        },
+        {
+            "root": "ن-ص-ح (Nasaha)",
+            "logic_function": "Process_Optimization",
+            "description": "Routine de correction ou d'amélioration du code (Patching)."
+        },
+        {
+            "root": "ن-ق-ر (Naqur)",
+            "logic_function": "Single_Bit_Ping",
+            "description": "Signal sonore ou binaire minimal (Ping)."
+        },
+        {
+            "root": "و-ز-ر (Wizra)",
+            "logic_function": "System_Burden_Load",
+            "description": "Charge système lourde ou dette technique (Load)."
+        },
+        {
+            "root": "و-ض-ع (Wada'a)",
+            "logic_function": "Download_Place",
+            "description": "Dépôt de données sur le disque local (Download/Write)."
+        },
+        {
+            "root": "ي-ق-ظ (Yaqaza)",
+            "logic_function": "Wake_On_Lan",
+            "description": "Réveil d'un nœud suite à un signal (Wake-up)."
+        },
+        {
+            "root": "ي-م-ن (Yamin)",
+            "logic_function": "Positive_Handshake_Right",
+            "description": "Vecteur de validation, priorité haute ou exécution sécurisée."
+        }
+    ]
+}
