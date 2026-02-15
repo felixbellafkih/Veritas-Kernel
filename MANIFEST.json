@@ -89,10 +89,6 @@
                 "function": "Processing_Core"
             },
             {
-                "root": "ج-ن-ن (J-N-N/Jinn)",
-                "function": "Hidden_Process"
-            },
-            {
                 "root": "ق-س-ط (Q-S-T/Qist)",
                 "function": "Structural_Equity"
             },
@@ -470,7 +466,7 @@
             },
             {
                 "root": "س-و-ر (S-W-R/Sur)",
-                "function": "System_Wall"
+                "function": "Perimeter_Wall_Isolation"
             },
             {
                 "root": "غ-و-ي (GH-W-Y/Aghwaytani)",
@@ -726,7 +722,7 @@
             },
             {
                 "root": "ن-ح-ل (N-H-L/Nahl)",
-                "function": "Autonomous_Agent"
+                "function": "Decentralized_Swarm_Intelligence"
             },
             {
                 "root": "س-ب-ل (S-B-L/Subul)",
@@ -790,7 +786,7 @@
             },
             {
                 "root": "ن-ق-ب (N-Q-B/Naqb)",
-                "function": "Penetration_Test"
+                "function": "Tunneling_Protocol"
             },
             {
                 "root": "خ-ب-ر (KH-B-R/Khabar)",
@@ -1126,11 +1122,7 @@
             },
             {
                 "root": "ج-ب-ل (J-B-L/Jabal)",
-                "function": "System_Anchor"
-            },
-            {
-                "root": "ح-د-د (H-D-D/Hadid)",
-                "function": "Hard_Core_Structure"
+                "function": "Primary_Anchor_Node"
             },
             {
                 "root": "ن-ا-ر (N-A-R/Nar)",
@@ -1299,6 +1291,294 @@
             {
                 "root": "خ-ز-ي (KH-Z-Y/Khizya)",
                 "function": "Logic_Interface_Error"
+            },
+            {
+                "root": "ح-ص-ن (H-S-N/Husn)",
+                "function": "Hardware_Fortification"
+            },
+            {
+                "root": "د-ف-ع (D-F-'/Dafa')",
+                "function": "Intrusion_Defense_Push"
+            },
+            {
+                "root": "ح-ج-ز (H-J-Z/Hijaz)",
+                "function": "Logic_Barrier_Sandbox"
+            },
+            {
+                "root": "س-ت-ر (S-T-R/Satr)",
+                "function": "Masking_Protocol"
+            },
+            {
+                "root": "ر-ج-م (R-J-M/Rajm)",
+                "function": "Access_Denied_Expulsion"
+            },
+            {
+                "root": "ط-ر-د (T-R-D/Tarda)",
+                "function": "Process_Eviction"
+            },
+            {
+                "root": "ح-ر-م (H-R-M/Haram)",
+                "function": "Privileged_Access_Only"
+            },
+            {
+                "root": "خ-ط-ف (KH-T-F/Khatafa)",
+                "function": "Packet_Interception"
+            },
+            {
+                "root": "ن-ذ-ر (N-DH-R/Nadhir)",
+                "function": "System_Alert_Trigger"
+            },
+            {
+                "root": "ن-م-ل (N-M-L/Naml)",
+                "function": "Micro_Agent_Coordination"
+            },
+            {
+                "root": "ط-ر-ق (T-R-Q/Tariq)",
+                "function": "Logic_Path_Routing"
+            },
+            {
+                "root": "ف-ج-ج (F-J-J/Fijj)",
+                "function": "Wide_Access_Gateway"
+            },
+            {
+                "root": "X-X-X (F-1)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-2)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-3)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-4)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-5)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-6)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-7)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-8)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-9)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-10)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-11)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-12)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-13)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-14)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-15)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-16)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-17)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-18)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-19)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-20)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-21)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-22)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-23)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-24)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-25)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-26)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-27)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-28)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-29)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-30)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-31)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-32)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-33)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-34)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-35)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-36)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-37)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-38)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-39)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-40)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-41)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-42)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-43)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-44)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-45)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-46)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-47)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-48)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-49)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-50)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-51)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-52)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-53)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-54)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-55)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-56)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-57)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-58)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-59)",
+                "function": "Utility_Reserved_Slot"
+            },
+            {
+                "root": "X-X-X (F-60)",
+                "function": "Utility_Reserved_Slot"
             }
         ],
         "RAM_Storage_Unit": [
@@ -1309,6 +1589,10 @@
             {
                 "root": "ك-ت-ب (K-T-B/Kitab)",
                 "function": "Data_Encoding_Script"
+            },
+            {
+                "root": "ج-ن-ن (J-N-N/Janna)",
+                "function": "Data_Encryption_Shield"
             },
             {
                 "root": "ر-ي-ب (R-Y-B/Rayb)",
@@ -1360,7 +1644,7 @@
             },
             {
                 "root": "ب-ح-ر (B-H-R/Bahr)",
-                "function": "Massive_Buffer"
+                "function": "Large_Scale_Data_Lake"
             },
             {
                 "root": "ص-ي-د (S-Y-D/Sayd)",
@@ -1407,8 +1691,8 @@
                 "function": "Data_Packet_Wrapper"
             },
             {
-                "root": "خ-ز-ن (KH-Z-N/Khaza'in)",
-                "function": "Massive_Storage_Vault"
+                "root": "خ-ز-ن (KH-Z-N/Khazana)",
+                "function": "Secure_Vault_Storage"
             },
             {
                 "root": "ب-ض-ع (B-D-'/'Bida'ah)",
@@ -1507,6 +1791,10 @@
                 "function": "Cloud_Storage_Layer"
             },
             {
+                "root": "ح-د-د (H-D-D/Hadid)",
+                "function": "Solid_Immutable_Data"
+            },
+            {
                 "root": "م-أ-ه (M-A-A/Ma'a)",
                 "function": "Data_Fluid"
             },
@@ -1524,7 +1812,7 @@
             },
             {
                 "root": "أ-ن-ه-ر (N-H-R/Anhar)",
-                "function": "Data_Channels"
+                "function": "Sequential_Data_Channel"
             },
             {
                 "root": "ع-ن-ب ('-N-B/'Inab)",
@@ -1549,6 +1837,14 @@
             {
                 "root": "ك-س-ب (K-S-B/Kasb)",
                 "function": "Data_Credit_Accumulation"
+            },
+            {
+                "root": "ت-ر-ب (T-R-B/Turab)",
+                "function": "Unprocessed_Dust_Data"
+            },
+            {
+                "root": "م-ا-ء (M-A-'/Ma')",
+                "function": "Dynamic_Data_Stream"
             }
         ],
         "IO_Sensors_Unit": [
@@ -1603,6 +1899,14 @@
             {
                 "root": "ر-ق-ب (R-Q-B/Raqib)",
                 "function": "Real_Time_Monitoring"
+            },
+            {
+                "root": "ر-ص-د (R-S-D/Rasad)",
+                "function": "Strategic_Monitoring_Post"
+            },
+            {
+                "root": "ط-ي-ن (T-Y-N/Tin)",
+                "function": "Malleable_Raw_Input"
             }
         ],
         "Network_Comm_Unit": [
@@ -1705,6 +2009,10 @@
             {
                 "root": "ح-ز-ن (H-Z-N/Hazn)",
                 "function": "Performance_Loss_Signal"
+            },
+            {
+                "root": "ع-ن-ك ('-N-K/'Ankabut)",
+                "function": "Weak_Dependency_Network"
             }
         ],
         "Security_Firewall": [
