@@ -1493,8 +1493,7 @@
             "logic_function": "Thirst_Error", 
             "description": "Manque critique de flux de données ou d'hydratation système (Soif)." 
         },
-        [
-  {
+         {
     "root": "أ-م-ن (A-M-N/Iman)",
     "logic_function": "Security_Validation",
     "description": "Validation du protocole de sécurité et passage en mode Trusted_Node."
@@ -1523,7 +1522,8 @@
     "root": "ق-د-ر (Q-D-R/Qadr)",
     "logic_function": "Resource_Capacity",
     "description": "Détermination de la puissance de calcul et limites d'allocation des ressources."
-  }
+  }       
+ 
 ]
     ]
 }
