@@ -289,9 +289,9 @@
             "description": "Perte critique de fluide vital ou corruption violente (Verser le sang)."
         },
         {
-            "root": "س-ب-ح (S-B-H.)",
-            "logic_function": "System_Maintenance",
-            "description": "Processus de nettoyage et de maintien de la flottabilité (Glorifier)."
+            "root": "س-ب-ح (S-B-H)",
+            "logic_function": "Orbital_Navigation_Flow",
+            "description": "Navigation fluide ou dérive orbitale (To swim/glorify)."
         },
         {
             "root": "ق-د-س (Q-D-S)",
@@ -2599,9 +2599,9 @@
             "description": "Retour de données, vêtement ou récompense (Reward)."
         },
         {
-            "root": "ص-ب-ح (S.-B-H.)",
+            "root": "ص-ب-ح (S.-B-H)",
             "logic_function": "System_Initialization_Dawn",
-            "description": "Moment de l'éclatement ou du démarrage visible (Dawn)."
+            "description": "Phase d'amorçage ou de démarrage de la visibilité (Dawn/Morning)."
         },
         {
             "root": "ي-د-ي (Y-D-Y)",
