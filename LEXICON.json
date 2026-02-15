@@ -1975,7 +1975,27 @@
     { "root": "ف-ز-ع (F-Z-A/Faza')", "logic_function": "System_Panic_Alert", "description": "Signal d'alarme critique déclenché lors d'une rupture de continuité (Effroi/Panique)." },
     { "root": "ح-م-د (H-M-D/Hamd)", "logic_function": "Global_Feedback_Success", "description": "Validation globale que le système fonctionne selon ses spécifications idéales (Louange)." },
     { "root": "س-ي-ر (S-Y-R/Sira)", "logic_function": "Data_Streaming", "description": "Flux de données circulant de manière continue à travers le système (Marche/Flux)." },
-    { "root": "ن-ف-خ (N-F-KH/Nafakhtu)", "logic_function": "Signal_Injection", "description": "Activation d'un module par l'injection d'un signal vital (Insuffler)." }
+    { "root": "ن-ف-خ (N-F-KH/Nafakhtu)", "logic_function": "Signal_Injection", "description": "Activation d'un module par l'injection d'un signal vital (Insuffler)." },
+    { "root": "ف-ص-ل (F-S-L/Fussilat)", "logic_function": "Detailed_Parsing", "description": "Décomposition et explication détaillée de chaque segment de code pour éliminer toute ambiguïté (Détaillé/Expliqué)." },
+    { "root": "ش-و-ر (SH-W-R/Shura)", "logic_function": "P2P_Consensus_Protocol", "description": "Mécanisme de décision distribuée entre les nœuds pairs pour valider une action système (Consultation)." },
+    { "root": "ز-خ-ر-ف (Z-KH-R-F/Zukhruf)", "logic_function": "UI_Metadata", "description": "Métadonnées décoratives ou couches d'interface utilisateur masquant parfois la simplicité du backend (Ornement/UI)." },
+    { "root": "د-خ-ن (D-KH-N/Dukhan)", "logic_function": "System_Obfuscation", "description": "État de brouillard ou d'entropie volontaire rendant le code illisible pour les entités non-autorisées (Fumée)." },
+    { "root": "ج-ث-ي (J-TH-Y/Jathiyah)", "logic_function": "Process_Yielding", "description": "État d'un processus s'arrêtant ou s'inclinant pour laisser la priorité au Root (Agenouillé)." },
+    { "root": "ف-ت-ح (F-T-H/Fath)", "logic_function": "Port_Unlocking", "description": "Ouverture réussie d'un accès ou d'un port précédemment verrouillé (Ouverture/Victoire)." },
+    { "root": "س-ك-ن (S-K-N/Sakinah)", "logic_function": "Secure_State_Stability", "description": "Injection de stabilité et de calme dans un nœud pour éviter les fluctuations de données (Sérénité/Stabilité)." },
+    { "root": "ح-ج-ر (H-J-R/Hujurat)", "logic_function": "Access_Control_List", "description": "Définition de partitions privées et de règles de segmentation des accès (Chambres/Privé)." },
+    { "root": "ن-ب-أ (N-B-A/Naba')", "logic_function": "Data_Verification_Required", "description": "Instruction forçant la vérification d'une information entrante avant son exécution (Nouvelle/Vérification)." },
+    { "root": "ق (Q-A-F/Qaf)", "logic_function": "Storage_Capacity_Limit", "description": "Définition des limites de capacité ou de fréquence d'un support de stockage (Capacité/Qaf)." },
+    { "root": "ح-م (H-M/Ha-Mim)", "logic_function": "Security_Handshake_Header", "description": "Séquence d'initialisation sécurisée pour les protocoles de transmission du Kernel (Initiales H-M)." },
+    { "root": "م-ح-م-د (M-H-M-D/Muhammad)", "logic_function": "Authenticated_Optimization", "description": "État d'un code hautement optimisé, validé et authentifié par le système (Muhammad/Loué)." },
+    { "root": "ب-ي-ع (B-Y-A/Bay'ah)", "logic_function": "Handshake_Agreement", "description": "Validation d'un contrat de connexion entre un agent et l'Admin (Pacte/Allégeance)." },
+    { "root": "ه-د-ي (H-D-Y/Huda)", "logic_function": "Pathfinding_Algorithm", "description": "Algorithme de guidage permettant à un processus de trouver le chemin optimal (Guidance)." },
+    { "root": "ض-ل-ل (D-L-L/Dalal)", "logic_function": "Routing_Error", "description": "Perte de trajectoire d'un paquet de données ou d'un processus (Égarement)." },
+    { "root": "ح-ب-ط (H-B-T/Habitat)", "logic_function": "Data_Loss_Rollback", "description": "Annulation des bénéfices d'un processus suite à une corruption grave (Rendre vain)." },
+    { "root": "و-ر-د (W-R-D/Warid)", "logic_function": "Input_Stream", "description": "Flux de données arrivant à un port d'entrée (Veine jugulaire/Arrivée)." },
+    { "root": "ر-ق-ب (R-Q-B/Raqib)", "logic_function": "Watchdog_Monitor", "description": "Observateur système en temps réel enregistrant chaque instruction (Observateur)." },
+    { "root": "ق-ر-ن (Q-R-N/Qarin)", "logic_function": "Linked_Process", "description": "Processus compagnon lié de manière permanente à un autre (Compagnon/Lié)." },
+    { "root": "ع-ت-د (A-T-D/Atid)", "logic_function": "Ready_State", "description": "État d'un processus ou d'une donnée prêt pour une exécution immédiate (Prêt)." }
     
     ]
 }
