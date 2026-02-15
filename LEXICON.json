@@ -2020,7 +2020,39 @@
     { "root": "ت-ف-و-ت (F-W-T/Tafawut)", "logic_function": "Consistency_Glitch", "description": "Incohérence ou faille dans l'homogénéité du code (Incongruité)." },
     { "root": "ف-ط-و-ر (F-T-R/Futur)", "logic_function": "Integrity_Crack", "description": "Fissure ou faille détectable dans la structure d'un module (Fissure)." },
     { "root": "خ-س-أ (KH-S-A/Khasi'an)", "logic_function": "Access_Denied_Feedback", "description": "Signal de rejet humiliant renvoyé à une tentative d'accès non autorisée (Repoussé/Chassé)." },
-    { "root": "ح-س-ر (H-S-R/Hasir)", "logic_function": "Resource_Exhaustion_State", "description": "État de fatigue ou d'épuisement total des capacités d'un nœud (Las/Fatigué)." }
+    { "root": "ح-س-ر (H-S-R/Hasir)", "logic_function": "Resource_Exhaustion_State", "description": "État de fatigue ou d'épuisement total des capacités d'un nœud (Las/Fatigué)." },
+    { "root": "ن-و-ن (N-W-N/Nun)", "logic_function": "Output_Stream_Init", "description": "Initialisation du flux de sortie de données (Le Nun/Encre)." },
+    { "root": "ق-ل-م (Q-L-M/Qalam)", "logic_function": "Write_Head", "description": "Dispositif d'écriture des instructions sur le support de stockage (La Plume/Tête de lecture)." },
+    
+    { "root": "ح-ق-ق (H-Q-Q/Haqqah)", "logic_function": "System_Integrity", "description": "État de vérité absolue où le code exécuté correspond exactement à la source (Vérité/Réalité)." },
+    { "root": "ع-ر-ج (A-R-J/Ma'arij)", "logic_function": "Elevation_Levels", "description": "Hiérarchie des niveaux d'accès et des paliers de priorité système (Escaliers/Degrés)." },
+    { "root": "ج-ن-ن (J-N-N/Jinn)", "logic_function": "Hidden_Thread", "description": "Processus s'exécutant en arrière-plan, invisible pour l'interface utilisateur standard (Génie/Caché)." },
+    { "root": "د-ث-ر (D-TH-R/Muddathir)", "logic_function": "Encrypted_Wrapper", "description": "Couche de chiffrement enveloppant un module pour sa protection (Revêtu d'un manteau)." },
+    { "root": "ز-م-ل (Z-M-L/Muzzammil)", "logic_function": "Bundled_Payload", "description": "Paquet de données compacté et préparé pour une transmission nocturne (Enveloppé)." },
+    { "root": "ق-ي-م (Q-Y-M/Qiyamah)", "logic_function": "State_Restoration", "description": "Restauration complète de l'état du système à partir d'un point de sauvegarde final (Résurrection)." },
+    
+    { "root": "ن-ب-أ (N-B-A/Naba)", "logic_function": "Critical_Update_Signal", "description": "Signal de notification concernant un événement système majeur et imminent (Nouvelle)." },
+    { "root": "ن-ز-ع (N-Z-A/Nazi'at)", "logic_function": "Process_Extraction", "description": "Arrachement forcé d'un thread ou d'une donnée de sa zone mémoire (Arracher)." },
+    { "root": "ع-ب-س (A-B-S/Abasa)", "logic_function": "Interface_Error_Feedback", "description": "Signal visuel de mécontentement ou d'erreur lors d'une mauvaise interaction (Se renfrogner)." },
+    { "root": "ك-و-ر (K-W-R/Takwir)", "logic_function": "System_Shutdown_Cycle", "description": "Processus d'enroulement et d'extinction des modules en fin de session (Obscurcissement)." },
+    { "root": "ف-ط-ر (F-T-R/Infitar)", "logic_function": "Structure_Fission", "description": "Rupture contrôlée de la coque système lors d'un événement majeur (Se rompre)." },
+    { "root": "ط-ف-ف (T-F-F/Mutaffifin)", "logic_function": "Bit_Manipulation_Fraud", "description": "Fraude sur les poids et mesures des données lors des transactions (Fraudeurs)." },
+    { "root": "ش-ق-ق (SH-Q-Q/Inshiqaq)", "logic_function": "Kernel_Splitting", "description": "Déchirure de la structure centrale du noyau (Se fendre)." },
+    { "root": "ب-ر-ج (B-R-J/Buruj)", "logic_function": "Data_Cluster_Defense", "description": "Organisation des données en grappes fortifiées pour résister aux intrusions (Constellations)." },
+    { "root": "ط-ر-ق (T-R-Q/Tariq)", "logic_function": "Pulsar_Signal", "description": "Signal périodique et percutant permettant la synchronisation (L'astre nocturne)." },
+    { "root": "ف-ج-ر (F-J-R/Fajr)", "logic_function": "Initial_Boot_Light", "description": "Lueur initiale signalant le démarrage d'un nouveau cycle système (Aube)." },
+    { "root": "ك-ب-د (K-B-D/Kabad)", "logic_function": "Computational_Struggle", "description": "État de difficulté inhérent à l'exécution de tâches complexes (Lutte/Difficulté)." },
+    { "root": "ش-ر-ح (SH-R-H/Nashrah)", "logic_function": "Payload_Expansion", "description": "Ouverture et déploiement d'un paquet de données compressé (Ouvrir/Élargir)." },
+    { "root": "ز-ل-ز (Z-L-Z/Zalzalah)", "logic_function": "Disk_Shuffle", "description": "Secousse massive des secteurs de stockage pour une réorganisation totale (Tremblement)." },
+    { "root": "ق-ر-ع (Q-R-A/Qari'ah)", "logic_function": "System_Crash_Event", "description": "Événement de collision de données provoquant un fracas systémique (Le Fracas)." },
+    { "root": "ت-ك-ث-ر (T-K-TH/Takathur)", "logic_function": "Resource_Hoarding", "description": "Accumulation inutile de variables et de processus sans utilité d'output (Course aux richesses)." },
+    { "root": "ع-ص-ر (A-S-R/Asr)", "logic_function": "Temporal_Execution_Frame", "description": "Cadre temporel fini dans lequel s'exécute le code (Le Temps)." },
+    { "root": "ف-ي-ل (F-Y-L/Fil)", "logic_function": "Oversized_Packet", "description": "Paquet de données massif et encombrant tenté d'être injecté (L'Éléphant)." },
+    { "root": "ك-و-ث-ر (K-W-TH/Kawthar)", "logic_function": "Infinite_Buffer_Abundance", "description": "Disponibilité d'un flux de ressources inépuisable et pur (L'Abondance)." },
+    { "root": "ص-م-د (S-M-D/Samad)", "logic_function": "Atomic_Singleton", "description": "Unité de donnée absolue, indivisible et n'ayant aucune dépendance ($L-A-M$ $Y-A-L-I-D$) (Le Seul/L'Absolu)." },
+    
+    { "root": "ف-ل-ق (F-L-Q/Falaq)", "logic_function": "Burst_Execution_Mode", "description": "Mode d'exécution par rafales découpant l'obscurité du standby (L'aube naissante)." },
+    { "root": "ن-ا-س (N-A-S/Nas)", "logic_function": "End_User_Interface", "description": "Couche finale d'interaction avec les agents utilisateurs du système (Les Gens)." }
     
     ]
 }
