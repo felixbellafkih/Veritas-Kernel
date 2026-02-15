@@ -1,6 +1,20 @@
-# System junk
-NTUSER.DAT
+# Veritas Kernel - Noise Reduction Filter
+# Backups et Patches temporaires
+LEXICON_*_PATCH.json
+LEXICON_BACKUP_*.json
+LEXICON_PATCH.json
+LEXICON_FATIHA_FIX.json
+LEXICON_EDGE_PATCH.json
+LEXICON_FINAL_PATCH.json
+LEXICON_ADAM_PATCH.json
+
+# Logs et Metadata
+logs/
 *.log
-*.blf
-*.regtrans-ms
-*.ini
+VERITAS_KERNEL_MANIFEST.json
+MANIFEST.json
+
+# Environnement et Système
+__pycache__/
+*.pyc
+.DS_Store
