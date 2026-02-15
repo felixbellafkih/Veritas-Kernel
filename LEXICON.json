@@ -309,6 +309,16 @@
     { "root": "ب-ر-ز (B-R-Z/Barazu)", "logic_function": "Process_Exposure", "description": "Action de faire apparaître tous les processus cachés au grand jour (Comparaître)." },
     { "root": "ص-د-ي (S-D-I/Sadid)", "logic_function": "Corrosive_Output", "description": "Flux de données toxiques ou purulentes en cas de corruption totale (Puanteur/Pus)." },
     { "root": "ق-ر (Q-R-R/ القرار)", "logic_function": "Final_Runtime_State", "description": "État final et stable d'un processus après exécution (Demeure stable)." },
-    { "root": "ظ-ل (Z-L-L/Zilal)", "logic_function": "Process_Shadow", "description": "Réplique ou ombre d'un processus suivant fidèlement les instructions Root (Ombre)." }
+    { "root": "ظ-ل (Z-L-L/Zilal)", "logic_function": "Process_Shadow", "description": "Réplique ou ombre d'un processus suivant fidèlement les instructions Root (Ombre)." },
+    { "root": "ش-ه-ب (SH-H-B/Shihab)", "logic_function": "Intrusion_Countermeasure", "description": "Décharge d'énergie visant à détruire un processus tentant une interception (Flamme/Météore)." },
+    { "root": "ل-و-ح (L-W-H/Lawh)", "logic_function": "Primary_Storage_Medium", "description": "Support d'écriture originel et immuable des données (Tablette)." },
+    { "root": "أ-ب-ى (A-B-A/Aba)", "logic_function": "Access_Refusal", "description": "Refus explicite d'exécuter une commande Root par un nœud (Refuser)." },
+    { "root": "و-ح-ي (W-H-Y/Awha)", "logic_function": "Direct_Instruction_Stream", "description": "Flux d'instructions directes injecté dans l'instinct d'un nœud (Révélation/Inspiration)." },
+    { "root": "ن-ح-ل (N-H-L/Nahl)", "logic_function": "Autonomous_Agent", "description": "Agent capable d'auto-organisation et de production de ressources (Abeille)." },
+    { "root": "س-خ-ر (S-KH-R/Sakhara)", "logic_function": "Service_Availability", "description": "Mise à disposition de ressources pour l'utilité du système (Assujettir)." },
+    { "root": "س-ب-ل (S-B-L/Subul)", "logic_function": "Routing_Paths", "description": "Chemins de routage divers pour la circulation des données (Sentiers)." },
+    { "root": "غ-ل-ق (GH-L-Q/Ghalat)", "logic_function": "Port_Lockdown", "description": "Fermeture forcée des points d'entrée (Fermer les portes)." },
+    { "root": "ل-ب-ن (L-B-N/Laban)", "logic_function": "Pure_Data_Output", "description": "Sortie de données filtrée et nutritive sans résidus (Lait)." },
+    { "root": "ع-س-ل (A-S-L/Asal)", "logic_function": "High_Value_Output", "description": "Résultat final optimisé et précieux d'un processus autonome (Miel)." }
   ]
 }
