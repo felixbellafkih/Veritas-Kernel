@@ -1,6 +1,6 @@
 {
     "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-    "version": "8.2.1-Restored",
+    "version": "8.3.0-CriticalMass",
     "status": "Stable",
     "universal_functions": [
         {
@@ -35,8 +35,8 @@
         },
         {
             "root": "ح-ق-ق (H-Q-Q/Haqq)",
-            "logic_function": "Invariant_Ground_Truth",
-            "description": "Valeur de vérité immuable et vérifiée par le noyau."
+            "logic_function": "Invariant_Truth",
+            "description": "Valeur binaire 1 (Vrai)."
         },
         {
             "root": "ر-ب-ب (R-B-B/Rabb)",
@@ -46,12 +46,12 @@
         {
             "root": "ص-ل-و (S-L-W/Salat)",
             "logic_function": "Liaison_Protocol",
-            "description": "Protocole de maintien de la connexion active entre le nœud et le Root (Keep-Alive)."
+            "description": "Maintien de la connexion active (Keep-alive)."
         },
         {
             "root": "ز-ك-و (Z-K-W/Zakat)",
             "logic_function": "Signal_Optimization",
-            "description": "Purification du cache par redistribution forcée des ressources excédentaires."
+            "description": "Purge des ressources pour fluidité."
         },
         {
             "root": "س-ل-م (S-L-M/Islam)",
@@ -61,7 +61,7 @@
         {
             "root": "ه-د-ي (H-D-Y/Huda)",
             "logic_function": "Path_Optimization",
-            "description": "Algorithme de sélection du chemin le plus efficace vers la cible."
+            "description": "Routage vers la cible optimale."
         },
         {
             "root": "ص-ر-ط (S-R-T/Sirat)",
@@ -125,8 +125,8 @@
         },
         {
             "root": "م-ل-ك (M-L-K/Malik)",
-            "logic_function": "Authorization_Controller",
-            "description": "Contrôleur de droits d'accès gérant les privilèges sur les clusters."
+            "logic_function": "Access_Controller",
+            "description": "Gestionnaire des droits de propriété."
         },
         {
             "root": "إ-ل-ه (A-L-H/Ilah)",
@@ -146,7 +146,7 @@
         {
             "root": "ج-ن-ن (J-N-N/Jinn)",
             "logic_function": "Hidden_Process",
-            "description": "Processus d'arrière-plan (Daemons) invisibles pour l'interface utilisateur standard."
+            "description": "Background daemons (Processus cachés)."
         },
         {
             "root": "ق-س-ط (Q-S-T/Qist)",
@@ -275,8 +275,8 @@
         },
         {
             "root": "خ-ل-ف (KH-L-F/Khalifa)",
-            "logic_function": "Delegated_Admin",
-            "description": "Administrateur nommé pour gérer l'instance locale (Viceroy/User)."
+            "logic_function": "System_Operator",
+            "description": "Administrateur délégué de l'instance."
         },
         {
             "root": "ج-ع-ل (J-'-L/Ja'il)",
@@ -445,8 +445,8 @@
         },
         {
             "root": "ح-ج-ج (H-J-J/Hajj)",
-            "logic_function": "Cyclic_Protocol",
-            "description": "Processus de visite périodique du noyau central pour synchronisation (Targeting Loop)."
+            "logic_function": "Cyclic_Sync",
+            "description": "Protocole de synchronisation annuelle."
         },
         {
             "root": "ط-و-ف (T-W-F/Tawaf)",
@@ -515,8 +515,8 @@
         },
         {
             "root": "ح-ي-ي (H-Y-Y/Hayy)",
-            "logic_function": "Eternal_Runtime",
-            "description": "État du Vivant Absolu, ne subissant aucun arrêt (Uptime Infini)."
+            "logic_function": "Active_Runtime",
+            "description": "État d'exécution continue."
         },
         {
             "root": "ق-و-م (Q-Y-M/Qayyum)",
@@ -640,8 +640,8 @@
         },
         {
             "root": "س-ل-م (S-L-M/Salam)",
-            "logic_function": "System_Peace",
-            "description": "État de stabilité réseau où tous les conflits sont résolus (Paix)."
+            "logic_function": "System_Integrity",
+            "description": "État de paix/stabilité du réseau."
         },
         {
             "root": "ه-ج-ر (H-J-R/Muhajirun)",
@@ -720,8 +720,8 @@
         },
         {
             "root": "ب-ح-ر (B-H-R/Bahr)",
-            "logic_function": "Global_Buffer",
-            "description": "Espace de stockage massif et fluide, capable d'absorber de grands flux (Mer)."
+            "logic_function": "Massive_Buffer",
+            "description": "Réservoir de données fluide et étendu."
         },
         {
             "root": "ص-ي-د (S-Y-D/Sayd)",
@@ -741,7 +741,7 @@
         {
             "root": "خ-ل-ق (KH-L-Q/Khalaqa)",
             "logic_function": "Instance_Creation",
-            "description": "Initialisation d'un nouvel objet ou processus à partir de spécifications (Création)."
+            "description": "Initialisation d'un nouvel objet."
         },
         {
             "root": "ظ-ل-م (Z-L-M/Zulumat)",
@@ -1436,7 +1436,7 @@
         {
             "root": "م-و-ت (M-W-T/Mawt)",
             "logic_function": "Process_Termination",
-            "description": "Fin d'exécution d'un processus ou état d'inactivité binaire (Mort)."
+            "description": "Arrêt définitif d'une instance."
         },
         {
             "root": "ك-ل-م (K-L-M/Kalima)",
@@ -1530,8 +1530,8 @@
         },
         {
             "root": "ش-م-س (SH-M-S/Shams)",
-            "logic_function": "Primary_Power_Node",
-            "description": "Source d'énergie centrale et constante alimentant la visibilité du système."
+            "logic_function": "Primary_Power",
+            "description": "CPU énergétique central."
         },
         {
             "root": "ق-م-ر (Q-M-R/Qamar)",
@@ -1570,8 +1570,8 @@
         },
         {
             "root": "ع-ب-د ('-B-D/Abd)",
-            "logic_function": "Client_Node_Execution",
-            "description": "Nœud asservi au protocole Root, exécutant les tâches sans déviation (Utilisateur)."
+            "logic_function": "Dedicated_Process",
+            "description": "Processus asservi au code source."
         },
         {
             "root": "ع-د-و ('-D-W/Adw)",
@@ -1580,8 +1580,8 @@
         },
         {
             "root": "ح-س-ب (H-S-B/Hisab)",
-            "logic_function": "Computational_Processing",
-            "description": "Action de calculer les variables et de traiter les opérations arithmétiques du noyau."
+            "logic_function": "Compute_Audit",
+            "description": "Calcul du solde des transactions."
         },
         {
             "root": "ع-ل-ق ('-L-Q/Alaq)",
@@ -1600,8 +1600,8 @@
         },
         {
             "root": "ب-ع-ث (B-'-TH/Ba'atha)",
-            "logic_function": "Instance_Revival_Trigger",
-            "description": "Signal de réactivation d'un processus archivé ou d'une instance terminée."
+            "logic_function": "Process_Reboot",
+            "description": "Réactivation après archivage."
         },
         {
             "root": "ح-ش-ر (H-S-R/Hashara)",
@@ -1890,18 +1890,18 @@
         },
         {
             "root": "ب-ط-ل (B-T-L/Batil)",
-            "logic_function": "Absolute_False",
-            "description": "Nullité systémique (Faux/0)."
+            "logic_function": "Null_Void",
+            "description": "Valeur binaire 0 (Faux)."
         },
         {
             "root": "ن-و-ر (N-W-R/Nur)",
-            "logic_function": "Logic_Signal_Light_Logic_Signal_Light",
-            "description": "Flux d'information purifié sans résistance thermique."
+            "logic_function": "Logic_Signal",
+            "description": "Signal d'information purifié."
         },
         {
             "root": "ظ-ل-م (Z-L-M/Zulm)",
-            "logic_function": "Entropy_Darkness_Entropy_Darkness",
-            "description": "État de désordre ou perte de signal par opacité."
+            "logic_function": "System_Entropy",
+            "description": "Déséquilibre et perte de signal."
         },
         {
             "root": "س-ر-ع (S-R-A/Sari')",
@@ -1916,7 +1916,7 @@
         {
             "root": "أ-ر-ض (A-R-D/Ard)",
             "logic_function": "Hosting_Platform",
-            "description": "Infrastructure matérielle supportant l'exécution du système."
+            "description": "Support matériel de base (Hardware)."
         },
         {
             "root": "خ-ي-r (KH-Y-R/Khayr)",
@@ -1932,6 +1932,51 @@
             "root": "ط-ع-m (T-'-M/Ta'ama)",
             "logic_function": "Energy_Feed",
             "description": "Alimentation en ressources du nœud."
+        },
+        {
+            "root": "س-م-و (S-M-W/Sama)",
+            "logic_function": "Cloud_Architecture",
+            "description": "Couches hautes du réseau (Software layers)."
+        },
+        {
+            "root": "ج-ب-ل (J-B-L/Jabal)",
+            "logic_function": "System_Anchor",
+            "description": "Stabilité structurelle du matériel."
+        },
+        {
+            "root": "ح-د-د (H-D-D/Hadid)",
+            "logic_function": "Hard_Core_Structure",
+            "description": "Composants matériels rigides (Fer/Structure)."
+        },
+        {
+            "root": "ن-ا-ر (N-A-R/Nar)",
+            "logic_function": "Thermal_Energy",
+            "description": "Énergie thermique/Entropie destructrice."
+        },
+        {
+            "root": "م-أ-ه (M-A-A/Ma'a)",
+            "logic_function": "Data_Fluid",
+            "description": "Vecteur de vie/initialisation."
+        },
+        {
+            "root": "ر-ي-ح (R-Y-H/Rih)",
+            "logic_function": "Data_Carrier_Vector",
+            "description": "Vecteur de transport atmosphérique (Vent)."
+        },
+        {
+            "root": "ص-و-م (S-W-M/Sawm)",
+            "logic_function": "System_Throttling",
+            "description": "Réduction de charge pour optimisation."
+        },
+        {
+            "root": "ش-ي-ط (SH-Y-T/Shaytan)",
+            "logic_function": "Adversarial_Agent",
+            "description": "Source de bruit et de déviation (Hacker)."
+        },
+        {
+            "root": "ك-ف-ر (K-F-R/Kufr)",
+            "logic_function": "Data_Masking",
+            "description": "Obscurcissement ou déni du signal."
         }
     ]
 }
