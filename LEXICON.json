@@ -256,6 +256,26 @@
     { "root": "ص-ل-ت (S-L-T/Salat)", "logic_function": "Connection_Maintenance", "description": "Protocole régulier de maintien de la connexion au serveur (Prière/Lien)." },
     { "root": "ز-ك-و (Z-K-W/Zakah)", "logic_function": "Cache_Purification", "description": "Nettoyage des actifs par redistribution obligatoire (Purification)." },
     { "root": "ج-ه-د (J-H-D/Jihad)", "logic_function": "Active_Debugging", "description": "Effort intensif pour éliminer les bugs et les résistances (Effort/Lutte)." },
-    { "root": "ف-ق-ه (F-Q-H/Fiqh)", "logic_function": "Deep_Decoding", "description": "Compréhension profonde de la logique interne du code (Compréhension)." }
+    { "root": "ف-ق-ه (F-Q-H/Fiqh)", "logic_function": "Deep_Decoding", "description": "Compréhension profonde de la logique interne du code (Compréhension)." },
+    { "root": "د-ب-ر (D-B-R/Yudabbiru)", "logic_function": "Process_Orchestration", "description": "Gestion active et régulation des commandes depuis le Root (Administrer)." },
+    { "root": "ع-ر-ش (A-R-SH/Arsh)", "logic_function": "Central_Console", "description": "Siège de l'autorité suprême du système d'où partent toutes les commandes (Trône)." },
+    { "root": "أ-ج-ل (A-J-L/Ajal)", "logic_function": "Timeout_Value", "description": "Délai d'expiration prédéfini pour chaque processus ou entité (Terme fixé)." },
+    { "root": "ف-ص-ل (F-S-L/Fussilat)", "logic_function": "Data_Parsing", "description": "Séparation et clarification détaillée des données pour traitement (Détailler)." },
+    { "root": "ق-س-ط (Q-S-T/Qist)", "logic_function": "Load_Balancing", "description": "Répartition équitable de la charge ou des ressources (Équité/Justice)." },
+    { "root": "س-ح-ر (S-H-R/Sihr)", "logic_function": "Visual_Glitch", "description": "Illusion d'optique ou code trompeur modifiant la perception utilisateur (Magie)." },
+    { "root": "غ-ر-ق (GH-R-Q/Gharaq)", "logic_function": "Buffer_Overflow", "description": "Saturation totale de la mémoire entraînant l'arrêt du processus (Noyade)." },
+    { "root": "ن-ج-و (N-J-W/Najayna)", "logic_function": "Safe_Mode_Boot", "description": "Redémarrage d'un processus en mode sécurisé après un crash (Sauvetage)." },
+    { "root": "ب-ش-ر (B-SH-R/Bushra)", "logic_function": "System_Notification", "description": "Message système annonçant une mise à jour positive (Bonne nouvelle)." },
+    { "root": "ع-ج-ل (A-J-L/Ista'jala)", "logic_function": "Overclocking_Request", "description": "Demande utilisateur d'accélérer le traitement au-delà des limites (Hâte)." },
+    { "root": "ك-ش-ف (K-SH-F/Kashafa)", "logic_function": "Error_Log_Display", "description": "Affichage clair de l'erreur ou du problème caché (Dévoiler)." },
+    { "root": "ح-ك-m (H-K-M/Uhkimat)", "logic_function": "Code_Hardening", "description": "Processus de renforcement du code pour le rendre inaltérable (Perfectionné)." },
+    { "root": "ت-ح-د (T-H-D/Tahaddi)", "logic_function": "Stress_Test_Challenge", "description": "Défi lancé aux sous-systèmes pour prouver leur capacité (Défier)." },
+    { "root": "م-ط-ر (M-T-R/Matar)", "logic_function": "Data_Torrent", "description": "Flux massif de données descendantes, souvent destructeur (Pluie/Chatiment)." },
+    { "root": "ف-و-ر (F-W-R/Fara)", "logic_function": "Thermal_Runaway", "description": "Surchauffe brutale et incontrôlée du système (Bouillir/Déborder)." },
+    { "root": "غ-ي-ض (GH-Y-D/Ghidha)", "logic_function": "Resource_Depletion", "description": "Réduction ou absorption totale des ressources liquides (Eau absorbée)." },
+    { "root": "ج-و-د (J-W-D/Judi)", "logic_function": "Recovery_Partition", "description": "Point de montage stable après un formatage massif (Mont Judi)." },
+    { "root": "ب-ع-د (B-A-D/Bu'dan)", "logic_function": "Remote_Isolation", "description": "Exclusion d'un processus vers une zone distante et inaccessible (Éloignement)." },
+    { "root": "ر-ك-ن (R-K-N/Rukn)", "logic_function": "Support_Dependency", "description": "Dépendance vers un module de soutien externe solide (Appui/Pilier)." },
+    { "root": "س-ق-m (S-Q-M/Istaqim)", "logic_function": "System_Stability", "description": "Maintien d'une ligne d'exécution droite et sans erreur (Droiture)." }
   ]
 }
