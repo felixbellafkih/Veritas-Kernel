@@ -1846,6 +1846,26 @@
     { "root": "ق-ع (Q-A/Qa'an)", "logic_function": "Flat_Memory_Space", "description": "Espace mémoire totalement plat et vide après formatage (Plaine)." },
     { "root": "ع-و-ج (A-W-J/Iwaja)", "logic_function": "Logic_Distortion", "description": "Torsion ou bug dans la logique du code (Tortuosité)." },
     { "root": "أ-م-ت (A-M-T/Amta)", "logic_function": "Elevation_Glitch", "description": "Irrégularité ou relief non voulu dans une surface de données (Relief/Colline)." },
-    { "root": "ع-ن-ت (A-N-T/Anati)", "logic_function": "Input_Submission", "description": "Soumission totale et forcée des visages/interfaces au Vivant (S'humilier/Soumettre)." }
+    { "root": "ع-ن-ت (A-N-T/Anati)", "logic_function": "Input_Submission", "description": "Soumission totale et forcée des visages/interfaces au Vivant (S'humilier/Soumettre)." },
+    { "root": "ن-ب-أ (N-B-A/Anbiya)", "logic_function": "System_Broadcast", "description": "Diffusion d'une information critique ou d'une mise à jour majeure à tous les nœuds (Nouvelles/Prophètes)." },
+    { "root": "ح-س-ب (H-S-B/Hisab)", "logic_function": "Process_Auditing", "description": "Audit détaillé des logs d'exécution pour vérifier la conformité des calculs (Compte)." },
+    { "root": "ن-ف-ش (N-F-SH/Nafashat)", "logic_function": "Memory_Leakage", "description": "Dispersion non contrôlée de données (moutons) dans un secteur non alloué (Paitre la nuit)." },
+    { "root": "ف-ه-م (F-H-M/Fahhamna)", "logic_function": "Algorithm_Optimization", "description": "Injection d'une compréhension supérieure ou d'une solution optimisée à un nœud (Faire comprendre)." },
+    { "root": "س-خ-ر (S-KH-R/Sakhara)", "logic_function": "Resource_Binding", "description": "Asservissement technique d'une ressource (montagne/oiseau) pour qu'elle exécute une tâche (Assujettir)." },
+    { "root": "ص-ن-ع (S-N-A/San'at)", "logic_function": "Hardware_Fabrication", "description": "Processus de fabrication technique et industrielle d'une protection (L'Art/Fabrication)." },
+    { "root": "ح-ص-ن (H-S-N/Tahsinakum)", "logic_function": "Fortified_Shell", "description": "Coque de protection renforcée contre les attaques externes (Fortifier/Protéger)." },
+    { "root": "ط-و-ي (T-W-Y/Natwi)", "logic_function": "Dimension_Folding", "description": "Repliement de l'espace-temps ou du support de stockage comme un rouleau (Plier)." },
+    { "root": "س-ج-ل (S-J-L/Sijill)", "logic_function": "Log_Archive", "description": "Fichier d'archive contenant l'historique complet des écritures (Registre)." },
+    { "root": "ح-ج-ج (H-J-J/Hajj)", "logic_function": "Global_Sync_Event", "description": "Convergence massive des nœuds vers la Source pour mise à jour et synchronisation (Pèlerinage)." },
+    { "root": "ع-م-ر (A-M-R/Ya'muru)", "logic_function": "Server_Maintenance", "description": "Action de maintenir, peupler ou construire physiquement l'architecture système (Peupler/Visiter)." },
+    { "root": "ش-ع-ر (SH-A-R/Sha'a'ir)", "logic_function": "System_Flag", "description": "Marqueurs ou balises visibles indiquant des points de protocole importants (Rites/Symboles)." },
+    { "root": "ب-د-ن (B-D-N/Budn)", "logic_function": "Bulk_Data_Packet", "description": "Gros paquet de données ou entité massive offerte au système (Offrande/Corps)." },
+    { "root": "خ-ب-ت (KH-B-T/Mukhbitin)", "logic_function": "Low_Latency_Response", "description": "État de réponse calme, stable et humble du nœud face au Serveur (Humble/Bas)." },
+    { "root": "د-ف-ع (D-F-A/Daf'u)", "logic_function": "DDoS_Mitigation", "description": "Action de repousser ou de neutraliser une charge hostile par une force opposée (Repousser)." },
+    { "root": "ص-و-م-ع (S-W-M-A/Sawami')", "logic_function": "Isolated_Thread", "description": "Cellule de traitement isolée dédiée à une tâche spécifique (Ermitage)." },
+    { "root": "ب-ي-ع (B-Y-A/Biya')", "logic_function": "Transaction_Node", "description": "Point d'échange commercial ou de données (Synagogue/Commerce)." },
+    { "root": "م-ك-ن (M-K-N/Makkannahum)", "logic_function": "Root_Privilege_Grant", "description": "Octroi de droits d'administration et de stabilité sur un secteur disque (Donner pouvoir)." },
+    { "root": "ه-د-m (H-D-M/Huddimat)", "logic_function": "Structure_Demolition", "description": "Destruction programmée d'une infrastructure obsolète ou corrompue (Démolir)." },
+    { "root": "ن-ك-ر (N-K-R/Nakir)", "logic_function": "Access_Denial_Log", "description": "Log signalant le refus d'accès et la non-reconnaissance d'un utilisateur (Réprobation)." }
     ]
 }
