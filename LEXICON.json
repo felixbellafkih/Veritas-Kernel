@@ -1702,6 +1702,91 @@
             "root": "ق-ل-م (Q-L-M/Qalam)",
             "logic_function": "Logic_Writer_Recorder",
             "description": "Outil d'enregistrement et de persistance des données sur un support de stockage."
+        },
+        {
+            "root": "ن-ف-خ (N-F-KH/Nafakha)",
+            "logic_function": "System_Inflation_Boot",
+            "description": "Initialisation du flux vital dans une instance ou un processus inerte."
+        },
+        {
+            "root": "ب-ع-ث (B-'-TH/Ba'atha)",
+            "logic_function": "Instance_Revival_Trigger",
+            "description": "Signal de réactivation d'un processus archivé ou d'une instance terminée."
+        },
+        {
+            "root": "ح-ش-ر (H-S-R/Hashara)",
+            "logic_function": "Process_Aggregation",
+            "description": "Rassemblement de tous les nœuds et données pour un audit global."
+        },
+        {
+            "root": "ج-م-ع (J-M-'/Jama'a)",
+            "logic_function": "Data_Clustering",
+            "description": "Indexation et regroupement des paquets d'information disparates."
+        },
+        {
+            "root": "ش-ك-ر (SH-K-R/Shukr)",
+            "logic_function": "Feedback_Optimization_Loop",
+            "description": "Signal de retour positif validant la réception et augmentant l'efficacité du lien."
+        },
+        {
+            "root": "ص-ب-ر (S-B-R/Sabr)",
+            "logic_function": "Buffer_Endurance_Latency",
+            "description": "Capacité du système à maintenir l'intégrité sous haute pression ou latence."
+        },
+        {
+            "root": "ن-ع-م (N-'-M/Ni'ma)",
+            "logic_function": "System_Asset_Provision",
+            "description": "Attribution de ressources pré-configurées facilitant l'exécution du nœud."
+        },
+        {
+            "root": "ر-ز-ق (R-Z-Q/Rizq)",
+            "logic_function": "Dynamic_Resource_Allocation",
+            "description": "Flux continu de données et d'énergie nécessaire au maintien d'une instance."
+        },
+        {
+            "root": "ب-ق-ي (B-Q-Y/Baqa)",
+            "logic_function": "Non-Volatile_Persistence",
+            "description": "État de donnée restant immuable après la fin d'un cycle d'exécution."
+        },
+        {
+            "root": "ف-ن-ي (F-N-Y/Fana)",
+            "logic_function": "Volatile_State_Termination",
+            "description": "Effacement des données temporaires et fin de l'instance éphémère."
+        },
+        {
+            "root": "ق-و-ل (Q-W-L/Qawl)",
+            "logic_function": "Logic_Statement_Output",
+            "description": "Chaîne de caractères finale produite par un calcul logique (Output)."
+        },
+        {
+            "root": "ن-ص-ر (N-S-R/Nasr)",
+            "logic_function": "System_Assistance_Overlay",
+            "description": "Support externe venant renforcer un nœud pour valider son exécution."
+        },
+        {
+            "root": "أ-ج-ب (A-J-B/Ajaba)",
+            "logic_function": "Query_Response_Handshake",
+            "description": "Protocole de réponse finalisant une requête entre deux entités."
+        },
+        {
+            "root": "د-ع-و (D-'-W/Da'wa)",
+            "logic_function": "Procedure_Invocation_Call",
+            "description": "Appel système ou requête d'exécution envoyée vers le Root."
+        },
+        {
+            "root": "ف-ؤ-د (F-'-D/Fu'ad)",
+            "logic_function": "Volatile_Processor_Core",
+            "description": "Centre de traitement des données à haute vitesse, sensible au bruit (Cœur)."
+        },
+        {
+            "root": "ل-س-ن (L-S-N/Lisan)",
+            "logic_function": "Communication_Interface_Protocol",
+            "description": "Couche de traduction permettant l'échange entre le Kernel et l'extérieur."
+        },
+        {
+            "root": "ك-و-ن (K-W-N/Kawn)",
+            "logic_function": "Manifestation_Existence_State",
+            "description": "État final d'un processus devenu actif et visible dans l'environnement."
         }
     ]
 }
