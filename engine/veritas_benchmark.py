@@ -48,7 +48,7 @@ def run_benchmark():
         },
         "SCENARIO_D [DATA_ENCRYPTION]": {
             "description": "Kahf (Precision Mode)",
-            "sequence": "H-S-B K-H-F R-Q-M A-Y-Y A-W-Y F-T-Y R-H.-M H-Y-Y",
+            "sequence": "H-S-B K-H-F R-Q-M A-Y-Y A-W-Y F-T-Y R-H.-M H.-Y-Y",
         }
     }
 
