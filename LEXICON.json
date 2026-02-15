@@ -178,6 +178,26 @@
     { "root": "ه-د-ي (H-D-Y/Hady)", "logic_function": "Target_Resource", "description": "Ressource dédiée à un objectif spécifique du noyau (Offrande)." },
     { "root": "ق-ل-ا-د (Q-L-D/Qala'id)", "logic_function": "Token_Identifier", "description": "Marquage spécifique pour identifier une ressource prioritaire (Colliers)." },
     { "root": "ب-ح-ر (B-H-R/Bahr)", "logic_function": "Global_Buffer", "description": "Espace de stockage massif et fluide (Mer)." },
-    { "root": "ص-ي-د (S-Y-D/Sayd)", "logic_function": "Data_Capture", "description": "Extraction de données brutes depuis l'environnement externe (Chasse)." }
+    { "root": "ص-ي-د (S-Y-D/Sayd)", "logic_function": "Data_Capture", "description": "Extraction de données brutes depuis l'environnement externe (Chasse)." },
+    { "root": "ح-ج-ج (H-J-J/Hujja)", "logic_function": "Logic_Proof", "description": "Argumentation irréfutable validée par le noyau (Preuve décisive)." },
+    { "root": "ب-ص-ر (B-S-R/Basa'ir)", "logic_function": "System_Insights", "description": "Capacité de vision profonde et d'analyse des métadonnées (Perspicacité)." },
+    { "root": "خ-ل-ق (KH-L-Q/Khalaqa)", "logic_function": "Instance_Creation", "description": "Initialisation d'un nouvel objet ou processus à partir du néant (Création)." },
+    { "root": "ظ-ل-m (Z-L-M/Zulumat)", "logic_function": "Data_Encryption_Layer", "description": "Zones d'ombre ou couches d'obscurité empêchant la lecture directe (Ténèbres)." },
+    { "root": "ن-و-ر (N-W-R/Nur)", "logic_function": "Data_Clarity", "description": "Signal clair et lumineux permettant le décodage (Lumière/Signal)." },
+    { "root": "ذ-ر-أ (DH-R-A/Dhara'a)", "logic_function": "Process_Multiplication", "description": "Multiplication et diffusion des instances à travers le système (Procréer/Diffuser)." },
+    { "root": "س-ك-ن (S-K-N/Sakan)", "logic_function": "State_Quiescence", "description": "État de repos ou de stabilité thermique d'un processus (Calme/Demeure)." },
+    { "root": "ف-ل-ق (F-L-Q/Falaqa)", "logic_function": "Cell_Splitting", "description": "Action de fendre ou de diviser pour libérer une ressource (Éclosion/Division)." },
+    { "root": "ح-ب (H-B-B/Habb)", "logic_function": "Data_Seed", "description": "Graine de donnée contenant le potentiel d'un processus complet (Semence)." },
+    { "root": "ن-و-ى (N-W-Y/Nawa)", "logic_function": "Core_Nucleus", "description": "Noyau central d'une unité de donnée (Noyau/Intention)." },
+    { "root": "س-ر-m (S-R-M/Sarmad)", "logic_function": "Infinite_Loop", "description": "Continuité perpétuelle d'un état sans interruption (Éternité)." },
+    { "root": "ق-ه-ر (Q-H-R/Qahir)", "logic_function": "Override_Command", "description": "Autorité Root capable d'écraser n'importe quel processus subalterne (Dominateur)." },
+    { "root": "ح-ف-ظ (H-F-Z/Hafaza)", "logic_function": "Data_Retention", "description": "Protocoles de sauvegarde et de protection contre l'effacement (Gardiens)." },
+    { "root": "و-ك-ل (W-K-L/Wakil)", "logic_function": "Proxy_Controller", "description": "Entité gérant les ressources pour le compte d'un autre nœud (Gérant/Mandataire)." },
+    { "root": "ن-ج-m (N-J-M/Nujum)", "logic_function": "Navigation_Markers", "description": "Points de repère fixes pour l'orientation dans le flux de données (Étoiles)." },
+    { "root": "غ-م (G-H-M/Ghamam)", "logic_function": "Cloud_Buffer", "description": "Couche de données vaporeuse masquant la visibilité directe (Nuages)." },
+    { "root": "م-ت (M-W-T/Maytan)", "logic_function": "Null_Pointer", "description": "Référence à un processus mort ou inexistant (Cadavre/Néant)." },
+    { "root": "س-ب (S-B-B/Sabba)", "logic_function": "Protocol_Abuse", "description": "Action d'insulter ou de corrompre un protocole de communication (Insulte)." },
+    { "root": "خ-ر-ق (KH-R-Q/Kharaqu)", "logic_function": "Logic_Breach", "description": "Invention de fausses dépendances sans preuve logique (Déchirer/Inventer)." },
+    { "root": "و-ص-ل (W-S-L/Wasala)", "logic_function": "Link_Establishment", "description": "Connexion établie entre deux segments de code (Liaison)." }
   ]
 }
