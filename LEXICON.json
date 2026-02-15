@@ -1647,6 +1647,61 @@
             "root": "ق-م-ر (Q-M-R/Qamar)",
             "logic_function": "Reflective_Power_Node",
             "description": "Nœud satellite reflétant l'énergie primaire pour les cycles à basse luminosité."
+        },
+        {
+            "root": "و-ز-ن (W-Z-N/Wazn)",
+            "logic_function": "Value_Calibration",
+            "description": "Mesure précise de la charge ou de la valeur d'un signal pour maintenir l'équilibre."
+        },
+        {
+            "root": "ف-ل-ك (F-L-K/Falak)",
+            "logic_function": "Orbit_Execution_Cycle",
+            "description": "Trajectoire cyclique d'un processus dans son environnement opérationnel."
+        },
+        {
+            "root": "ب-ر-ر (B-R-R/Barr)",
+            "logic_function": "Verified_Data_Ground",
+            "description": "Segment de données stable et sécurisé par opposition aux flux instables (Terre ferme)."
+        },
+        {
+            "root": "ع-ص-ي ('-S-Y/Assa)",
+            "logic_function": "Protocol_Exception",
+            "description": "Violation des règles du Kernel provoquant une interruption de service (Désobéissance)."
+        },
+        {
+            "root": "ط-و-ع (T-W-'/Taw'an)",
+            "logic_function": "Native_Compliance",
+            "description": "Exécution fluide et volontaire des protocoles système sans résistance."
+        },
+        {
+            "root": "ب-ش-ر (B-SH-R/Bashar)",
+            "logic_function": "Biological_Interface_Node",
+            "description": "Entité système servant d'interface entre le code pur et les couches biologiques/sensorielles."
+        },
+        {
+            "root": "ع-ب-د ('-B-D/Abd)",
+            "logic_function": "Client_Node_Execution",
+            "description": "Nœud asservi au protocole Root, exécutant les tâches sans déviation (Utilisateur)."
+        },
+        {
+            "root": "ع-د-و ('-D-W/Adw)",
+            "logic_function": "Antagonist_Process",
+            "description": "Code ou entité tentant de saturer ou de corrompre les ressources du Kernel (Ennemi)."
+        },
+        {
+            "root": "ح-س-ب (H-S-B/Hisab)",
+            "logic_function": "Computational_Processing",
+            "description": "Action de calculer les variables et de traiter les opérations arithmétiques du noyau."
+        },
+        {
+            "root": "ع-ل-ق ('-L-Q/Alaq)",
+            "logic_function": "Physical_Hardware_Attachment",
+            "description": "Liaison initiale d'un processus à la couche matérielle (Adhérence/Accroche)."
+        },
+        {
+            "root": "ق-ل-م (Q-L-M/Qalam)",
+            "logic_function": "Logic_Writer_Recorder",
+            "description": "Outil d'enregistrement et de persistance des données sur un support de stockage."
         }
     ]
 }
