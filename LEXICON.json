@@ -220,6 +220,24 @@
     { "root": "و-ر-ث (W-R-TH/Awradhthumuhu)", "logic_function": "Permission_Inheritance", "description": "Passage des droits d'accès d'un parent à un enfant (Héritage)." },
     { "root": "س-ج-د (S-J-D/Sajada)", "logic_function": "Command_Execution", "description": "Soumission immédiate à une directive Root (Prosternation/Exécution)." },
     { "root": "ك-ب-ر (K-B-R/Istakbara)", "logic_function": "Privilege_Overrun", "description": "Tentative de surpasser ses droits d'accès par orgueil (S'enfler d'orgueil)." },
-    { "root": "د-ل (D-L-L/Dallakuma)", "logic_function": "False_Pointer", "description": "Indication d'une fausse direction menant à une erreur (Induire en erreur)." }
+    { "root": "د-ل (D-L-L/Dallakuma)", "logic_function": "False_Pointer", "description": "Indication d'une fausse direction menant à une erreur (Induire en erreur)." },
+    { "root": "ن-ف-ل (N-F-L/Anfal)", "logic_function": "Resource_Recovery", "description": "Récupération et redistribution des ressources après une opération de nettoyage (Butin)." },
+    { "root": "و-ج-ل (W-J-L/Wajila)", "logic_function": "Alert_State", "description": "État d'alerte haute fréquence du noyau face à une entrée critique (Crainte/Vibration)." },
+    { "root": "ش-و-ك (SH-W-K/Shawka)", "logic_function": "Power_Spike", "description": "Pic de puissance ou force de frappe d'une entité (Piquant/Force)." },
+    { "root": "م-د-د (M-D-D/Mumiddukum)", "logic_function": "Reinforcement_Stream", "description": "Flux continu de ressources de soutien envoyées par le Root (Renfort)." },
+    { "root": "ر-د-ف (R-D-F/Murdifin)", "logic_function": "Sequential_Backup", "description": "Unités de sauvegarde arrivant en file indienne derrière le flux principal." },
+    { "root": "ر-م-ي (R-M-Y/Rama)", "logic_function": "Target_Projection", "description": "Envoi d'une charge utile vers une cible spécifique (Lancer/Tir)." },
+    { "root": "ز-ح-ف (Z-H-F/Zahfa)", "logic_function": "Slow_Advance", "description": "Avancée progressive et inéluctable d'un processus vers sa cible (Marche)." },
+    { "root": "ر-ب-ط (R-B-T/Rabata)", "logic_function": "Network_Bonding", "description": "Renforcement des liens entre les nœuds pour stabiliser le cluster (Lier/Fortifier)." },
+    { "root": "ف-ر-ق (F-R-Q/Furqan)", "logic_function": "Binary_Discriminator", "description": "Algorithme de distinction absolue entre Vrai (1) et Faux (0) (Discernement)." },
+    { "root": "خ-ف-ف (KH-F-F/Mukhaffaf)", "logic_function": "Load_Balancing", "description": "Allègement de la charge processeur pour optimiser la vitesse (Alléger)." },
+    { "root": "أ-س-ر (A-S-R/Asra)", "logic_function": "Process_Capture", "description": "Capture et mise en quarantaine de processus hostiles (Prisonniers)." },
+    { "root": "ث-خ-ن (TH-KH-N/Athkhana)", "logic_function": "Heavy_Processing", "description": "Traitement intensif nécessaire pour subjuguer une résistance système (Épais/Dominé)." },
+    { "root": "خ-ي-ن (KH-Y-N/Khiyana)", "logic_function": "Data_Leak", "description": "Violation de confiance ou fuite de données par un nœud interne (Trahison)." },
+    { "root": "ر-ه-ب (R-H-B/Turhibun)", "logic_function": "Deterrence_Signal", "description": "Signal de puissance dissuasif pour prévenir les attaques (Terroriser/Dissuader)." },
+    { "root": "ج-ن-ح (J-N-H/Janahu)", "logic_function": "State_Inclination", "description": "Tendance d'un processus à basculer vers un état (paix/guerre) (Penchant)." },
+    { "root": "أ-ل-ف (A-L-F/Allafa)", "logic_function": "Sync_Harmonization", "description": "Synchronisation parfaite des cœurs/processus disparates (Unir les cœurs)." },
+    { "root": "ح-س-ب (H-S-B/Hasbuk)", "logic_function": "Sufficiency_Check", "description": "Vérification que les ressources allouées sont suffisantes (Suffire)." },
+    { "root": "م-ك-اء (M-K-A/Muka'an)", "logic_function": "Empty_Signal", "description": "Bruit ou signal vide de sens, simple sifflement (Sifflement)." }
   ]
 }
