@@ -1,6 +1,6 @@
 {
     "kernel_identity": "VERITAS_UNIVERSAL_GENOME",
-    "version": "8.2.0-Expanded",
+    "version": "8.2.1-Restored",
     "status": "Stable",
     "universal_functions": [
         {
@@ -1020,8 +1020,8 @@
         },
         {
             "root": "ب-ن-ي (B-N-Y/Bunyan)",
-            "logic_function": "Structure_Stability_Structure_Solidarity_Structure_Solidarity",
-            "description": "Solidité de l'architecture logicielle (Édifice)."
+            "logic_function": "Structure_Solidarity",
+            "description": "Cohérence empêchant la fragmentation."
         },
         {
             "root": "ه-و-ر (H-W-R/Har)",
@@ -1260,8 +1260,8 @@
         },
         {
             "root": "ق-ض-ي (Q-D-Y/Qada)",
-            "logic_function": "Kernel_Verdict_Execution_Verdict_Execution_Verdict",
-            "description": "Arrêt final d'un jugement système qui ne peut être révoqué (Décret)."
+            "logic_function": "Execution_Verdict",
+            "description": "Finalisation irrévocable d'une instruction."
         },
         {
             "root": "م-ح-و (M-H-W/Mahawna)",
@@ -1680,63 +1680,63 @@
         },
         {
             "root": "ح-ي-ن (H-Y-N/Hin)",
-            "logic_function": "Temporal_Segment_Temporal_Segment",
-            "description": "Définition d'une fenêtre de temps spécifique dans le cycle d'exécution."
+            "logic_function": "Temporal_Segment",
+            "description": "Fenêtre d'exécution temporelle."
         },
         {
             "root": "أ-م-د (A-M-D/Amad)",
-            "logic_function": "Execution_Duration_Execution_Duration",
-            "description": "Mesure de la durée totale d'un processus du boot à la terminaison."
+            "logic_function": "Execution_Duration",
+            "description": "Durée totale d'un processus du boot à la fin."
         },
         {
             "root": "س-ا-ع (S-A-T/Sa'ah)",
-            "logic_function": "System_Clock_Event_System_Clock_Event",
-            "description": "Événement déclenché par l'horloge système (Interruption temporelle)."
+            "logic_function": "System_Clock_Event",
+            "description": "Interruption déclenchée par l'horloge système."
         },
         {
             "root": "د-ه-ر (D-H-R/Dahr)",
-            "logic_function": "Epoch_Infinity_Epoch_Infinity",
-            "description": "Temps continu non segmenté de l'infrastructure globale."
+            "logic_function": "Epoch_Infinity",
+            "description": "Temps continu de l'infrastructure globale."
         },
         {
             "root": "و-ق-ت (W-Q-T/Waqt)",
-            "logic_function": "Timestamp_Marker_Timestamp_Marker",
-            "description": "Marquage précis d'un état de donnée à un instant T."
+            "logic_function": "Timestamp_Marker",
+            "description": "Marquage précis d'un état à l'instant T."
         },
         {
             "root": "ج-ر-ي (G-R-Y/Jara)",
-            "logic_function": "Data_Stream_Flow_Data_Stream_Flow",
-            "description": "Mouvement fluide de données à travers les canaux (Streaming)."
+            "logic_function": "Data_Stream",
+            "description": "Mouvement fluide de données (Streaming)."
         },
         {
             "root": "و-ل-ج (W-L-G/Walaja)",
-            "logic_function": "Data_Insertion_Merge_Data_Insertion_Merge",
-            "description": "Processus d'insertion d'un signal dans un autre (Injection de bit)."
+            "logic_function": "Data_Insertion",
+            "description": "Insertion d'un signal dans un autre (Injection)."
         },
         {
             "root": "خ-ر-ج (KH-R-J/Kharaja)",
-            "logic_function": "System_Exit_Output_System_Exit_Output",
-            "description": "Sortie d'un processus hors de son environnement d'exécution."
+            "logic_function": "System_Exit",
+            "description": "Sortie d'un processus hors de l'environnement."
         },
         {
             "root": "د-خ-ل (D-KH-L/Dakhala)",
-            "logic_function": "System_Entry_Input_System_Entry_Input",
-            "description": "Entrée d'un nouveau signal dans l'environnement du Kernel."
+            "logic_function": "System_Entry",
+            "description": "Entrée d'un nouveau signal dans le Kernel."
         },
         {
             "root": "ف-ع-ل (F-'-L/Fa'ala)",
-            "logic_function": "Direct_Action_Execution_Direct_Action_Execution",
-            "description": "Déclenchement d'une fonction active sur un objet cible."
+            "logic_function": "Direct_Action",
+            "description": "Déclenchement d'une fonction active sur une cible."
         },
         {
             "root": "ص-ن-ع (S-N-'/Sana'a)",
-            "logic_function": "System_Manufacturing_System_Manufacturing",
-            "description": "Processus de construction complexe de structures matérielles ou logicielles."
+            "logic_function": "System_Manufacturing",
+            "description": "Construction complexe de structures."
         },
         {
             "root": "ح-م-ل (H-M-L/Hamala)",
-            "logic_function": "Payload_Carrier_Payload_Carrier",
-            "description": "Transport d'un paquet de données ou d'une charge utile (Buffer global)."
+            "logic_function": "Payload_Carrier",
+            "description": "Transport de charge utile (Buffer)."
         },
         {
             "root": "ط-ع-م (T-'-M/Ta'ama)",
@@ -1745,18 +1745,18 @@
         },
         {
             "root": "ش-ر-ب (SH-R-B/Sharaba)",
-            "logic_function": "Resource_Absorption_Resource_Absorption",
-            "description": "Consommation interne de fluides de données par une instance."
+            "logic_function": "Resource_Absorption",
+            "description": "Consommation interne de flux par une instance."
         },
         {
             "root": "ل-ي-ل (L-Y-L/Layl)",
-            "logic_function": "Background_Cycle_Dark_Background_Cycle_Dark",
-            "description": "Mode de basse consommation ou cycle de maintenance nocturne."
+            "logic_function": "Background_Cycle",
+            "description": "Cycle de maintenance basse consommation."
         },
         {
             "root": "ن-ه-ر (N-H-R/Nahar)",
-            "logic_function": "Active_Cycle_Light_Active_Cycle_Light",
-            "description": "Mode de haute performance ou cycle d'exécution diurne."
+            "logic_function": "Active_Cycle",
+            "description": "Cycle d'exécution haute performance."
         },
         {
             "root": "ث-ق-ل (TH-Q-L/Thaqala)",
@@ -1825,17 +1825,17 @@
         },
         {
             "root": "ق-و-ي (Q-W-Y/Quwwa)",
-            "logic_function": "Compute_Power_Compute_Power",
-            "description": "Capacité brute de calcul et de résistance du système."
+            "logic_function": "Compute_Power",
+            "description": "Capacité brute de calcul disponible."
         },
         {
             "root": "ض-ع-ف (D-'-F/Da'afa)",
-            "logic_function": "Signal_Weakness_Signal_Weakness",
-            "description": "Dégradation du signal ou baisse de puissance de calcul."
+            "logic_function": "Signal_Weakness",
+            "description": "Dégradation du signal ou baisse de puissance."
         },
         {
             "root": "م-ث-ق (M-TH-Q/Mithqal)",
-            "logic_function": "Atomic_Mass_Unit_Atomic_Mass_Unit",
+            "logic_function": "Atomic_Mass_Unit",
             "description": "Poids unitaire d'une particule de donnée (Dharra)."
         },
         {
@@ -1865,33 +1865,33 @@
         },
         {
             "root": "ح-ر-ث (H-R-TH/Harath)",
-            "logic_function": "Database_Tilling_Database_Tilling",
-            "description": "Préparation d'un espace de stockage pour de nouvelles données."
+            "logic_function": "Storage_Tilling",
+            "description": "Préparation de l'espace de stockage."
         },
         {
             "root": "ل-ق-ي (L-Q-Y/Laqiya)",
-            "logic_function": "Handshake_Encounter_Handshake_Encounter",
-            "description": "Rencontre et échange de paramètres entre deux flux."
+            "logic_function": "Handshake",
+            "description": "Rencontre et échange entre deux flux."
         },
         {
             "root": "ب-ل-غ (B-L-G/Balagha)",
-            "logic_function": "Target_Reached_Target_Reached",
-            "description": "Validation de la fin d'un trajet de donnée ou d'un objectif."
+            "logic_function": "Target_Reached",
+            "description": "Validation de la fin d'un trajet de donnée."
         },
         {
             "root": "ن-ف-ذ (N-F-DH/Nafadha)",
-            "logic_function": "Data_Penetration_Data_Penetration",
-            "description": "Traversée d'une barrière système ou d'une couche logicielle."
+            "logic_function": "Data_Penetration",
+            "description": "Traversée d'une barrière système."
         },
         {
             "root": "ح-ق (H-Q-Q/Haqq)",
-            "logic_function": "Absolute_Truth_Bit_Absolute_Truth_Bit",
-            "description": "Valeur booléenne 1 (Vrai) - Invariant systémique."
+            "logic_function": "Absolute_Truth",
+            "description": "Invariant systémique (Vrai/1)."
         },
         {
             "root": "ب-ط-ل (B-T-L/Batil)",
-            "logic_function": "Absolute_False_Bit_Absolute_False_Bit",
-            "description": "Valeur booléenne 0 (Faux) - Nullité systémique."
+            "logic_function": "Absolute_False",
+            "description": "Nullité systémique (Faux/0)."
         },
         {
             "root": "ن-و-ر (N-W-R/Nur)",
@@ -1912,6 +1912,26 @@
             "root": "ب-ط-ء (B-T-A/Bati')",
             "logic_function": "System_Throttling_System_Throttling",
             "description": "Ralentissement volontaire ou forcé du flux de données."
+        },
+        {
+            "root": "أ-ر-ض (A-R-D/Ard)",
+            "logic_function": "Hosting_Platform",
+            "description": "Infrastructure matérielle supportant l'exécution du système."
+        },
+        {
+            "root": "خ-ي-r (KH-Y-R/Khayr)",
+            "logic_function": "System_Efficiency",
+            "description": "Optimisation maximale de l'exécution."
+        },
+        {
+            "root": "خ-ل-ص (KH-L-S/Khalasa)",
+            "logic_function": "Signal_Filtration",
+            "description": "Filtrage du signal sans aucun bruit résiduel."
+        },
+        {
+            "root": "ط-ع-m (T-'-M/Ta'ama)",
+            "logic_function": "Energy_Feed",
+            "description": "Alimentation en ressources du nœud."
         }
     ]
 }
