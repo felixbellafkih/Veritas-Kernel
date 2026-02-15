@@ -1,49 +1,43 @@
 import json
 import sys
+import os
 import re
 
-# Chargement du Cœur (Lexique)
-def load_kernel():
+def normalize(text):
+    return re.sub(r'[^A-Z0-9\']', '', text.upper())
+
+def query_oracle(token):
     try:
-        with open('LEXICON.json', 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        print("ERREUR CRITIQUE : LEXICON.json introuvable. Le système est hors ligne.")
-        sys.exit(1)
-
-# Moteur de Recherche Logique
-def query_kernel(user_input, kernel):
-    print(f"\n--- 🧬 ANALYSE VERITAS : '{user_input.upper()}' ---")
-    
-    hits = []
-    
-    # Scan de toutes les fonctions universelles
-    for entry in kernel['universal_functions']:
-        # On cherche dans la racine, la fonction ou la description
-        search_space = (entry['root'] + entry['logic_function'] + entry['description']).lower()
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        lexicon_path = os.path.join(base_path, 'LEXICON.json')
         
-        if user_input.lower() in search_space:
-            hits.append(entry)
-
-    if not hits:
-        print(f"❌ RÉSULTAT : AUCUNE CORRESPONDANCE SYSTÉMIQUE.")
-        print("   -> Ce concept semble être du 'Bruit' (Noise) ou une 'Tradition' non reconnue par le Kernel.")
-        print("   -> Action : Rejet par défaut (Ghayr dhi 'iwaj).")
-    else:
-        print(f"✅ RÉSULTAT : {len(hits)} CORRESPONDANCE(S) TROUVÉE(S).\n")
-        for hit in hits:
-            print(f"   🔹 RACINE  : {hit['root']}")
-            print(f"   🔹 FONCTION: {hit['logic_function']}")
-            print(f"   🔹 DÉFINITION : {hit['description']}")
-            print("   ------------------------------------------------")
+        with open(lexicon_path, 'r', encoding='utf-8') as f:
+            lexicon = json.load(f)['universal_functions']
+        
+        raw_target = normalize(token)
+        # Test 1: Recherche littérale (ex: MITHAQ ou QASAS)
+        match = next((item for item in lexicon if raw_target in normalize(item['root'])), None)
+        
+        # Test 2: Si échec, tentative avec standard 'Ain (si A est présent)
+        if not match and "A" in raw_target:
+            alt_target = raw_target.replace("A", "'")
+            match = next((item for item in lexicon if alt_target in normalize(item['root'])), None)
+        
+        if match:
+            print(f"\n--- RÉPONSE ORACLE VERITAS v8.3.4 ---")
+            print(f"IDENTIFIANT : {match['root']}")
+            print(f"FONCTION    : {match['logic_function']}")
+            print(f"DESCRIPTION : {match['description']}")
+            print(f"STATUT      : SIGNAL STABLE")
+            print(f"------------------------------------")
+        else:
+            print(f"\n❌ SIGNAL INCONNU : '{token}' (Aucune correspondance physique ou logique)")
             
-        print("\n🔎 VERDICT DU SYSTÈME :")
-        print("   Le concept a été redéfini. Oubliez la définition culturelle.")
-        print("   Appliquez strictement la 'logic_function' ci-dessus.")
+    except Exception as e:
+        print(f"❌ ERREUR SYSTÈME : {e}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Usage: python veritas_oracle.py 'votre_concept'")
+    if len(sys.argv) > 1:
+        query_oracle(sys.argv[1])
     else:
-        kernel_data = load_kernel()
-        query_kernel(sys.argv[1], kernel_data)
+        print("Usage: python engine/analysis/veritas_oracle.py [ROOT_TOKEN]")

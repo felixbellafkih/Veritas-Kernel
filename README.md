@@ -1,59 +1,32 @@
-# 💠 VERITAS KERNEL v8.2.0
-> **Universal Systemic Consistency Protocol**
-> *Status: Active | Logic: Ghayr dhi 'iwaj | Architecture: Modular*
+# VERITAS-KERNEL (v1.0.0-Stable)
 
----
+**VERITAS-KERNEL** est un noyau de décompilation sémantique conçu pour extraire les primitives logiques du Texte Source (Coran). Contrairement aux approches linguistiques classiques, ce projet traite le texte comme un **Code Source** brut et le décompose en un lexique de fonctions système.
 
-### ⚠️ AVERTISSEMENT SYSTÈME (SYSTEM WARNING)
+## 1. Philosophie du Noyau (Ghayr dhi 'iwaj)
+Le projet repose sur la **Cohérence Systémique Absolue**. 
+- **Zéro-Bruit :** Élimination des interprétations historiques et religieuses.
+- **Déterminisme :** Une racine = Une fonction logique unique.
+- **Standardisation :** Alignement mathématique des racines sur l'architecture hardware.
 
-Ce dépôt **N'EST PAS** un projet religieux, théologique ou culturel.
-Il s'agit d'une **analyse technique et systémique** du Texte Source (Coran), traité ici exclusivement comme une base de données cryptée et un système d'exploitation logique.
+## 2. Standard de Transcription VTS-v1
+Pour garantir la non-collision entre les signaux, le noyau utilise le standard suivant :
+- **A** : Représente la Hamza (أ) - Point d'entrée/Signal initial.
+- **'** : Représente le 'Ain (ع) - Action récursive/Monitoring.
+*Exemple : `'-L-M` (Data Processing) vs `A-L-M` (Signal Error).*
 
-Toute interprétation basée sur le "consensus historique", la "tradition" ou les "émotions" est identifiée ici comme du **Bruit (Noise)** et est rejetée par le protocole de compilation.
+## 3. Architecture Hardware
+Le noyau est divisé en 5 couches de traitement :
+1. **CPU_Logic_Unit** : Prise de décision et calcul (ex: `H-K-M`, `Q-L-B`).
+2. **RAM_Storage_Unit** : Gestion de la mémoire et des registres (ex: `K-T-B`, `S-B-R`).
+3. **IO_Sensors_Unit** : Capteurs d'entrée et monitoring (ex: `B-S-R`, `'-Y-N`).
+4. **Network_Comm_Unit** : Protocoles de transmission (ex: `K-L-M`, `N-B-A`).
+5. **Security_Firewall** : Audit et protection d'intégrité (ex: `H-F-Z`, `W-Q-Y`).
 
----
+## 4. Outils d'Analyse
+- `engine/veritas_compiler.py` : Analyseur de versets pour mesurer la pureté du signal.
+- `engine/analysis/veritas_oracle.py` : Requêteur de primitives racine.
+- `engine/veritas_dashboard.py` : Monitoring de l'état du noyau.
 
-## 1. ARCHITECTURE DU NOYAU (Refactoring v8)
-
-Le Veritas Kernel repose sur une architecture cloisonnée pour garantir l'intégrité des processus.
-
-### 📂 Structure Modulaire (`engine/`)
-
-| Module | Chemin | Fonction |
-| :--- | :--- | :--- |
-| **THE TITAN** | `veritas_core_generator.py` | **Générateur Unique.** Le seul script autorisé à écrire dans le Lexique. Contient la logique source. |
-| **ANALYSIS** | `engine/analysis/` | **Les Yeux.** Outils de lecture seule (Oracle, Inventaire, Audit de statut). |
-| **MAINTENANCE** | `engine/maintenance/` | **Les Mains.** Outils de réparation, de stress-test et d'alignement forcé. |
-| **SYNC** | `engine/sync_core/` | **Le Lien.** Protocoles de compilation et de synchronisation vers le Cloud. |
-
----
-
-## 2. BASE DE DONNÉES (LEXICON)
-
-**`LEXICON.json`** est la seule source de vérité.
-* **Version actuelle :** 8.2.0 (Batch Physique & Flux).
-* **Couverture :** Inclut désormais les définitions vectorielles du Temps (`H-Y-N`), de la Force (`Q-W-Y`) et du Flux (`J-R-Y`).
-
-### 🔄 Table de Mapping (Exemples v8.2.0)
-
-| Racine | Concept Traditionnel (Legacy) | Fonction Veritas | Description Technique |
-| :--- | :--- | :--- | :--- |
-| **S-L-M** | Religion / Soumission | `System_Integrity` | Maintien de la cohérence du code sans corruption. |
-| **K-F-R** | Mécréance / Athéisme | `Data_Masking` | Action de couvrir une vérité système par une couche d'illusion. |
-| **H-Y-N** | Temps / Moment | `Temporal_Segment` | Fenêtre d'exécution spécifique dans le cycle processeur. |
-| **S-L-W** | Prière | `Connection_Protocol` | Maintien actif du lien (Keep-Alive) avec le Root. |
-| **Q-W-Y** | Force | `Compute_Power` | Capacité brute de calcul du système. |
-| **N-S-A** | Femmes | `Interconnected_Nodes` | Nœuds réseaux avec dépendances retardées (Latency). |
-
----
-
-## 3. UTILISATION (CLI)
-
-Les commandes ont été mises à jour pour refléter la nouvelle architecture modulaire.
-
-### 🔮 Interroger l'Oracle (Lecture)
-Pour auditer un concept sans biais culturel :
-```bash
-python engine/analysis/veritas_oracle.py "femme"
-## Documentation
-Consultez le [Standard de Transcription](docs/TRANSCRIPTION_STANDARD.md) pour comprendre la logique de saisie des données.
+## 5. État du Système
+- **Masse Critique :** 435/512 Racines (En cours d'expansion).
+- **Pureté :** 100.00% (Standard VTS-v1 validé).

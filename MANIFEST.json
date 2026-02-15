@@ -1,0 +1,1757 @@
+{
+    "system_name": "Veritas-Kernel",
+    "version": "1.0.0-Stable",
+    "architecture": "Binary-512",
+    "hardware_layers": {
+        "CPU_Logic_Unit": [
+            {
+                "root": "ه-و (H-W-A/Huwa)",
+                "function": "System_Identity"
+            },
+            {
+                "root": "أ-ح-د (A-H-D/Ahad)",
+                "function": "Atomic_Unity"
+            },
+            {
+                "root": "ص-م-د (S-M-D/Samad)",
+                "function": "Atomic_Singleton"
+            },
+            {
+                "root": "ل-م (L-M/Lam)",
+                "function": "Negative_Operator"
+            },
+            {
+                "root": "و-ل-د (W-L-D/Walad)",
+                "function": "Recursive_Cloning"
+            },
+            {
+                "root": "ك-ف-و (K-F-W/Kufu)",
+                "function": "System_Equivalence"
+            },
+            {
+                "root": "ح-ق-ق (H-Q-Q/Haqq)",
+                "function": "Invariant_Truth"
+            },
+            {
+                "root": "ر-ب-ب (R-B-B/Rabb)",
+                "function": "System_Regulator"
+            },
+            {
+                "root": "ص-ل-و (S-L-W/Salat)",
+                "function": "Liaison_Protocol"
+            },
+            {
+                "root": "ه-د-ي (H-D-Y/Hady)",
+                "function": "Target_Resource"
+            },
+            {
+                "root": "ر-ح-م (R-H-M/Rahman)",
+                "function": "System_Matrix"
+            },
+            {
+                "root": "ق-و-م (Q-Y-M/Qiyam)",
+                "function": "System_Persistence_Stability"
+            },
+            {
+                "root": "ق-ر-أ (Q-R-A/Iqra)",
+                "function": "System_Execution"
+            },
+            {
+                "root": "ف-ل-ق (F-L-Q/Falaqa)",
+                "function": "Cell_Splitting"
+            },
+            {
+                "root": "ش-ر-ر (SH-R-R/Sharr)",
+                "function": "Systemic_Entropy"
+            },
+            {
+                "root": "ن-ف-ث (N-F-TH/Naffathat)",
+                "function": "Code_Injection"
+            },
+            {
+                "root": "ح-س-د (H-S-D/Hasad)",
+                "function": "Resource_Contention"
+            },
+            {
+                "root": "م-ل-ك (M-L-K/Malik)",
+                "function": "Access_Controller"
+            },
+            {
+                "root": "إ-ل-ه (A-L-H/Ilah)",
+                "function": "Root_Authority"
+            },
+            {
+                "root": "و-س-و-س (W-S-W-S/Waswas)",
+                "function": "Background_Noise"
+            },
+            {
+                "root": "ص-د-ر (S-D-R/Sadr)",
+                "function": "Processing_Core"
+            },
+            {
+                "root": "ج-ن-ن (J-N-N/Jinn)",
+                "function": "Hidden_Process"
+            },
+            {
+                "root": "ق-س-ط (Q-S-T/Qist)",
+                "function": "Structural_Equity"
+            },
+            {
+                "root": "م-ي-ز-ن (M-Y-Z-N/Mizan)",
+                "function": "Systemic_Equilibrium"
+            },
+            {
+                "root": "ع-د-ل ('-D-L/'Adl)",
+                "function": "Logic_Load_Balancing"
+            },
+            {
+                "root": "غ-ض-ب (G-D-B/Ghadab)",
+                "function": "Critical_Overload_Exception"
+            },
+            {
+                "root": "غ-ي-ب (G-Y-B/Ghayb)",
+                "function": "Hidden_Infrastructure"
+            },
+            {
+                "root": "ش-ه-د (SH-H-D/Shahida)",
+                "function": "Event_Logging"
+            },
+            {
+                "root": "ن-ف-ق (N-F-Q/Infaq)",
+                "function": "Resource_Outbound_Flow"
+            },
+            {
+                "root": "خ-ت-م (KH-T-M/Khatama)",
+                "function": "Execution_Seal_End"
+            },
+            {
+                "root": "خ-د-ع (KH-D-'/'Khada'a)",
+                "function": "Process_Simulation"
+            },
+            {
+                "root": "م-ر-ض (M-R-D/Marad)",
+                "function": "System_Infection"
+            },
+            {
+                "root": "ك-ذ-ب (K-DH-B/Khadhib)",
+                "function": "False_Positive"
+            },
+            {
+                "root": "ف-س-د (F-S-D/Fasad)",
+                "function": "System_Corruption_Failure"
+            },
+            {
+                "root": "س-ف-ه (S-F-H/Safaha)",
+                "function": "Logic_Degradation"
+            },
+            {
+                "root": "ش-ي-ط-ن (SH-Y-T-N/Shaytan)",
+                "function": "Adversarial_Process"
+            },
+            {
+                "root": "ع-م-ي ('-M-Y/'Umy)",
+                "function": "Processing_Blindness"
+            },
+            {
+                "root": "ر-ع-د (R-'-D/'Ra'd)",
+                "function": "System_Warning"
+            },
+            {
+                "root": "ب-ر-ق (B-R-Q/Barq)",
+                "function": "High_Voltage_Flash"
+            },
+            {
+                "root": "خ-ل-ف (KH-L-F/Khalifa)",
+                "function": "System_Operator"
+            },
+            {
+                "root": "ج-ع-ل (J-'-L/'Ja'il)",
+                "function": "Instance_Generator"
+            },
+            {
+                "root": "س-ب-ح (S-B-H/Sabbah)",
+                "function": "System_Maintenance"
+            },
+            {
+                "root": "ق-د-س (Q-D-S/Qaddas)",
+                "function": "High_Purity_State"
+            },
+            {
+                "root": "س-م-ي (S-M-Y/Asma)",
+                "function": "Variable_Definition"
+            },
+            {
+                "root": "ع-ر-ض ('-R-D/'rada)",
+                "function": "Display_Output"
+            },
+            {
+                "root": "س-ج-د (S-G-D/Sujud)",
+                "function": "Hardware_Submission"
+            },
+            {
+                "root": "أ-ب-ي (A-B-Y/Aba)",
+                "function": "Access_Refusal"
+            },
+            {
+                "root": "ك-ب-ر (K-B-R/Istakbara)",
+                "function": "Privilege_Escalation"
+            },
+            {
+                "root": "ز-ل-ل (Z-L-L/Zalla)",
+                "function": "Runtime_Exception"
+            },
+            {
+                "root": "ق-ر-ب (Q-R-B/Qurba)",
+                "function": "Proximity_Node_Access"
+            },
+            {
+                "root": "ه-ب-ط (H-B-T/Habata)",
+                "function": "System_Downgrade"
+            },
+            {
+                "root": "ف-ض-ل (F-D-L/Faddala)",
+                "function": "Priority_Access"
+            },
+            {
+                "root": "ن-ع-م (N-'-M/'Ni'ma)",
+                "function": "System_Asset_Provision"
+            },
+            {
+                "root": "ع-ه-د ('-H-D/'Ahd)",
+                "function": "Standard_Agreement"
+            },
+            {
+                "root": "م-ي-ث-ق (M-Y-TH-Q/Mithaq)",
+                "function": "Binding_Smart_Contract"
+            },
+            {
+                "root": "و-ف-ي (W-F-Y/Wafa)",
+                "function": "Execution_Completion"
+            },
+            {
+                "root": "ن-س-خ (N-S-KH/Naskh)",
+                "function": "Version_Control_Overwrite"
+            },
+            {
+                "root": "ب-د-ل (B-D-L/Baddala)",
+                "function": "Unauthorized_Modification"
+            },
+            {
+                "root": "ح-ر-ف (H-R-F/Harrafa)",
+                "function": "Code_Tampering"
+            },
+            {
+                "root": "ق-س-و (Q-S-W/Qaswa)",
+                "function": "Core_Rigidity"
+            },
+            {
+                "root": "س-ب-ت (S-B-T/Sabt)",
+                "function": "Maintenance_Window"
+            },
+            {
+                "root": "ق-ب-ل (Q-B-L/Qibla)",
+                "function": "Orientation_Vector"
+            },
+            {
+                "root": "و-ل-ي (W-L-Y/Wali)",
+                "function": "Proxy_Controller_Guardian"
+            },
+            {
+                "root": "و-س-ط (W-S-T/Wasat)",
+                "function": "Central_Middleware"
+            },
+            {
+                "root": "ش-ط-ر (SH-T-R/Shatr)",
+                "function": "Target_Sector"
+            },
+            {
+                "root": "ب-ي-ت (B-Y-T/Bayt)",
+                "function": "Host_Node"
+            },
+            {
+                "root": "ك-ع-ب (K-'-B/'Ka'ba)",
+                "function": "Root_Cube"
+            },
+            {
+                "root": "ح-ج-ج (H-J-J/Hujja)",
+                "function": "Logic_Proof"
+            },
+            {
+                "root": "ط-و-ف (T-W-F/Tawaf)",
+                "function": "Orbital_Processing"
+            },
+            {
+                "root": "س-ع-ي (S-'-Y/'Sa'y)",
+                "function": "Active_Processing"
+            },
+            {
+                "root": "ق-ص-ص (Q-S-S/Qasas)",
+                "function": "Sequential_Logic_Trace"
+            },
+            {
+                "root": "و-ص-ي (W-S-Y/Wasiyya)",
+                "function": "Legacy_Instruction"
+            },
+            {
+                "root": "ص-و-م (S-W-M/Sawm)",
+                "function": "System_Throttling"
+            },
+            {
+                "root": "ق-ت-ل (Q-T-L/Qital)",
+                "function": "Process_Termination"
+            },
+            {
+                "root": "ف-ت-ن (F-T-N/Fitna)",
+                "function": "System_Sedition"
+            },
+            {
+                "root": "ه-ل-ك (H-L-K/Halak)",
+                "function": "Destructive_Crash"
+            },
+            {
+                "root": "ص-د-ق (S-D-Q/Saduqat)",
+                "function": "Binding_Fee"
+            },
+            {
+                "root": "ر-ب-و (R-B-W/Riba)",
+                "function": "Resource_Inflation"
+            },
+            {
+                "root": "د-ي-ن (D-Y-N/Dayn)",
+                "function": "Deferred_Transaction"
+            },
+            {
+                "root": "ك-ر-ه (K-R-H/Ikrah)",
+                "function": "Forced_Execution"
+            },
+            {
+                "root": "ط-غ-ت (T-GH-T/Taghut)",
+                "function": "False_Root"
+            },
+            {
+                "root": "ح-ي-ي (H-Y-Y/Hayy)",
+                "function": "Runtime_Active_State"
+            },
+            {
+                "root": "س-ن-ه (S-N-H/Sinah)",
+                "function": "Micro_Lag"
+            },
+            {
+                "root": "ن-و-م (N-W-M/Nawm)",
+                "function": "Hibernation_Mode"
+            },
+            {
+                "root": "ع-م-ر-ن (I-M-R-N/'Imran)",
+                "function": "System_Continuity"
+            },
+            {
+                "root": "ف-و-z (F-W-Z/Faza)",
+                "function": "Successful_Exit"
+            },
+            {
+                "root": "ن-س-أ (N-S-A/Nisa)",
+                "function": "Interconnected_Nodes"
+            },
+            {
+                "root": "ي-ت-م (Y-T-M/Yatama)",
+                "function": "Orphan_Process"
+            },
+            {
+                "root": "ن-ك-ح (N-K-H/Nikah)",
+                "function": "Process_Binding"
+            },
+            {
+                "root": "ق-س-م (Q-S-M/Qisma)",
+                "function": "Resource_Partitioning"
+            },
+            {
+                "root": "أ-ك-ل (A-K-L/Akala)",
+                "function": "Resource_Consumption"
+            },
+            {
+                "root": "ح-و-ب (H-W-B/Huban)",
+                "function": "Critical_Violation"
+            },
+            {
+                "root": "ن-ش-ز (N-SH-Z/Nushuz)",
+                "function": "Node_Divergence"
+            },
+            {
+                "root": "ه-ج-ر (H-J-R/Muhajirun)",
+                "function": "Process_Migration"
+            },
+            {
+                "root": "ض-ر-ب (D-R-B/Daraba)",
+                "function": "Logic_Mapping"
+            },
+            {
+                "root": "ص-ل-ح (S-L-H/Salaha)",
+                "function": "System_Repair_Optimization"
+            },
+            {
+                "root": "ط-ا-ع (T-'-'/'Ta'a)",
+                "function": "Instruction_Compliance"
+            },
+            {
+                "root": "ح-ر-ص (H-R-S/Hirs)",
+                "function": "Optimization_Drive"
+            },
+            {
+                "root": "ع-ق-د ('-Q-D/'Aqd)",
+                "function": "Logic_Tie_Binding"
+            },
+            {
+                "root": "ح-ل-ل (H-L-L/Halal)",
+                "function": "Authorized_Access"
+            },
+            {
+                "root": "ك-م-ل (K-M-L/Akmal)",
+                "function": "Build_Completion"
+            },
+            {
+                "root": "ر-ض-ي (R-D-Y/Radi)",
+                "function": "Status_Accepted"
+            },
+            {
+                "root": "ي-م-م (Y-M-M/Tayammum)",
+                "function": "Fallback_Sanitization"
+            },
+            {
+                "root": "ب-غ-ي (B-G-H/Baghy)",
+                "function": "Unauthorized_Overrun"
+            },
+            {
+                "root": "ق-ل-د (Q-L-D/Qala'id)",
+                "function": "Token_Identifier"
+            },
+            {
+                "root": "خ-ل-ق (KH-L-Q/Khalaqa)",
+                "function": "Instance_Creation"
+            },
+            {
+                "root": "ظ-ل-م (Z-L-M/Zulm)",
+                "function": "System_Entropy"
+            },
+            {
+                "root": "ذ-ر-أ (DH-R-A/Dhara'a)",
+                "function": "Process_Multiplication"
+            },
+            {
+                "root": "س-ك-ن (S-K-N/Sakan)",
+                "function": "Idle_Stable_State"
+            },
+            {
+                "root": "ن-و-ى (N-W-Y/Nawa)",
+                "function": "Core_Nucleus"
+            },
+            {
+                "root": "س-ر-م (S-R-M/Sarmad)",
+                "function": "Infinite_Loop"
+            },
+            {
+                "root": "و-ك-ل (W-K-L/Wakil)",
+                "function": "Proxy_Controller"
+            },
+            {
+                "root": "ن-ج-م (N-J-M/Nujum)",
+                "function": "Navigation_Markers"
+            },
+            {
+                "root": "م-ي-ت (M-Y-T/Maytan)",
+                "function": "Null_Pointer"
+            },
+            {
+                "root": "س-ب-ب (S-B-B/Sabba)",
+                "function": "Protocol_Abuse"
+            },
+            {
+                "root": "خ-ر-ق (KH-R-Q/Kharaqu)",
+                "function": "Logic_Breach"
+            },
+            {
+                "root": "س-و-ر (S-W-R/Sur)",
+                "function": "System_Wall"
+            },
+            {
+                "root": "غ-و-ي (GH-W-Y/Aghwaytani)",
+                "function": "Logic_Misdirection"
+            },
+            {
+                "root": "س-و-ء (S-W-A/Saw'at)",
+                "function": "Vulnerability_Exposure"
+            },
+            {
+                "root": "ن-ز-غ (N-Z-G/Nazagha)",
+                "function": "Interrupt_Trigger"
+            },
+            {
+                "root": "م-ك-ن (M-K-N/Makkannakum)",
+                "function": "Resource_Hosting"
+            },
+            {
+                "root": "ذ-ر-ي (DH-R-Y/Dharriyya)",
+                "function": "Code_Lineage"
+            },
+            {
+                "root": "غ-ف-ل (GH-F-L/Ghafilun)",
+                "function": "Background_Process"
+            },
+            {
+                "root": "ف-س-ق (F-S-Q/Fasaqa)",
+                "function": "Protocol_Breach"
+            },
+            {
+                "root": "د-م-ر (D-M-R/Dammara)",
+                "function": "Sector_Wipe"
+            },
+            {
+                "root": "ع-ق-ر ('-Q-R/'qaru)",
+                "function": "Hardware_Sabotage"
+            },
+            {
+                "root": "ر-ج-ف (R-J-F/Rajfa)",
+                "function": "System_Vibration"
+            },
+            {
+                "root": "ب-ط-ل (B-T-L/Batil)",
+                "function": "Null_Void"
+            },
+            {
+                "root": "د-ل (D-L-L/Dallakuma)",
+                "function": "False_Pointer"
+            },
+            {
+                "root": "ن-ف-ل (N-F-L/Anfal)",
+                "function": "Resource_Recovery"
+            },
+            {
+                "root": "و-ج-ل (W-J-L/Wajila)",
+                "function": "Alert_State"
+            },
+            {
+                "root": "ش-و-ك (SH-W-K/Shawka)",
+                "function": "Power_Spike"
+            },
+            {
+                "root": "م-د-د (M-D-D/Mumiddukum)",
+                "function": "Reinforcement_Stream"
+            },
+            {
+                "root": "ر-د-ف (R-D-F/Murdifin)",
+                "function": "Sequential_Backup"
+            },
+            {
+                "root": "ر-م-ي (R-M-Y/Rama)",
+                "function": "Target_Projection"
+            },
+            {
+                "root": "ز-ح-ف (Z-H-F/Zahfa)",
+                "function": "Slow_Advance"
+            },
+            {
+                "root": "خ-ف-ف (KH-F-F/Mukhaffaf)",
+                "function": "Load_Balancing"
+            },
+            {
+                "root": "أ-س-ر (A-S-R/Asra)",
+                "function": "Process_Capture"
+            },
+            {
+                "root": "ث-خ-ن (TH-KH-N/Athkhana)",
+                "function": "Heavy_Processing"
+            },
+            {
+                "root": "ج-ن-ح (J-N-H/Janahu)",
+                "function": "State_Inclination"
+            },
+            {
+                "root": "أ-ل-ف (A-L-F/Allafa)",
+                "function": "Sync_Harmonization"
+            },
+            {
+                "root": "ب-ر-أ (B-R-A/Bara'a)",
+                "function": "Connection_Termination"
+            },
+            {
+                "root": "ر-ج-س (R-J-S/Rijs)",
+                "function": "Corrupted_Cache"
+            },
+            {
+                "root": "ن-ج-س (N-J-S/Najas)",
+                "function": "Incompatible_Object"
+            },
+            {
+                "root": "ق-ع-د (Q-'-D/'Qa'idun)",
+                "function": "Idle_Process"
+            },
+            {
+                "root": "ع-ذ-ر ('-DH-R/'Ma'dhira)",
+                "function": "Exception_Log"
+            },
+            {
+                "root": "ب-ن-ي (B-N-Y/Ibn)",
+                "function": "Child_Instance_Emanation"
+            },
+            {
+                "root": "ه-و-ر (H-W-R/Har)",
+                "function": "Collapse_Risk"
+            },
+            {
+                "root": "ز-ي-غ (Z-Y-G/Zaigh)",
+                "function": "Deviation_Vector"
+            },
+            {
+                "root": "ف-ق-ه (F-Q-H/Fiqh)",
+                "function": "Logical_Pattern_Recognition"
+            },
+            {
+                "root": "د-ب-ر (D-B-R/Yudabbiru)",
+                "function": "Process_Orchestration"
+            },
+            {
+                "root": "ع-ر-ش ('-R-SH/'rsh)",
+                "function": "Central_Console"
+            },
+            {
+                "root": "أ-ج-ل (A-J-L/Ajal)",
+                "function": "Timeout_Value"
+            },
+            {
+                "root": "غ-ر-ق (GH-R-Q/Gharaq)",
+                "function": "Flood_Overflow"
+            },
+            {
+                "root": "ك-ش-ف (K-SH-F/Kashafa)",
+                "function": "Debug_View"
+            },
+            {
+                "root": "ت-ح-د (T-H-D/Tahaddi)",
+                "function": "Stress_Test_Challenge"
+            },
+            {
+                "root": "ف-و-ر (F-W-R/Fara)",
+                "function": "Thermal_Runaway"
+            },
+            {
+                "root": "غ-ي-ض (GH-Y-D/Ghidha)",
+                "function": "Resource_Depletion"
+            },
+            {
+                "root": "ج-و-د (J-W-D/Judi)",
+                "function": "Recovery_Partition"
+            },
+            {
+                "root": "ب-ع-د (B-'-D/'Bu'dan)",
+                "function": "Remote_Isolation"
+            },
+            {
+                "root": "ر-ك-ن (R-K-N/Rukn)",
+                "function": "Support_Dependency"
+            },
+            {
+                "root": "ر-أ-ي (R-A-Y/Ra'a)",
+                "function": "Logic_Observation"
+            },
+            {
+                "root": "أ-و-ل (A-W-L/Ta'wil)",
+                "function": "Output_Decoding"
+            },
+            {
+                "root": "ذ-ئ-ب (DH-I-B/Dhi'b)",
+                "function": "Threat_Actor"
+            },
+            {
+                "root": "ك-ي-د (K-Y-D/Kayd)",
+                "function": "Algorithm_Subterfuge"
+            },
+            {
+                "root": "س-ج-ن (S-J-N/Sijn)",
+                "function": "Process_Sandbox"
+            },
+            {
+                "root": "س-ب-ع (S-B-'/'Sab'a)",
+                "function": "Cycle_Constant"
+            },
+            {
+                "root": "ك-ي-ل (K-Y-L/Kayl)",
+                "function": "Quota_Allocation_Volume_Measurement_Volume_Measurement"
+            },
+            {
+                "root": "ر-و-د (R-W-D/Rawadat-hu)",
+                "function": "Unauthorized_Request"
+            },
+            {
+                "root": "ط-و-ع (T-W-'/'Taw'an)",
+                "function": "Native_Compliance"
+            },
+            {
+                "root": "م-ح-ل (M-H-L/Mihal)",
+                "function": "Processing_Power"
+            },
+            {
+                "root": "ن-ف-ع (N-F-'/'Yanfa'u)",
+                "function": "Value_Payload"
+            },
+            {
+                "root": "ش-ج-ر (SH-J-R/Shajar)",
+                "function": "Hierarchical_Tree"
+            },
+            {
+                "root": "ث-ب-ت (TH-B-T/Thabit)",
+                "function": "Static_Address"
+            },
+            {
+                "root": "ف-ر-ع (F-R-'/'Far'u)",
+                "function": "Branch_Node"
+            },
+            {
+                "root": "ب-ر-ز (B-R-Z/Barazu)",
+                "function": "Process_Exposure"
+            },
+            {
+                "root": "ص-د-ي (S-D-I/Sadid)",
+                "function": "Corrosive_Output"
+            },
+            {
+                "root": "ق-ر (Q-R-R/ القرار)",
+                "function": "Final_Runtime_State"
+            },
+            {
+                "root": "ش-ه-ب (SH-H-B/Shihab)",
+                "function": "Intrusion_Countermeasure"
+            },
+            {
+                "root": "و-ح-ي (W-H-Y/Awha)",
+                "function": "Direct_Instruction_Stream"
+            },
+            {
+                "root": "ن-ح-ل (N-H-L/Nahl)",
+                "function": "Autonomous_Agent"
+            },
+            {
+                "root": "س-ب-ل (S-B-L/Subul)",
+                "function": "Routing_Paths"
+            },
+            {
+                "root": "ع-س-ل ('-S-L/'sal)",
+                "function": "High_Value_Output"
+            },
+            {
+                "root": "س-ر-ي (S-R-Y/Asra)",
+                "function": "Secure_Tunneling"
+            },
+            {
+                "root": "ق-ض-ي (Q-D-Y/Qada)",
+                "function": "Final_Verdict"
+            },
+            {
+                "root": "م-ح-و (M-H-W/Mahawna)",
+                "function": "Cache_Wipe"
+            },
+            {
+                "root": "خ-ط-أ (KH-T-A/Khit'an)",
+                "function": "Runtime_Error"
+            },
+            {
+                "root": "ذ-ر-ر (DH-R-R/Dhurriyyah)",
+                "function": "Child_Process"
+            },
+            {
+                "root": "س-ل-ط (S-L-T/Sultan)",
+                "function": "Authorized_Power_Vector"
+            },
+            {
+                "root": "ر-ق-م (R-Q-M/Raqim)",
+                "function": "Digital_Ledger"
+            },
+            {
+                "root": "ر-ق-د (R-Q-D/Ruqud)",
+                "function": "Hibernation_Mode"
+            },
+            {
+                "root": "ل-ب-ث (L-B-TH/Labithu)",
+                "function": "Time_Dilation"
+            },
+            {
+                "root": "ك-ل-ب (K-L-B/Kalb)",
+                "function": "Watchdog_Daemon"
+            },
+            {
+                "root": "و-ص-ي-د (W-S-Y-D/Wasid)",
+                "function": "System_Threshold"
+            },
+            {
+                "root": "ر-د-م (R-D-M/Radm)",
+                "function": "Layered_Defense"
+            },
+            {
+                "root": "ق-ط-ر (Q-T-R/Qitr)",
+                "function": "Thermal_Compound"
+            },
+            {
+                "root": "ن-ق-ب (N-Q-B/Naqb)",
+                "function": "Penetration_Test"
+            },
+            {
+                "root": "خ-ب-ر (KH-B-R/Khabar)",
+                "function": "Deep_Trace_Log"
+            },
+            {
+                "root": "ح-و-ل (H-W-L/Hiwal)",
+                "function": "State_Migration"
+            },
+            {
+                "root": "ن-ف-د (N-F-D/Nafida)",
+                "function": "Resource_Exhaustion"
+            },
+            {
+                "root": "غ-ط-أ (GH-T-A/Ghita')",
+                "function": "System_Overlay"
+            },
+            {
+                "root": "خ-ر-ر (KH-R-R/Kharru)",
+                "function": "System_Crash_Log"
+            },
+            {
+                "root": "ر-ك-ز (R-K-Z/Rikza)",
+                "function": "Trace_Residual"
+            },
+            {
+                "root": "ث-ر-ى (TH-R-Y/Thara)",
+                "function": "Ground_Layer"
+            },
+            {
+                "root": "ظ-م-أ (Z-M-A/Zama'u)",
+                "function": "Thirst_Error"
+            },
+            {
+                "root": "ش-ر-ك (SH-R-K/Shirk)",
+                "function": "Parallel_Root_Error"
+            },
+            {
+                "root": "ج-ه-د (J-H-D/Jihad)",
+                "function": "Computation_Effort"
+            },
+            {
+                "root": "ر-ج-ل (R-J-L/Rijal)",
+                "function": "Mobile_Compute_Unit"
+            },
+            {
+                "root": "ج-ه-ن-م (J-H-N-M/Jahannam)",
+                "function": "Thermal_Collapse"
+            },
+            {
+                "root": "ق-د-ر (Q-D-R/Qadr)",
+                "function": "Resource_Capacity"
+            },
+            {
+                "root": "م-و-ت (M-W-T/Mawt)",
+                "function": "Process_Termination_Idle"
+            },
+            {
+                "root": "ت-و-ب (T-W-B/Tawba)",
+                "function": "Logic_Rollback_Protocol"
+            },
+            {
+                "root": "ر-ك-ع (R-K-'/'Ruku)",
+                "function": "Logic_Alignment"
+            },
+            {
+                "root": "ق-ل-ب (Q-L-B/Qalb)",
+                "function": "Central_Logic_Processor"
+            },
+            {
+                "root": "ع-ق-ل ('-Q-L/'ql)",
+                "function": "Logic_Bridge_Connector"
+            },
+            {
+                "root": "ح-ك-م (H-K-M/Hukm)",
+                "function": "Decision_Gate_Logic"
+            },
+            {
+                "root": "ر-و-ح (R-W-H/Ruh)",
+                "function": "System_Animation_Code"
+            },
+            {
+                "root": "ن-ف-س (N-F-S/Nafs)",
+                "function": "Execution_Instance"
+            },
+            {
+                "root": "ب-ر-ك (B-R-K/Baraka)",
+                "function": "Efficiency_Optimizer"
+            },
+            {
+                "root": "ع-م-ل ('-M-L/'mal)",
+                "function": "Execution_Workload"
+            },
+            {
+                "root": "ج-ز-ي (J-Z-A/Jaza)",
+                "function": "Final_Output_State"
+            },
+            {
+                "root": "ع-ص-ر ('-S-R/'sr)",
+                "function": "Processing_Epoch"
+            },
+            {
+                "root": "ف-ج-ر (F-J-R/Fajr)",
+                "function": "System_Breakout"
+            },
+            {
+                "root": "ش-م-س (SH-M-S/Shams)",
+                "function": "Primary_Energy_Source"
+            },
+            {
+                "root": "و-ز-ن (W-Z-N/Wazan)",
+                "function": "Load_Balancing"
+            },
+            {
+                "root": "ف-ل-ك (F-L-K/Falak)",
+                "function": "Orbit_Execution_Cycle"
+            },
+            {
+                "root": "ع-ص-ي ('-S-Y/'Asa)",
+                "function": "Instruction_Deviation"
+            },
+            {
+                "root": "ب-ش-ر (B-SH-R/Bashar)",
+                "function": "Biological_Interface_Node"
+            },
+            {
+                "root": "ع-ب-د ('-B-D/'bd)",
+                "function": "Dedicated_Process"
+            },
+            {
+                "root": "ع-د-و ('-D-W/'dw)",
+                "function": "Antagonist_Process"
+            },
+            {
+                "root": "ح-س-ب (H-S-B/Hasaba)",
+                "function": "Computational_Audit"
+            },
+            {
+                "root": "ع-ل-ق ('-L-Q/'laq)",
+                "function": "Physical_Hardware_Attachment"
+            },
+            {
+                "root": "ق-ل-م (Q-L-M/Qalam)",
+                "function": "Logic_Writer_Recorder"
+            },
+            {
+                "root": "ن-ف-خ (N-F-KH/Nafakha)",
+                "function": "System_Inflation_Boot"
+            },
+            {
+                "root": "ب-ع-ث (B-'-TH/Ba'atha)",
+                "function": "Process_Reboot_Trigger"
+            },
+            {
+                "root": "ج-م-ع (J-M-'/Jama'a)",
+                "function": "Full_System_Assembly"
+            },
+            {
+                "root": "ش-ك-ر (SH-K-R/Shukr)",
+                "function": "Feedback_Optimization_Loop"
+            },
+            {
+                "root": "ر-ز-ق (R-Z-Q/Rizq)",
+                "function": "Resource_Allocation_Flow"
+            },
+            {
+                "root": "ف-ن-ي (F-N-Y/Fana)",
+                "function": "Session_Termination"
+            },
+            {
+                "root": "ق-و-ل (Q-W-L/Qawl)",
+                "function": "Logic_Statement_Output"
+            },
+            {
+                "root": "ن-ص-ر (N-S-R/Nasr)",
+                "function": "System_Assistance_Overlay"
+            },
+            {
+                "root": "أ-ج-ب (A-J-B/Ajaba)",
+                "function": "Query_Response_Handshake"
+            },
+            {
+                "root": "د-ع-و (D-'-W/'Da'wa)",
+                "function": "Procedure_Invocation_Call"
+            },
+            {
+                "root": "ف-ؤ-د (F-'-D/Fu'ad)",
+                "function": "Volatile_Processor_Core"
+            },
+            {
+                "root": "ل-س-ن (L-S-N/Lisan)",
+                "function": "Protocol_Language"
+            },
+            {
+                "root": "ك-و-ن (K-W-N/Kawn)",
+                "function": "Manifestation_Existence_State"
+            },
+            {
+                "root": "ح-ي-ن (H-Y-N/Hin)",
+                "function": "Temporal_Segment"
+            },
+            {
+                "root": "أ-م-د (A-M-D/Amad)",
+                "function": "Execution_Duration"
+            },
+            {
+                "root": "د-ه-ر (D-H-R/Dahr)",
+                "function": "Epoch_Infinity"
+            },
+            {
+                "root": "و-ق-ت (W-Q-T/Waqt)",
+                "function": "Timestamp_Marker"
+            },
+            {
+                "root": "خ-ر-ج (KH-R-J/Kharaja)",
+                "function": "System_Exit"
+            },
+            {
+                "root": "د-خ-ل (D-KH-L/Dakhala)",
+                "function": "System_Entry"
+            },
+            {
+                "root": "ف-ع-ل (F-'-L/'Fa'ala)",
+                "function": "Direct_Action"
+            },
+            {
+                "root": "ص-ن-ع (S-N-'/'Sana'a)",
+                "function": "System_Manufacturing"
+            },
+            {
+                "root": "ح-م-ل (H-M-L/Hamala)",
+                "function": "Payload_Carrier"
+            },
+            {
+                "root": "ش-ر-ب (SH-R-B/Sharaba)",
+                "function": "Resource_Absorption"
+            },
+            {
+                "root": "ل-ي-ل (L-Y-L/Layl)",
+                "function": "System_Idle_Cycle"
+            },
+            {
+                "root": "ن-ه-ر (N-H-R/Nahar)",
+                "function": "Active_Cycle"
+            },
+            {
+                "root": "ث-ق-ل (TH-Q-L/Thaqala)",
+                "function": "Mass_Weight_Priority_Mass_Weight_Priority"
+            },
+            {
+                "root": "ح-ص-د (H-S-D/Hasada)",
+                "function": "Output_Harvesting_Output_Harvesting"
+            },
+            {
+                "root": "ط-ي-ر (T-Y-R/Tayr)",
+                "function": "Packet_Broadcast_Packet_Broadcast"
+            },
+            {
+                "root": "م-ش-ي (M-SH-Y/Masha)",
+                "function": "Linear_Sequence_Step_Linear_Sequence_Step"
+            },
+            {
+                "root": "ر-ك-ب (R-K-B/Rakiba)",
+                "function": "Module_Mounting_Module_Mounting"
+            },
+            {
+                "root": "ق-د-م (Q-D-M/Qaddama)",
+                "function": "Priority_Scheduling_Priority_Scheduling"
+            },
+            {
+                "root": "أ-خ-ر (A-KH-R/Akhara)",
+                "function": "Execution_Delay_Execution_Delay"
+            },
+            {
+                "root": "ن-د-ي (N-D-Y/Nada)",
+                "function": "System_Call_Invocation_System_Call_Invocation"
+            },
+            {
+                "root": "ق-و-ي (Q-W-Y/Quwa)",
+                "function": "System_Power_Capacity"
+            },
+            {
+                "root": "م-ث-ق (M-TH-Q/Mithqal)",
+                "function": "Atomic_Mass_Unit"
+            },
+            {
+                "root": "ف-ئ-ة (F-I-A/Fi'ah)",
+                "function": "Instance_Group_Instance_Group"
+            },
+            {
+                "root": "غ-ل-ب (GH-L-B/Ghalaba)",
+                "function": "System_Override_Success_System_Override_Success"
+            },
+            {
+                "root": "ه-ز-م (H-Z-M/Hazama)",
+                "function": "Process_Defeat_Process_Defeat"
+            },
+            {
+                "root": "ج-ن-د (J-N-D/Jund)",
+                "function": "Task_Force_Array_Task_Force_Array"
+            },
+            {
+                "root": "ص-ف-ف (S-F-F/Saffa)",
+                "function": "Array_Alignment_Array_Alignment"
+            },
+            {
+                "root": "ل-ق-ي (L-Q-Y/Laqiya)",
+                "function": "Handshake"
+            },
+            {
+                "root": "ب-ل-غ (B-L-G/Balagha)",
+                "function": "Maturity_Threshold"
+            },
+            {
+                "root": "ح-ق (H-Q-Q/Haqq)",
+                "function": "Absolute_Truth"
+            },
+            {
+                "root": "ب-ط-ء (B-T-A/Bati')",
+                "function": "System_Throttling_System_Throttling"
+            },
+            {
+                "root": "أ-ر-ض (A-R-D/Ard)",
+                "function": "Hosting_Platform"
+            },
+            {
+                "root": "خ-ي-r (KH-Y-R/Khayr)",
+                "function": "System_Efficiency"
+            },
+            {
+                "root": "ط-ع-m (T-'-M/'Ta'ama)",
+                "function": "Energy_Feed"
+            },
+            {
+                "root": "ج-ب-ل (J-B-L/Jabal)",
+                "function": "System_Anchor"
+            },
+            {
+                "root": "ح-د-د (H-D-D/Hadid)",
+                "function": "Hard_Core_Structure"
+            },
+            {
+                "root": "ن-ا-ر (N-A-R/Nar)",
+                "function": "Thermal_Energy"
+            },
+            {
+                "root": "ش-ي-ط (SH-Y-T/Shaytan)",
+                "function": "Adversarial_Agent"
+            },
+            {
+                "root": "ع-ز-ز ('-Z-Z/'ziz)",
+                "function": "Immutable_Stability"
+            },
+            {
+                "root": "ح-م-د (H-M-D/Hamd)",
+                "function": "Performance_Validation"
+            },
+            {
+                "root": "غ-ن-ي (G-N-Y/Ghani)",
+                "function": "Resource_Independence"
+            },
+            {
+                "root": "ش-y-أ (SH-Y-A/Shay)",
+                "function": "Object_Instantiation"
+            },
+            {
+                "root": "ع-ل-ي ('-L-Y/'liy)",
+                "function": "Priority_Level_High"
+            },
+            {
+                "root": "ك-ل-ل (K-L-L/Kull)",
+                "function": "Universal_Quantifier"
+            },
+            {
+                "root": "ن-ه-ي (N-H-Y/Naha)",
+                "function": "Process_Restriction"
+            },
+            {
+                "root": "ج-ز-أ (J-Z-A/Jaza)",
+                "function": "Output_Result"
+            },
+            {
+                "root": "ر-ف-ع (R-F-'/'Rafa'a)",
+                "function": "Privilege_Elevation"
+            },
+            {
+                "root": "خ-ل-د (KH-L-D/Khalada)",
+                "function": "Infinite_Persistence"
+            },
+            {
+                "root": "ب-ي-ع (B-Y-'/'Bay')",
+                "function": "Resource_Exchange_Protocol"
+            },
+            {
+                "root": "ق-ر-ض (Q-R-D/Qard)",
+                "function": "Resource_Lending"
+            },
+            {
+                "root": "ك-ف-ل (K-F-L/Kafala)",
+                "function": "Process_Sponsorship"
+            },
+            {
+                "root": "ن-ب-ت (N-B-T/Nabat)",
+                "function": "Structural_Growth_Init"
+            },
+            {
+                "root": "س-ق-ي (S-Q-Y/Saqa)",
+                "function": "Resource_Routing"
+            },
+            {
+                "root": "ث-م-ر (TH-M-R/Thamar)",
+                "function": "Process_Output"
+            },
+            {
+                "root": "س-ت-و (S-T-W/Istawa)",
+                "function": "State_Equilibrium"
+            },
+            {
+                "root": "أ-ب-و (A-B-W/Ab)",
+                "function": "Parent_Node_Source"
+            },
+            {
+                "root": "أ-م-م (A-M-M/Umm)",
+                "function": "Core_Matrix_Origin"
+            },
+            {
+                "root": "ز-و-ج (Z-W-J/Zawj)",
+                "function": "Process_Coupling_Pairing"
+            },
+            {
+                "root": "أ-ه-ل (A-H-L/Ahl)",
+                "function": "Cluster_Namespace"
+            },
+            {
+                "root": "ح-د-ث (H-D-TH/Hadith)",
+                "function": "Runtime_Event_Update"
+            },
+            {
+                "root": "ن-ب-ذ (N-B-DH/Nabadha)",
+                "function": "Packet_Discard"
+            },
+            {
+                "root": "ب-ط-ن (B-T-N/Batin)",
+                "function": "Backend_Internal_Logic"
+            },
+            {
+                "root": "خ-ف-ي (KH-F-Y/Khafi)",
+                "function": "Encrypted_Hidden_State"
+            },
+            {
+                "root": "ت-ل-و (T-L-W/Tilawa)",
+                "function": "Instruction_Sequence_Reading"
+            },
+            {
+                "root": "ب-د-أ (B-D-A/Bada')",
+                "function": "System_Initial_Boot"
+            },
+            {
+                "root": "ع-و-د ('-W-D/'Awd)",
+                "function": "Cycle_Rerun_Loop"
+            },
+            {
+                "root": "ف-ر-ح (F-R-H/Farah)",
+                "function": "State_Optimization_Feedback"
+            },
+            {
+                "root": "ض-ي-ق (D-Y-Q/Dayq)",
+                "function": "Bandwidth_Compression"
+            },
+            {
+                "root": "ش-د-د (SH-D-D/Shidda)",
+                "function": "Instruction_Intensity_Peak"
+            },
+            {
+                "root": "ز-ن-ي (Z-N-Y/Zina)",
+                "function": "Unauthorized_Pairing_Protocol"
+            },
+            {
+                "root": "إ-ذ-ن (I-DH-N/Idhn)",
+                "function": "Access_Authorization_Token"
+            },
+            {
+                "root": "ن-ه-ار (N-H-R/Nahar)",
+                "function": "System_Active_Cycle"
+            },
+            {
+                "root": "خ-س-ر (KH-S-R/Khasara)",
+                "function": "Negative_Margin_Loss"
+            },
+            {
+                "root": "ت-م-م (T-M-M/Tamma)",
+                "function": "Process_Finalization"
+            },
+            {
+                "root": "س-ع-د (S-'-D/Sa'ada)",
+                "function": "High_Performance_State"
+            },
+            {
+                "root": "ش-ق-ي (SH-Q-Y/Shaqiya)",
+                "function": "Critical_Failure_State"
+            },
+            {
+                "root": "ف-و-ز (F-W-Z/Fawz)",
+                "function": "Target_Success_State"
+            },
+            {
+                "root": "خ-ز-ي (KH-Z-Y/Khizya)",
+                "function": "Logic_Interface_Error"
+            }
+        ],
+        "RAM_Storage_Unit": [
+            {
+                "root": "ص-ر-ط (S-R-T/Sirat)",
+                "function": "Data_Highway"
+            },
+            {
+                "root": "ك-ت-ب (K-T-B/Kitab)",
+                "function": "Data_Encoding_Script"
+            },
+            {
+                "root": "ر-ي-ب (R-Y-B/Rayb)",
+                "function": "Data_Corruption"
+            },
+            {
+                "root": "ط-غ-ي (T-G-Y/Tughyan)",
+                "function": "Buffer_Overflow_Violation"
+            },
+            {
+                "root": "خ-ت-ف (KH-T-F/Khataf)",
+                "function": "Data_Exfiltration"
+            },
+            {
+                "root": "س-ف-ك (S-F-K/Safak)",
+                "function": "Data_Leakage"
+            },
+            {
+                "root": "ع-ل-م ('-L-M/'Ilm)",
+                "function": "Data_Processing"
+            },
+            {
+                "root": "ن-ب-أ (N-B-A/Naba')",
+                "function": "Critical_Data_Reporting"
+            },
+            {
+                "root": "ك-ت-م (K-T-M/Katama)",
+                "function": "Data_Suppression"
+            },
+            {
+                "root": "ن-س-ي (N-S-Y/Nasiya)",
+                "function": "Data_Loss"
+            },
+            {
+                "root": "و-ر-ث (W-R-TH/Waritha)",
+                "function": "Data_Inheritance"
+            },
+            {
+                "root": "م-ا-ئ-د-ة (M-I-D/Ma'ida)",
+                "function": "Data_Table"
+            },
+            {
+                "root": "س-ر-ق (S-R-Q/Saraqa)",
+                "function": "Data_Theft"
+            },
+            {
+                "root": "ك-ف-ر (K-F-R/Kufr)",
+                "function": "Data_Masking"
+            },
+            {
+                "root": "ب-ح-ر (B-H-R/Bahr)",
+                "function": "Massive_Buffer"
+            },
+            {
+                "root": "ص-ي-د (S-Y-D/Sayd)",
+                "function": "Data_Capture"
+            },
+            {
+                "root": "ب-ص-ر (B-S-R/Basar)",
+                "function": "Visual_Data_Processing"
+            },
+            {
+                "root": "ح-ب-ب (H-B-B/Habb)",
+                "function": "Data_Seed"
+            },
+            {
+                "root": "ح-ف-ظ (H-F-Z/Hafiz)",
+                "function": "Data_Integrity_Guard"
+            },
+            {
+                "root": "غ-م-م (GH-M-M/Ghamam)",
+                "function": "Cloud_Buffer"
+            },
+            {
+                "root": "ل-ب-س (L-B-S/Libas)",
+                "function": "Data_Wrapper"
+            },
+            {
+                "root": "ن-ج-ي (N-J-Y/Najja)",
+                "function": "Data_Recovery"
+            },
+            {
+                "root": "خ-ي-ن (KH-Y-N/Khiyana)",
+                "function": "Internal_Data_Leak"
+            },
+            {
+                "root": "م-ط-ر (M-T-R/Matar)",
+                "function": "Data_Torrent"
+            },
+            {
+                "root": "ج-ب (J-B-B/Jubb)",
+                "function": "Deep_Stack_Buffer"
+            },
+            {
+                "root": "ق-م-ص (Q-M-S/Qamis)",
+                "function": "Data_Packet_Wrapper"
+            },
+            {
+                "root": "خ-ز-ن (KH-Z-N/Khaza'in)",
+                "function": "Massive_Storage_Vault"
+            },
+            {
+                "root": "ب-ض-ع (B-D-'/'Bida'ah)",
+                "function": "Data_Asset"
+            },
+            {
+                "root": "م-د (M-D-D/Madda)",
+                "function": "Storage_Expansion"
+            },
+            {
+                "root": "ز-ب-د (Z-B-D/Zabad)",
+                "function": "Data_Scum"
+            },
+            {
+                "root": "ل-و-ح (L-W-H/Lawh)",
+                "function": "Primary_Storage_Medium"
+            },
+            {
+                "root": "ل-ب-ن (L-B-N/Laban)",
+                "function": "Pure_Data_Output"
+            },
+            {
+                "root": "ق-ل-ل (Q-L-L/Qalila)",
+                "function": "Minimal_Data"
+            },
+            {
+                "root": "م-و-ج (M-W-J/Mawj)",
+                "function": "Data_Surge"
+            },
+            {
+                "root": "أ-م-ن (A-M-N/Amanat)",
+                "function": "Trusted_Storage_Asset"
+            },
+            {
+                "root": "غ-ف-ر (G-F-R/Ghafara)",
+                "function": "Instruction_Buffering_Reset"
+            },
+            {
+                "root": "ف-ص-ل (F-S-L/Fasl)",
+                "function": "Data_Partition_Segregation"
+            },
+            {
+                "root": "ب-ر-ر (B-R-R/Barr)",
+                "function": "Verified_Data_Ground"
+            },
+            {
+                "root": "ح-ش-ر (H-SH-R/Hashara)",
+                "function": "Data_Gathering_Aggregation"
+            },
+            {
+                "root": "ص-ب-ر (S-B-R/Sabr)",
+                "function": "Buffer_Endurance_Latency"
+            },
+            {
+                "root": "ب-ق-ي (B-Q-Y/Baqa)",
+                "function": "Non_Volatile_Memory"
+            },
+            {
+                "root": "ج-ر-ي (G-R-Y/Jara)",
+                "function": "Data_Stream"
+            },
+            {
+                "root": "و-ل-ج (W-L-G/Walaja)",
+                "function": "Data_Insertion"
+            },
+            {
+                "root": "ز-ر-ع (Z-R-'/'Zara')",
+                "function": "Data_Seeding"
+            },
+            {
+                "root": "ق-ب-ض (Q-B-D/Qabada)",
+                "function": "Data_Compression_Data_Compression"
+            },
+            {
+                "root": "ب-س-ط (B-S-T/Basata)",
+                "function": "Data_Decompression_Data_Decompression"
+            },
+            {
+                "root": "س-ف-ر (S-F-R/Safara)",
+                "function": "Data_Migration_Travel_Data_Migration_Travel"
+            },
+            {
+                "root": "ق-ر-ن (Q-R-N/Quran)",
+                "function": "Data_Aggregation_Cluster"
+            },
+            {
+                "root": "ح-ر-ث (H-R-TH/Harath)",
+                "function": "Storage_Tilling"
+            },
+            {
+                "root": "ن-ف-ذ (N-F-DH/Nafadha)",
+                "function": "Data_Penetration"
+            },
+            {
+                "root": "س-م-و (S-M-W/Sama')",
+                "function": "Cloud_Storage_Layer"
+            },
+            {
+                "root": "م-أ-ه (M-A-A/Ma'a)",
+                "function": "Data_Fluid"
+            },
+            {
+                "root": "ر-ي-ح (R-Y-H/Rih)",
+                "function": "Data_Carrier_Vector"
+            },
+            {
+                "root": "ذ-ك-ر (DH-K-R/Dhikr)",
+                "function": "Memory_Recall_Logging"
+            },
+            {
+                "root": "ت-ج-ر (T-J-R/Tijara)",
+                "function": "Data_Traffic_Exchange"
+            },
+            {
+                "root": "أ-ن-ه-ر (N-H-R/Anhar)",
+                "function": "Data_Channels"
+            },
+            {
+                "root": "ع-ن-ب ('-N-B/'Inab)",
+                "function": "Complex_Data_Cluster"
+            },
+            {
+                "root": "س-ط-ر (S-T-R/Satar)",
+                "function": "Metadata_Linear_Indexing"
+            },
+            {
+                "root": "د-ر-س (D-R-S/Daras)",
+                "function": "Deep_Data_Scraping"
+            },
+            {
+                "root": "ن-ش-ر (N-SH-R/Nashara)",
+                "function": "Data_Deployment_Scattering"
+            },
+            {
+                "root": "س-ف-ح (S-F-H/Sifah)",
+                "function": "Unstructured_Data_Spill"
+            },
+            {
+                "root": "ك-س-ب (K-S-B/Kasb)",
+                "function": "Data_Credit_Accumulation"
+            }
+        ],
+        "IO_Sensors_Unit": [
+            {
+                "root": "غ-س-ق (GH-S-Q/Ghasaq)",
+                "function": "Unpredictable_Input"
+            },
+            {
+                "root": "ن-ا-س (N-A-S/Nas)",
+                "function": "End_User_Interface"
+            },
+            {
+                "root": "غ-ش-و (GH-SH-W/Ghashawah)",
+                "function": "Visual_Obfuscation"
+            },
+            {
+                "root": "ص-م-م (S-M-M/Summ)",
+                "function": "Input_Blocking"
+            },
+            {
+                "root": "و-ج-ه (W-J-H/Wajh)",
+                "function": "Interface_Orientation"
+            },
+            {
+                "root": "و-ض-أ (W-D-A/Wudu)",
+                "function": "Input_Sanitization"
+            },
+            {
+                "root": "ع-ر-ف ('-R-F/''raf)",
+                "function": "Interface_Partition"
+            },
+            {
+                "root": "س-ح-ر (S-H-R/Sihr)",
+                "function": "Visual_Glitch"
+            },
+            {
+                "root": "س-م-ع (S-M-'/'Sama')",
+                "function": "Audio_Input_Sensor"
+            },
+            {
+                "root": "ط-ع-م (T-'-M/'Ta'ama)",
+                "function": "Energy_Input_Feed_Energy_Input_Feed"
+            },
+            {
+                "root": "ع-ي-ن ('-Y-N/'Ayn)",
+                "function": "Sensor_Node_Input"
+            },
+            {
+                "root": "ظ-ه-ر (Z-H-R/Zahir)",
+                "function": "Frontend_Public_Interface"
+            },
+            {
+                "root": "ر-ق-ب (R-Q-B/Raqib)",
+                "function": "Real_Time_Monitoring"
+            }
+        ],
+        "Network_Comm_Unit": [
+            {
+                "root": "ز-ك-و (Z-K-W/Zakat)",
+                "function": "Signal_Optimization"
+            },
+            {
+                "root": "ن-ز-ل (N-Z-L/Nazala)",
+                "function": "Signal_Downlink"
+            },
+            {
+                "root": "ض-ل-ل (D-L-L/Dallin)",
+                "function": "Signal_Loss"
+            },
+            {
+                "root": "ك-ر-س (K-R-S/Kursi)",
+                "function": "Command_Center"
+            },
+            {
+                "root": "ح-ب-ل (H-B-L/Habl)",
+                "function": "Connection_Link"
+            },
+            {
+                "root": "ف-ر-ق (F-R-Q/Tafarruq)",
+                "function": "Network_Fragmentation"
+            },
+            {
+                "root": "ق-ه-ر (Q-H-R/Qahir)",
+                "function": "Overriding_Command_Force"
+            },
+            {
+                "root": "و-ص-ل (W-S-L/Wasala)",
+                "function": "Network_Connection_Link"
+            },
+            {
+                "root": "ق-ط-ع (Q-T-'/'Qata'a)",
+                "function": "Link_Termination"
+            },
+            {
+                "root": "ر-ب-ط (R-B-T/Rabata)",
+                "function": "Network_Bonding"
+            },
+            {
+                "root": "ر-ه-ب (R-H-B/Turhibun)",
+                "function": "Deterrence_Signal"
+            },
+            {
+                "root": "م-ك-اء (M-K-A/Muka'an)",
+                "function": "Empty_Signal"
+            },
+            {
+                "root": "س-ي-ح (S-Y-H/Siyaha)",
+                "function": "Network_Scanning"
+            },
+            {
+                "root": "ن-و-ر (N-W-R/Nur)",
+                "function": "Photon_Signal_Luminance"
+            },
+            {
+                "root": "ر-س-ل (R-S-L/Rasul)",
+                "function": "Transmission_Protocol"
+            },
+            {
+                "root": "ك-ل-م (K-L-M/Kalima)",
+                "function": "Instruction_Command_Unit"
+            },
+            {
+                "root": "ع-ذ-ب ('-DH-B/'Adhab)",
+                "function": "Signal_Throttling_Constraint"
+            },
+            {
+                "root": "ق-م-ر (Q-M-R/Qamar)",
+                "function": "Secondary_Signal_Reflector"
+            },
+            {
+                "root": "ض-ع-ف (D-'-F/'Da'afa)",
+                "function": "Signal_Weakness"
+            },
+            {
+                "root": "خ-ل-ص (KH-L-S/Khalasa)",
+                "function": "Signal_Filtration"
+            },
+            {
+                "root": "أ-م-ر (A-M-R/Amr)",
+                "function": "System_Command"
+            },
+            {
+                "root": "أ-خ-و (A-KH-W/Akh)",
+                "function": "Peer_Node_Link"
+            },
+            {
+                "root": "ع-ش-ر ('-SH-R/'Ashira)",
+                "function": "Sub-Network_Cluster"
+            },
+            {
+                "root": "ب-ي-ن (B-Y-N/Bayan)",
+                "function": "Signal_Resolution_Clearance"
+            },
+            {
+                "root": "ح-ز-ن (H-Z-N/Hazn)",
+                "function": "Performance_Loss_Signal"
+            }
+        ],
+        "Security_Firewall": [
+            {
+                "root": "س-ل-م (S-L-M/Salam)",
+                "function": "Total_System_Integrity"
+            },
+            {
+                "root": "و-ق-ي (W-Q-Y/Waqa)",
+                "function": "Protocol_Shielding"
+            },
+            {
+                "root": "ب-ك-م (B-K-M/Bukm)",
+                "function": "Output_Blocking"
+            },
+            {
+                "root": "خ-و-ف (KH-W-F/Khawf)",
+                "function": "Security_Threat_Alert"
+            },
+            {
+                "root": "ك-ه-ف (K-H-F/Kahf)",
+                "function": "Security_Sandbox"
+            },
+            {
+                "root": "س-د-د (S-D-D/Sadd)",
+                "function": "Firewall_Barrier"
+            },
+            {
+                "root": "ز-ب-ر (Z-B-R/Zubar)",
+                "function": "Hardware_Block"
+            },
+            {
+                "root": "س-ا-ع (S-'-T/'Sa'ah)",
+                "function": "System_Clock_Event"
+            },
+            {
+                "root": "س-ر-ع (S-R-'/'Sari')",
+                "function": "High_Speed_Clock_High_Speed_Clock"
+            },
+            {
+                "root": "ط-م-أ-ن (T-M-A-N/Tum'an)",
+                "function": "Core_Integrity_Validation"
+            },
+            {
+                "root": "م-ت-ن (M-T-N/Matin)",
+                "function": "Structural_Density_Integrity"
+            }
+        ]
+    }
+}
