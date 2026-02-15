@@ -1706,7 +1706,7 @@
         {
             "root": "ن-ف-خ (N-F-KH/Nafakha)",
             "logic_function": "System_Inflation_Boot",
-            "description": "Initialisation du flux vital dans une instance ou un processus inerte."
+            "description": "Initialisation du flux d'information dans une instance ou un processus inerte."
         },
         {
             "root": "ب-ع-ث (B-'-TH/Ba'atha)",
@@ -1766,7 +1766,7 @@
         {
             "root": "أ-ج-ب (A-J-B/Ajaba)",
             "logic_function": "Query_Response_Handshake",
-            "description": "Protocole de réponse finalisant une requête entre deux entités."
+            "description": "Protocole de réponse finalisant une requête entre deux entités (Alif-Corrected)."
         },
         {
             "root": "د-ع-و (D-'-W/Da'wa)",
@@ -1787,6 +1787,86 @@
             "root": "ك-و-ن (K-W-N/Kawn)",
             "logic_function": "Manifestation_Existence_State",
             "description": "État final d'un processus devenu actif et visible dans l'environnement."
+        },
+        {
+            "root": "ع-ج-ب ('-J-B/Ajiba)",
+            "logic_function": "Logic_Anomaly_Signal",
+            "description": "Signal d'une séquence de données dépassant les paramètres de prédiction (Ain)."
+        },
+        {
+            "root": "ق-ر-ي (Q-R-Y/Qarya)",
+            "logic_function": "Node_Cluster",
+            "description": "Regroupement local de nœuds ou d'unités de stockage partageant un segment."
+        },
+        {
+            "root": "ع-ي-ن ('-Y-N/Ayn)",
+            "logic_function": "Precision_Sensor",
+            "description": "Capteur focalisé permettant l'extraction de données visuelles ou de flux."
+        },
+        {
+            "root": "ن-ا-ر (N-A-R/Nar)",
+            "logic_function": "Thermal_Energy_Flux",
+            "description": "Flux d'énergie intense servant de moteur ou de protocole de purge."
+        },
+        {
+            "root": "ر-ي-ح (R-Y-H/Rih)",
+            "logic_function": "Vector_Transfer_Protocol",
+            "description": "Déplacement rapide de paquets de données à travers le réseau."
+        },
+        {
+            "root": "ي-م-ن (Y-M-N/Yamin)",
+            "logic_function": "Validated_Path",
+            "description": "Vecteur de direction aligné sur les protocoles de succès système."
+        },
+        {
+            "root": "ش-م-ل (SH-M-L/Shimal)",
+            "logic_function": "Divergent_Path",
+            "description": "Vecteur de direction secondaire ou hors-protocole."
+        },
+        {
+            "root": "ف-و-ق (F-W-Q/Fawqa)",
+            "logic_function": "Super-Layer_Access",
+            "description": "Indicateur de positionnement dans une couche logicielle supérieure."
+        },
+        {
+            "root": "ت-ح-ت (T-H-T/Tahta)",
+            "logic_function": "Sub-Layer_Access",
+            "description": "Indicateur de positionnement dans la couche infrastructurelle (Hardware)."
+        },
+        {
+            "root": "أ-ب-و ('-B-W/Ab)",
+            "logic_function": "Origin_Parent_Node",
+            "description": "Nœud source dont les attributs sont hérités par les processus enfants."
+        },
+        {
+            "root": "أ-خ-و ('-KH-W/Akh)",
+            "logic_function": "Peer_Network_Node",
+            "description": "Nœud de même niveau hiérarchique partageant des ressources."
+        },
+        {
+            "root": "ز-و-ج (Z-W-J/Zawj)",
+            "logic_function": "Symmetric_Pair_Link",
+            "description": "Couplage de deux entités pour la redondance ou le chiffrement symétrique."
+        },
+        {
+            "root": "ش-ي-أ (SH-Y-Y/Shay)",
+            "logic_function": "Generic_Entity_Object",
+            "description": "Définition d'un objet ou d'une entité non encore typée (Instance)."
+        },
+        {
+            "root": "ن-م-ل (N-M-L/Naml)",
+            "logic_function": "Micro-Task_Swarm",
+            "description": "Exécution massive de micro-instructions coordonnées."
+        },
+        {
+            "root": "ك-ث-ر (K-TH-R/Kathir)",
+            "logic_function": "Data_Saturation_Signal",
+            "description": "Indicateur de haute densité ou de saturation de données."
+        },
+        {
+            "root": "ص-و-ت (S-W-T/Sawt)",
+            "logic_function": "Analog_Signal_Output",
+            "description": "Sortie de données sous forme de fréquences ou de vibrations système."
         }
     ]
 }
