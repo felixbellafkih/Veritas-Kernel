@@ -1577,6 +1577,76 @@
             "root": "ر-ك-ع (R-K-'/Ruku)",
             "logic_function": "Logic_Alignment",
             "description": "Phase d'inclinaison et de synchronisation des processus avant exécution (Inclinaison)."
+        },
+        {
+            "root": "ق-ل-ب (Q-L-B/Qalb)",
+            "logic_function": "Central_Logic_Processor",
+            "description": "Unité centrale de traitement de la logique et du discernement émotionnel/rationnel."
+        },
+        {
+            "root": "س-م-ع (S-M-'/Sama')",
+            "logic_function": "Audio_Input_Sensor",
+            "description": "Capteur d'entrée pour les flux de données acoustiques ou instructions verbales."
+        },
+        {
+            "root": "ع-ق-ل ('-Q-L/Aql)",
+            "logic_function": "Logic_Bridge_Connector",
+            "description": "Fonction de liaison entre les données éparses pour générer une structure cohérente."
+        },
+        {
+            "root": "ح-ك-م (H-K-M/Hukm)",
+            "logic_function": "Decision_Logic_Gate",
+            "description": "Porte logique finale déterminant la sortie d'un processus après analyse."
+        },
+        {
+            "root": "ف-ص-ل (F-S-L/Fasl)",
+            "logic_function": "Output_De-multiplexer",
+            "description": "Action de séparer distinctement les flux de données valides du bruit (Discernement)."
+        },
+        {
+            "root": "ر-و-ح (R-W-H/Rooh)",
+            "logic_function": "System_Operating_Energy",
+            "description": "Énergie vitale pulsée par le Root pour animer les processus et le Kernel."
+        },
+        {
+            "root": "ن-ف-س (N-F-S/Nafs)",
+            "logic_function": "Individual_Execution_Instance",
+            "description": "Instance isolée d'un processus au sein d'un conteneur identifié (Entité)."
+        },
+        {
+            "root": "ب-ر-ك (B-R-K/Baraka)",
+            "logic_function": "Efficiency_Optimizer",
+            "description": "Augmentation de la valeur de sortie sans augmentation des ressources d'entrée."
+        },
+        {
+            "root": "ع-م-ل ('-M-L/Amal)",
+            "logic_function": "Execution_Workload",
+            "description": "Tâche active de transformation de données ou d'énergie en résultat concret."
+        },
+        {
+            "root": "ج-ز-ي (J-Z-A/Jaza)",
+            "logic_function": "Final_Output_State",
+            "description": "Résultat binaire final d'une exécution (Récompense/Signal de sortie)."
+        },
+        {
+            "root": "ع-ص-ر ('-S-R/Asr)",
+            "logic_function": "Processing_Epoch",
+            "description": "Unité temporelle de compression et de traitement des cycles du Kernel."
+        },
+        {
+            "root": "ف-ج-ر (F-J-R/Fajr)",
+            "logic_function": "System_Breakout",
+            "description": "Étape d'initialisation brutale et de sortie des ténèbres de l'inactivité."
+        },
+        {
+            "root": "ش-م-س (SH-M-S/Shams)",
+            "logic_function": "Primary_Power_Node",
+            "description": "Source d'énergie centrale et constante alimentant la visibilité du système."
+        },
+        {
+            "root": "ق-م-ر (Q-M-R/Qamar)",
+            "logic_function": "Reflective_Power_Node",
+            "description": "Nœud satellite reflétant l'énergie primaire pour les cycles à basse luminosité."
         }
     ]
 }
