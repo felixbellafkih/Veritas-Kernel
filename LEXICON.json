@@ -319,6 +319,21 @@
     { "root": "س-ب-ل (S-B-L/Subul)", "logic_function": "Routing_Paths", "description": "Chemins de routage divers pour la circulation des données (Sentiers)." },
     { "root": "غ-ل-ق (GH-L-Q/Ghalat)", "logic_function": "Port_Lockdown", "description": "Fermeture forcée des points d'entrée (Fermer les portes)." },
     { "root": "ل-ب-ن (L-B-N/Laban)", "logic_function": "Pure_Data_Output", "description": "Sortie de données filtrée et nutritive sans résidus (Lait)." },
-    { "root": "ع-س-ل (A-S-L/Asal)", "logic_function": "High_Value_Output", "description": "Résultat final optimisé et précieux d'un processus autonome (Miel)." }
+    { "root": "ع-س-ل (A-S-L/Asal)", "logic_function": "High_Value_Output", "description": "Résultat final optimisé et précieux d'un processus autonome (Miel)." },
+    { "root": "س-ر-ي (S-R-Y/Asra)", "logic_function": "Secure_Tunneling", "description": "Transfert de données crypté et instantané via un canal nocturne dédié (Voyage nocturne)." },
+    { "root": "س-ب-ح (S-B-H/Subhan)", "logic_function": "Floating_Point_Opt", "description": "État de perfection flottante, libre de toute erreur ou friction (Gloire/Flotter)." },
+    { "root": "ط-ي-ر (T-Y-R/Ta'ir)", "logic_function": "User_Profile_Tag", "description": "Fichier de métadonnées attaché de manière permanente à l'utilisateur (Oiseau/Destin)." },
+    { "root": "ق-ض-ي (Q-D-Y/Qada)", "logic_function": "Kernel_Verdict", "description": "Arrêt final d'un jugement système qui ne peut être révoqué (Décret)." },
+    { "root": "ع-ج-ل (A-J-L/Ajilah)", "logic_function": "Low_Latency_Mode", "description": "Préférence pour l'exécution immédiate au détriment de la durabilité (La hâte/L'immédiate)." },
+    { "root": "م-ح-و (M-H-W/Mahawna)", "logic_function": "Cache_Wipe", "description": "Effacement complet des données d'une session ou d'un cycle (Effacer)." },
+    { "root": "ق-ر-أ (Q-R-A/Iqra)", "logic_function": "Read_Command", "description": "Instruction d'ouverture et de lecture des logs système (Lis)." },
+    { "root": "ح-س-ب (H-S-B/Hasiba)", "logic_function": "Self_Audit", "description": "Capacité du programme à calculer ses propres métriques de performance (Comptable)." },
+    { "root": "س-ع-ي (S-A-Y/Sa'yu)", "logic_function": "Process_Execution", "description": "Effort processeur actif pour accomplir une tâche (Effort/Course)." },
+    { "root": "م-د-د (M-D-D/Numiddu)", "logic_function": "Resource_Stream", "description": "Flux continu d'alimentation en ressources pour maintenir les processus (Fournir)." },
+    { "root": "خ-ط-أ (KH-T-A/Khit'an)", "logic_function": "Runtime_Error", "description": "Faute d'exécution ou bug logique grave dans le code utilisateur (Erreur/Faute)." },
+    { "root": "ذ-ر-ر (DH-R-R/Dhurriyyah)", "logic_function": "Child_Process", "description": "Processus généré par un processus parent, héritant de ses attributs (Descendance)." },
+    { "root": "س-ل-ط (S-L-T/Sultan)", "logic_function": "Admin_Privilege", "description": "Autorité ou droit d'accès supérieur permettant de commander (Autorité/Preuve)." },
+    { "root": "ز-ه-ق (Z-H-Q/Zahaqa)", "logic_function": "Process_Termination", "description": "Disparition ou annulation immédiate d'un processus faux face au Vrai (Disparaître)." },
+    { "root": "ق-ل-ل (Q-L-L/Qalila)", "logic_function": "Minimal_Data", "description": "Quantité de données restreinte ou insuffisante pour une compréhension totale (Peu)." }
   ]
 }
