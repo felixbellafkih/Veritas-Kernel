@@ -159,7 +159,7 @@
             "description": "Point d'équilibre optimal des variables pour éviter le crash (Standardisation de M-I-Z-N)." 
         },
         { 
-            "root": "ع-د-ل (A-D-L/Adl)", 
+            "root": "ع-د-ل ('-D-L/Adl)", 
             "logic_function": "Symmetry_Operator",
             "description": "Opérateur garantissant la parité et la symétrie des transactions." 
         },
@@ -254,12 +254,12 @@
             "description": "Panne des ports de sortie empêchant l'émission de réponses (Mutisme)." 
         },
         { 
-            "root": "ع-م-ي (A-M-Y/Umy)", 
+            "root": "ع-م-ي ('-M-Y/Umy)", 
             "logic_function": "Processing_Blindness", 
             "description": "Incapacité du processeur à visualiser les données internes." 
         },
         { 
-            "root": "ر-ع-د (R-A-D/Ra'd)", 
+            "root": "ر-ع-د (R-'-D/Ra'd)", 
             "logic_function": "System_Warning", 
             "description": "Signal d'alerte critique acoustique (Tonnerre/Alarme)." 
         },
@@ -279,7 +279,7 @@
             "description": "Administrateur nommé pour gérer l'instance locale (Viceroy/User)." 
         },
         { 
-            "root": "ج-ع-ل (J-A-L/Ja'il)", 
+            "root": "ج-ع-ل (J-'-L/Ja'il)", 
             "logic_function": "Instance_Generator", 
             "description": "Fonction de création ou d'assignation d'un rôle à une entité." 
         },
@@ -299,7 +299,7 @@
             "description": "État de sainteté absolue, sans bug ni entropie." 
         },
         { 
-            "root": "ع-ل-م (A-L-M/Allama)", 
+            "root": "ع-ل-م ('-L-M/Allama)", 
             "logic_function": "Knowledge_Upload", 
             "description": "Téléchargement direct de données dans le processeur (Enseigner)." 
         },
@@ -309,7 +309,7 @@
             "description": "Capacité de nommer et d'identifier les objets du système." 
         },
         { 
-            "root": "ع-ر-ض (A-R-D/Arada)", 
+            "root": "ع-ر-ض ('-R-D/Arada)", 
             "logic_function": "Display_Output", 
             "description": "Présentation des données sur l'interface (Exposer)." 
         },
@@ -359,7 +359,7 @@
             "description": "Ressources allouées par l'Administrateur (Grace/Bienfait)." 
         },
         { 
-            "root": "ع-ه-د (A-H-D/Ahd)", 
+            "root": "ع-ه-د ('-H-D/Ahd)", 
             "logic_function": "Protocol_Agreement", 
             "description": "Contrat de service standard (Engagement)." 
         },
@@ -439,7 +439,7 @@
             "description": "Nœud d'hébergement sécurisé pour les données (Maison/Serveur)." 
         },
         { 
-            "root": "ك-ع-ب (K-A-B/Ka'ba)", 
+            "root": "ك-ع-ب (K-'-B/Ka'ba)", 
             "logic_function": "Root_Cube", 
             "description": "Bloc central cubique servant de pivot universel (Anchor Point)." 
         },
@@ -454,7 +454,7 @@
             "description": "Rotation de données autour d'un pivot central (Circumambulation/Orbit)." 
         },
         { 
-            "root": "س-ع-ي (S-A-Y/Sa'y)", 
+            "root": "س-ع-ي (S-'-Y/Sa'y)", 
             "logic_function": "Active_Processing", 
             "description": "Exécution d'une tâche intensive entre deux points de contrôle (Running Process)." 
         },
@@ -929,7 +929,7 @@
             "description": "Connexion établie et maintenue entre deux segments de code (Liaison)." 
         },
         { 
-            "root": "ع-ر-ف (A-R-F/A'raf)", 
+            "root": "ع-ر-ف ('-R-F/A'raf)", 
             "logic_function": "Interface_Partition", 
             "description": "Zone tampon entre deux états système majeurs (Les Remparts/Interface)." 
         },
@@ -974,9 +974,9 @@
             "description": "État d'un processus tournant sans surveillance active (Inattention)." 
         },
         { 
-            "root": "ق-ط-ع (Q-T-A/Qata'a)", 
+            "root": "ق-ط-ع (Q-T-'/Qata'a)", 
             "logic_function": "Link_Termination", 
-            "description": "Rupture forcée d'une connexion ou d'un segment de code (Couper)." 
+            "description": "Rupture forcée d'une connexion ou d'un segment de code (Interrompre)." 
         },
         { 
             "root": "ف-س-ق (F-S-Q/Fasaqa)", 
@@ -994,7 +994,7 @@
             "description": "Extraction réussie d'un processus avant le crash du système (Sauvetage)." 
         },
         { 
-            "root": "ع-ق-ر (A-Q-R/Aqaru)", 
+            "root": "ع-ق-ر ('-Q-R/Aqaru)", 
             "logic_function": "Hardware_Sabotage", 
             "description": "Attaque directe sur les composants physiques ou vitaux (Blesser/Saboter)." 
         },
@@ -1114,12 +1114,12 @@
             "description": "Parcours du réseau pour audit ou exploration (Itinérance)." 
         },
         { 
-            "root": "ق-ع-د (Q-A-D/Qa'idun)", 
+            "root": "ق-ع-د (Q-'-D/Qa'idun)", 
             "logic_function": "Idle_Process", 
             "description": "Processus refusant de s'exécuter lors d'une demande de ressources (Assis)." 
         },
         { 
-            "root": "ع-ذ-ر (A-DH-R/Ma'dhira)", 
+            "root": "ع-ذ-ر ('-DH-R/Ma'dhira)", 
             "logic_function": "Exception_Log", 
             "description": "Rapport justifiant l'échec d'une tâche (Excuse)." 
         },
@@ -1149,7 +1149,7 @@
             "description": "Gestion active et régulation des commandes depuis le Root (Administrer)." 
         },
         { 
-            "root": "ع-ر-ش (A-R-SH/Arsh)", 
+            "root": "ع-ر-ش ('-R-SH/Arsh)", 
             "logic_function": "Central_Console", 
             "description": "Siège de l'autorité suprême du système d'où partent toutes les commandes (Trône)." 
         },
@@ -1199,7 +1199,7 @@
             "description": "Point de montage stable après un formatage massif (Mont Judi)." 
         },
         { 
-            "root": "ب-ع-د (B-A-D/Bu'dan)", 
+            "root": "ب-ع-د (B-'-D/Bu'dan)", 
             "logic_function": "Remote_Isolation", 
             "description": "Exclusion d'un processus vers une zone distante et inaccessible (Éloignement)." 
         },
@@ -1249,7 +1249,7 @@
             "description": "Entrepôts de données à haute capacité pour la gestion de crise (Trésors)." 
         },
         { 
-            "root": "س-ب-ع (S-B-A/Sab'a)", 
+            "root": "س-ب-ع (S-B-'/Sab'a)", 
             "logic_function": "Cycle_Constant", 
             "description": "Valeur itérative utilisée pour la planification temporelle (Sept)." 
         },
@@ -1289,7 +1289,7 @@
             "description": "Données inutiles ou résidus de calcul flottant à la surface (Écume)." 
         },
         { 
-            "root": "ن-ف-ع (N-F-A/Yanfa'u)", 
+            "root": "ن-ف-ع (N-F-'/Yanfa'u)", 
             "logic_function": "Value_Payload", 
             "description": "Partie utile de la donnée qui reste stockée après le filtrage (Utilité)." 
         },
@@ -1304,7 +1304,7 @@
             "description": "Variable ou adresse mémoire immuable et stable (Ferme)." 
         },
         { 
-            "root": "ف-ر-ع (F-R-A/Far'u)", 
+            "root": "ف-ر-ع (F-R-'/Far'u)", 
             "logic_function": "Branch_Node", 
             "description": "Extension ou nœud fils partant d'une structure parente (Branche)." 
         },
@@ -1354,7 +1354,7 @@
             "description": "Sortie de données filtrée et nutritive sans résidus (Lait)." 
         },
         { 
-            "root": "ع-س-ل (A-S-L/Asal)", 
+            "root": "ع-س-ل ('-S-L/Asal)", 
             "logic_function": "High_Value_Output", 
             "description": "Résultat final optimisé et précieux d'un processus autonome (Miel)." 
         },
@@ -1529,7 +1529,7 @@
             "description": "Signal d'entrée permettant la visibilité des données dans le système (Lumière)."
         },
         {
-            "root": "ع-ل-م (A-L-M/Ilm)",
+            "root": "ع-ل-م ('-L-M/Ilm)",
             "logic_function": "Data_Processing",
             "description": "Traitement de l'information et structuration de la connaissance (Science)."
         },
@@ -1539,7 +1539,7 @@
             "description": "Vecteur de transmission de données entre le Root et les terminaux (Messager)."
         },
         {
-            "root": "ع-د-ل (A-D-L/Adl)",
+            "root": "ع-د-ل ('-D-L/Adl)",
             "logic_function": "Systemic_Equilibrium",
             "description": "Maintien de la balance et de la symétrie des charges dans le noyau (Justice)."
         },
@@ -1564,7 +1564,7 @@
             "description": "Retour à un point de restauration système antérieur (Repentir)."
         },
         {
-            "root": "ع-ذ-ب (A-Z-B/Adhab)",
+            "root": "ع-ذ-ب ('-Z-B/Adhab)",
             "logic_function": "Penalty_Function",
             "description": "Application d'une contrainte de dégradation sur un nœud défaillant (Châtiment)."
         },
@@ -1574,7 +1574,7 @@
             "description": "Alignement total des ressources matérielles sur les exigences du noyau (Prosternation)."
         },
         {
-            "root": "ر-ك-ع (R-K-E/Ruku)",
+            "root": "ر-ك-ع (R-K-'/Ruku)",
             "logic_function": "Logic_Alignment",
             "description": "Phase d'inclinaison et de synchronisation des processus avant exécution (Inclinaison)."
         }
