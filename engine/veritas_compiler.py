@@ -1,50 +1,49 @@
-import json
 import sys
-import os
-import re
+import json
 
-def normalize(text):
-    return re.sub(r'[^A-Z0-9\']', '', text.upper())
+# Mapping unifié - Version 8.1.8 (Standardisé)
+VERITAS_MAP = {
+    'A': 'أ', 'B': 'ب', 'T': 'ت', 'TH': 'ث', 'J': 'ج', 'H.': 'ح', 'KH': 'خ',
+    'D': 'د', 'DH': 'ذ', 'R': 'ر', 'Z': 'ز', 'S': 'س', 'SH': 'ش', 'S.': 'ص',
+    'D.': 'ض', 'T.': 'ط', 'Z.': 'ظ', "'": 'ع', 'G': 'غ', 'F': 'ف', 'Q': 'ق',
+    'K': 'ك', 'L': 'ل', 'M': 'م', 'N': 'ن', 'H': 'ه', 'W': 'و', 'Y': 'ي',
+    '*': 'ء'
+}
 
-def compile_veritas(input_string):
-    lex_path = 'LEXICON.json'
-    if not os.path.exists(lex_path):
-        print("❌ CRITICAL ERROR: LEXICON.json MISSING")
-        return
+def to_arabic(root_latin):
+    # Découpage strict par le tiret pour protéger KH, TH, SH, DH, etc.
+    parts = root_latin.upper().split('-')
+    return "".join([VERITAS_MAP.get(p, p) for p in parts])
 
-    with open(lex_path, 'r', encoding='utf-8') as f:
-        lexicon = json.load(f)['universal_functions']
-
-    tokens = input_string.split()
-    results = []
-    signals_count = 0
-
-    for t in tokens:
-        clean_t = normalize(t)
-        # Recherche exacte dans le noyau
-        match = next((item for item in lexicon if clean_t in normalize(item['root'])), None)
+def compile_report(input_roots):
+    try:
+        with open('LEXICON.json', 'r', encoding='utf-8') as f:
+            lexicon = json.load(f)
         
-        if match:
-            signals_count += 1
-            # Formatage spécifique demandé : Racine (Label) => Logic_Chain
-            # Note: On extrait la partie fonctionnelle pour le mapping
-            logic_chain = match['logic_function'].replace('_', ' -> ')
-            results.append(f" -> {match['root'].split(' ')[0]:<12} ({clean_t:<8}) => {logic_chain}")
-        else:
-            results.append(f" -> !! NOISE !! ({clean_t:<8}) => UNKNOWN_SIGNAL")
+        db = {item['root'].upper(): item for item in lexicon['universal_functions']}
+        
+        print(f"\n --- RAPPORT DE COMPILATION VERITAS v8.1.8 ---")
+        found_count = 0
+        roots_list = input_roots.split()
 
-    # Calcul de la pureté
-    purity = (signals_count / len(tokens)) * 100 if tokens else 0
-    state = "OPTIMAL" if purity == 100 else "DÉGRADÉ" if purity > 0 else "CRITICAL_FAILURE"
+        for r in roots_list:
+            r_upper = r.upper()
+            arabic = to_arabic(r_upper)
+            match = db.get(r_upper)
+            
+            if match:
+                func = match['logic_function']
+                print(f" -> {r_upper:<12} ({arabic:<4}) => {func}")
+                found_count += 1
+            else:
+                print(f" -> !! NOISE !! ({r_upper:<12}) => UNKNOWN_SIGNAL")
 
-    print(f"\n --- RAPPORT DE COMPILATION VERITAS v8.1.5 --- ")
-    for res in results:
-        print(res)
-    print(f"\n Tokens : {len(tokens)} | Signaux : {signals_count} | Pureté : {purity:.2f}% ")
-    print(f" État : {state} ")
+        purity = (found_count / len(roots_list)) * 100
+        print(f"\n Tokens : {len(roots_list)} | Signaux : {found_count} | Pureté : {purity:.2f}%")
+
+    except Exception as e:
+        print(f"ERREUR SYSTÈME : {e}")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        compile_veritas(" ".join(sys.argv[1:]))
-    else:
-        print("Usage: python engine/veritas_compiler.py \"ROOT1 ROOT2 ...\"")
+        compile_report(sys.argv[1])
