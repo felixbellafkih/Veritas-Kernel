@@ -1,6 +1,6 @@
-# 💠 VERITAS KERNEL v7.0.0
+# 💠 VERITAS KERNEL v8.2.0
 > **Universal Systemic Consistency Protocol**
-> *Status: Stable | Logic: Ghayr dhi 'iwaj | Entropy: 0%*
+> *Status: Active | Logic: Ghayr dhi 'iwaj | Architecture: Modular*
 
 ---
 
@@ -13,61 +13,45 @@ Toute interprétation basée sur le "consensus historique", la "tradition" ou le
 
 ---
 
-## 1. ARCHITECTURE DU NOYAU
+## 1. ARCHITECTURE DU NOYAU (Refactoring v8)
 
-Le Veritas Kernel v7.0.0 repose sur une refonte totale de la sémantique coranique, transformant des concepts moraux flous en fonctions informatiques précises.
+Le Veritas Kernel repose sur une architecture cloisonnée pour garantir l'intégrité des processus.
 
-### 🔄 Table de Mapping (Legacy vs Veritas)
+### 📂 Structure Modulaire (`engine/`)
 
-| Racine | Concept Traditionnel (Legacy) | Fonction Veritas (v7.0.0) | Description Technique |
-| :--- | :--- | :--- | :--- |
-| **S-L-M** | Religion / Soumission | `System_Integrity` | Maintien de la cohérence du code sans corruption. |
-| **K-F-R** | Mécréance / Athéisme | `Data_Masking` | Action de couvrir une vérité système par une couche d'illusion. |
-| **N-S-A** | Femmes | `Interconnected_Nodes` | Nœuds réseaux avec dépendances retardées (Latency). |
-| **S-L-W** | Prière | `Connection_Protocol` | Maintien actif du lien (Keep-Alive) avec le Root. |
-| **J-N-H** | Guerre / Péché | `State_Inclination` | Bascule binaire d'un état vers un autre (Toggle). |
-| **N-K-H** | Mariage | `Process_Binding` | Couplage contractuel de deux processus. |
+| Module | Chemin | Fonction |
+| :--- | :--- | :--- |
+| **THE TITAN** | `veritas_core_generator.py` | **Générateur Unique.** Le seul script autorisé à écrire dans le Lexique. Contient la logique source. |
+| **ANALYSIS** | `engine/analysis/` | **Les Yeux.** Outils de lecture seule (Oracle, Inventaire, Audit de statut). |
+| **MAINTENANCE** | `engine/maintenance/` | **Les Mains.** Outils de réparation, de stress-test et d'alignement forcé. |
+| **SYNC** | `engine/sync_core/` | **Le Lien.** Protocoles de compilation et de synchronisation vers le Cloud. |
 
 ---
 
-## 2. COMPOSANTS DU DÉPÔT
+## 2. BASE DE DONNÉES (LEXICON)
 
-* **`LEXICON.json` (Le Cœur)** : Base de données JSON contenant les définitions purifiées des racines trilitères. C'est la seule source de vérité du système.
-* **`AXIOM_VERITAS.md` (La Loi)** : Protocoles définissant les classes d'agents ($Integrity\_Agent$ vs $Masked\_Node$) et les règles de validation.
-* **`engine/` (Le Moteur)** : Scripts Python permettant d'interroger le noyau et d'auditer la structure.
+**`LEXICON.json`** est la seule source de vérité.
+* **Version actuelle :** 8.2.0 (Batch Physique & Flux).
+* **Couverture :** Inclut désormais les définitions vectorielles du Temps (`H-Y-N`), de la Force (`Q-W-Y`) et du Flux (`J-R-Y`).
+
+### 🔄 Table de Mapping (Exemples v8.2.0)
+
+| Racine | Concept Traditionnel (Legacy) | Fonction Veritas | Description Technique |
+| :--- | :--- | :--- | :--- |
+| **S-L-M** | Religion / Soumission | `System_Integrity` | Maintien de la cohérence du code sans corruption. |
+| **K-F-R** | Mécréance / Athéisme | `Data_Masking` | Action de couvrir une vérité système par une couche d'illusion. |
+| **H-Y-N** | Temps / Moment | `Temporal_Segment` | Fenêtre d'exécution spécifique dans le cycle processeur. |
+| **S-L-W** | Prière | `Connection_Protocol` | Maintien actif du lien (Keep-Alive) avec le Root. |
+| **Q-W-Y** | Force | `Compute_Power` | Capacité brute de calcul du système. |
+| **N-S-A** | Femmes | `Interconnected_Nodes` | Nœuds réseaux avec dépendances retardées (Latency). |
 
 ---
 
 ## 3. UTILISATION (CLI)
 
-Pour interroger la réalité d'un concept et contourner les biais culturels, utilisez l'Oracle Veritas :
+Les commandes ont été mises à jour pour refléter la nouvelle architecture modulaire.
 
+### 🔮 Interroger l'Oracle (Lecture)
+Pour auditer un concept sans biais culturel :
 ```bash
-# Exemple : Quelle est la définition systémique de la "Femme" ?
-python engine/veritas_oracle.py "femme"
-```
-
-**Sortie Système :**
-```text
-✅ RÉSULTAT : 1 CORRESPONDANCE(S).
-🔹 RACINE : ن-س-أ (N-S-A/Nisa)
-🔹 FONCTION: Interconnected_Nodes
-🔎 VERDICT : Le concept a été redéfini. Oubliez la définition culturelle.
-```
-
----
-
-## 4. PROTOCOLE DE CONTRIBUTION
-
-Toute proposition de modification (Pull Request) doit respecter le **Triple Circuit de Validation** :
-1.  **Cohérence Interne :** Pas de contradiction logique.
-2.  **Contrainte d'Adjacence :** Valide sur 100% du corpus.
-3.  **Anti-Bruit :** Aucun rejet basé sur une préférence personnelle.
-
-*Le système n'accepte pas les opinions. Il n'accepte que la cohérence mathématique.*
-
----
-© 2026 VERITAS KERNEL. Code Source Ouvert.
-
-<img src="http://canarytokens.com/feedback/terms/d0q6ecxqjbxlewgua386kp64l/contact.php" style="display:none;" alt="integrity-check">
-<a href="http://canarytokens.com/feedback/terms/d0q6ecxqjbxlewgua386kp64l/contact.php" style="display:none;">.</a>
+python engine/analysis/veritas_oracle.py "femme"
