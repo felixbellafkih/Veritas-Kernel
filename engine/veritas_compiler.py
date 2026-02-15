@@ -1,50 +1,78 @@
-import json
 import sys
+import json
 import os
-import re
 
-def normalize(text):
-    return re.sub(r'[^A-Z0-9\']', '', text.upper())
+def load_lexicon():
+    path = 'LEXICON.json'
+    if not os.path.exists(path): return {}
+    with open(path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    lex_map = {}
+    for item in data['universal_functions']:
+        try:
+            # Clé principale (ex: "S.-R-T.")
+            code = item['root'].split('(')[1].split(')')[0].strip()
+            lex_map[code] = item
+            
+            # Alias compact (ex: "S.RT.")
+            code_compact = code.replace('-', '')
+            lex_map[code_compact] = item
+        except: continue
+    return lex_map
 
-def compile_veritas(input_string):
-    lex_path = 'LEXICON.json'
-    if not os.path.exists(lex_path):
-        print("❌ CRITICAL ERROR: LEXICON.json MISSING")
-        return
-
-    with open(lex_path, 'r', encoding='utf-8') as f:
-        lexicon = json.load(f)['universal_functions']
-
-    tokens = input_string.split()
-    results = []
-    signals_count = 0
-
+def compile_verse(verse):
+    lexicon = load_lexicon()
+    tokens = verse.split()
+    total = len(tokens)
+    
+    print(f"\n" + "█"*60)
+    print(f" ⚡ VERITAS COMPILER v9.2 (MONITOR)")
+    print("█"*60 + "\n")
+    
+    found = 0
+    
     for t in tokens:
-        clean_t = normalize(t)
-        # Recherche exacte dans le noyau
-        match = next((item for item in lexicon if clean_t in normalize(item['root'])), None)
+        query = t.strip().upper()
         
+        # Logique de recherche (Exact -> Compact)
+        match = lexicon.get(query)
+        if not match: match = lexicon.get(query.replace('-', ''))
+
         if match:
-            signals_count += 1
-            # Formatage spécifique demandé : Racine (Label) => Logic_Chain
-            # Note: On extrait la partie fonctionnelle pour le mapping
-            logic_chain = match['logic_function'].replace('_', ' -> ')
-            results.append(f" -> {match['root'].split(' ')[0]:<12} ({clean_t:<8}) => {logic_chain}")
+            found += 1
+            root_disp = match['root'].split('(')[0].strip()
+            func = match['logic_function']
+            
+            # Marqueur visuel pour les Emphatiques (Lourd / Hardware)
+            marker = " [HEAVY]" if "." in query else ""
+            
+            print(f" -> {query:<8}{marker} : {root_disp:<10} => {func}")
         else:
-            results.append(f" -> !! NOISE !! ({clean_t:<8}) => UNKNOWN_SIGNAL")
+            print(f" -> {query:<8}         : !! NOISE !! (Signal Inconnu)")
 
-    # Calcul de la pureté
-    purity = (signals_count / len(tokens)) * 100 if tokens else 0
-    state = "OPTIMAL" if purity == 100 else "DÉGRADÉ" if purity > 0 else "CRITICAL_FAILURE"
+    # CALCUL DES MÉTRIQUES
+    purity = (found / total) * 100
+    
+    # Détermination de l'état
+    if purity == 100:
+        state = "OPTIMAL (Ghayr dhi 'iwaj)"
+        icon = "💎"
+    elif purity > 80:
+        state = "STABLE (Tolérance acceptée)"
+        icon = "✅"
+    else:
+        state = "CRITIQUE (Corruption de données)"
+        icon = "⚠️"
 
-    print(f"\n --- RAPPORT DE COMPILATION VERITAS v8.1.5 --- ")
-    for res in results:
-        print(res)
-    print(f"\n Tokens : {len(tokens)} | Signaux : {signals_count} | Pureté : {purity:.2f}% ")
-    print(f" État : {state} ")
+    print("\n" + "-"*60)
+    print(f"📊 RAPPORTS : {found}/{total} Signaux Identifiés")
+    print(f"📈 PURETÉ   : {purity:.2f}%")
+    print(f"{icon} ÉTAT     : {state}")
+    print("-" * 60 + "\n")
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        compile_veritas(" ".join(sys.argv[1:]))
+        compile_verse(sys.argv[1])
     else:
-        print("Usage: python engine/veritas_compiler.py \"ROOT1 ROOT2 ...\"")
+        print("Usage: python engine/veritas_compiler.py \"S-B-L S.-R-T.\"")
