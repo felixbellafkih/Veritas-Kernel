@@ -1492,6 +1492,38 @@
             "root": "ظ-م-أ (Z-M-A/Zama'u)", 
             "logic_function": "Thirst_Error", 
             "description": "Manque critique de flux de données ou d'hydratation système (Soif)." 
-        }
+        },
+        [
+  {
+    "root": "أ-م-ن (A-M-N/Iman)",
+    "logic_function": "Security_Validation",
+    "description": "Validation du protocole de sécurité et passage en mode Trusted_Node."
+  },
+  {
+    "root": "ش-ر-ك (SH-R-K/Shirk)",
+    "logic_function": "Parallel_Root_Error",
+    "description": "Tentative d'exécution de processus concurrents avec des privilèges Root non autorisés."
+  },
+  {
+    "root": "ج-ه-د (J-H-D/Jihad)",
+    "logic_function": "Computation_Effort",
+    "description": "Dépense de ressources pour surmonter une résistance système ou une corruption de données."
+  },
+  {
+    "root": "ر-ج-ل (R-J-L/Rijal)",
+    "logic_function": "Mobile_Compute_Unit",
+    "description": "Entités système caractérisées par leur mobilité et leur capacité d'exécution hors-site."
+  },
+  {
+    "root": "ج-ه-ن-م (J-H-N-M/Jahannam)",
+    "logic_function": "Thermal_Collapse",
+    "description": "État de surchauffe systémique menant à une dégradation irréversible des données (Entropie)."
+  },
+  {
+    "root": "ق-د-ر (Q-D-R/Qadr)",
+    "logic_function": "Resource_Capacity",
+    "description": "Détermination de la puissance de calcul et limites d'allocation des ressources."
+  }
+]
     ]
 }
