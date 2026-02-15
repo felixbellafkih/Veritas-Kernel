@@ -238,6 +238,24 @@
     { "root": "ج-ن-ح (J-N-H/Janahu)", "logic_function": "State_Inclination", "description": "Tendance d'un processus à basculer vers un état (paix/guerre) (Penchant)." },
     { "root": "أ-ل-ف (A-L-F/Allafa)", "logic_function": "Sync_Harmonization", "description": "Synchronisation parfaite des cœurs/processus disparates (Unir les cœurs)." },
     { "root": "ح-س-ب (H-S-B/Hasbuk)", "logic_function": "Sufficiency_Check", "description": "Vérification que les ressources allouées sont suffisantes (Suffire)." },
-    { "root": "م-ك-اء (M-K-A/Muka'an)", "logic_function": "Empty_Signal", "description": "Bruit ou signal vide de sens, simple sifflement (Sifflement)." }
+    { "root": "م-ك-اء (M-K-A/Muka'an)", "logic_function": "Empty_Signal", "description": "Bruit ou signal vide de sens, simple sifflement (Sifflement)." },
+    { "root": "ب-ر-أ (B-R-A/Bara'a)", "logic_function": "Connection_Termination", "description": "Rupture unilatérale et définitive de tout contrat avec un nœud hostile (Désaveu/Immunité)." },
+    { "root": "ن-ف-ق (N-F-Q/Nifaq)", "logic_function": "Malware_Camouflage", "description": "Processus hostile se faisant passer pour un processus système valide (Hypocrisie)." },
+    { "root": "ت-و-ب (T-W-B/Tawbah)", "logic_function": "System_Restore", "description": "Retour à une configuration saine après une erreur critique (Repentir)." },
+    { "root": "ر-ج-س (R-J-S/Rijs)", "logic_function": "Corrupted_Cache", "description": "Données impures ou malveillantes devant être purgées (Souillure)." },
+    { "root": "ن-ج-س (N-J-S/Najas)", "logic_function": "Incompatible_Object", "description": "Objet déclaré impropre à l'intégration dans le noyau (Impureté)." },
+    { "root": "ك-ن-Z (K-N-Z/Kanz)", "logic_function": "Hoarded_Memory", "description": "Ressources accumulées inutilement et non redistribuées (Thésaurisation)." },
+    { "root": "س-ي-ح (S-Y-H/Siyaha)", "logic_function": "Network_Scanning", "description": "Parcours du réseau pour audit ou exploration (Tourisme/Itinérance)." },
+    { "root": "ق-ع-د (Q-A-D/Qa'idun)", "logic_function": "Idle_Process", "description": "Processus refusant de s'exécuter lors d'une demande de ressources (Ceux qui restent assis)." },
+    { "root": "خ-ل-ف (KH-L-F/Mukhallafun)", "logic_function": "Lagged_Process", "description": "Processus laissés en arrière en raison de leur lenteur ou refus (Les laissés pour compte)." },
+    { "root": "ع-ذ-ر (A-DH-R/Ma'dhira)", "logic_function": "Exception_Log", "description": "Rapport justifiant l'échec d'une tâche (Excuse)." },
+    { "root": "ض-ر-ر (D-R-R/Dirar)", "logic_function": "Harmful_Fork", "description": "Création d'un sous-système (mosquée) pour nuire au réseau principal (Nuisance)." },
+    { "root": "ب-ن-ي (B-N-Y/Bunyan)", "logic_function": "Structure_Stability", "description": "Solidité de l'architecture logicielle (Édifice)." },
+    { "root": "ه-و-ر (H-W-R/Har)", "logic_function": "Collapse_Risk", "description": "État instable d'une structure sur le point de s'effondrer (Bord du précipice)." },
+    { "root": "ز-ي-غ (Z-Y-G/Zaigh)", "logic_function": "Deviation_Vector", "description": "Vecteur mathématique s'éloignant de la cible (Déviation)." },
+    { "root": "ص-ل-ت (S-L-T/Salat)", "logic_function": "Connection_Maintenance", "description": "Protocole régulier de maintien de la connexion au serveur (Prière/Lien)." },
+    { "root": "ز-ك-و (Z-K-W/Zakah)", "logic_function": "Cache_Purification", "description": "Nettoyage des actifs par redistribution obligatoire (Purification)." },
+    { "root": "ج-ه-د (J-H-D/Jihad)", "logic_function": "Active_Debugging", "description": "Effort intensif pour éliminer les bugs et les résistances (Effort/Lutte)." },
+    { "root": "ف-ق-ه (F-Q-H/Fiqh)", "logic_function": "Deep_Decoding", "description": "Compréhension profonde de la logique interne du code (Compréhension)." }
   ]
 }
