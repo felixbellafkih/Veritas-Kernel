@@ -276,6 +276,24 @@
     { "root": "ج-و-د (J-W-D/Judi)", "logic_function": "Recovery_Partition", "description": "Point de montage stable après un formatage massif (Mont Judi)." },
     { "root": "ب-ع-د (B-A-D/Bu'dan)", "logic_function": "Remote_Isolation", "description": "Exclusion d'un processus vers une zone distante et inaccessible (Éloignement)." },
     { "root": "ر-ك-ن (R-K-N/Rukn)", "logic_function": "Support_Dependency", "description": "Dépendance vers un module de soutien externe solide (Appui/Pilier)." },
-    { "root": "س-ق-m (S-Q-M/Istaqim)", "logic_function": "System_Stability", "description": "Maintien d'une ligne d'exécution droite et sans erreur (Droiture)." }
+    { "root": "س-ق-m (S-Q-M/Istaqim)", "logic_function": "System_Stability", "description": "Maintien d'une ligne d'exécution droite et sans erreur (Droiture)." },
+    { "root": "ق-ص-ص (Q-S-S/Qasas)", "logic_function": "Optimized_Log_Sequence", "description": "Séquence de logs parfaitement structurée pour l'apprentissage du système (Meilleur récit)." },
+    { "root": "ر-أ-ي (R-U-Y/Ru'ya)", "logic_function": "System_Simulation", "description": "Exécution d'un scénario de données en environnement virtuel (Rêve/Vision)." },
+    { "root": "ت-أ-و-ي-ل (A-W-L/Ta'wil)", "logic_function": "Output_Decoding", "description": "Capacité de résoudre la signification finale d'un flux de données complexe (Interprétation)." },
+    { "root": "ج-ب (J-B-B/Jubb)", "logic_function": "Deep_Stack_Buffer", "description": "Zone de stockage temporaire profonde et isolée (Puits/Buffer)." },
+    { "root": "س-ي-ر (S-Y-R/Sayyarah)", "logic_function": "Data_Crawler", "description": "Processus mobile parcourant les segments de données (Caravane/Crawler)." },
+    { "root": "ذ-ئ-ب (DH-I-B/Dhi'b)", "logic_function": "Threat_Actor", "description": "Entité malveillante tentant d'intercepter ou de détruire un processus (Loup)." },
+    { "root": "ق-م-ص (Q-M-S/Qamis)", "logic_function": "Data_Packet_Wrapper", "description": "Enveloppe de données servant de preuve ou d'identifiant (Chemise/Wrapper)." },
+    { "root": "ك-ي-د (K-Y-D/Kayd)", "logic_function": "Algorithm_Subterfuge", "description": "Manipulation logique complexe pour atteindre un but (Ruse/Stratagème)." },
+    { "root": "س-ج-ن (S-J-N/Sijn)", "logic_function": "Process_Sandbox", "description": "Environnement d'exécution restreint et isolé pour un long terme (Prison/Sandbox)." },
+    { "root": "خ-ز-ن (KH-Z-N/Khaza'in)", "logic_function": "Massive_Storage_Vault", "description": "Entrepôts de données à haute capacité pour la gestion de crise (Trésors/Magasins)." },
+    { "root": "ح-ف-ظ (H-F-Z/Hafiz)", "logic_function": "Data_Retention_Officer", "description": "Contrôleur garantissant l'intégrité et la rétention des données (Gardien)." },
+    { "root": "ع-ص-ر (A-S-R/A'siru)", "logic_function": "Data_Compression", "description": "Action de presser ou réduire les données pour en extraire l'essence (Presser/Compresser)." },
+    { "root": "ح-ص-د (H-S-D/Hasadtum)", "logic_function": "Resource_Harvesting", "description": "Collecte finale des données après une période de traitement (Moisson)." },
+    { "root": "س-ب-ع (S-B-A/Sab'a)", "logic_function": "Cycle_Constant", "description": "Valeur itérative utilisée pour la planification temporelle (Sept/Cycles)." },
+    { "root": "ك-ي-ل (K-Y-L/Kayl)", "logic_function": "Quata_Allocation", "description": "Mesure précise des ressources allouées à un nœud (Mesure/Charge)." },
+    { "root": "ب-ض-ع (B-D-A/Bida'ah)", "logic_function": "Data_Asset", "description": "Unité de valeur utilisée pour une transaction système (Marchandise)." },
+    { "root": "ر-و-د (R-W-D/Rawadat-hu)", "logic_function": "Unauthorized_Request", "description": "Tentative de sollicitation d'un processus par un nœud non autorisé (Séduction/Sollicitation)." },
+    { "root": "ص-و-ع (S-W-A/Suwa')", "logic_function": "Auth_Token", "description": "Objet de valeur utilisé pour vérifier l'identité d'un utilisateur (Coupe du roi/Token)." }
   ]
 }
