@@ -1,0 +1,15 @@
+{
+    "patch_version": "v8.2-Error-Handling",
+    "universal_functions": [
+        {"root": "S-W-'", "logic_function": "Bad_Sector", "description": "Détérioration générique d'une zone mémoire ou d'une action."},
+        {"root": "Z-Y-GH", "logic_function": "Vector_Drift", "description": "Déviation angulaire par rapport à la trajectoire calculée (Bug)."},
+        {"root": "J-D-L", "logic_function": "Recursive_Conflict", "description": "Boucle infinie de contention ou d'argumentation sans sortie."},
+        {"root": "B-GH-Y", "logic_function": "Privilege_Escalation", "description": "Usurpation de droits ou dépassement des limites allouées."},
+        {"root": "K-S-L", "logic_function": "Process_Latency", "description": "Lourdeur ou délai excessif dans l'exécution d'une tâche."},
+        {"root": "L-GH-W", "logic_function": "Null_Data_Stream", "description": "Flux de données vide de sens ou bruit statique."},
+        {"root": "T.-GH-Y", "logic_function": "Buffer_Overflow", "description": "Dépassement critique des limites de capacité (Tyrannie)."},
+        {"root": "W-Y-L", "logic_function": "Fatal_Exception_Warning", "description": "Alerte de destruction imminente ou erreur fatale."},
+        {"root": "F-Z-'", "logic_function": "Kernel_Panic", "description": "État de peur systémique ou réaction de choc du processeur."},
+        {"root": "S-K-R", "logic_function": "Logic_Scrambling", "description": "Obfuscation de la logique ou perte de contrôle (Ivresse)."}
+    ]
+}
