@@ -1,0 +1,41 @@
+# VERITAS-KERNEL v1.0 : MANUEL OPÉRATEUR
+
+## 1. PRINCIPE DE BASE
+Ce système considère le texte d'entrée comme un code informatique. Il ignore le contexte historique pour se concentrer sur la fonction logique de la racine trilitère.
+
+## 2. COMMANDES PRINCIPALES
+
+### A. Compiler un Verset (Scan Sémantique)
+Analyse une phrase pour voir si elle est "Pure" (indexée) ou "Bruyante" (inconnue).
+$ python engine/veritas_compiler.py "RACINE1 RACINE2 RACINE3"
+Exemple : python engine/veritas_compiler.py "K-T-B R-Y-B H-D-Y"
+
+### B. Interroger l'Oracle (Recherche Unitaire)
+Trouve la définition technique d'une racine spécifique.
+$ python engine/analysis/veritas_oracle.py [RACINE]
+Exemple : python engine/analysis/veritas_oracle.py S-B-R
+
+### C. Dashboard (État du Système)
+Affiche la santé du noyau et la couverture matérielle.
+$ python engine/veritas_dashboard.py
+
+## 3. CODES D'ERREUR COURANTS
+
+* **!! NOISE !!** : Le mot n'est pas une racine système reconnue (Probable ajout humain/traditionnel).
+* **UNKNOWN_SIGNAL** : Erreur de transcription. Vérifiez si vous utilisez ' (Ain) ou A (Hamza).
+* **DÉGRADÉ** : Le verset contient moins de 100% de signaux reconnus.
+
+## 4. STANDARD DE TRANSCRIPTION (VTS-v1)
+* **'** = 'Ain (ع) -> Action, Processus (ex: 'L-M = Science/Data).
+* **A** = Hamza (أ) -> Origine, Input (ex: A-L-M = Douleur/Signal).
+* **SH** = Shin (ش).
+* **TH** = Tha (ث).
+* **KH** = Kha (خ).
+* **DH** = Dhal (ذ).
+
+## 5. RECHERCHE DE BUG (DEBUGGING)
+Si une racine semble manquante, vérifiez le fichier `LEXICON.json`.
+Si elle est absente, c'est que le concept est considéré comme "Non-Systémique" ou "Bruit" dans la version 1.0.
+
+---
+SYSTEME : GHAYR DHI 'IWAJ (WITHOUT DISTORTION)
