@@ -1488,7 +1488,7 @@
             "logic_function": "Ground_Layer", 
             "description": "Couche physique la plus basse du système (Sol humide)." 
         },
-       {
+      {
             "root": "ظ-م-أ (Z-M-A/Zama'u)",
             "logic_function": "Thirst_Error",
             "description": "Manque critique de flux de données ou d'hydratation système (Soif)."
@@ -1522,7 +1522,61 @@
             "root": "ق-د-ر (Q-D-R/Qadr)",
             "logic_function": "Resource_Capacity",
             "description": "Détermination de la puissance de calcul et limites d'allocation des ressources."
+        },
+        {
+            "root": "ن-و-ر (N-U-R/Noor)",
+            "logic_function": "Logic_Signal",
+            "description": "Signal d'entrée permettant la visibilité des données dans le système (Lumière)."
+        },
+        {
+            "root": "ع-ل-م (A-L-M/Ilm)",
+            "logic_function": "Data_Processing",
+            "description": "Traitement de l'information et structuration de la connaissance (Science)."
+        },
+        {
+            "root": "ر-س-ل (R-S-L/Rasul)",
+            "logic_function": "Transmission_Protocol",
+            "description": "Vecteur de transmission de données entre le Root et les terminaux (Messager)."
+        },
+        {
+            "root": "ع-د-ل (A-D-L/Adl)",
+            "logic_function": "Systemic_Equilibrium",
+            "description": "Maintien de la balance et de la symétrie des charges dans le noyau (Justice)."
+        },
+        {
+            "root": "م-و-ت (M-W-T/Mawt)",
+            "logic_function": "Process_Termination",
+            "description": "Fin d'exécution d'un processus ou état d'inactivité binaire (Mort)."
+        },
+        {
+            "root": "ك-ل-م (K-L-M/Kalima)",
+            "logic_function": "Instruction_Command",
+            "description": "Unité de base du langage de commande système (Parole/Verbe)."
+        },
+        {
+            "root": "غ-ف-ر (G-F-R/Ghaffar)",
+            "logic_function": "Data_Protection_Overwrite",
+            "description": "Action de couvrir une erreur par une couche de protection ou de récupération (Pardon)."
+        },
+        {
+            "root": "ت-و-ب (T-W-B/Tawba)",
+            "logic_function": "State_Reversion",
+            "description": "Retour à un point de restauration système antérieur (Repentir)."
+        },
+        {
+            "root": "ع-ذ-ب (A-Z-B/Adhab)",
+            "logic_function": "Penalty_Function",
+            "description": "Application d'une contrainte de dégradation sur un nœud défaillant (Châtiment)."
+        },
+        {
+            "root": "س-ج-د (S-G-D/Sujud)",
+            "logic_function": "Hardware_Submission",
+            "description": "Alignement total des ressources matérielles sur les exigences du noyau (Prosternation)."
+        },
+        {
+            "root": "ر-ك-ع (R-K-E/Ruku)",
+            "logic_function": "Logic_Alignment",
+            "description": "Phase d'inclinaison et de synchronisation des processus avant exécution (Inclinaison)."
         }
-]
     ]
 }
