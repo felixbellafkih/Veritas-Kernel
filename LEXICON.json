@@ -1927,6 +1927,25 @@
     { "root": "ع-ل-م (A-L-M/Ilm)", "logic_function": "Data_Knowledge", "description": "Ensemble d'informations traitées, vérifiées et stockées avec certitude (Science)." },
     { "root": "ن-ب-ل (N-B-L/Nabil)", "logic_function": "Elite_Process", "description": "Processus de haute qualité, optimisé et noble dans son exécution (Noble)." },
     { "root": "ع-ف-ر-ي-ت (A-F-R-T/Ifrit)", "logic_function": "High_Performance_Daemon", "description": "Démon système capable d'exécuter des tâches lourdes à très haute vitesse (Ifrit)." },
-    { "root": "ط-ر-ف (T-R-F/Tarfuka)", "logic_function": "Refresh_Rate", "description": "Vitesse de rafraîchissement d'un signal ou d'une vue (Clin d'œil)." }
+    { "root": "ط-ر-ف (T-R-F/Tarfuka)", "logic_function": "Refresh_Rate", "description": "Vitesse de rafraîchissement d'un signal ou d'une vue (Clin d'œil)." },
+    { "root": "ق-ص-ص (Q-S-S/Qasas)", "logic_function": "Sequential_Traceability", "description": "Action de suivre et d'extraire la séquence exacte des logs d'exécution d'un processus (Suivre la trace)." },
+    { "root": "ب-ر-ه-ن (B-R-H-N/Burhan)", "logic_function": "Logical_Proof", "description": "Preuve irréfutable générée par le système pour valider une opération critique (Preuve/Argument)." },
+    { "root": "ع-ن-ك-ب-ت (A-N-K-B-T/Ankabut)", "logic_function": "Fragile_Mesh_Network", "description": "Infrastructure réseau complexe mais structurellement faible et vulnérable (Toile d'araignée)." },
+    { "root": "و-ه-ن (W-H-N/Awhan)", "logic_function": "Structural_Weakness", "description": "Point de défaillance critique dans l'architecture matérielle ou logicielle (Faiblesse)." },
+    { "root": "ف-ت-ن (F-T-N/Fitnah)", "logic_function": "System_Stress_Test", "description": "Épreuve de résistance ou test de pénétration visant à vérifier l'intégrité d'un nœud (Épreuve/Test)." },
+    { "root": "ح-م-ل (H-M-L/Hamala)", "logic_function": "Data_Payload", "description": "Charge utile transportée par un processus ou un agent à travers le réseau (Porter/Charge)." },
+    { "root": "ر-و-م (R-W-M/Rum)", "logic_function": "External_System_State", "description": "État ou logs d'un système tiers/externe interagissant avec le Kernel (Romains/Étrangers)." },
+    { "root": "غ-ل-ب (G-L-B/Ghulibat)", "logic_function": "Process_Preemption", "description": "Prise de contrôle ou écrasement d'un processus par un autre plus prioritaire (Victoire/Domination)." },
+    { "root": "ب-ض-ع (B-DH-A/Bid'i)", "logic_function": "Time_Interval", "description": "Segment temporel indéterminé mais court, utilisé pour la planification de tâches (Quelques/Intervalle)." },
+    { "root": "و-ع-د (W-A-D/Wa'd)", "logic_function": "Future_Callback", "description": "Promesse d'exécution d'une fonction à un état futur défini du système (Promesse)." },
+    { "root": "ب-د-أ (B-D-A/Yabda'u)", "logic_function": "Process_Initialization", "description": "Démarrage initial de la création d'un processus ou d'un objet (Commencer)." },
+    { "root": "ع-ي-د (A-I-D/Yu'iduhu)", "logic_function": "Process_Iteration", "description": "Répétition ou réinitialisation d'un cycle d'exécution (Recommencer/Réitérer)." },
+    { "root": "ف-س-د (F-S-D/Fasad)", "logic_function": "Data_Corruption", "description": "Détérioration de l'intégrité des données provoquant un chaos dans le secteur (Corruption)." },
+    { "root": "ظ-ه-ر (Z-H-R/Zahara)", "logic_function": "Visual_Output", "description": "Affichage ou manifestation d'une donnée sur l'interface utilisateur (Apparaître)." },
+    { "root": "ب-ط-ن (B-T-N/Batana)", "logic_function": "Backend_Process", "description": "Logique s'exécutant dans les couches cachées, invisible pour l'utilisateur (Caché/Interne)." },
+    { "root": "م-ث-ل (M-TH-L/Amthal)", "logic_function": "Object_Template", "description": "Modèle ou schéma utilisé pour instancier des objets similaires (Exemple/Parabole)." },
+    { "root": "ن-ف-ق (N-F-Q/Nifaq)", "logic_function": "Resource_Drain", "description": "Consommation cachée de ressources sans production d'output valide (Dépense vaine/Hypocrisie)." },
+    { "root": "ض-ر-ب (DH-R-B/Daraba)", "logic_function": "Logic_Mapping", "description": "Action d'établir une correspondance entre deux concepts ou de frapper une donnée (Frapper/Établir)." }
+    
     ]
 }
