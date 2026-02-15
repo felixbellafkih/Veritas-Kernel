@@ -334,6 +334,26 @@
     { "root": "ذ-ر-ر (DH-R-R/Dhurriyyah)", "logic_function": "Child_Process", "description": "Processus généré par un processus parent, héritant de ses attributs (Descendance)." },
     { "root": "س-ل-ط (S-L-T/Sultan)", "logic_function": "Admin_Privilege", "description": "Autorité ou droit d'accès supérieur permettant de commander (Autorité/Preuve)." },
     { "root": "ز-ه-ق (Z-H-Q/Zahaqa)", "logic_function": "Process_Termination", "description": "Disparition ou annulation immédiate d'un processus faux face au Vrai (Disparaître)." },
-    { "root": "ق-ل-ل (Q-L-L/Qalila)", "logic_function": "Minimal_Data", "description": "Quantité de données restreinte ou insuffisante pour une compréhension totale (Peu)." }
+    { "root": "ق-ل-ل (Q-L-L/Qalila)", "logic_function": "Minimal_Data", "description": "Quantité de données restreinte ou insuffisante pour une compréhension totale (Peu)." },
+    { "root": "ك-ه-ف (K-H-F/Kahf)", "logic_function": "Security_Sandbox", "description": "Environnement isolé protégeant les processus critiques des menaces externes (Caverne)." },
+    { "root": "ر-ق-م (R-Q-M/Raqim)", "logic_function": "Digital_Ledger", "description": "Registre numérique ou hash cryptographique identifiant les données stockées (Inscription)." },
+    { "root": "ر-ق-د (R-Q-D/Ruqud)", "logic_function": "Hibernation_Mode", "description": "État de veille prolongée avec conservation de l'état mémoire sur disque (Sommeil)." },
+    { "root": "ب-ع-ث (B-A-TH/Ba'atha)", "logic_function": "Process_Wakeup", "description": "Réveil et restauration d'un processus après une période d'inactivité (Ressusciter/Envoyer)." },
+    { "root": "ل-ب-ث (L-B-TH/Labithu)", "logic_function": "Time_Dilation", "description": "Persistance temporelle d'un processus dans un état donné (Demeurer)." },
+    { "root": "ك-ل-ب (K-L-B/Kalb)", "logic_function": "Watchdog_Daemon", "description": "Processus de surveillance posté à l'entrée/seuil du système (Chien)." },
+    { "root": "و-ص-ي-د (W-S-Y-D/Wasid)", "logic_function": "System_Threshold", "description": "Zone tampon ou seuil d'entrée/sortie physique d'un serveur (Seuil)." },
+    { "root": "ن-س-ي (N-S-Y/Nasiya)", "logic_function": "Memory_Leak", "description": "Perte d'information ou oubli d'une instruction critique (Oublier)." },
+    { "root": "ك-ن-ز (K-N-Z/Kanz)", "logic_function": "Legacy_Code", "description": "Trésor de code ancien caché sous un mur, à préserver (Trésor)." },
+    { "root": "س-د (S-D-D/Sadd)", "logic_function": "Firewall_Barrier", "description": "Obstacle physique ou logique bloquant un flux de données (Mur/Barrage)." },
+    { "root": "ر-د-م (R-D-M/Radm)", "logic_function": "Layered_Defense", "description": "Construction multicouche compacte pour combler une brèche de sécurité (Remblai)." },
+    { "root": "ز-ب-ر (Z-B-R/Zubar)", "logic_function": "Hardware_Block", "description": "Blocs de matériel brut (fer) utilisés pour renforcer l'infrastructure (Blocs)." },
+    { "root": "ق-ط-ر (Q-T-R/Qitr)", "logic_function": "Thermal_Compound", "description": "Matériau conducteur (cuivre fondu) versé pour sceller une structure (Airain/Cuivre)." },
+    { "root": "ن-ق-ب (N-Q-B/Naqb)", "logic_function": "Penetration_Test", "description": "Tentative de percer une défense ou de créer un tunnel d'accès (Percer)." },
+    { "root": "خ-ب-ر (KH-B-R/Khubr)", "logic_function": "Deep_Knowledge", "description": "Connaissance interne approfondie des logs et des causes racines (Expérience)." },
+    { "root": "ح-و-ل (H-W-L/Hiwal)", "logic_function": "State_Migration", "description": "Désir ou action de changer d'état ou de localisation (Changement)." },
+    { "root": "م-و-ج (M-W-J/Mawj)", "logic_function": "Data_Surge", "description": "Vagues de données massives et chaotiques (Vagues)." },
+    { "root": "ن-ف-د (N-F-D/Nafida)", "logic_function": "Resource_Exhaustion", "description": "Épuisement total des ressources disponibles (Épuiser)." },
+    { "root": "ك-ش-ف (K-SH-F/Kashf)", "logic_function": "Debug_View", "description": "Retrait du voile pour voir la réalité du code (Dévoiler)." },
+    { "root": "غ-ط-اء (GH-T-A/Ghita')", "logic_function": "System_Overlay", "description": "Couche masquant la visibilité directe du kernel aux utilisateurs (Couverture/Voile)." }
   ]
 }
