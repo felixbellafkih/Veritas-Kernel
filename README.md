@@ -55,3 +55,5 @@ Les commandes ont été mises à jour pour refléter la nouvelle architecture mo
 Pour auditer un concept sans biais culturel :
 ```bash
 python engine/analysis/veritas_oracle.py "femme"
+## Documentation
+Consultez le [Standard de Transcription](docs/TRANSCRIPTION_STANDARD.md) pour comprendre la logique de saisie des données.
