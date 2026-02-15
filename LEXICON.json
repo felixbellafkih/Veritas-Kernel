@@ -1995,7 +1995,32 @@
     { "root": "و-ر-د (W-R-D/Warid)", "logic_function": "Input_Stream", "description": "Flux de données arrivant à un port d'entrée (Veine jugulaire/Arrivée)." },
     { "root": "ر-ق-ب (R-Q-B/Raqib)", "logic_function": "Watchdog_Monitor", "description": "Observateur système en temps réel enregistrant chaque instruction (Observateur)." },
     { "root": "ق-ر-ن (Q-R-N/Qarin)", "logic_function": "Linked_Process", "description": "Processus compagnon lié de manière permanente à un autre (Compagnon/Lié)." },
-    { "root": "ع-ت-د (A-T-D/Atid)", "logic_function": "Ready_State", "description": "État d'un processus ou d'une donnée prêt pour une exécution immédiate (Prêt)." }
+    { "root": "ع-ت-د (A-T-D/Atid)", "logic_function": "Ready_State", "description": "État d'un processus ou d'une donnée prêt pour une exécution immédiate (Prêt)." },
+    { "root": "ط-و-ر (T-W-R/Tur)", "logic_function": "Structured_Storage_Mount", "description": "Support physique organisé pour le stockage de données structurées (Montagne/Support)." },
+    { "root": "س-ط-ر (S-T-R/Mastur)", "logic_function": "Columnar_Data_Format", "description": "Formatage des données en lignes et colonnes pour une lecture séquentielle (Inscrit/Aligné)." },
+    { "root": "ر-ق (R-Q-Q/Raqq)", "logic_function": "Fine_Storage_Medium", "description": "Support de stockage souple et de haute densité (Parchemin/Peau)." },
+    { "root": "ن-ج-م (N-J-M/Najm)", "logic_function": "Execution_Unit", "description": "Unité de traitement ou point de donnée s'activant selon un cycle (Étoile/Phase)." },
+    { "root": "ه-و-ي (H-W-Y/Hawa)", "logic_function": "Process_Drop", "description": "Chute de priorité ou fin d'exécution d'un thread (Tomber/Désirer)." },
+    { "root": "و-ق-ع (W-Q-A/Waqi'ah)", "logic_function": "Event_Trigger", "description": "Événement système majeur déclenchant une série d'instructions irrévocables (Événement/Calamité)." },
+    { "root": "ر-ج (R-J-J/Rujjat)", "logic_function": "System_Vibration_Test", "description": "Test de secousse ou d'instabilité thermique du hardware (Secouer)." },
+    { "root": "ب-ي-ن (B-Y-N/Bayan)", "logic_function": "Output_Rendering", "description": "Capacité du système à exprimer et rendre les données de manière intelligible (Explication/Expression)." },
+    { "root": "م-ي-ز-ن (M-Y-Z-N/Mizan)", "logic_function": "Load_Balancer", "description": "Algorithme maintenant l'équilibre des charges et des variables (Balance)." },
+    { "root": "ح-د-ي-د (H-D-Y-D/Hadid)", "logic_function": "Hardware_Structural_Integrity", "description": "Propriétés physiques du matériel offrant une résistance et une puissance de calcul élevée (Fer)." },
+    { "root": "ب-أ-س (B-A-S/Ba's)", "logic_function": "Execution_Force", "description": "Puissance de frappe ou intensité de l'exécution d'une commande (Force/Rigueur)." },
+    { "root": "ح-ب-ب (H-B-B/Habib)", "logic_function": "Priority_Affinity", "description": "Affinité d'un nœud pour un certain type de données ou de processus (Amour/Affinité)." },
+    { "root": "ك-ر-ه (K-R-H/Kurh)", "logic_function": "Priority_Aversion", "description": "Refus ou résistance d'un nœud à traiter un certain type d'input (Aversion/Contrainte)." },
+    { "root": "س-ب-ح (S-B-H/Sabbaha)", "logic_function": "Clock_Cycle_Oscillation", "description": "Fréquence d'horloge permettant aux processus de 'flotter' harmonieusement (Glorifier/Flotter)." },
+    { "root": "ص-ف (S-F-F/Saffan)", "logic_function": "Sequential_Array", "description": "Organisation des données en tableaux strictement ordonnés (Rangées)." },
+    { "root": "ن-ف-ق (N-F-Q/Munafiqin)", "logic_function": "Zombie_Process", "description": "Processus qui consomme des ressources système tout en simulant une activité légitime (Hypocrites)." },
+    { "root": "ج-د-ل (J-D-L/Mujadilah)", "logic_function": "Logic_Argumentation", "description": "Conflit de règles ou discussion entre deux instances pour résoudre une ambiguïté (Discussion)." },
+    { "root": "ح-ش-ر (H-SH-R/Hashr)", "logic_function": "Global_Memory_Gathering", "description": "Rassemblement de tous les objets et processus pour un audit final (Rassemblement)." },
+    { "root": "س-ي-ق (S-Y-Q/Siqu)", "logic_function": "Data_Routing_Stream", "description": "Action de conduire ou de router un flux vers une destination précise (Conduire/Pousser)." },
+    { "root": "م-ل-ك (M-L-K/Mulk)", "logic_function": "Root_Sovereignty", "description": "Contrôle absolu et propriété du Kernel sur toutes les ressources (Royauté/Pouvoir)." },
+    { "root": "ق-د-ر (Q-D-R/Qadir)", "logic_function": "Resource_Quota_Manager", "description": "Gestionnaire des capacités et des limites de puissance du système (Puissant/Capable)." },
+    { "root": "ت-ف-و-ت (F-W-T/Tafawut)", "logic_function": "Consistency_Glitch", "description": "Incohérence ou faille dans l'homogénéité du code (Incongruité)." },
+    { "root": "ف-ط-و-ر (F-T-R/Futur)", "logic_function": "Integrity_Crack", "description": "Fissure ou faille détectable dans la structure d'un module (Fissure)." },
+    { "root": "خ-س-أ (KH-S-A/Khasi'an)", "logic_function": "Access_Denied_Feedback", "description": "Signal de rejet humiliant renvoyé à une tentative d'accès non autorisée (Repoussé/Chassé)." },
+    { "root": "ح-س-ر (H-S-R/Hasir)", "logic_function": "Resource_Exhaustion_State", "description": "État de fatigue ou d'épuisement total des capacités d'un nœud (Las/Fatigué)." }
     
     ]
 }
