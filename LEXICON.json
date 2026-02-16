@@ -90,8 +90,8 @@
         {
             "root": "'-L-M",
             "arabic": "علم",
-            "logic_function": "DATA_PROCESSING // KNOWLEDGE_BASE",
-            "description": "Possession et traitement de l'information vérifiée. Marqueurs et attributs connus.",
+            "logic_function": "DATA_INDEXING // MARKER_RECOGNITION",
+            "description": "Savoir basé sur des signes (Alam) et des balises. Reconnaissance des attributs d'un objet. C'est la base de données factuelle.",
             "binary_pair": "J-H-L"
         },
         {
@@ -160,9 +160,9 @@
         {
             "root": "'-Q-L",
             "arabic": "عقل",
-            "logic_function": "Logic_Bridge_Connector",
-            "description": "Fonction de liaison entre les données éparses pour générer une structure cohérente.",
-            "binary_pair": null
+            "logic_function": "LOGIC_RESTRAINT // ERROR_CHECK",
+            "description": "Fonction de retenue et de liaison. Attacher les données pour empêcher l'erreur ou la passion (Hawa). Le frein intelligent du système.",
+            "binary_pair": "J-N-N"
         },
         {
             "root": "'-Q-R",
@@ -251,9 +251,9 @@
         {
             "root": "'-W-D",
             "arabic": "عود",
-            "logic_function": "Cycle_Rerun_Loop",
-            "description": "Répétition d'un processus ou retour à un état d'exécution précédent.",
-            "binary_pair": null
+            "logic_function": "PROCESS_LOOP // RETURN",
+            "description": "Répétition d'un processus ou retour à un état antérieur. Le 'Mubdi' lance, le 'Mu'id' relance.",
+            "binary_pair": "B-D-'"
         },
         {
             "root": "'-Y-L",
@@ -419,9 +419,9 @@
         {
             "root": "A-M-R",
             "arabic": "أمر",
-            "logic_function": "EXECUTION_COMMAND // SYSTEM_CALL",
-            "description": "L'impulsion directive (Command) qui vient du Root (Dieu) ou de l'Admin (Khalifa). C'est le signal qui déclenche l'action. Le Monde de la Création (Khalq) est distinct du Monde de l'Ordre (Amr).",
-            "binary_pair": null
+            "logic_function": "COMMAND_INSTRUCTION // INIT_SIGNAL",
+            "description": "L'impulsion directrice du Root. 'Alif' (Initiation) + 'Mim' (Masse) + 'Ra' (Ordre). C'est le signal qui met le système en mouvement.",
+            "binary_pair": "N-H-Y"
         },
         {
             "root": "A-N-B",
@@ -650,8 +650,8 @@
         {
             "root": "B-S.-R",
             "arabic": "بصر",
-            "logic_function": "VIDEO_INPUT // PATTERN_RECOGNITION",
-            "description": "Traitement visuel des données. Capacité à analyser l'environnement (Insight).",
+            "logic_function": "OPTICAL_RECOGNITION // INSIGHT",
+            "description": "Traitement du signal visuel. Capacité à distinguer les formes et les structures.",
             "binary_pair": "'-M-Y"
         },
         {
@@ -839,9 +839,9 @@
         {
             "root": "DH-H-B",
             "arabic": "ذهب",
-            "logic_function": "High_Value_Conductor",
-            "description": "Matériau à haute valeur de transfert, inaltérable (Gold Standard).",
-            "binary_pair": null
+            "logic_function": "PROCESS_EXIT // STATE_PURGE",
+            "description": "L'action de quitter un état ou un lieu. Implique la disparition ou le départ de la ressource (ex: la lumière s'en va).",
+            "binary_pair": "J-Y-'"
         },
         {
             "root": "DH-I-B",
@@ -979,9 +979,9 @@
         {
             "root": "F-Q-H",
             "arabic": "فقه",
-            "logic_function": "Logical_Pattern_Recognition",
-            "description": "Compréhension profonde des structures et dépendances du code.",
-            "binary_pair": null
+            "logic_function": "DEEP_DECODING // REVERSE_ENGINEERING",
+            "description": "Action d'ouvrir (F) la donnée pour en extraire la logique interne (H). Compréhension du mécanisme causal. Plus profond que le simple Savoir ('Ilm).",
+            "binary_pair": "S.-M-M"
         },
         {
             "root": "F-R-'",
@@ -1063,9 +1063,9 @@
         {
             "root": "F-T.-R",
             "arabic": "فطر",
-            "logic_function": "Source_Code_Initialization",
-            "description": "Phase de design originel définissant les constantes fondamentales de la stack.",
-            "binary_pair": null
+            "logic_function": "SYSTEM_INIT // BIOS_LOAD",
+            "description": "L'acte de fendre (F) la surface (T.) pour lancer le programme par défaut (Fitra). Initialisation du système d'exploitation originel.",
+            "binary_pair": "T-GH-Y"
         },
         {
             "root": "F-W-Q",
@@ -1574,9 +1574,9 @@
         {
             "root": "J-'-L",
             "arabic": "جعل",
-            "logic_function": "Instance_Generator",
-            "description": "Fonction de création ou d'assignation d'un rôle à une entité.",
-            "binary_pair": null
+            "logic_function": "FUNCTION_ASSIGNMENT // SET_VARIABLE",
+            "description": "Assigner une nouvelle fonction ou un état à un objet existant. 'Set X as Y'. C'est une configuration de rôle.",
+            "binary_pair": "'-Z-L"
         },
         {
             "root": "J-A-A",
@@ -1868,9 +1868,9 @@
         {
             "root": "KH-B-R",
             "arabic": "خبر",
-            "logic_function": "Deep_Trace_Log",
-            "description": "Donnée d'expertise provenant de l'analyse profonde des métadonnées (Log expert).",
-            "binary_pair": null
+            "logic_function": "INFO_LOG // REPORTING",
+            "description": "Information rapportée sur un état ou un événement. Le Khabir est celui qui connaît les états internes cachés.",
+            "binary_pair": "N-B-'"
         },
         {
             "root": "KH-D-'",
@@ -1917,9 +1917,9 @@
         {
             "root": "KH-L-Q",
             "arabic": "خلق",
-            "logic_function": "Instance_Creation",
-            "description": "Initialisation d'un nouvel objet.",
-            "binary_pair": null
+            "logic_function": "STRUCTURAL_DESIGN // CALIBRATION",
+            "description": "Projeter une structure (KH) et définir ses mesures. Ce n'est pas l'apparition ex-nihilo, mais le design des contraintes physiques et logiques.",
+            "binary_pair": "F-N-Y"
         },
         {
             "root": "KH-L-S.",
@@ -1952,8 +1952,8 @@
         {
             "root": "KH-R-J",
             "arabic": "خرج",
-            "logic_function": "SYSTEM_EXIT // LOGOUT_EVENT",
-            "description": "Action de sortir d'un état ou d'une boucle.",
+            "logic_function": "DATA_OUTPUT // EXIT_CONTAINER",
+            "description": "Sortie d'une structure englobante (M-KH-R-J). Production d'un résultat vers l'extérieur.",
             "binary_pair": "D-KH-L"
         },
         {
@@ -1987,9 +1987,9 @@
         {
             "root": "KH-T-M",
             "arabic": "ختم",
-            "logic_function": "Execution_Seal_End",
-            "description": "Verrouillage final d'un segment de mémoire ou d'une session (Seal).",
-            "binary_pair": null
+            "logic_function": "PROCESSOR_LOCK // SEALING",
+            "description": "Verrouillage des entrées/sorties du Cœur. Le processeur est scellé et ne traite plus les nouvelles données.",
+            "binary_pair": "Q-L-B"
         },
         {
             "root": "KH-T.-A",
@@ -2253,9 +2253,9 @@
         {
             "root": "M-SH-Y",
             "arabic": "مشي",
-            "logic_function": "Linear_Sequence_Step_Linear_Sequence_Step",
-            "description": "Exécution séquentielle pas à pas d'un processus.",
-            "binary_pair": null
+            "logic_function": "SEQUENTIAL_PROGRESSION // RUNTIME",
+            "description": "Avancement rythmé et régulier. Progression étape par étape dans l'environnement.",
+            "binary_pair": "W-Q-F"
         },
         {
             "root": "M-T-N",
@@ -2435,9 +2435,9 @@
         {
             "root": "N-F-S",
             "arabic": "نفس",
-            "logic_function": "Execution_Instance",
-            "description": "Instance individuelle d'un programme (Entité).",
-            "binary_pair": null
+            "logic_function": "USER_INSTANCE // SELF_IDENTITY",
+            "description": "L'entité logicielle complète ('Moi'). Le souffle interne (Nafas) qui maintient l'instance en vie. C'est le siège de la responsabilité et des désirs.",
+            "binary_pair": "R-W-H."
         },
         {
             "root": "N-F-TH",
@@ -2456,9 +2456,9 @@
         {
             "root": "N-H-Y",
             "arabic": "نهي",
-            "logic_function": "Process_Restriction",
-            "description": "Interdiction ou blocage d'un vecteur d'exécution.",
-            "binary_pair": null
+            "logic_function": "PROHIBITION_SIGNAL // HALT",
+            "description": "Le signal de retenue. Empêcher le processus de s'exécuter. Nuha = Intelligence (ce qui retient l'erreur).",
+            "binary_pair": "A-M-R"
         },
         {
             "root": "N-H.-L",
@@ -2638,9 +2638,9 @@
         {
             "root": "N-Z-L",
             "arabic": "نزل",
-            "logic_function": "Signal_Downlink",
-            "description": "Descente de données vers les couches applicatives.",
-            "binary_pair": null
+            "logic_function": "DATA_DOWNLOAD // DEPLOYMENT",
+            "description": "Transfert de données d'une couche supérieure (Server/Sky) vers une couche inférieure (Client/Earth).",
+            "binary_pair": "S.-'-D"
         },
         {
             "root": "N-Z.-R",
@@ -2694,9 +2694,9 @@
         {
             "root": "Q-D.-Y",
             "arabic": "قضي",
-            "logic_function": "Final_Verdict",
-            "description": "Exécution irrévocable d'une décision du noyau.",
-            "binary_pair": null
+            "logic_function": "EXECUTION_RUNTIME // PROCESS_TERMINATION",
+            "description": "L'acte de conclure et d'exécuter une commande de manière irréversible. Le 'Qada' est l'application fatale du code (Hukm).",
+            "binary_pair": "N-Q-D."
         },
         {
             "root": "Q-F-L",
@@ -2715,9 +2715,9 @@
         {
             "root": "Q-L-B",
             "arabic": "قلب",
-            "logic_function": "Central_Logic_Processor",
-            "description": "Unité centrale de traitement de la logique et du discernement émotionnel/rationnel.",
-            "binary_pair": null
+            "logic_function": "CENTRAL_PROCESSOR // STATE_SWITCH",
+            "description": "Le moteur de traitement qui 'retourne' (Qallaba) les données. Change d'état dynamiquement. Si le processeur s'arrête ou est scellé, la compréhension cesse.",
+            "binary_pair": "KH-T-M"
         },
         {
             "root": "Q-L-D",
@@ -3170,9 +3170,9 @@
         {
             "root": "S-'-Y",
             "arabic": "سعي",
-            "logic_function": "Active_Processing",
-            "description": "Exécution d'une tâche intensive entre deux points de contrôle (Running Process).",
-            "binary_pair": null
+            "logic_function": "ACTIVE_STRIVING // PROCESSING_CYCLE",
+            "description": "Effort actif et dirigé. Oscillation entre deux points (ex: Safa/Marwa) ou travail continu pour générer un résultat.",
+            "binary_pair": "Q-'-D"
         },
         {
             "root": "S-A-L",
@@ -3527,9 +3527,9 @@
         {
             "root": "S.-D-R",
             "arabic": "صدر",
-            "logic_function": "Processing_Core",
-            "description": "Cœur de traitement où les instructions sont analysées avant exécution.",
-            "binary_pair": null
+            "logic_function": "INTERFACE_BUFFER // FRONT_END",
+            "description": "La zone tampon qui fait face à l'extérieur (Sadar = Front). Reçoit les inputs bruts (Walswasa ou Inspiration) avant traitement par le Cœur. Zone d'expansion (Sharh) ou de compression (Dayq).",
+            "binary_pair": "B-T.-N"
         },
         {
             "root": "S.-F-F",
@@ -3604,9 +3604,9 @@
         {
             "root": "S.-N-'",
             "arabic": "صنع",
-            "logic_function": "System_Manufacturing",
-            "description": "Construction complexe de structures.",
-            "binary_pair": null
+            "logic_function": "ENGINEERING // MANUFACTURING",
+            "description": "Mise en forme technique et précise. Implique un art et une maîtrise des composants internes (N).",
+            "binary_pair": "KH-R-B"
         },
         {
             "root": "S.-R-F",
@@ -3646,9 +3646,9 @@
         {
             "root": "SH-'-R",
             "arabic": "شعر",
-            "logic_function": "Sensor_Detection",
-            "description": "Perception fine et intuitive d'un signal subtil (Feeling/Perception/Poetry).",
-            "binary_pair": null
+            "logic_function": "SIGNAL_DETECTION // FINE_SENSING",
+            "description": "Perception subtile et fine (comme un cheveu). Capacité à détecter un signal diffus ou caché avant qu'il ne soit visible. (Intuition système).",
+            "binary_pair": "GH-F-L"
         },
         {
             "root": "SH-D-D",
@@ -4213,9 +4213,9 @@
         {
             "root": "Y-Q-N",
             "arabic": "يقن",
-            "logic_function": "Data_Integrity_Validation",
-            "description": "État de certitude absolue du signal, sans aucune interférence ou probabilité.",
-            "binary_pair": null
+            "logic_function": "ABSOLUTE_CERTAINTY // VERIFIED_DATA",
+            "description": "État de la donnée vérifiée à 100%. Aucune latence ni doute. Le 'Haqq al-Yaqin' est la vérité expérientielle totale.",
+            "binary_pair": "Z.-N-N"
         },
         {
             "root": "Y-Q-Z.",
@@ -4537,6 +4537,62 @@
             "logic_function": "DATA_HOARDING // STAGNATION",
             "description": "Accumulation de ressources sans les faire circuler. Compression (Z) de la richesse interne (N) dans une structure fermée (K). Bloque la bande passante.",
             "binary_pair": "SH-R-Y"
+        },
+        {
+            "root": "N-Q-D.",
+            "arabic": "نقض",
+            "logic_function": "PROCESS_BREAK // ROLLBACK",
+            "description": "Défaire une structure tricotée ou scellée. Annuler le pacte ou l'exécution.",
+            "binary_pair": "Q-D.-Y"
+        },
+        {
+            "root": "J-B-R",
+            "arabic": "جبر",
+            "logic_function": "FORCE_CORRECTION // SYSTEM_OVERRIDE",
+            "description": "Réunion forcée des éléments pour rétablir l'ordre. Comme une attelle répare un os (Jabira). L'action de contraindre le système à revenir à son état nominal.",
+            "binary_pair": "K-S-R"
+        },
+        {
+            "root": "K-S-R",
+            "arabic": "كسر",
+            "logic_function": "SYSTEM_FRACTURE // BREAKING",
+            "description": "Briser la structure ou le contenant. L'état cassé qui appelle le Jabar (Réparation).",
+            "binary_pair": "J-B-R"
+        },
+        {
+            "root": "B-D-'",
+            "arabic": "بدأ",
+            "logic_function": "PROCESS_START // NEW_INSTANCE",
+            "description": "Initier une nouvelle instance ou un processus inédit.",
+            "binary_pair": "'-W-D"
+        },
+        {
+            "root": "S-W-Y",
+            "arabic": "سوي",
+            "logic_function": "SYSTEM_EQUALIZATION // SMOOTHING",
+            "description": "Rendre la surface ou le flux égal, sans courbure ni torsion. Équilibrer les niveaux (Istiwa).",
+            "binary_pair": "GH-W-Y"
+        },
+        {
+            "root": "Z.-N-N",
+            "arabic": "ظن",
+            "logic_function": "PROBABILISTIC_INFERENCE // FUZZY_LOGIC",
+            "description": "Traitement basé sur une projection ou une probabilité, non sur une certitude absolue (100%). Peut être positif (anticipation) ou négatif (spéculation infondée).",
+            "binary_pair": "Y-Q-N"
+        },
+        {
+            "root": "J-Y-'",
+            "arabic": "جاء",
+            "logic_function": "EVENT_ARRIVAL // CRITICAL_INPUT",
+            "description": "L'arrivée d'une donnée ou d'un événement majeur (Haqq, Nasr). Impact fort sur le système.",
+            "binary_pair": "DH-H-B"
+        },
+        {
+            "root": "F-A-D",
+            "arabic": "فؤاد",
+            "logic_function": "CRITICAL_SENSOR // EMOTIONAL_CORE",
+            "description": "Zone de haute intensité du traitement. Le capteur de vérité qui brûle ou réagit vivement. Responsable de la validation finale des inputs sensoriels.",
+            "binary_pair": "B-L-D"
         }
     ]
 }
