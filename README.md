@@ -1,3 +1,4 @@
+[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/felixbellafkih/Veritas-Quranic-Lexicon/tree/main)
 ---
 tags: [ontology, formal-logic, quranic-nlp, computational-linguistics, systemic-analysis]
 language: [ar, fr, en]
