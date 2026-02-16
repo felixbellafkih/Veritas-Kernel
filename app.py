@@ -1,9 +1,10 @@
 import streamlit as st
+import graphviz
 from data.repository import LexiconRepository
 
 # --- CONFIGURATION ---
 st.set_page_config(
-    page_title="Veritas Terminal v10.1",
+    page_title="Veritas Terminal v10.2",
     page_icon="👁️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -20,6 +21,7 @@ st.markdown("""
     .arabic-text {font-family: 'Amiri', serif; font-size: 32px; color: #ffcc00; direction: rtl; text-align: right; margin-top: -10px;}
     .root-title {font-size: 24px; font-weight: bold; color: #00ff41;}
     .logic-func {font-family: monospace; color: #ff4b4b; font-weight: bold;}
+    .stAlert {background-color: #262730; color: #e0e0e0; border: 1px solid #444;}
 </style>
 """, unsafe_allow_html=True)
 
@@ -31,7 +33,7 @@ def get_repo():
 repo = get_repo()
 
 # --- HEADER ---
-st.title("VERITAS TERMINAL v10.1")
+st.title("VERITAS TERMINAL v10.2")
 st.markdown("*Modular Architecture - Non-Torted Logic*")
 st.markdown("---")
 
@@ -45,7 +47,8 @@ if repo.get_count() > 0:
 else:
     st.sidebar.error("KERNEL ERROR: DATABASE OFFLINE")
 
-mode = st.sidebar.radio("PROTOCOL", ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW"])
+# LE NOUVEAU MENU EST ICI :
+mode = st.sidebar.radio("PROTOCOL", ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW", "GOVERNANCE MAP"])
 
 # --- MODE 1: SCANNER ---
 if mode == "ROOT SCANNER":
@@ -75,9 +78,7 @@ elif mode == "VERSE DECOMPILER":
         roots = input_seq.split()
         st.markdown("---")
         for r in roots:
-            # Appel au repository pour chaque racine
             data = repo.find_root(r)
-            
             if data:
                 with st.expander(f"[{data['root']}]  {data['arabic']}  ::  {data['logic_function']}"):
                     st.write(f"**Function:** {data['description']}")
@@ -88,4 +89,63 @@ elif mode == "VERSE DECOMPILER":
 elif mode == "MATRIX VIEW":
     st.subheader("🌐 GLOBAL DATA")
     st.dataframe(repo.get_all_roots())
+
+# --- MODE 4: GOVERNANCE MAP (NOUVEAU) ---
+elif mode == "GOVERNANCE MAP":
+    st.subheader("👑 SYSTEM HIERARCHY (Admin vs Daemon)")
+    
+    st.info("""
+    **PROTOCOLE DE GOUVERNANCE :**
+    Le système distingue les entités dotées de **Volonté (Free Will)** et les processus **Automatisés (Daemons)**.
+    L'adoration d'un processus automatisé (ex: Soleil/Lune) est une erreur d'adressage IP (Idolatry/Shirk).
+    """)
+
+    # Graphe Graphviz
+    governance_graph = """
+    digraph G {
+        bgcolor="#0e1117"
+        rankdir=TB
+        node [style=filled, fontname="Courier New", shape=box]
+        edge [color="#00ff41", fontname="Courier New", fontsize=10]
+
+        # 1. LE ROOT
+        ROOT [label="ROOT (Allah)\n[Source of Command]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
+
+        # 2. LES ADMINS
+        subgraph cluster_admins {
+            label = "ZONE: FREE WILL (S-Y-T-R)"
+            style=dashed; color="#00ff41"; fontcolor="#00ff41"
+            KHALIFA [label="USER (Insan)\n[Read/Write Access]", color="#00ff41", fontcolor="black"]
+            ANGELS [label="AGENTS (Mala'ika)\n[Admin Executors]", color="#00ff41", fontcolor="black"]
+        }
+
+        # 3. LES AUTOMATES
+        subgraph cluster_automata {
+            label = "ZONE: AUTOMATION (S-KH-R)"
+            style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
+            SUN [label="DAEMON: SUN\n[Solar_Service]", color="#262730", fontcolor="white"]
+            MOON [label="DAEMON: MOON\n[Time_Service]", color="#262730", fontcolor="white"]
+            PHYSICS [label="KERNEL: PHYSICS\n[Laws/Gravity]", color="#262730", fontcolor="white"]
+        }
+
+        # RELATIONS
+        ROOT -> KHALIFA [label="Grant_Access"]
+        ROOT -> ANGELS [label="Command (A-M-R)"]
+        ROOT -> SUN [label="Hard_Code (Q-D-R)"]
+        
+        KHALIFA -> SUN [label="Utilise (S-KH-R)", style=dotted]
+        ANGELS -> PHYSICS [label="Maintain (D-B-R)"]
+    }
+    """
+    
+    st.graphviz_chart(governance_graph)
+    
+    st.markdown("---")
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        st.error("**S-KH-R (سخر)**\n\nTask Automation.\n(Ex: Soleil, Lune, Animaux)")
+    with c2:
+        st.success("**S-Y-T-R (سيطر)**\n\nRoot Admin.\n(Ex: Autorité de Contrôle)")
+    with c3:
+        st.warning("**KH-L-F (خلف)**\n\nSystem Operator.\n(Ex: Humain/Successeur)")
 
