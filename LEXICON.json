@@ -360,8 +360,8 @@
         {
             "root": "A-M-R",
             "arabic": "أمر",
-            "logic_function": "Command_Instruction",
-            "description": "Exécution d'une directive directe émanant de la hiérarchie supérieure."
+            "logic_function": "EXECUTION_COMMAND // SYSTEM_CALL",
+            "description": "L'impulsion directive (Command) qui vient du Root (Dieu) ou de l'Admin (Khalifa). C'est le signal qui déclenche l'action. Le Monde de la Création (Khalq) est distinct du Monde de l'Ordre (Amr)."
         },
         {
             "root": "A-N-B",
@@ -2298,8 +2298,8 @@
         {
             "root": "Q-D-R",
             "arabic": "قدر",
-            "logic_function": "Resource_Capacity",
-            "description": "Détermination de la puissance de calcul et limites d'allocation des ressources."
+            "logic_function": "COMPUTED_MEASURE // HARD_CODE",
+            "description": "La programmation mathématique finie d'un objet. Chaque entité a un 'Qadar' (Code Source) qui définit ses limites physiques, sa durée de vie et ses propriétés. C'est le script que suit l'automate."
         },
         {
             "root": "Q-D-S",
@@ -2844,8 +2844,8 @@
         {
             "root": "S-KH-R",
             "arabic": "سخر",
-            "logic_function": "Task_Automation",
-            "description": "Assujettissement d'une ressource pour qu'elle exécute une tâche sans libre arbitre (Subjection/Service)."
+            "logic_function": "TASK_AUTOMATION // DAEMON_SERVICE",
+            "description": "Définit une entité en mode 'Read-Only', assujettie à une tâche répétitive sans possibilité de refus (Hard-coded). Le Soleil et la Lune sont 'Musakhar' (Assujettis/Automatisés). Ils n'ont pas de Libre Arbitre. L'Homme utilise ces services, il ne les sert pas."
         },
         {
             "root": "S-L-KH",
@@ -2974,10 +2974,10 @@
             "description": "Parcours du réseau pour audit ou exploration (Itinérance)."
         },
         {
-            "root": "S-Y-T-R",
+            "root": "S-Y-T.-R",
             "arabic": "سيطر",
-            "logic_function": "Root_Admin_Override",
-            "description": "Extension de S-T-R (Ligne). Capacité à imposer ses scripts et contrôler l'exécution des autres (Dominator/Controller)."
+            "logic_function": "ROOT_ADMIN // AUTHORITY_CONTROL",
+            "description": "Définit l'autorité de contrôle (Write Access). Celui qui 'Musaytir' a le pouvoir de modifier ou de contraindre le système. C'est l'attribut de la Gouvernance active, opposé à l'automatisme passif."
         },
         {
             "root": "S.-'-D",
