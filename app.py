@@ -2,7 +2,8 @@ import streamlit as st
 import graphviz
 from data.repository import LexiconRepository
 from core.config import config
-from export.manager import ExportManager  # <--- NOUVEAU MODULE
+from export.manager import ExportManager
+from core.logger import logger  # <--- IMPORT DU LOGGER
 
 # --- CONFIGURATION ---
 st.set_page_config(
@@ -31,10 +32,11 @@ st.markdown("""
 # --- INITIALISATION ---
 @st.cache_resource
 def get_repo():
+    logger.info("SYSTEM BOOT: Initializing Repository...")
     return LexiconRepository(filepath=config['database']['path'])
 
 repo = get_repo()
-exporter = ExportManager() # <--- INSTANCE DE L'EXPORTATEUR
+exporter = ExportManager()
 
 # --- HEADER ---
 st.title(f"{config['app']['name']} {config['app']['version']}")
@@ -48,14 +50,14 @@ if repo.get_count() > 0:
 else:
     st.sidebar.error("DATABASE OFFLINE")
 
-# Menu dynamique
+# Menu
 options = ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW"]
 if config['modules']['enable_governance']:
     options.append("GOVERNANCE MAP")
 
 mode = st.sidebar.radio("PROTOCOL", options)
 
-# --- MODE 1: ROOT SCANNER (AVEC EXPORT) ---
+# --- MODE 1: SCANNER ---
 if mode == "ROOT SCANNER":
     st.subheader("🔍 SINGLE ROOT ANALYSIS")
     query = st.text_input("INPUT SIGNAL (Latin/Arabic)", "").strip()
@@ -63,6 +65,9 @@ if mode == "ROOT SCANNER":
     if query:
         result = repo.find_root(query)
         if result:
+            # LOGGING DE LA RECHERCHE
+            logger.info(f"USER QUERY: Search for '{query}' -> FOUND ({result['root']})")
+            
             st.markdown("---")
             c1, c2 = st.columns([1, 2])
             with c1:
@@ -71,16 +76,12 @@ if mode == "ROOT SCANNER":
                 st.markdown(f"**LOGIC FUNCTION:** <span class='logic-func'>{result['logic_function']}</span>", unsafe_allow_html=True)
                 st.info(f"{result['description']}")
                 
-                # --- BOUTON D'EXPORTATION ---
                 if config['modules']['enable_export']:
                     fname, fcontent = exporter.generate_markdown(result)
-                    st.download_button(
-                        label="📥 DOWNLOAD REPORT (MD)",
-                        data=fcontent,
-                        file_name=fname,
-                        mime="text/markdown"
-                    )
+                    if st.download_button(label="📥 DOWNLOAD REPORT (MD)", data=fcontent, file_name=fname, mime="text/markdown"):
+                        logger.info(f"EXPORT: Report generated for {result['root']}")
         else:
+            logger.warning(f"USER QUERY: Search for '{query}' -> NOT FOUND")
             st.warning(f"SIGNAL '{query}' NOT FOUND.")
 
 # --- MODE 2: DECOMPILER ---
@@ -88,6 +89,7 @@ elif mode == "VERSE DECOMPILER":
     st.subheader("💻 SEQUENCE DECOMPILER")
     input_seq = st.text_area("ROOT SEQUENCE", "B-S-M A-L-H R-H-M R-H-M")
     if st.button("EXECUTE"):
+        logger.info(f"DECOMPILER: Processing sequence '{input_seq}'")
         roots = input_seq.split()
         st.markdown("---")
         for r in roots:
@@ -98,16 +100,15 @@ elif mode == "VERSE DECOMPILER":
             else:
                 st.error(f"[{r}] UNKNOWN")
 
-# --- MODE 3: MATRIX ---
+# --- AUTRES MODES (SIMPLIFIÉS) ---
 elif mode == "MATRIX VIEW":
     st.subheader("🌐 GLOBAL DATA")
     st.dataframe(repo.get_all_roots())
 
-# --- MODE 4: GOVERNANCE ---
 elif mode == "GOVERNANCE MAP":
     st.subheader("👑 SYSTEM HIERARCHY")
     st.info("PROTOCOL: Admin (Free Will) vs Daemon (Automation).")
-    
+    # (Code graphe inchangé)
     governance_graph = """
     digraph G {
         bgcolor="#0e1117"
