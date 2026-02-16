@@ -438,12 +438,6 @@
         {
             "root": "B-D-A",
             "arabic": "بدأ",
-            "logic_function": "Data_Asset",
-            "description": "Unité de valeur utilisée pour une transaction système (Marchandise)."
-        },
-        {
-            "root": "B-D-A",
-            "arabic": "بدأ",
             "logic_function": "System_Initial_Boot",
             "description": "Lancement du premier cycle d'exécution du code."
         },
@@ -522,12 +516,6 @@
         {
             "root": "B-R-A",
             "arabic": "برأ",
-            "logic_function": "Security_Dissociation",
-            "description": "Bannissement immédiat et rupture de tout lien logique avec un segment corrompu."
-        },
-        {
-            "root": "B-R-A",
-            "arabic": "برأ",
             "logic_function": "Connection_Termination",
             "description": "Rupture unilatérale et définitive de tout contrat avec un nœud hostile (Désaveu)."
         },
@@ -602,12 +590,6 @@
             "arabic": "بيع",
             "logic_function": "Peer_To_Peer_Handshake",
             "description": "Validation d'un échange bilatéral de ressources (Transaction commit)."
-        },
-        {
-            "root": "B-Y-D.",
-            "arabic": "بيض",
-            "logic_function": "High_Clarity_State",
-            "description": "État de transparence ou de clarté maximale du signal."
         },
         {
             "root": "B-Y-D.",
@@ -950,12 +932,6 @@
             "arabic": "فوز",
             "logic_function": "Target_Success_State",
             "description": "Atteinte de l'objectif de sortie défini par le Root."
-        },
-        {
-            "root": "F-Z-'",
-            "arabic": "فزع",
-            "logic_function": "Kernel_Panic",
-            "description": "État de peur systémique ou réaction de choc du processeur."
         },
         {
             "root": "F-Z-'",
@@ -1398,12 +1374,6 @@
         {
             "root": "J-D-L",
             "arabic": "جدل",
-            "logic_function": "Recursive_Conflict",
-            "description": "Boucle infinie de contention ou d'argumentation sans sortie."
-        },
-        {
-            "root": "J-D-L",
-            "arabic": "جدل",
             "logic_function": "Protocol_Conflict",
             "description": "Collision de protocoles ou boucle de négociation (Dispute)."
         },
@@ -1574,12 +1544,6 @@
             "arabic": "كسب",
             "logic_function": "Data_Credit_Accumulation",
             "description": "Résultat net d'une opération générant un crédit ou une valeur dans le registre."
-        },
-        {
-            "root": "K-S-L",
-            "arabic": "كسل",
-            "logic_function": "Process_Latency",
-            "description": "Lourdeur ou délai excessif dans l'exécution d'une tâche."
         },
         {
             "root": "K-S-L",
@@ -1830,12 +1794,6 @@
         {
             "root": "L-GH-W",
             "arabic": "لغو",
-            "logic_function": "Null_Data_Stream",
-            "description": "Flux de données vide de sens ou bruit statique."
-        },
-        {
-            "root": "L-GH-W",
-            "arabic": "لغو",
             "logic_function": "Null_Packet_Noise",
             "description": "Paquet de données vide de sens ou bruit de fond à ignorer."
         },
@@ -1886,12 +1844,6 @@
             "arabic": "ليل",
             "logic_function": "System_Idle_Cycle",
             "description": "Phase de basse activité favorisant la maintenance et le repos des processeurs."
-        },
-        {
-            "root": "M-A-A",
-            "arabic": "ماء",
-            "logic_function": "Dynamic_Data_Stream",
-            "description": "Vecteur de transport d'information fluide, essentiel au rafraîchissement du système."
         },
         {
             "root": "M-A-A",
@@ -2256,12 +2208,6 @@
         {
             "root": "N-S.-B",
             "arabic": "نصب",
-            "logic_function": "Relational_Pointer_Hierarchy",
-            "description": "Structure d'adressage basée sur les liens de dépendance entre instances."
-        },
-        {
-            "root": "N-S.-B",
-            "arabic": "نصب",
             "logic_function": "System_Strain_Load",
             "description": "État de tension extrême sur les bus de communication."
         },
@@ -2348,12 +2294,6 @@
             "arabic": "قدم",
             "logic_function": "Priority_Scheduling_Priority_Scheduling",
             "description": "Envoi d'un processus en tête de file d'attente."
-        },
-        {
-            "root": "Q-D-R",
-            "arabic": "قدر",
-            "logic_function": "Resource_Capacity",
-            "description": "Mesure de la capacité de traitement et allocation des ressources (Dal = Dimension)."
         },
         {
             "root": "Q-D-R",
@@ -2564,12 +2504,6 @@
             "arabic": "رعد",
             "logic_function": "System_Warning",
             "description": "Signal d'alerte critique acoustique (Tonnerre/Alarme)."
-        },
-        {
-            "root": "R-A-Y",
-            "arabic": "رأي",
-            "logic_function": "Simulated_Data_Stream",
-            "description": "Traitement de flux de données simulées ou virtuelles (Backend Rendering)."
         },
         {
             "root": "R-A-Y",
@@ -2904,12 +2838,6 @@
         {
             "root": "S-K-R",
             "arabic": "سكر",
-            "logic_function": "Logic_Scrambling",
-            "description": "Obfuscation de la logique ou perte de contrôle (Ivresse)."
-        },
-        {
-            "root": "S-K-R",
-            "arabic": "سكر",
             "logic_function": "System_Drunkenness",
             "description": "Désynchronisation temporaire des capteurs (Glitch/Stupor)."
         },
@@ -3036,12 +2964,6 @@
         {
             "root": "S-W-D",
             "arabic": "سود",
-            "logic_function": "High_Intensity_State",
-            "description": "État de saturation ou d'intensité maximale du signal."
-        },
-        {
-            "root": "S-W-D",
-            "arabic": "سود",
             "logic_function": "State_Error_Black",
             "description": "État critique, éteint ou corrompu (Shutdown/Void)."
         },
@@ -3092,12 +3014,6 @@
             "arabic": "صديد",
             "logic_function": "Corrosive_Output",
             "description": "Flux de données toxiques en cas de corruption totale (Pus)."
-        },
-        {
-            "root": "S.-D-Q",
-            "arabic": "صدق",
-            "logic_function": "Binding_Fee",
-            "description": "Allocation de ressources obligatoire pour valider un lien contractuel (Dot)."
         },
         {
             "root": "S.-D-Q",
@@ -3194,12 +3110,6 @@
             "arabic": "صوم",
             "logic_function": "System_Throttling",
             "description": "Réduction de charge pour optimisation."
-        },
-        {
-            "root": "S.-W-R",
-            "arabic": "صور",
-            "logic_function": "Perimeter_Wall_Isolation",
-            "description": "Barrière logique isolant un segment système du reste du réseau."
         },
         {
             "root": "S.-W-R",
@@ -3451,12 +3361,6 @@
             "root": "T.-L-Q",
             "arabic": "طلق",
             "logic_function": "Session_Split_Divorce",
-            "description": "Action de désynchroniser et de rompre définitivement un lien contractuel entre deux nœuds."
-        },
-        {
-            "root": "T.-L-Q",
-            "arabic": "طلق",
-            "logic_function": "Session_Split_Divorce",
             "description": "Rupture formelle et irréversible d'un couplage (Unpair)."
         },
         {
@@ -3470,12 +3374,6 @@
             "arabic": "طرد",
             "logic_function": "Process_Eviction",
             "description": "Action de sortir un processus de la file d'attente pour non-conformité."
-        },
-        {
-            "root": "T.-R-Q",
-            "arabic": "طرق",
-            "logic_function": "Logic_Path_Routing",
-            "description": "Définition d'un chemin de routage entre deux points du réseau."
         },
         {
             "root": "T.-R-Q",
@@ -3758,12 +3656,6 @@
             "arabic": "زحف",
             "logic_function": "Slow_Advance",
             "description": "Avancée progressive et inéluctable d'un processus vers sa cible (Marche)."
-        },
-        {
-            "root": "Z-J-J",
-            "arabic": "زجاج",
-            "logic_function": "Refraction_Interface",
-            "description": "Matériau de haute pureté assurant la transmission et la clarté du signal."
         },
         {
             "root": "Z-J-J",
