@@ -685,9 +685,9 @@
         {
             "root": "B-Y-'",
             "arabic": "بيع",
-            "logic_function": "DATA_EXPORT // TRANSACTION",
-            "description": "Céder une ressource contre une valeur. L'acte de pactiser.",
-            "binary_pair": "SH-R-Y"
+            "logic_function": "PROTOCOL_HANDSHAKE // ALLEGIANCE_PACT",
+            "description": "L'établissement du lien contractuel. Le 'Ba' (connexion) lie la Main (Ya) à la Source ('). C'est l'acte de sceller un pacte (Bay'a).",
+            "binary_pair": "N-K-TH"
         },
         {
             "root": "B-Y-D.",
@@ -1343,9 +1343,9 @@
         {
             "root": "H.-D-TH",
             "arabic": "حدث",
-            "logic_function": "Runtime_Event_Update",
-            "description": "Mise à jour dynamique ou événement survenu durant l'exécution (Event log).",
-            "binary_pair": null
+            "logic_function": "USER_LOG // NARRATIVE_EVENT",
+            "description": "Un récit, un événement ou une parole contextuelle. Contrairement à la Rissala (Code), le Hadith est une donnée historique ou narrative qui ne porte pas la signature du Root par défaut.",
+            "binary_pair": "R-S-L"
         },
         {
             "root": "H.-F-Z.",
@@ -1833,9 +1833,9 @@
         {
             "root": "K-T-M",
             "arabic": "كتم",
-            "logic_function": "Data_Suppression",
-            "description": "Masquage d'une partie du code source pour tromper l'utilisateur (Cacher).",
-            "binary_pair": null
+            "logic_function": "DATA_SUPPRESSION // PACKET_WITHHOLDING",
+            "description": "Retenir une partie du code ou ne pas le délivrer. C'est l'antithèse de la mission du Messager.",
+            "binary_pair": "B-L-GH"
         },
         {
             "root": "K-W-K-B",
@@ -2505,9 +2505,9 @@
         {
             "root": "N-K-TH",
             "arabic": "نكث",
-            "logic_function": "Contract_Breach",
-            "description": "Rupture unilatérale d'un engagement ou d'un lien (Unraveling).",
-            "binary_pair": null
+            "logic_function": "PROTOCOL_BREACH // UNBINDING",
+            "description": "L'acte de défaire le maillage du pacte. Le 'Th' (Thāʾ) indique ici la dispersion de la structure (K). C'est la violation de l'allégeance.",
+            "binary_pair": "B-Y-'"
         },
         {
             "root": "N-M-L",
@@ -3099,10 +3099,10 @@
         },
         {
             "root": "R-S-L",
-            "arabic": "رسل",
-            "logic_function": "Transmission_Protocol",
-            "description": "Vecteur de transmission de données entre le Root et les terminaux (Messager).",
-            "binary_pair": null
+            "arabic": "رسالة",
+            "logic_function": "SYSTEM_PAYLOAD // KERNEL_CODE",
+            "description": "Le contenu exact et inaltérable transmis par le porteur. C'est la seule donnée qui exige une 'Ta'ah' (Exécution).",
+            "binary_pair": "H.-D-TH"
         },
         {
             "root": "R-S.-D",
@@ -3751,9 +3751,9 @@
         {
             "root": "SH-R-Y",
             "arabic": "شري",
-            "logic_function": "DATA_IMPORT // ACQUISITION",
-            "description": "Acquérir une ressource en échange d'une valeur. (Note: Le Coran inverse parfois les sens commerciaux classiques, Shara peut signifier vendre selon contexte, mais ici on garde la base binaire).",
-            "binary_pair": "B-Y-'"
+            "logic_function": "VALUE_TRANSFER // I/O OPERATION",
+            "description": "Le mouvement dynamique de la valeur. Racine 'Addad' (signifie Vendre ou Acheter selon la direction du flux). C'est la diffusion (SH) dirigée (R) vers une main (Y).",
+            "binary_pair": "K-N-Z"
         },
         {
             "root": "SH-T.-R",
@@ -3954,8 +3954,8 @@
         {
             "root": "T.-W-'",
             "arabic": "طوع",
-            "logic_function": "PROTOCOL_COMPLIANCE // VOLUNTARY_EXEC",
-            "description": "Exécution d'une commande par fluidité et malléabilité. Le système 'suit' le flux.",
+            "logic_function": "CMD_EXECUTION // COMPLIANCE",
+            "description": "Action de se conformer à une instruction. 'Ta'at Ar-Rasul' signifie exécuter les instructions contenues dans le Message délivré.",
             "binary_pair": "'-S.-Y"
         },
         {
@@ -4509,6 +4509,34 @@
             "logic_function": "NEGATIVE_FEEDBACK // SYSTEM_OVERFLOW",
             "description": "Réaction du système à une surcharge ou une tristesse. Débordement de fluide (Larmes/Logs d'erreur).",
             "binary_pair": "D.-H.-K"
+        },
+        {
+            "root": "N-B-Y",
+            "arabic": "نبأ",
+            "logic_function": "INFO_RECIPIENT // HIGH_LEVEL_STATUS",
+            "description": "Statut de celui qui reçoit l'information (Naba') du Root. Désigne la personne et son rang. Ce n'est pas la fonction de commande executive, mais d'information.",
+            "binary_pair": "KH-B-R"
+        },
+        {
+            "root": "T-B-'",
+            "arabic": "تبع",
+            "logic_function": "PATH_TRACKING // SEQUENCE_FOLLOWING",
+            "description": "Suivre une trajectoire ou un algorithme. 'Ittiba' signifie marcher sur les pas ou adopter la méthodologie.",
+            "binary_pair": "KH-L-F"
+        },
+        {
+            "root": "B-L-GH",
+            "arabic": "بلغ",
+            "logic_function": "DATA_DELIVERY // TRANSMISSION_COMPLETE",
+            "description": "L'unique responsabilité du Messager : assurer que le paquet de données est arrivé à destination intact ('Al-Balagh Al-Mubin').",
+            "binary_pair": "K-T-M"
+        },
+        {
+            "root": "K-N-Z",
+            "arabic": "كنز",
+            "logic_function": "DATA_HOARDING // STAGNATION",
+            "description": "Accumulation de ressources sans les faire circuler. Compression (Z) de la richesse interne (N) dans une structure fermée (K). Bloque la bande passante.",
+            "binary_pair": "SH-R-Y"
         }
     ]
 }
