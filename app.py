@@ -3,7 +3,7 @@ import graphviz
 from data.repository import LexiconRepository
 from core.config import config
 from export.manager import ExportManager
-from core.logger import logger  # <--- IMPORT DU LOGGER
+from core.logger import logger
 
 # --- CONFIGURATION ---
 st.set_page_config(
@@ -50,14 +50,14 @@ if repo.get_count() > 0:
 else:
     st.sidebar.error("DATABASE OFFLINE")
 
-# Menu
+# Menu dynamique
 options = ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW"]
 if config['modules']['enable_governance']:
     options.append("GOVERNANCE MAP")
 
 mode = st.sidebar.radio("PROTOCOL", options)
 
-# --- MODE 1: SCANNER ---
+# --- MODE 1: ROOT SCANNER ---
 if mode == "ROOT SCANNER":
     st.subheader("🔍 SINGLE ROOT ANALYSIS")
     query = st.text_input("INPUT SIGNAL (Latin/Arabic)", "").strip()
@@ -65,9 +65,7 @@ if mode == "ROOT SCANNER":
     if query:
         result = repo.find_root(query)
         if result:
-            # LOGGING DE LA RECHERCHE
             logger.info(f"USER QUERY: Search for '{query}' -> FOUND ({result['root']})")
-            
             st.markdown("---")
             c1, c2 = st.columns([1, 2])
             with c1:
@@ -78,8 +76,12 @@ if mode == "ROOT SCANNER":
                 
                 if config['modules']['enable_export']:
                     fname, fcontent = exporter.generate_markdown(result)
-                    if st.download_button(label="📥 DOWNLOAD REPORT (MD)", data=fcontent, file_name=fname, mime="text/markdown"):
-                        logger.info(f"EXPORT: Report generated for {result['root']}")
+                    st.download_button(
+                        label="📥 DOWNLOAD REPORT (MD)",
+                        data=fcontent,
+                        file_name=fname,
+                        mime="text/markdown"
+                    )
         else:
             logger.warning(f"USER QUERY: Search for '{query}' -> NOT FOUND")
             st.warning(f"SIGNAL '{query}' NOT FOUND.")
@@ -100,16 +102,18 @@ elif mode == "VERSE DECOMPILER":
             else:
                 st.error(f"[{r}] UNKNOWN")
 
-# --- AUTRES MODES (SIMPLIFIÉS) ---
+# --- MODE 3: MATRIX VIEW ---
 elif mode == "MATRIX VIEW":
     st.subheader("🌐 GLOBAL DATA")
     st.dataframe(repo.get_all_roots())
 
+# --- MODE 4: GOVERNANCE MAP ---
 elif mode == "GOVERNANCE MAP":
     st.subheader("👑 SYSTEM HIERARCHY")
     st.info("PROTOCOL: Admin (Free Will) vs Daemon (Automation).")
-    # (Code graphe inchangé)
-            governance_graph = """
+    
+    # Correction indentation ici (4 espaces)
+    governance_graph = """
     digraph G {
         bgcolor="#0e1117"
         rankdir=TB
@@ -117,8 +121,7 @@ elif mode == "GOVERNANCE MAP":
         edge [color="#00ff41", fontname="Courier New", fontsize=10]
 
         # 1. LE ROOT
-        ROOT [label="ROOT (Allah)
-[Source of Command]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
+        ROOT [label="ROOT (Allah)\\n[Source of Command]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
 
         # 2. LES ADMINS (Dual Boot System - Free Will)
         subgraph cluster_admins {
@@ -126,10 +129,8 @@ elif mode == "GOVERNANCE MAP":
             style=dashed; color="#00ff41"; fontcolor="#00ff41"
             
             # Deux types d'utilisateurs avec Write Access
-            KHALIFA [label="USER: INSAN
-[Visible Admin]", color="#00ff41", fontcolor="black"]
-            DJINN [label="USER: JINN (Rational)
-[Hidden Admin]", color="#00aa00", fontcolor="black"]
+            KHALIFA [label="USER: INSAN\\n[Visible Admin]", color="#00ff41", fontcolor="black"]
+            DJINN [label="USER: JINN (Rational)\\n[Hidden Admin]", color="#00aa00", fontcolor="black"]
         }
 
         # 3. LES AUTOMATES & AGENTS
@@ -137,11 +138,9 @@ elif mode == "GOVERNANCE MAP":
             label = "ZONE: AUTOMATION & SERVICE (S-KH-R)"
             style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
             
-            # Entités cachées non-intelligentes (Virus, Forces) sont ICI, pas en Admin
-            NATURE [label="DAEMON: NATURE
-[Hidden & Visible Forces]", color="#262730", fontcolor="white"]
-            ANGELS [label="AGENT: ANGELS
-[System Executors]", color="#aaaaaa", fontcolor="black"]
+            # Entités cachées non-intelligentes (Virus, Forces) sont ICI
+            NATURE [label="DAEMON: NATURE\\n[Hidden & Visible Forces]", color="#262730", fontcolor="white"]
+            ANGELS [label="AGENT: ANGELS\\n[System Executors]", color="#aaaaaa", fontcolor="black"]
         }
 
         # RELATIONS
