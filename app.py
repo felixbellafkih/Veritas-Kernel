@@ -117,7 +117,7 @@ elif mode == "GOVERNANCE MAP":
         edge [color="#00ff41", fontname="Courier New", fontsize=10]
         ROOT [label="ROOT (Allah)", color="#FFD700", fontcolor="black", shape=doubleoctagon]
         subgraph cluster_admins {
-            label = "ZONE: ADMIN (S-Y-T-R)"; style=dashed; color="#00ff41"; fontcolor="#00ff41"
+            label = "ZONE: ADMIN (S-Y-T.-R)"; style=dashed; color="#00ff41"; fontcolor="#00ff41"
             KHALIFA [label="USER (Insan)", color="#00ff41", fontcolor="black"]
             ANGELS [label="AGENTS (Mala'ika)", color="#00ff41", fontcolor="black"]
         }
