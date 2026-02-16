@@ -109,25 +109,50 @@ elif mode == "GOVERNANCE MAP":
     st.subheader("👑 SYSTEM HIERARCHY")
     st.info("PROTOCOL: Admin (Free Will) vs Daemon (Automation).")
     # (Code graphe inchangé)
-    governance_graph = """
+            governance_graph = """
     digraph G {
         bgcolor="#0e1117"
         rankdir=TB
         node [style=filled, fontname="Courier New", shape=box]
         edge [color="#00ff41", fontname="Courier New", fontsize=10]
-        ROOT [label="ROOT (Allah)", color="#FFD700", fontcolor="black", shape=doubleoctagon]
+
+        # 1. LE ROOT
+        ROOT [label="ROOT (Allah)
+[Source of Command]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
+
+        # 2. LES ADMINS (Dual Boot System - Free Will)
         subgraph cluster_admins {
-            label = "ZONE: ADMIN (S-Y-T.-R)"; style=dashed; color="#00ff41"; fontcolor="#00ff41"
-            KHALIFA [label="USER (Insan)", color="#00ff41", fontcolor="black"]
-            ANGELS [label="AGENTS (Mala'ika)", color="#00ff41", fontcolor="black"]
+            label = "ZONE: ADMIN / FREE WILL (S-Y-T.-R)"
+            style=dashed; color="#00ff41"; fontcolor="#00ff41"
+            
+            # Deux types d'utilisateurs avec Write Access
+            KHALIFA [label="USER: INSAN
+[Visible Admin]", color="#00ff41", fontcolor="black"]
+            DJINN [label="USER: JINN (Rational)
+[Hidden Admin]", color="#00aa00", fontcolor="black"]
         }
+
+        # 3. LES AUTOMATES & AGENTS
         subgraph cluster_automata {
-            label = "ZONE: DAEMON (S-KH-R)"; style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
-            SUN [label="DAEMON: SUN", color="#262730", fontcolor="white"]
+            label = "ZONE: AUTOMATION & SERVICE (S-KH-R)"
+            style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
+            
+            # Entités cachées non-intelligentes (Virus, Forces) sont ICI, pas en Admin
+            NATURE [label="DAEMON: NATURE
+[Hidden & Visible Forces]", color="#262730", fontcolor="white"]
+            ANGELS [label="AGENT: ANGELS
+[System Executors]", color="#aaaaaa", fontcolor="black"]
         }
-        ROOT -> KHALIFA
-        ROOT -> SUN
-        KHALIFA -> SUN [style=dotted]
+
+        # RELATIONS
+        ROOT -> KHALIFA [label="Grant_Access"]
+        ROOT -> DJINN [label="Grant_Access"]
+        ROOT -> ANGELS [label="Command (A-M-R)"]
+        ROOT -> NATURE [label="Hard_Code (Q-D-R)"]
+        
+        # Interactions
+        KHALIFA -> NATURE [label="Utilise", style=dotted]
+        DJINN -> NATURE [label="Utilise", style=dotted]
     }
     """
     st.graphviz_chart(governance_graph)
