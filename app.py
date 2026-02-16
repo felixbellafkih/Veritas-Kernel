@@ -1,9 +1,10 @@
 import streamlit as st
 import graphviz
 from data.repository import LexiconRepository
-from core.config import config  # <-- IMPORT DE LA CONFIG
+from core.config import config
+from export.manager import ExportManager  # <--- NOUVEAU MODULE
 
-# --- CONFIGURATION STREAMLIT VIA YAML ---
+# --- CONFIGURATION ---
 st.set_page_config(
     page_title=f"{config['app']['name']} {config['app']['version']}",
     page_icon="👁️",
@@ -11,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state=config['interface']['sidebar_state']
 )
 
-# --- STYLE (Inchangé pour l'instant) ---
+# --- STYLE ---
 st.markdown("""
 <style>
     .reportview-container {background: #0e1117;}
@@ -22,46 +23,43 @@ st.markdown("""
     .arabic-text {font-family: 'Amiri', serif; font-size: 32px; color: #ffcc00; direction: rtl; text-align: right; margin-top: -10px;}
     .root-title {font-size: 24px; font-weight: bold; color: #00ff41;}
     .logic-func {font-family: monospace; color: #ff4b4b; font-weight: bold;}
-    .stAlert {background-color: #262730; color: #e0e0e0; border: 1px solid #444;}
+    .stButton>button {border: 1px solid #00ff41; color: #00ff41; background-color: #0e1117;}
+    .stButton>button:hover {background-color: #00ff41; color: #000000;}
 </style>
 """, unsafe_allow_html=True)
 
-# --- REPOSITORY ---
+# --- INITIALISATION ---
 @st.cache_resource
 def get_repo():
-    # Le chemin vient maintenant de la config !
     return LexiconRepository(filepath=config['database']['path'])
 
 repo = get_repo()
+exporter = ExportManager() # <--- INSTANCE DE L'EXPORTATEUR
 
-# --- HEADER DYNAMIQUE ---
+# --- HEADER ---
 st.title(f"{config['app']['name']} {config['app']['version']}")
 st.markdown(f"*Mode: {config['app']['mode'].upper()} - Non-Torted Logic*")
 st.markdown("---")
 
-# --- SIDEBAR DYNAMIQUE ---
+# --- SIDEBAR ---
 st.sidebar.title("SYSTEM STATUS")
-st.sidebar.text(f"Core: v{st.__version__}")
-st.sidebar.text(f"Config: Loaded")
-
 if repo.get_count() > 0:
     st.sidebar.success(f"KERNEL LOADED: {repo.get_count()} NODES")
 else:
-    st.sidebar.error("KERNEL ERROR: DATABASE OFFLINE")
+    st.sidebar.error("DATABASE OFFLINE")
 
 # Menu dynamique
 options = ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW"]
 if config['modules']['enable_governance']:
     options.append("GOVERNANCE MAP")
-if config['modules']['enable_export']: # Ce module est désactivé dans le YAML pour l'instant
-    options.append("EXPORT DATA")
 
 mode = st.sidebar.radio("PROTOCOL", options)
 
-# --- LOGIQUE DES MODES (Identique à v10.2) ---
+# --- MODE 1: ROOT SCANNER (AVEC EXPORT) ---
 if mode == "ROOT SCANNER":
     st.subheader("🔍 SINGLE ROOT ANALYSIS")
-    query = st.text_input("INPUT SIGNAL (Latin ex: K-T-B or Arabic ex: كتب)", "").strip()
+    query = st.text_input("INPUT SIGNAL (Latin/Arabic)", "").strip()
+    
     if query:
         result = repo.find_root(query)
         if result:
@@ -72,30 +70,43 @@ if mode == "ROOT SCANNER":
             with c2: 
                 st.markdown(f"**LOGIC FUNCTION:** <span class='logic-func'>{result['logic_function']}</span>", unsafe_allow_html=True)
                 st.info(f"{result['description']}")
+                
+                # --- BOUTON D'EXPORTATION ---
+                if config['modules']['enable_export']:
+                    fname, fcontent = exporter.generate_markdown(result)
+                    st.download_button(
+                        label="📥 DOWNLOAD REPORT (MD)",
+                        data=fcontent,
+                        file_name=fname,
+                        mime="text/markdown"
+                    )
         else:
-            st.warning(f"SIGNAL '{query}' NOT FOUND IN KERNEL.")
+            st.warning(f"SIGNAL '{query}' NOT FOUND.")
 
+# --- MODE 2: DECOMPILER ---
 elif mode == "VERSE DECOMPILER":
     st.subheader("💻 SEQUENCE DECOMPILER")
-    input_seq = st.text_area("ROOT SEQUENCE (Space separated)", "B-S-M A-L-H R-H-M R-H-M")
+    input_seq = st.text_area("ROOT SEQUENCE", "B-S-M A-L-H R-H-M R-H-M")
     if st.button("EXECUTE"):
         roots = input_seq.split()
         st.markdown("---")
         for r in roots:
             data = repo.find_root(r)
             if data:
-                with st.expander(f"[{data['root']}]  {data['arabic']}  ::  {data['logic_function']}"):
-                    st.write(f"**Function:** {data['description']}")
+                with st.expander(f"[{data['root']}] {data['logic_function']}"):
+                    st.write(data['description'])
             else:
-                st.error(f"[{r}] :: UNKNOWN SIGNAL")
+                st.error(f"[{r}] UNKNOWN")
 
+# --- MODE 3: MATRIX ---
 elif mode == "MATRIX VIEW":
     st.subheader("🌐 GLOBAL DATA")
     st.dataframe(repo.get_all_roots())
 
+# --- MODE 4: GOVERNANCE ---
 elif mode == "GOVERNANCE MAP":
     st.subheader("👑 SYSTEM HIERARCHY")
-    st.info("**PROTOCOLE DE GOUVERNANCE :** Distinction Admin (Free Will) vs Daemon (Automation).")
+    st.info("PROTOCOL: Admin (Free Will) vs Daemon (Automation).")
     
     governance_graph = """
     digraph G {
@@ -103,24 +114,19 @@ elif mode == "GOVERNANCE MAP":
         rankdir=TB
         node [style=filled, fontname="Courier New", shape=box]
         edge [color="#00ff41", fontname="Courier New", fontsize=10]
-        ROOT [label="ROOT (Allah)\n[Source]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
+        ROOT [label="ROOT (Allah)", color="#FFD700", fontcolor="black", shape=doubleoctagon]
         subgraph cluster_admins {
-            label = "ZONE: FREE WILL (S-Y-T-R)"
-            style=dashed; color="#00ff41"; fontcolor="#00ff41"
+            label = "ZONE: ADMIN (S-Y-T-R)"; style=dashed; color="#00ff41"; fontcolor="#00ff41"
             KHALIFA [label="USER (Insan)", color="#00ff41", fontcolor="black"]
             ANGELS [label="AGENTS (Mala'ika)", color="#00ff41", fontcolor="black"]
         }
         subgraph cluster_automata {
-            label = "ZONE: AUTOMATION (S-KH-R)"
-            style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
+            label = "ZONE: DAEMON (S-KH-R)"; style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
             SUN [label="DAEMON: SUN", color="#262730", fontcolor="white"]
-            MOON [label="DAEMON: MOON", color="#262730", fontcolor="white"]
         }
         ROOT -> KHALIFA
-        ROOT -> ANGELS
         ROOT -> SUN
         KHALIFA -> SUN [style=dotted]
     }
     """
     st.graphviz_chart(governance_graph)
-

@@ -1,0 +1,17 @@
+app:
+  name: "VERITAS TERMINAL"
+  version: "v10.4"
+  author: "System Operator"
+  mode: "production"
+
+interface:
+  theme: "cyberpunk"
+  layout: "wide"
+  sidebar_state: "expanded"
+
+database:
+  path: "LEXICON.json"
+
+modules:
+  enable_governance: true
+  enable_export: true  # <--- ACTIVÉ ICI
