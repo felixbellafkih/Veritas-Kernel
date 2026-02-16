@@ -439,10 +439,10 @@
         },
         {
             "root": "A-S-M",
-            "arabic": "أسم",
-            "logic_function": "Metadata_Identifier",
-            "description": "Étiquettes de désignation permettant l'adressage et l'identification des objets du Kernel.",
-            "binary_pair": null
+            "arabic": "اسم",
+            "logic_function": "IDENTITY_TAG // ATTRIBUTE_POINTER",
+            "description": "L'étiquette qui définit l'objet (Sumuw = Élévation par le sens). 'Alif' (Initiation) + 'Sin' (Flux) + 'Mim' (Masse). C'est le pointeur vers la réalité de la chose.",
+            "binary_pair": "M-J-H-L"
         },
         {
             "root": "A-S-R",
@@ -4593,6 +4593,34 @@
             "logic_function": "CRITICAL_SENSOR // EMOTIONAL_CORE",
             "description": "Zone de haute intensité du traitement. Le capteur de vérité qui brûle ou réagit vivement. Responsable de la validation finale des inputs sensoriels.",
             "binary_pair": "B-L-D"
+        },
+        {
+            "root": "B-S-M",
+            "arabic": "بسم",
+            "logic_function": "INIT_BY_PROXY // AUTH_HEADER",
+            "description": "Instance dérivée de A-S-M. Connexion (Ba) à l'Identité (Ism). Signifie : 'J'initie cette action avec les privilèges et les attributs du Nom cible'. C'est le Header d'authentification.",
+            "binary_pair": "B-T.-L"
+        },
+        {
+            "root": "R-H-M-N",
+            "arabic": "رحمن",
+            "logic_function": "SYSTEM_ARCHITECTURE // INFINITE_POTENTIAL",
+            "description": "La Matrice dans son état d'expansion maximale (Suffixe A-N). Englobe toute la création. C'est le 'Système d'Exploitation' disponible pour tous. L'état statique et absolu de la Miséricorde.",
+            "binary_pair": "GH-D.-B"
+        },
+        {
+            "root": "R-H-M",
+            "arabic": "رحم",
+            "logic_function": "MATRIX_SOURCE // WOMB",
+            "description": "La racine mère. Le lieu de création et de protection (Womb). Source des deux modes : Architecture (Rahman) et Flux (Rahim).",
+            "binary_pair": "Q-S-W"
+        },
+        {
+            "root": "R-H-Y-M",
+            "arabic": "رحيم",
+            "logic_function": "ACTIVE_FLOW // DIRECTED_DELIVERY",
+            "description": "La Matrice en mode transmission active (Infixe Y). C'est le flux ciblé qui connecte la Source (Rahman) à un objet précis. Le 'Rahim' est le processus de téléchargement constant de la donnée 'Rahma'.",
+            "binary_pair": "'-DH-B"
         }
     ]
 }
