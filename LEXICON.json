@@ -10,6 +10,12 @@
             "description": "Processus asservi au code source."
         },
         {
+            "root": "'-B-Q-R",
+            "arabic": "عبقر",
+            "logic_function": "High_Fidelity_Texture",
+            "description": "Qualité de rendu exceptionnelle ou génie de conception (Genius/Carpets)."
+        },
+        {
             "root": "'-D-D",
             "arabic": "عدد",
             "logic_function": "Latency_Buffer_Period",
@@ -164,6 +170,12 @@
             "arabic": "عرش",
             "logic_function": "Central_Console",
             "description": "Siège de l'autorité suprême du système d'où partent toutes les commandes (Trône)."
+        },
+        {
+            "root": "'-S-'-S",
+            "arabic": "عسعس",
+            "logic_function": "State_Transition_Oscillation",
+            "description": "Répétition de '-S (Patrouille). Phase de basculement entre deux modes d'éclairage ou d'état (Night transition)."
         },
         {
             "root": "'-S-L",
@@ -376,6 +388,12 @@
             "description": "Capture et mise en quarantaine de processus hostiles (Prisonniers)."
         },
         {
+            "root": "A-T-Y",
+            "arabic": "أتي",
+            "logic_function": "Data_Import",
+            "description": "Action d'apporter une donnée externe ou d'arriver à un point d'exécution (Coming/Bringing)."
+        },
+        {
             "root": "A-W-L",
             "arabic": "أول",
             "logic_function": "Output_Decoding",
@@ -410,6 +428,12 @@
             "arabic": "بعث",
             "logic_function": "Process_Reboot_Trigger",
             "description": "Réactivation d'une instance à partir de son état archivé (Résurrection)."
+        },
+        {
+            "root": "B-'-TH-R",
+            "arabic": "بعثر",
+            "logic_function": "Entropy_Scattering",
+            "description": "Fusion de B-'-TH (Envoi) et R. Extraction brutale et désordonnée de données cachées (Scattered/Overturned)."
         },
         {
             "root": "B-D-A",
@@ -634,6 +658,12 @@
             "description": "Entrée d'un nouveau signal dans le Kernel."
         },
         {
+            "root": "D-M-D-M",
+            "arabic": "دمدم",
+            "logic_function": "Recursive_Crash",
+            "description": "Répétition de D-M (Charge/Sang). Écrasement total par récursion d'une onde de choc (Crushing Blast)."
+        },
+        {
             "root": "D-M-R",
             "arabic": "دمر",
             "logic_function": "Sector_Wipe",
@@ -794,6 +824,12 @@
             "arabic": "فجر",
             "logic_function": "System_Breakout",
             "description": "Étape d'initialisation brutale et de sortie des ténèbres de l'inactivité."
+        },
+        {
+            "root": "F-K-R",
+            "arabic": "فكر",
+            "logic_function": "Heuristic_Processing",
+            "description": "Traitement analytique des données pour générer de nouvelles conclusions (Thinking/Reflection)."
         },
         {
             "root": "F-L-H.",
@@ -1016,6 +1052,12 @@
             "arabic": "غرق",
             "logic_function": "Flood_Overflow",
             "description": "Saturation totale de la mémoire entraînant l'arrêt du processus (Noyade)."
+        },
+        {
+            "root": "GH-S-L-N",
+            "arabic": "غسلن",
+            "logic_function": "Corrupted_Output_Residue",
+            "description": "Déchet toxique issu du nettoyage des processus corrompus (Ghislin/Washing water)."
         },
         {
             "root": "GH-S-Q",
@@ -1246,6 +1288,12 @@
             "description": "Conflit d'allocation où un processus tente d'intercepter ou de dégrader les ressources d'un autre."
         },
         {
+            "root": "H.-S.-H.-S",
+            "arabic": "حصحص",
+            "logic_function": "Data_Clarification",
+            "description": "Répétition de H.-S. (Partager/Scanner). Moment où la vérité brute est extraite du bruit (Now the truth is manifest)."
+        },
+        {
             "root": "H.-S.-N",
             "arabic": "حصن",
             "logic_function": "Hardware_Fortification",
@@ -1318,10 +1366,22 @@
             "description": "Architecture de lignée permettant la transmission du code sans perte (Héritage)."
         },
         {
+            "root": "I-SH-M-A-Z",
+            "arabic": "اشمأز",
+            "logic_function": "System_Rejection_Glitch",
+            "description": "Racine (SH-M-Z). Réaction de rejet violent ou de contraction face à une donnée incompatible (Shrink/Aversion)."
+        },
+        {
             "root": "J-'-L",
             "arabic": "جعل",
             "logic_function": "Instance_Generator",
             "description": "Fonction de création ou d'assignation d'un rôle à une entité."
+        },
+        {
+            "root": "J-A-A",
+            "arabic": "جاء",
+            "logic_function": "Event_Arrival",
+            "description": "Occurrence d'un événement ou arrivée d'une instance critique (Came/Arrival)."
         },
         {
             "root": "J-B-B",
@@ -1424,6 +1484,12 @@
             "arabic": "كعب",
             "logic_function": "Root_Cube",
             "description": "Bloc central cubique servant de pivot universel (Anchor Point)."
+        },
+        {
+            "root": "K-B-K-B",
+            "arabic": "كبكب",
+            "logic_function": "Stack_Overflow_Dump",
+            "description": "Répétition de K-B (Renverser). Empilement désordonné ou chute en cascade (Toppled/Thrown)."
         },
         {
             "root": "K-B-R",
@@ -2254,6 +2320,12 @@
             "description": "Descente de données vers les couches applicatives."
         },
         {
+            "root": "N-Z.-R",
+            "arabic": "نظر",
+            "logic_function": "Visual_Data_Input",
+            "description": "Analyse active d'un flux visuel ou attente d'un signal (Vision/Waiting)."
+        },
+        {
             "root": "Q-'-D",
             "arabic": "قعد",
             "logic_function": "Idle_Process",
@@ -2356,6 +2428,12 @@
             "description": "Enveloppe de données servant de preuve ou d'identifiant (Chemise)."
         },
         {
+            "root": "Q-M-T-R",
+            "arabic": "قمطر",
+            "logic_function": "System_Constraint_Stress",
+            "description": "Fusion de Q-M (Lever) et T-R (Cadre). État de compression extrême et de difficulté (Distressful)."
+        },
+        {
             "root": "Q-N-T",
             "arabic": "قنت",
             "logic_function": "Steady_State_Compliance",
@@ -2408,6 +2486,12 @@
             "arabic": "قسو",
             "logic_function": "Core_Rigidity",
             "description": "Durcissement du noyau empêchant les nouvelles écritures (Cœurs durs)."
+        },
+        {
+            "root": "Q-S-W-R",
+            "arabic": "قسور",
+            "logic_function": "Hunter_Process",
+            "description": "Instance agressive traquant les processus faibles (Lion/Hunter)."
         },
         {
             "root": "Q-S.-D",
@@ -2806,6 +2890,12 @@
             "description": "Environnement d'exécution restreint et isolé pour un long terme (Prison)."
         },
         {
+            "root": "S-J-Y-L",
+            "arabic": "سجيل",
+            "logic_function": "Hardened_Data_Cluster",
+            "description": "Paquet de données solidifié et marqué pour une frappe ciblée (Baked Clay)."
+        },
+        {
             "root": "S-K-N",
             "arabic": "سكن",
             "logic_function": "Idle_Stable_State",
@@ -2824,6 +2914,12 @@
             "description": "Désynchronisation temporaire des capteurs (Glitch/Stupor)."
         },
         {
+            "root": "S-KH-R",
+            "arabic": "سخر",
+            "logic_function": "Task_Automation",
+            "description": "Assujettissement d'une ressource pour qu'elle exécute une tâche sans libre arbitre (Subjection/Service)."
+        },
+        {
             "root": "S-L-KH",
             "arabic": "سلخ",
             "logic_function": "Peel_Termination",
@@ -2834,6 +2930,12 @@
             "arabic": "سلم",
             "logic_function": "Total_System_Integrity",
             "description": "État de paix logicielle où tous les composants sont synchronisés sans collision."
+        },
+        {
+            "root": "S-L-S-B",
+            "arabic": "سلسب",
+            "logic_function": "Fluid_Data_Stream",
+            "description": "Flux de données à viscosité nulle, circulation parfaite (Salsabila/Easy flow)."
         },
         {
             "root": "S-L-T.",
@@ -2890,6 +2992,12 @@
             "description": "Continuité perpétuelle d'un état sans interruption (Éternité)."
         },
         {
+            "root": "S-R-M-D",
+            "arabic": "سرمد",
+            "logic_function": "Uptime_Bound_Persistence",
+            "description": "Fusion de S-A-R (Flux) et M-D-A (Extension). Processus continu actif tant que l'instance globale (Système) est maintenue."
+        },
+        {
             "root": "S-R-Q",
             "arabic": "سرق",
             "logic_function": "Data_Theft",
@@ -2942,6 +3050,12 @@
             "arabic": "ساح",
             "logic_function": "Network_Scanning",
             "description": "Parcours du réseau pour audit ou exploration (Itinérance)."
+        },
+        {
+            "root": "S-Y-T-R",
+            "arabic": "سيطر",
+            "logic_function": "Root_Admin_Override",
+            "description": "Extension de S-T-R (Ligne). Capacité à imposer ses scripts et contrôler l'exécution des autres (Dominator/Controller)."
         },
         {
             "root": "S.-'-D",
@@ -3102,8 +3216,8 @@
         {
             "root": "SH-'-R",
             "arabic": "شعر",
-            "logic_function": "System_Signaling_Markers",
-            "description": "Marqueurs d'interface identifiant l'appartenance aux protocoles du Root."
+            "logic_function": "Sensor_Detection",
+            "description": "Perception fine et intuitive d'un signal subtil (Feeling/Perception/Poetry)."
         },
         {
             "root": "SH-D-D",
@@ -3540,8 +3654,8 @@
         {
             "root": "W-S-W-S",
             "arabic": "وسوس",
-            "logic_function": "Background_Noise",
-            "description": "Signaux parasites de bas niveau tentant d'influencer l'exécution sans commande Root."
+            "logic_function": "Subliminal_Signal_Injection",
+            "description": "Injection discrète de code malveillant dans la boucle de pensée (Whisper/Inception)."
         },
         {
             "root": "W-S.-L",
@@ -3634,6 +3748,12 @@
             "description": "Blocs de matériel brut (fer) utilisés pour renforcer l'infrastructure (Blocs)."
         },
         {
+            "root": "Z-H-Z-H",
+            "arabic": "زحزح",
+            "logic_function": "Incremental_Displacement",
+            "description": "Répétition de Z-H (Pousser). Décalage progressif d'une position critique (Nudged away)."
+        },
+        {
             "root": "Z-H.-F",
             "arabic": "زحف",
             "logic_function": "Slow_Advance",
@@ -3672,8 +3792,14 @@
         {
             "root": "Z-L-Z-L",
             "arabic": "زلزل",
-            "logic_function": "Seismic_Data_Flush",
-            "description": "Processus de vibration et de purge forcée de la couche physique avant reset."
+            "logic_function": "Structural_Resonance_Failure",
+            "description": "Répétition de Z-L (Glisser). Instabilité critique faisant trembler l'architecture entière (Earthquake/Shake)."
+        },
+        {
+            "root": "Z-M-H-R",
+            "arabic": "زمهر",
+            "logic_function": "Thermal_Stasis_Lock",
+            "description": "État de contraction extrême dû à une absence totale d'énergie thermique (Extreme Cold/Freezing)."
         },
         {
             "root": "Z-N-Y",
