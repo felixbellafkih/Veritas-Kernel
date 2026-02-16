@@ -3044,8 +3044,8 @@
         {
             "root": "R-K-'",
             "arabic": "ركع",
-            "logic_function": "SYSTEM_ALIGNMENT // ADAPTATION",
-            "description": "Processus d'ajustement structurel. Consiste à abaisser ses propres paramètres (priorités locales) pour s'aligner sur la ligne directrice du Root. Ce n'est pas une flexion du dos, mais une mise en conformité de l'architecture personnelle avec la Loi.",
+            "logic_function": "VOLUNTARY_ALIGNMENT // ACTIVE_SYNC",
+            "description": "Alignement délibéré et volontaire sur la structure du système. L'entité choisit activement de se mettre en phase avec les règles du Root.",
             "binary_pair": null
         },
         {
@@ -4398,6 +4398,12 @@
             "logic_function": "DATA_CORRUPTION // FALSIFIED",
             "description": "L'injection de données fausses dans le système. Le mensonge est un virus qui corrompt la base de données.",
             "binary_pair": "S-D-Q"
+        },
+        {
+            "root": "KH-D.-'",
+            "arabic": "خضع",
+            "logic_function": "COMPELLED_SUBMISSION // FORCED_CONSTRAINT",
+            "description": "Soumission subie par contrainte structurelle. L'entité est forcée de prendre un état spécifique par la pression du système ou une loi inviolable (Hard-code)."
         }
     ]
 }
