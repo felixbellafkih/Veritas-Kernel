@@ -27,9 +27,9 @@
         {
             "root": "'-D-L",
             "arabic": "عدل",
-            "logic_function": "Logic_Load_Balancing",
-            "description": "Distribution équitable des ressources et maintien de l'équilibre du système.",
-            "binary_pair": null
+            "logic_function": "SYSTEM_EQUILIBRIUM // LOAD_BALANCING",
+            "description": "État d'équilibre parfait des ressources. Aucune partition ne consomme plus que ce qui lui est alloué.",
+            "binary_pair": "Z.-L-M"
         },
         {
             "root": "'-D-W",
@@ -90,9 +90,9 @@
         {
             "root": "'-L-M",
             "arabic": "علم",
-            "logic_function": "Data_Processing",
-            "description": "Traitement de l'information et structuration de la connaissance (Science).",
-            "binary_pair": null
+            "logic_function": "DATA_PROCESSING // KNOWLEDGE_BASE",
+            "description": "Possession et traitement de l'information vérifiée. Marqueurs et attributs connus.",
+            "binary_pair": "J-H-L"
         },
         {
             "root": "'-L-Q",
@@ -412,9 +412,9 @@
         {
             "root": "A-M-N",
             "arabic": "أمن",
-            "logic_function": "Secure_Trust_Protocol",
-            "description": "État de stabilité et de sécurité d'un segment de données (Faith/Safety).",
-            "binary_pair": null
+            "logic_function": "SECURE_STATE // TRUSTED_ACCESS",
+            "description": "État de sécurité et de confiance. Le système est stable, les ports sont ouverts aux données vérifiées. La foi (Iman) est une 'Sécurisation' de la relation avec le Root.",
+            "binary_pair": "K-F-R"
         },
         {
             "root": "A-M-R",
@@ -482,9 +482,9 @@
         {
             "root": "B-'-D",
             "arabic": "بعد",
-            "logic_function": "Remote_Isolation",
-            "description": "Exclusion d'un processus vers une zone distante et inaccessible (Éloignement).",
-            "binary_pair": null
+            "logic_function": "HIGH_LATENCY // REMOTE_ACCESS",
+            "description": "Éloignement du signal source. Risque de timeout ou de déconnexion ('La malédiction' est un éloignement technique).",
+            "binary_pair": "Q-R-B"
         },
         {
             "root": "B-'-L",
@@ -804,9 +804,9 @@
         {
             "root": "D.-L-L",
             "arabic": "ضلل",
-            "logic_function": "False_Pointer",
-            "description": "Indication d'une fausse direction menant à une erreur d'adressage (Induire en erreur).",
-            "binary_pair": null
+            "logic_function": "SIGNAL_LOSS // NAVIGATION_ERROR",
+            "description": "Perte du signal de guidage. L'entité n'a plus de repère et erre dans le système sans coordonnée valide. Ce n'est pas nécessairement une rébellion, mais une incapacité à trouver le chemin (Null Path).",
+            "binary_pair": "H-D-Y"
         },
         {
             "root": "D.-R-'",
@@ -853,9 +853,9 @@
         {
             "root": "DH-K-R",
             "arabic": "ذكر",
-            "logic_function": "Memory_Recall_Logging",
-            "description": "Processus d'accès aux registres de stockage (Read/Log).",
-            "binary_pair": null
+            "logic_function": "DATA_RETRIEVAL // ACTIVE_MEMORY",
+            "description": "Action de rappeler une donnée du stockage vers la mémoire vive (RAM) pour traitement. Le Dhikr est la maintenance de la connexion active.",
+            "binary_pair": "N-S-Y"
         },
         {
             "root": "DH-R-A",
@@ -1266,9 +1266,9 @@
         {
             "root": "H-D-Y",
             "arabic": "هدي",
-            "logic_function": "Target_Resource",
-            "description": "Ressource dédiée envoyée vers un objectif spécifique du noyau (Offrande).",
-            "binary_pair": null
+            "logic_function": "TARGET_ACQUISITION // SIGNAL_LOCK",
+            "description": "Acquisition de la cible. Le système reçoit les données de télémétrie et s'oriente vers la destination prévue. C'est un guidage actif.",
+            "binary_pair": "D.-L-L"
         },
         {
             "root": "H-J-R",
@@ -1427,9 +1427,9 @@
         {
             "root": "H.-R-B",
             "arabic": "حرب",
-            "logic_function": "Process_Friction",
-            "description": "Collision cinétique entre instances pour l'accès aux ressources (Guerre).",
-            "binary_pair": null
+            "logic_function": "CONFLICT_MODE // ATTACK_VECTOR",
+            "description": "État de guerre systémique. Tentative active de détruire ou de pirater une partie de l'architecture.",
+            "binary_pair": "S-L-M"
         },
         {
             "root": "H.-R-F",
@@ -1532,9 +1532,9 @@
         {
             "root": "H.-Y-Y",
             "arabic": "حي",
-            "logic_function": "Runtime_Active_State",
-            "description": "État d'exécution continue d'un processus (Vie).",
-            "binary_pair": null
+            "logic_function": "PROCESS_ACTIVE // LIVE_STATE",
+            "description": "Processus en cours d'exécution. L'entité répond aux pings et traite les données.",
+            "binary_pair": "M-W-T"
         },
         {
             "root": "H.-Z-B",
@@ -1728,9 +1728,9 @@
         {
             "root": "K-F-R",
             "arabic": "كفر",
-            "logic_function": "Data_Masking",
-            "description": "Obscurcissement ou déni du signal.",
-            "binary_pair": null
+            "logic_function": "DATA_MASKING // ACCESS_DENIAL",
+            "description": "Acte de couvrir ou d'enterrer une donnée. Ce n'est pas une simple incrédulité, c'est une action technique de dissimulation de la vérité (Haqq). L'utilisateur 'Kafir' masque sciemment le signal du Root.",
+            "binary_pair": "A-M-N"
         },
         {
             "root": "K-F-W",
@@ -1889,9 +1889,9 @@
         {
             "root": "KH-F-F",
             "arabic": "خفف",
-            "logic_function": "Load_Balancing",
-            "description": "Allègement de la charge processeur pour optimiser la vitesse (Alléger).",
-            "binary_pair": null
+            "logic_function": "LOW_LOAD // OPTIMIZED",
+            "description": "Allègement de la charge. Optimisation des processus.",
+            "binary_pair": "TH-Q-L"
         },
         {
             "root": "KH-F-Y",
@@ -2029,9 +2029,9 @@
         {
             "root": "KH-Y-R",
             "arabic": "خير",
-            "logic_function": "System_Efficiency",
-            "description": "Optimisation maximale de l'exécution.",
-            "binary_pair": null
+            "logic_function": "OPTIMAL_SELECTION // SYSTEM_BENEFIT",
+            "description": "Ce qui est choisi pour son efficacité supérieure. Le bien est défini par sa capacité à produire un résultat optimal pour le système.",
+            "binary_pair": "SH-R-R"
         },
         {
             "root": "KH-Z-N",
@@ -2295,9 +2295,9 @@
         {
             "root": "M-W-T",
             "arabic": "موت",
-            "logic_function": "Process_Termination_Idle",
-            "description": "Arrêt d'exécution et mise en état de repos/archivage (Mort).",
-            "binary_pair": null
+            "logic_function": "PROCESS_TERMINATED // HALT_STATE",
+            "description": "Arrêt complet des processus. L'entité ne consomme plus de CPU et ne répond plus. État inerte.",
+            "binary_pair": "H.-Y-Y"
         },
         {
             "root": "M-Y-S-R",
@@ -2393,9 +2393,9 @@
         {
             "root": "N-F-'",
             "arabic": "نفع",
-            "logic_function": "Value_Payload",
-            "description": "Partie utile de la donnée qui reste stockée après le filtrage (Utilité).",
-            "binary_pair": null
+            "logic_function": "SYSTEM_UTILITY // VALUE_ADD",
+            "description": "Fonctionnalité qui ajoute de la valeur ou de l'efficacité au système global.",
+            "binary_pair": "D.-R-R"
         },
         {
             "root": "N-F-D",
@@ -2568,9 +2568,9 @@
         {
             "root": "N-S-Y",
             "arabic": "نسي",
-            "logic_function": "Data_Loss",
-            "description": "Perte d'information critique par négligence ou écrasement (Oubli).",
-            "binary_pair": null
+            "logic_function": "DATA_LOSS // CACHE_FLUSH",
+            "description": "Perte de l'index d'une donnée. Le fichier existe peut-être encore, mais le système ne sait plus où le trouver.",
+            "binary_pair": "DH-K-R"
         },
         {
             "root": "N-S.-B",
@@ -2617,9 +2617,9 @@
         {
             "root": "N-W-R",
             "arabic": "نور",
-            "logic_function": "Photon_Signal_Luminance",
-            "description": "Vecteur de transmission de données par flux lumineux (Signal pur).",
-            "binary_pair": null
+            "logic_function": "DATA_ILLUMINATION // DISPLAY_ON",
+            "description": "Ce qui rend les données visibles et lisibles. La lumière est le support de l'information.",
+            "binary_pair": "Z.-L-M"
         },
         {
             "root": "N-W-Y",
@@ -2785,9 +2785,9 @@
         {
             "root": "Q-R-B",
             "arabic": "قرب",
-            "logic_function": "Proximity_Node_Access",
-            "description": "Nœuds situés dans la périphérie immédiate d'un centre de traitement (Latence faible).",
-            "binary_pair": null
+            "logic_function": "LOW_LATENCY // DIRECT_ACCESS",
+            "description": "Proximité avec le Root. Temps de réponse minimal. Privilèges élevés.",
+            "binary_pair": "B-'-D"
         },
         {
             "root": "Q-R-D.",
@@ -3037,9 +3037,9 @@
         {
             "root": "R-J-S",
             "arabic": "رجس",
-            "logic_function": "Corrupted_Cache",
-            "description": "Données impures ou malveillantes devant être purgées (Souillure).",
-            "binary_pair": null
+            "logic_function": "MALWARE // CORRUPT_FILE",
+            "description": "Souillure logique. Un virus ou un script sale qui doit être nettoyé pour éviter le crash.",
+            "binary_pair": "T.-H-R"
         },
         {
             "root": "R-K-'",
@@ -3331,9 +3331,9 @@
         {
             "root": "S-L-M",
             "arabic": "سلم",
-            "logic_function": "Total_System_Integrity",
-            "description": "État de paix logicielle où tous les composants sont synchronisés sans collision.",
-            "binary_pair": null
+            "logic_function": "SYSTEM_INTEGRITY // NO_CONFLICT",
+            "description": "État où tous les sous-systèmes fonctionnent sans friction. Absence de bugs ou d'attaques. Islam = Soumission à l'architecture pour atteindre cet état.",
+            "binary_pair": "H.-R-B"
         },
         {
             "root": "S-L-S-B",
@@ -3743,10 +3743,10 @@
         },
         {
             "root": "SH-R-R",
-            "arabic": "شر",
-            "logic_function": "Systemic_Entropy",
-            "description": "Mesure du désordre et de la dégradation de l'énergie au sein du réseau.",
-            "binary_pair": null
+            "arabic": "شرر",
+            "logic_function": "SYSTEM_ENTROPY // HARMFUL_NOISE",
+            "description": "Dispersion, étincelles, instabilité. Le mal est ce qui génère du bruit, de la chaleur inutile et de la désorganisation dans le code.",
+            "binary_pair": "KH-Y-R"
         },
         {
             "root": "SH-R-Y",
@@ -3912,9 +3912,9 @@
         {
             "root": "T.-H-R",
             "arabic": "طهر",
-            "logic_function": "Data_Sanitization",
-            "description": "Purification des entrées pour éliminer les éléments corrompus (Pure).",
-            "binary_pair": null
+            "logic_function": "CLEAN_STATE // NO_VIRUS",
+            "description": "État d'un système débarrassé de tout code malveillant ou corrompu.",
+            "binary_pair": "R-J-S"
         },
         {
             "root": "T.-L-Q",
@@ -4003,9 +4003,9 @@
         {
             "root": "TH-Q-L",
             "arabic": "ثقل",
-            "logic_function": "Mass_Weight_Priority_Mass_Weight_Priority",
-            "description": "Indicateur de poids ou de charge de calcul élevée.",
-            "binary_pair": null
+            "logic_function": "HIGH_LOAD // HEAVY_COMPUTATION",
+            "description": "Charge système lourde. Gravité importante. Responsabilité critique.",
+            "binary_pair": "KH-F-F"
         },
         {
             "root": "TH-R-W",
@@ -4360,9 +4360,9 @@
         {
             "root": "Z.-L-M",
             "arabic": "ظلم",
-            "logic_function": "System_Entropy",
-            "description": "Déséquilibre et perte de signal.",
-            "binary_pair": null
+            "logic_function": "SYSTEM_IMBALANCE // RESOURCE_MISALLOCATION",
+            "description": "Placement d'une variable ou d'un objet là où il ne doit pas être. Crée des conflits d'adresse et de l'obscurité (absence de lumière/donnée).",
+            "binary_pair": "'-D-L / N-W-R"
         },
         {
             "root": "Z.-M-A",
@@ -4404,6 +4404,20 @@
             "arabic": "خضع",
             "logic_function": "COMPELLED_SUBMISSION // FORCED_CONSTRAINT",
             "description": "Soumission subie par contrainte structurelle. L'entité est forcée de prendre un état spécifique par la pression du système ou une loi inviolable (Hard-code)."
+        },
+        {
+            "root": "D.-R-R",
+            "arabic": "ضرر",
+            "logic_function": "SYSTEM_DAMAGE // CRITICAL_ERROR",
+            "description": "Élément qui corrompt l'intégrité du système ou réduit ses performances (Harmful).",
+            "binary_pair": "N-F-'"
+        },
+        {
+            "root": "J-H-L",
+            "arabic": "جهل",
+            "logic_function": "UNPROCESSED_STATE // UNKNOWN_VARIABLE",
+            "description": "Action sans connaissance des paramètres. Exécuter un script sans savoir ce qu'il fait (Dangerous).",
+            "binary_pair": "'-L-M"
         }
     ]
 }

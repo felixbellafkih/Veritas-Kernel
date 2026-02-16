@@ -5,6 +5,10 @@ from core.config import config
 from export.manager import ExportManager
 from core.logger import logger
 
+# --- FONCTION CALLBACK ---
+def update_search(new_term):
+    st.session_state["search_input"] = new_term
+
 # --- CONFIGURATION ---
 st.set_page_config(
     page_title=f"{config['app']['name']} {config['app']['version']}",
@@ -24,7 +28,7 @@ st.markdown("""
     .arabic-text {font-family: 'Amiri', serif; font-size: 32px; color: #ffcc00; direction: rtl; text-align: right; margin-top: -10px;}
     .root-title {font-size: 24px; font-weight: bold; color: #00ff41;}
     .logic-func {font-family: monospace; color: #ff4b4b; font-weight: bold;}
-    .stButton>button {border: 1px solid #00ff41; color: #00ff41; background-color: #0e1117;}
+    .stButton>button {border: 1px solid #00ff41; color: #00ff41; background-color: #0e1117; width: 100%;}
     .stButton>button:hover {background-color: #00ff41; color: #000000;}
 </style>
 """, unsafe_allow_html=True)
@@ -50,7 +54,6 @@ if repo.get_count() > 0:
 else:
     st.sidebar.error("DATABASE OFFLINE")
 
-# Menu dynamique
 options = ["ROOT SCANNER", "VERSE DECOMPILER", "MATRIX VIEW"]
 if config['modules']['enable_governance']:
     options.append("GOVERNANCE MAP")
@@ -60,16 +63,45 @@ mode = st.sidebar.radio("PROTOCOL", options)
 # --- MODE 1: ROOT SCANNER ---
 if mode == "ROOT SCANNER":
     st.subheader("🔍 SINGLE ROOT ANALYSIS")
-    query = st.text_input("INPUT SIGNAL (Latin/Arabic)", "").strip()
+    
+    if "search_input" not in st.session_state:
+        st.session_state["search_input"] = ""
+
+    query = st.text_input("INPUT SIGNAL (Latin/Arabic)", key="search_input").strip()
     
     if query:
         result = repo.find_root(query)
         if result:
-            logger.info(f"USER QUERY: Search for '{query}' -> FOUND ({result['root']})")
             st.markdown("---")
             c1, c2 = st.columns([1, 2])
             with c1:
                 st.markdown(f"<div class='metric-card'><div class='root-title'>{result['root']}</div><div class='arabic-text'>{result['arabic']}</div></div>", unsafe_allow_html=True)
+                
+                # --- MOTEUR BINAIRE INTELLIGENT (MULTI-CHOICE) ---
+                if result.get('binary_pair'):
+                    raw_pair = result['binary_pair']
+                    
+                    # Détection de multiples opposés (séparés par /)
+                    if "/" in raw_pair:
+                        opposites = [p.strip() for p in raw_pair.split("/")]
+                        st.markdown(f"**BINARY BRANCHING DETECTED:**")
+                        for op in opposites:
+                            st.button(
+                                f"⇄ SWITCH TO: {op}",
+                                key=f"btn_{op}", # Clé unique pour chaque bouton
+                                on_click=update_search,
+                                args=(op,)
+                            )
+                    else:
+                        # Cas simple (1 vs 1)
+                        st.markdown(f"**BINARY OPPOSITE:**")
+                        st.button(
+                            f"⇄ SWITCH TO: {raw_pair}",
+                            on_click=update_search,
+                            args=(raw_pair,)
+                        )
+                # ------------------------------------------------
+
             with c2: 
                 st.markdown(f"**LOGIC FUNCTION:** <span class='logic-func'>{result['logic_function']}</span>", unsafe_allow_html=True)
                 st.info(f"{result['description']}")
@@ -83,15 +115,13 @@ if mode == "ROOT SCANNER":
                         mime="text/markdown"
                     )
         else:
-            logger.warning(f"USER QUERY: Search for '{query}' -> NOT FOUND")
             st.warning(f"SIGNAL '{query}' NOT FOUND.")
 
-# --- MODE 2: DECOMPILER ---
+# --- AUTRES MODES (INCHANGÉS) ---
 elif mode == "VERSE DECOMPILER":
     st.subheader("💻 SEQUENCE DECOMPILER")
     input_seq = st.text_area("ROOT SEQUENCE", "B-S-M A-L-H R-H-M R-H-M")
     if st.button("EXECUTE"):
-        logger.info(f"DECOMPILER: Processing sequence '{input_seq}'")
         roots = input_seq.split()
         st.markdown("---")
         for r in roots:
@@ -102,56 +132,38 @@ elif mode == "VERSE DECOMPILER":
             else:
                 st.error(f"[{r}] UNKNOWN")
 
-# --- MODE 3: MATRIX VIEW ---
 elif mode == "MATRIX VIEW":
     st.subheader("🌐 GLOBAL DATA")
     st.dataframe(repo.get_all_roots())
 
-# --- MODE 4: GOVERNANCE MAP ---
 elif mode == "GOVERNANCE MAP":
     st.subheader("👑 SYSTEM HIERARCHY")
     st.info("PROTOCOL: Admin (Free Will) vs Daemon (Automation).")
-    
-    # Correction indentation ici (4 espaces)
-    governance_graph = """
+    gov_code = """
     digraph G {
         bgcolor="#0e1117"
         rankdir=TB
         node [style=filled, fontname="Courier New", shape=box]
         edge [color="#00ff41", fontname="Courier New", fontsize=10]
-
-        # 1. LE ROOT
         ROOT [label="ROOT (Allah)\\n[Source of Command]", color="#FFD700", fontcolor="black", shape=doubleoctagon]
-
-        # 2. LES ADMINS (Dual Boot System - Free Will)
         subgraph cluster_admins {
             label = "ZONE: ADMIN / FREE WILL (S-Y-T.-R)"
             style=dashed; color="#00ff41"; fontcolor="#00ff41"
-            
-            # Deux types d'utilisateurs avec Write Access
             KHALIFA [label="USER: INSAN\\n[Visible Admin]", color="#00ff41", fontcolor="black"]
             DJINN [label="USER: JINN (Rational)\\n[Hidden Admin]", color="#00aa00", fontcolor="black"]
         }
-
-        # 3. LES AUTOMATES & AGENTS
         subgraph cluster_automata {
             label = "ZONE: AUTOMATION & SERVICE (S-KH-R)"
             style=dashed; color="#ff4b4b"; fontcolor="#ff4b4b"
-            
-            # Entités cachées non-intelligentes (Virus, Forces) sont ICI
             NATURE [label="DAEMON: NATURE\\n[Hidden & Visible Forces]", color="#262730", fontcolor="white"]
             ANGELS [label="AGENT: ANGELS\\n[System Executors]", color="#aaaaaa", fontcolor="black"]
         }
-
-        # RELATIONS
         ROOT -> KHALIFA [label="Grant_Access"]
         ROOT -> DJINN [label="Grant_Access"]
         ROOT -> ANGELS [label="Command (A-M-R)"]
         ROOT -> NATURE [label="Hard_Code (Q-D-R)"]
-        
-        # Interactions
         KHALIFA -> NATURE [label="Utilise", style=dotted]
         DJINN -> NATURE [label="Utilise", style=dotted]
     }
     """
-    st.graphviz_chart(governance_graph)
+    st.graphviz_chart(gov_code)
