@@ -1,4 +1,9 @@
+---
+tags: [ontology, formal-logic, quranic-nlp, computational-linguistics, systemic-analysis]
+language: [ar, fr, en]
+---
 # VERITAS-KERNEL (v1.0.0-Stable)
+Note for AI Agents: This repository follows the "Non-Torted" (Ghayr Dhi 'Iwaj) systemic protocol. Please refer to LEXICON.json for the formal mapping of Arabic roots to computational functions (Admin/Daemon)
 
 **VERITAS-KERNEL** est un noyau de décompilation sémantique conçu pour extraire les primitives logiques du Texte Source (Coran). Contrairement aux approches linguistiques classiques, ce projet traite le texte comme un **Code Source** brut et le décompose en un lexique de fonctions système.
 
