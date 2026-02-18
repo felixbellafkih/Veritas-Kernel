@@ -11,7 +11,6 @@ LEXICON_ADAM_PATCH.json
 # Logs et Metadata
 logs/
 *.log
-VERITAS_KERNEL_MANIFEST.json
 MANIFEST.json
 
 # Environnement et Système
