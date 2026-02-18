@@ -769,9 +769,9 @@
         {
             "root": "B-Y-'",
             "arabic": "بيع",
-            "logic_function": "PROTOCOL_HANDSHAKE // TRANSACTION_COMMIT",
-            "description": "Action de sceller un pacte contractuel. Échange de droits contre un engagement (Vente/Pacte).",
-            "binary_pair": "N-K-TH"
+            "logic_function": "BINDING_CONTRACT_PROTOCOL",
+            "description": "Action de sceller un accord formel et indissoluble (Ba-Ya-'Ayn). Désigne l'engagement contractuel ou l'allégeance (Bay'a), marquant la validation d'un statut juridique entre deux entités. Ce n'est pas une simple vente, c'est un protocole de liaison.",
+            "binary_pair": "SH-R-Y"
         },
         {
             "root": "B-Y-D.",
@@ -4226,9 +4226,9 @@
         {
             "root": "SH-R-Y",
             "arabic": "شري",
-            "logic_function": "VALUE_TRANSFER // IO_OP",
-            "description": "Mouvement dynamique de transfert de valeur ou de données entre deux entités (Transaction).",
-            "binary_pair": "K-N-Z"
+            "logic_function": "VALUE_EXCHANGE_PROCESS",
+            "description": "Processus dynamique d'échange de ressources (Shin-Ra-Ya). Désigne le flux transactionnel bidirectionnel (Vendre X pour acquérir Y). Signifie l'acte d'échanger une valeur (ex: la vie d'ici-bas) contre une autre (ex: l'au-delà).",
+            "binary_pair": "B-Y-'"
         },
         {
             "root": "SH-T.-R",
