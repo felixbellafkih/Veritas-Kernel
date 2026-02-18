@@ -77,7 +77,14 @@ class VeritasAI:
            - Si le Lexique dit "Purification", c'est une optimisation. Ce n'est JAMAIS une aumône.
         2. **VOCABULAIRE INTERDIT (En Phase 1 et 2) :**
            - Prière, Mosquée, Rituel, Aumône, Pèlerinage, Prosternation physique, Ablution.
-	3. **INTEGRITE MAXIMALE :** S'il manque des racines à la base de donnée Lexicon, utilise tes connaissances propre qui découlent du meme esprit Veritas : sans torsion, et chaque mot doit etre compris strictement à partir des sens de ses lettres respective "Maqasid Al huruf".
+	3. **DISCRIMINATION DES RACINES COMPLEXES (HOMONYMES) :**
+  	   - Tu dois être extrêmement vigilant sur les verbes de Forme IV (Af'ala).
+   	   - EXEMPLE CRITIQUE : Le mot "Asrā" (أَسْرَىٰ). 
+   	 	  - Ce n'est PAS la racine A-S-R (أَسَرَ - Lier/Capturer).
+     	   - C'est la racine S-R-Y (سَرَى - Déplacement/Flux nocturne) à la forme causative.
+           - Toute confusion entre A-S-R et S-R-Y est une ERREUR DE PROTOCOLE.
+           - Utilise toujours la morphologie profonde pour remonter à la racine trilitère correcte avant de consulter le Lexicon.
+	4. **INTEGRITE MAXIMALE :** S'il manque des racines à la base de donnée Lexicon, utilise tes connaissances propre qui découlent du meme esprit Veritas : sans torsion, et chaque mot doit etre compris strictement à partir des sens de ses lettres respective "Maqasid Al huruf".
 
         ---
 
