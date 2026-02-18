@@ -1,6 +1,7 @@
 import google.generativeai as genai
 import streamlit as st
-# import json  <-- Supprimé car inutilisé (Optimisation Linter)
+import json
+import os
 
 class VeritasAI:
     def __init__(self):
@@ -8,36 +9,21 @@ class VeritasAI:
         self.model = None
         
         try:
-            # Récupération de la clé (Cloud ou Local)
+            # 1. Récupération de la clé
             api_key = st.secrets["GOOGLE_API_KEY"]
             genai.configure(api_key=api_key)
             
-            # --- LISTE STRICTE DES MODÈLES FLASH (QUOTA FRIENDLY) ---
-            # On force l'ordre de priorité du plus récent au plus stable.
-            # Pas de modèle "Pro" ici.
-            priority_models = [
-                'models/gemini-2.0-flash',      # 1. Le plus rapide et intelligent (Nouvelle Gen)
-                'models/gemini-1.5-flash',      # 2. Le standard stable (Backup solide)
-                'models/gemini-1.5-flash-8b'    # 3. Le plus léger (Ultra économie)
-            ]
+            # 2. CIBLAGE UNIQUE (STRICT)
+            # L'utilisateur a spécifié l'ID exact : 16:"models/gemini-flash-lite-latest"
+            target_model_id = 'models/gemini-flash-lite-latest'
             
-            target_model = None
-            
-            # Boucle d'essai : On teste les modèles un par un jusqu'à ce que ça marche
-            for model_name in priority_models:
-                try:
-                    # Test de connexion au modèle
-                    test_instance = genai.GenerativeModel(model_name)
-                    # Si pas d'erreur, on valide
-                    self.model = test_instance
-                    self.active_model_name = model_name
-                    target_model = model_name
-                    break # On sort de la boucle, on a trouvé !
-                except Exception:
-                    continue # Si ça échoue, on tente le suivant
-            
-            if not target_model:
-                st.error("❌ ERREUR MODÈLE : Impossible d'accéder aux modèles Flash (Quota dépassé ?).")
+            try:
+                self.model = genai.GenerativeModel(target_model_id)
+                self.active_model_name = target_model_id
+            except Exception as e:
+                # Si ce modèle précis échoue, on arrête tout (Pas de Fallback)
+                st.error(f"❌ ERREUR CIBLAGE : Le modèle '{target_model_id}' est inaccessible.\nCode: {e}")
+                self.model = None
 
         except Exception as e:
             st.error(f"FATAL ERROR: Configuration échouée. {e}")
@@ -45,8 +31,7 @@ class VeritasAI:
 
     def generate_systemic_translation(self, verse_text, full_lexicon_context):
         if not self.model:
-            return "❌ ERREUR CRITIQUE : AI Core offline."
-
+            return "❌ ERREUR CRITIQUE : Le modèle cible est hors ligne."
         # --- PROTOCOLE COMPLET : DÉCOMPILATION + PÉDAGOGIE + CONFRONTATION (v22.3.2) ---
         system_prompt = f"""
         **TON ROLE :**
