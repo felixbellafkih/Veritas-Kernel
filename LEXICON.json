@@ -770,8 +770,8 @@
             "root": "B-Y-A.",
             "arabic": "بيع",
             "logic_function": "BINDING_CONTRACT_PROTOCOL",
-            "description": "Action de sceller un accord formel et indissoluble (Ba-Ya-A.Ayn). Désigne l'engagement contractuel ou l'allégeance (Bay'a), marquant la validation d'un statut juridique entre deux entités. Ce n'est pas une simple vente, c'est un protocole de liaison.",
-            "binary_pair": "SH-R-Y"
+            "description": "Action de sceller un accord formel et indissoluble (Ba-Ya-A.Ayn). Désigne l'allégeance par contrat contractuel (Bay'a), marquant la validation d'un statut juridique entre deux entités. Ce n'est pas une simple vente, c'est un protocole de liaison.",
+            "binary_pair": null
         },
         {
             "root": "B-Y-D.",
@@ -4227,8 +4227,8 @@
             "root": "SH-R-Y",
             "arabic": "شري",
             "logic_function": "VALUE_EXCHANGE_PROCESS",
-            "description": "Processus dynamique d'échange de ressources (Shin-Ra-Ya). Désigne le flux transactionnel bidirectionnel (Vendre X pour acquérir Y). Signifie l'acte d'échanger une valeur (ex: la vie d'ici-bas) contre une autre (ex: l'au-delà).",
-            "binary_pair": "B-Y-A."
+            "description": "Processus dynamique d'échange de ressources (Shin-Ra-Ya). Désigne le flux transactionnel bidirectionnel (Vendre et acheter). Signifie l'acte d'échanger une valeur x (ex: la vie d'ici-bas) contre une autre y (ex: l'au-delà).",
+            "binary_pair": null
         },
         {
             "root": "SH-T.-R",
