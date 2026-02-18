@@ -1,7 +1,6 @@
 import streamlit as st
 import graphviz
 import pandas as pd
-import json
 from data.repository import LexiconRepository
 from core.config import config
 from export.manager import ExportManager
