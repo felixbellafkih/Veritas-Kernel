@@ -1,9 +1,11 @@
 import streamlit as st
 import graphviz
 import pandas as pd
+import json
 from data.repository import LexiconRepository
 from core.config import config
 from export.manager import ExportManager
+from engine.ai_bridge import VeritasAI  # Import du Pont IA
 
 # ==============================================================================
 # 1. MOTEUR MORPHOLOGIQUE (SYSTEME DE DÉTECTION DES FORMES)
@@ -122,11 +124,41 @@ st.markdown("""
         color: #e0e1dd;
         border: 1px solid #415a77;
     }
+    .stTextArea > div > div > textarea {
+        background-color: #1b263b;
+        color: #e0e1dd;
+        border: 1px solid #415a77;
+    }
     
-    /* TEXTES */
+    /* TEXTES GÉNÉRAUX */
     h1, h2, h3 {color: #e0e1dd !important;}
     p, li, label {color: #b0c4de !important;}
     
+    /* --- CORRECTION DES TABLEAUX MARKDOWN (Celle qui te manquait) --- */
+    div[data-testid="stMarkdownContainer"] table {
+        width: 100%;
+        border-collapse: collapse !important;
+        background-color: #162544 !important; /* Fond carte */
+        border: 1px solid #415a77 !important;
+    }
+    div[data-testid="stMarkdownContainer"] th {
+        background-color: #0d1b2a !important; /* Fond entête sombre */
+        color: #00ff41 !important; /* TITRES EN VERT MATRIX */
+        border: 1px solid #415a77 !important;
+        padding: 10px !important;
+        font-family: 'Consolas', monospace;
+    }
+    div[data-testid="stMarkdownContainer"] td {
+        color: #e0e1dd !important; /* Texte clair */
+        border: 1px solid #415a77 !important;
+        padding: 8px !important;
+    }
+    div[data-testid="stMarkdownContainer"] td:nth-child(1) {
+        font-family: 'Amiri', serif; /* Arabe */
+        font-size: 18px;
+        color: #ffd700 !important; /* Or */
+    }
+
     /* CARDS UI */
     .metric-card {
         background-color: #162544;
@@ -183,8 +215,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
-
 # ==============================================================================
 # 4. CHARGEMENT DES DONNÉES
 # ==============================================================================
@@ -197,7 +227,7 @@ exporter = ExportManager()
 
 
 # ==============================================================================
-# 5. SIDEBAR NAVIGATION
+# 5. SIDEBAR NAVIGATION (UNIFIÉE)
 # ==============================================================================
 with st.sidebar:
     st.title("VERITAS KERNEL")
@@ -217,17 +247,66 @@ with st.sidebar:
     
     st.markdown("---")
     
-    mode = st.radio("MODULES", 
-        ["LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW"])
+    # MENU UNIQUE
+    mode = st.radio(
+        "MODULES", 
+        ["LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW", "VERSE INTERPRETER"]
+    )
     
     st.markdown("---")
     st.info("Authorized Access Only")
 
 
 # ==============================================================================
-# MODULE 1: LOGIC SEQUENCER (AVEC MORPHOLOGIE)
+# MODULE: VERSE INTERPRETER (INTELLIGENCE ARTIFICIELLE)
 # ==============================================================================
-if mode == "LOGIC SEQUENCER":
+if mode == "VERSE INTERPRETER":
+    st.title("📖 VERSE INTERPRETER NODE")
+    st.markdown("Protocole de décompilation IA sous contrainte Lexicale (Gemini 1.5 Pro).")
+    st.markdown("---")
+
+    col1, col2 = st.columns([2, 1])
+    
+    with col1:
+        verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: M-L-K Y-W-M D-Y-N...")
+    
+    with col2:
+        st.info("ℹ️ Le système va charger l'intégralité du Lexicon v22.2.1 en mémoire tampon pour garantir une conformité totale au protocole.")
+
+    if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
+        if verse_input:
+            # 1. Chargement du Lexicon Brut
+            try:
+                with open('LEXICON.json', 'r', encoding='utf-8') as f:
+                    full_lexicon_str = f.read()
+            except FileNotFoundError:
+                st.error("FATAL: LEXICON.json introuvable.")
+                st.stop()
+
+            # 2. Appel au Moteur IA
+            ai_engine = VeritasAI()
+            
+            status_container = st.status("System processing...", expanded=True)
+            status_container.write("🔌 Initializing connection to Gemini Core...")
+            status_container.write("📂 Injecting Lexicon Payload (Context Window)...")
+            
+            result = ai_engine.generate_systemic_translation(verse_input, full_lexicon_str)
+            
+            status_container.update(label="Compilation Complete", state="complete", expanded=False)
+
+            # 3. Affichage du Résultat
+            st.markdown("### 🧬 SYSTEMIC OUTPUT")
+            st.markdown("---")
+            st.markdown(result)
+            
+        else:
+            st.warning("AWAITING SIGNAL...")
+
+
+# ==============================================================================
+# MODULE: LOGIC SEQUENCER (AVEC MORPHOLOGIE)
+# ==============================================================================
+elif mode == "LOGIC SEQUENCER":
     st.title("⛓️ LOGIC SEQUENCER")
     st.markdown("Construct causal chains. Supports Morphological Wrappers (IST-, A-, M-).")
     
@@ -251,6 +330,12 @@ if mode == "LOGIC SEQUENCER":
 
         console_logs = []
         previous_node = None
+        
+        # SÉCURITÉ : Pas de colonnes vides
+        if not tokens:
+            st.warning("Sequence empty.")
+            st.stop()
+            
         cols = st.columns(len(tokens))
         
         for i, token in enumerate(tokens):
@@ -340,7 +425,7 @@ if mode == "LOGIC SEQUENCER":
 
 
 # ==============================================================================
-# MODULE 2: ROOT SCANNER
+# MODULE: ROOT SCANNER
 # ==============================================================================
 elif mode == "ROOT SCANNER":
     st.title("🔍 ROOT SCANNER")
@@ -396,7 +481,7 @@ elif mode == "ROOT SCANNER":
 
 
 # ==============================================================================
-# MODULE 3: GOVERNANCE MAP (ADMIN/DAEMON RESTORED)
+# MODULE: GOVERNANCE MAP (ADMIN/DAEMON RESTORED)
 # ==============================================================================
 elif mode == "GOVERNANCE MAP":
     st.title("👑 GOVERNANCE TOPOLOGY")
@@ -412,7 +497,7 @@ elif mode == "GOVERNANCE MAP":
         edge [color="#888", fontname="Consolas", fontsize=10, fontcolor="#b0c4de"]
         
         # ROOT NODE
-        ROOT [label="ROOT (ALLAH)\n[Source of Command]", color="#FFD700", fontcolor="black", fillcolor="#FFD700", shape=doubleoctagon, height=1.2]
+        ROOT [label="ROOT (ALLAH)\\n[Source of Command]", color="#FFD700", fontcolor="black", fillcolor="#FFD700", shape=doubleoctagon, height=1.2]
         
         # ZONE 1: ADMINS (LIBRE ARBITRE)
         subgraph cluster_admins {
@@ -421,8 +506,8 @@ elif mode == "GOVERNANCE MAP":
             color="#00ff41"; 
             fontcolor="#00ff41"
             
-            KHALIFA [label="INSAN (User)\n<TYPE: ADMIN>\n[Voluntary Sync]", color="#00ff41", fontcolor="black", fillcolor="#00ff41"]
-            DJINN [label="JINN (Hidden)\n<TYPE: ADMIN>\n[Rational Force]", color="#00aa00", fontcolor="black", fillcolor="#00aa00"]
+            KHALIFA [label="INSAN (User)\\n<TYPE: ADMIN>\\n[Voluntary Sync]", color="#00ff41", fontcolor="black", fillcolor="#00ff41"]
+            DJINN [label="JINN (Hidden)\\n<TYPE: ADMIN>\\n[Rational Force]", color="#00aa00", fontcolor="black", fillcolor="#00aa00"]
         }
         
         # ZONE 2: DAEMONS (AUTOMATES)
@@ -432,8 +517,8 @@ elif mode == "GOVERNANCE MAP":
             color="#ff4b4b"; 
             fontcolor="#ff4b4b"
             
-            ANGELS [label="MALA'IKA\n<TYPE: DAEMON>\n[Exec Function]", color="#aaaaaa", fontcolor="black", fillcolor="#aaaaaa"]
-            NATURE [label="PHYSICS ENGINE\n<TYPE: KERNEL>\n[Hard-Coded Laws]", color="#222", fontcolor="white", fillcolor="#222"]
+            ANGELS [label="MALA'IKA\\n<TYPE: DAEMON>\\n[Exec Function]", color="#aaaaaa", fontcolor="black", fillcolor="#aaaaaa"]
+            NATURE [label="PHYSICS ENGINE\\n<TYPE: KERNEL>\\n[Hard-Coded Laws]", color="#222", fontcolor="white", fillcolor="#222"]
         }
         
         # FLUX DE COMMANDE
@@ -450,7 +535,7 @@ elif mode == "GOVERNANCE MAP":
 
 
 # ==============================================================================
-# MODULE 4: MATRIX VIEW
+# MODULE: MATRIX VIEW
 # ==============================================================================
 elif mode == "MATRIX VIEW":
     st.title("🌐 KERNEL MATRIX")
