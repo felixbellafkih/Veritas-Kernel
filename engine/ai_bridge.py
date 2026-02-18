@@ -1,7 +1,6 @@
 import google.generativeai as genai
 import streamlit as st
-import json
-import os
+# import json  <-- Supprimé car inutilisé (Optimisation Linter)
 
 class VeritasAI:
     def __init__(self):
@@ -9,43 +8,36 @@ class VeritasAI:
         self.model = None
         
         try:
+            # Récupération de la clé (Cloud ou Local)
             api_key = st.secrets["GOOGLE_API_KEY"]
             genai.configure(api_key=api_key)
             
-            # --- SÉLECTION DU MODÈLE (ROBUSTE) ---
+            # --- LISTE STRICTE DES MODÈLES FLASH (QUOTA FRIENDLY) ---
+            # On force l'ordre de priorité du plus récent au plus stable.
+            # Pas de modèle "Pro" ici.
+            priority_models = [
+                'models/gemini-2.0-flash',      # 1. Le plus rapide et intelligent (Nouvelle Gen)
+                'models/gemini-1.5-flash',      # 2. Le standard stable (Backup solide)
+                'models/gemini-1.5-flash-8b'    # 3. Le plus léger (Ultra économie)
+            ]
+            
             target_model = None
             
-            # 1. Priorité : Gemini Flash Latest (Stable & Gratuit)
-            try:
-                test_model = genai.GenerativeModel('models/gemini-flash-latest')
-                self.model = test_model
-                self.active_model_name = 'models/gemini-flash-latest'
-                target_model = self.active_model_name
-            except:
-                pass
+            # Boucle d'essai : On teste les modèles un par un jusqu'à ce que ça marche
+            for model_name in priority_models:
+                try:
+                    # Test de connexion au modèle
+                    test_instance = genai.GenerativeModel(model_name)
+                    # Si pas d'erreur, on valide
+                    self.model = test_instance
+                    self.active_model_name = model_name
+                    target_model = model_name
+                    break # On sort de la boucle, on a trouvé !
+                except Exception:
+                    continue # Si ça échoue, on tente le suivant
             
-            # 2. Secours : Gemini 2.0 Flash Lite (Rapide)
             if not target_model:
-                try:
-                    test_model = genai.GenerativeModel('models/gemini-2.0-flash-lite-001')
-                    self.model = test_model
-                    self.active_model_name = 'models/gemini-2.0-flash-lite-001'
-                    target_model = self.active_model_name
-                except:
-                    pass
-
-            # 3. Dernier recours : Gemini 2.0 Flash Standard
-            if not target_model:
-                try:
-                    test_model = genai.GenerativeModel('models/gemini-2.0-flash')
-                    self.model = test_model
-                    self.active_model_name = 'models/gemini-2.0-flash'
-                    target_model = self.active_model_name
-                except:
-                    pass
-
-            if not target_model:
-                st.error("AUCUN MODÈLE ACCESSIBLE (Échec sur Flash Latest, Lite et 2.0).")
+                st.error("❌ ERREUR MODÈLE : Impossible d'accéder aux modèles Flash (Quota dépassé ?).")
 
         except Exception as e:
             st.error(f"FATAL ERROR: Configuration échouée. {e}")
@@ -55,7 +47,7 @@ class VeritasAI:
         if not self.model:
             return "❌ ERREUR CRITIQUE : AI Core offline."
 
-# --- PROTOCOLE COMPLET : DÉCOMPILATION + PÉDAGOGIE + CONFRONTATION (v22.3.2) ---
+        # --- PROTOCOLE COMPLET : DÉCOMPILATION + PÉDAGOGIE + CONFRONTATION (v22.3.2) ---
         system_prompt = f"""
         **TON ROLE :**
         Tu es l'ARCHITECTE SYSTÈME du projet Veritas.
@@ -99,6 +91,7 @@ class VeritasAI:
                     temperature=0.1, # Légère fluidité pour le style humain
                 )
             )
+            # On affiche le modèle utilisé pour être sûr
             return f"**[ANALYST: {self.active_model_name}]**\n\n" + response.text
 
         except Exception as e:
