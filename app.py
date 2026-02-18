@@ -15,7 +15,7 @@ class MorphologyEngine:
         self.patterns = [
             # FORM X: I-S-T (Demande/Requête)
             {
-                "prefix": "I-S-T-", 
+                "prefix": "I-S-T-A.", 
                 "suffix": "",
                 "logic_mod": "REQUEST_PROTOCOL", 
                 "color": "#FF00FF", # Magenta
@@ -23,7 +23,7 @@ class MorphologyEngine:
             },
             # FORM IV: A- (Causal/Transitif)
             {
-                "prefix": "A-", 
+                "prefix": "A-A.", 
                 "suffix": "",
                 "logic_mod": "CAUSAL_OUTPUT", 
                 "color": "#FFA500", # Orange
@@ -39,7 +39,7 @@ class MorphologyEngine:
             },
              # MAF'UL: M- (Passif/Objet)
             {
-                "prefix": "M-", 
+                "prefix": "M-A.", 
                 "suffix": "",
                 "logic_mod": "PASSIVE_OBJECT", 
                 "color": "#FFFF00", # Jaune
@@ -501,7 +501,7 @@ elif mode == "GOVERNANCE MAP":
         
         # ZONE 1: ADMINS (LIBRE ARBITRE)
         subgraph cluster_admins {
-            label = "ZONE: SYS_ADMINS (R-K-')"; 
+            label = "ZONE: SYS_ADMINS (R-K-A.)"; 
             style=dashed; 
             color="#00ff41"; 
             fontcolor="#00ff41"

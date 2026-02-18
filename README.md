@@ -52,7 +52,7 @@ Le noyau déploie le lexique sur 5 couches d'infrastructure :
 
 1. **CPU_Logic_Unit** : Calcul et arbitrage binaire (ex: `H-K-M`, `Q-L-B`).
 2. **RAM_Storage_Unit** : Gestion des registres et de la mémoire vive (ex: `K-T-B`, `S-B-R`).
-3. **IO_Sensors_Unit** : Capteurs d'entrée et monitoring (ex: `B-S-R`, `'-Y-N`).
+3. **IO_Sensors_Unit** : Capteurs d'entrée et monitoring (ex: `B-S-R`, `A.-Y-N`).
 4. **Network_Comm_Unit** : Protocoles de transmission et flux (ex: `K-L-M`, `N-B-A`).
 5. **Security_Firewall** : Protection d'intégrité et isolation (ex: `H.-F-Z.`, `W-Q-Y`).
 
