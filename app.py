@@ -268,7 +268,7 @@ if mode == "VERSE INTERPRETER":
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: M-L-K Y-W-M D-Y-N...")
+        verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: ...بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ...")
     
     with col2:
         st.info("ℹ️ Le système va charger l'intégralité du Lexicon v22.2.1 en mémoire tampon pour garantir une conformité totale au protocole.")
@@ -313,7 +313,7 @@ elif mode == "LOGIC SEQUENCER":
     c1, c2 = st.columns([4, 1])
     with c1:
         # DEFAULT: BASMALAH COMPLETE
-        input_seq = st.text_input("ROOT SEQUENCE", "B-S-M A-L-H R-H-M-N R-H-Y-M")
+        input_seq = st.text_input("ROOT SEQUENCE", "B-S-M A-L-H R-H.-M-N R-H.-Y-M")
     with c2:
         st.write("")
         st.write("")

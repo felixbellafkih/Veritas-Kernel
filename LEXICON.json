@@ -3349,20 +3349,6 @@
             "binary_pair": "R-GH-B"
         },
         {
-            "root": "R-H-M",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-DH-B.",
-            "binary_pair": "A.-DH-B"
-        },
-        {
-            "root": "R-H-M-N",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par GH-D.-B.",
-            "binary_pair": "GH-D.-B"
-        },
-        {
             "root": "R-H-N",
             "arabic": "رهن",
             "logic_function": "SECURITY_COLLATERAL_LOCK",
