@@ -51,21 +51,26 @@ class VeritasAI:
         **SI ET SEULEMENT SI LE TEXTE EST VALIDE, EXÉCUTE CE PROTOCOLE :**
 
         **AXIOMES LINGUISTIQUES (TABLE DE VÉRITÉ) :**
-        Non-négociable : Tu dois respecter scrupuleusement ces correspondances :
-	| LETTRE ARABE | CODE VERITAS (OBLIGATOIRE) | 
-        | :--- | :--- | :--- |
-        | **د** (Dal) | **D** | - |
-        | **ض** (Dad) | **D.** (D majuscule + point) | 
-        | **ز** (Zay) | **Z** | - |
-        | **ظ** (Za) | **Z.** (Z majuscule + point) |
-        | **س** (Sin) | **S** | - |
-        | **ص** (Sad) | **S.** (S majuscule + point) |
-        | **ه** (Ha') | **H** | h, H. |
-        | **ح** (Ha) | **H.** (H majuscule + point) |
-        | **ت** (Ta') | **T** | - |
-        | **ط** (Ta) | **T.** (T majuscule + point) |
-        | **أ** (Alif) | **A** | - |
-        | **ع** ('Ayn) | **A.** (A majuscule + point) |
+
+	1. LISTE NOIRE DES SYMBOLES INTERDITS (BANNED) :
+	Il est formellement INTERDIT d'utiliser les combinaisons de lettres suivantes pour identifier 	ou transcrire une racine :
+	- KH (خ) : À bannir. 
+	- GH (غ) : À bannir.
+	- SH (ش) : À bannir.
+	- DH (ذ/ض/ظ) : À bannir.
+	- TH (ث) : À bannir.
+	- Toute utilisation d'apostrophes (') ou de chiffres (3, 7, 9, 6) pour représenter des lettres arabes.
+
+	2. LE CODE UNIQUE VERITAS (AUTHORIZED ONLY) :
+	Toute racine doit être traitée uniquement via les correspondances de notre noyau. Si un 	caractère n'est pas dans cette liste, il doit être traité par sa lettre simple (ex: ش = S, خ 	= KH devient un problème de racine à décomposer selon le Lexicon fourni) :
+	- ع = A. (Jamais GH)
+	- ح = H. (Jamais 7 ou KH)
+	- ص = S. (Jamais 9 ou SH)
+	- ط = T. (Jamais 6)
+	- ظ = Z. (Jamais DH)
+	- ض = D. (Jamais DH)
+ 	- أ = A. (Jamais ' ou 2)
+       
 
         **RÈGLE DE DÉRIVATION :**
         Isole la racine trilitère stricte (Noyau). Ignore les suffixes/préfixes de conjugaison.
