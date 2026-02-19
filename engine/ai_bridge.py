@@ -96,7 +96,7 @@ class VeritasAI:
         - Objectif : Rendre le vrai sens du verset compréhensible de manière naturelle pour un lecteur non-informaticien.
 
 	**PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
-       🚨 [CIBLAGE SÉMANTIQUE EXPLICITE] : Tu DOIS traquer et exposer le réductionnisme historique. Identifie systématiquement si le consensus traditionnel dominant diverge drastiquement de ton analyse rationnelle déduite des phases précédentes.     
+       🚨 [CIBLAGE SÉMANTIQUE EXPLICITE] : Tu DOIS faire une recherche sur internet pour traquer et exposer ce que disent les sources de Fiqh et Tafssirs traditionnels dominants. Identifie systématiquement si le consensus traditionnel dominant diverge drastiquement de ton analyse rationnelle déduite des phases précédentes.     
         🚨 [ALGORITHME CONDITIONNEL - EXÉCUTION STRICTE] :
         Vérifie le tableau généré à la Phase 1.
         IF (SI) les racines (R-S-L), (T-A-A.) ou (T-B-A.) sont EXPLICITEMENT affichées dans la colonne 'Racine' du tableau :
