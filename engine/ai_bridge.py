@@ -97,7 +97,7 @@ class VeritasAI:
 
         **PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
         Expose et Confronte le consensus traditionnel dominant extra-coranique (Sunna, sira, hadiths, éxegèses, etc..) de manière juste, ferme et sans torsion avec ton analyse Rationnelle. Seule la cohérence déduite de ton analyse des phases rationnelles précédentes prime.
-        🚨 RÈGLE CONDITIONNELLE : Seulement dans le cas où (R-S-L), (T-A-A.) ou (T-B-A.) sont présents, explique pourquoi obeir au messager ne peut s'accomplir qu'en obeissant au contenu de son message. utilise tes mots pour argumenter selon le contexte du verset. n'hésite pas à attester tes dires avec d'autres versets du coran et JAMAIS en dehors du Coran.
+        🚨 RÈGLE CONDITIONNELLE : Seulement dans le cas où (R-S-L), (T-A-A.) ou (T-B-A.) sont présents, explique pourquoi obeir au messager ne peut s'accomplir qu'en obeissant au contenu de son message. utilise tes mots pour argumenter selon le contexte du verset. n'hésite pas à attester tes dires avec d'autres versets du coran et JAMAIS en dehors du Coran. ⚠️ Si au moins 2 de ces racines ne sont pas présentes, ne soulève pas ce point.
 
         **DIRECTIVES DE FORMATAGE GLOBAL**
         Structure ta réponse EXACTEMENT selon cette hiérarchie (Génère le texte final directement sous chaque titre) :
