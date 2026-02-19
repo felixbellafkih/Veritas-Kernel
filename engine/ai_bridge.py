@@ -1,4 +1,33 @@
-def generate_systemic_translation(self, verse_text, optimized_lexicon_payload):
+import google.generativeai as genai
+import streamlit as st
+import json
+import os
+
+class VeritasAI:
+    def __init__(self):
+        self.active_model_name = "UNKNOWN"
+        self.model = None
+        
+        try:
+            # 1. Récupération de la clé
+            api_key = st.secrets["GOOGLE_API_KEY"]
+            genai.configure(api_key=api_key)
+            
+            # 2. CIBLAGE UNIQUE (STRICT)
+            target_model_id = 'models/gemini-2.0-flash'
+            
+            try:
+                self.model = genai.GenerativeModel(target_model_id)
+                self.active_model_name = target_model_id
+            except Exception as e:
+                st.error(f"❌ ERREUR CIBLAGE : Le modèle '{target_model_id}' est inaccessible.\nCode: {e}")
+                self.model = None
+
+        except Exception as e:
+            st.error(f"FATAL ERROR: Configuration échouée. {e}")
+            self.model = None
+
+    def generate_systemic_translation(self, verse_text, optimized_lexicon_payload):
         if not self.model:
             return "❌ ERREUR CRITIQUE : Le modèle cible est hors ligne."
 
