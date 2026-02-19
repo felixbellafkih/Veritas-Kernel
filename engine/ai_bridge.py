@@ -64,7 +64,7 @@ class VeritasAI:
            - 🚨 **Piège Causal (Préfixe A) :** Les verbes de Forme IV commençant par un Alif/Hamza (أ) DOIVENT perdre ce "A". 
              -> EXEMPLE ABSOLU : **Asrā (أَسۡرَىٰ) = S-R-Y** (INTERDICTION FORMELLE de générer A-S-R).
            - 🚨 **Affixes Composés :** Retire tous les préfixes et suffixes de conjugaison. 
-             -> EXEMPLE ABSOLU : **Lita'lamū (لِتَعۡلَمُواْ) = A.-L-M** (pas L-T-A.-L-M).
+             -> EXEMPLE ABSOLU : **Lita'lamū (لِتَعۡلَمُواْ) = A.-L-M** (pas L-T-A.-L-M). **Youti'ou (يُطِعِ) = T-A-A.** (pas A-T-A-A. ni T-A.-A.)
         3. **PAS DE RITUALISME :** Salat = Connexion. Zakat = Purification/Optimisation.
         4. **AXE DE RÉALITÉ :** Traite les informations de manière logique et rationnelle.
 
