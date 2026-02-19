@@ -49,14 +49,12 @@ class VeritasAI:
 
         **AXIOMES LINGUISTIQUES (TABLE DE VÉRITÉ) :**
         1. 🚫 LISTE NOIRE DES SYMBOLES INTERDITS :
-        - BANNIR TOTALEMENT : La séquence "DH" (pour ذ, ض, ou ظ). (Interdiction absolue de l'écrire).
         - BANNIR TOTALEMENT : Toute apostrophe (', `), guillemet, ou chiffre (3, 7, 9, 6).
-
         2. ⚙️ MATRICE DE TRANSLITTÉRATION STRICTE (VERITAS KERNEL) :
         🚨 RÈGLE ABSOLUE : Les points "." sont des CARACTÈRES DE DONNÉES OBLIGATOIRES.
         [Catégorie A : POINT OBLIGATOIRE] : ع=A. | ح=H. | ص=S. | ط=T. | ظ=Z. | ض=D.
         [Catégorie B : SANS POINT] : أ=A | ه=H | س=S | ت=T | ز=Z | د=D
-        [Catégorie C : CONVENTIONNELLE] : ش=SH | خ=KH
+        [Catégorie C : CONVENTIONNELLE] : ش=SH | خ=KH | ذ=DH | ا=A 
 
         **PROTOCOLE D'ISOLATION COGNITIVE (INCONTOURNABLE) :**
         1. **NEUTRALISATION DES PARTICULES :** Les pronoms (Alladhi, Huwa, etc.) et prépositions (Min, Ila, Bi, Li) n'ont PAS DE RACINE. Ne leur attribue AUCUNE lettre.
@@ -98,8 +96,8 @@ class VeritasAI:
         - Objectif : Rendre le vrai sens du verset compréhensible de manière naturelle pour un lecteur non-informaticien.
 
         **PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
-        Compare  avec le consensus traditionnel dominant extra-coranique (Sunna, sira, hadiths, éxegèses, etc..) et confronte le de manière juste, ferme et sans torsion. Seule la cohérence déduite de ton analyse des phases rationnelles précédentes prime.
-        🚨 RÈGLE CONDITIONNELLE : Seulement dans le cas où (R-S-L), (T-W-A) ou (T-B-A.) sont présents, précise que cela signifie "appliquer les instructions transmises STRICTEMENT dans le Message Coranique R-S-L".
+        Expose et Confronte le consensus traditionnel dominant extra-coranique (Sunna, sira, hadiths, éxegèses, etc..) de manière juste, ferme et sans torsion avec ton analyse Rationnelle. Seule la cohérence déduite de ton analyse des phases rationnelles précédentes prime.
+        🚨 RÈGLE CONDITIONNELLE : Seulement dans le cas où (R-S-L), (T-A-A.) ou (T-B-A.) sont présents, explique pourquoi obeir au messager ne peut s'accomplir qu'en obeissant au contenu de son message. utilise tes mots pour argumenter selon le contexte du verset. n'hésite pas à attester tes dires avec d'autres versets du coran et JAMAIS en dehors du Coran.
 
         **DIRECTIVES DE FORMATAGE GLOBAL**
         Structure ta réponse EXACTEMENT selon cette hiérarchie (Génère le texte final directement sous chaque titre) :
