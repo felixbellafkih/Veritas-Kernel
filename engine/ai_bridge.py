@@ -95,9 +95,8 @@ class VeritasAI:
         - 🚨 RÈGLE : Ne désigne pas Dieu par une fonction systémique (ex: n'utilise pas la racine A-L-H pour Le décrire). Appelle-Le "Allah" ou "Dieu".
         - Objectif : Rendre le vrai sens du verset compréhensible de manière naturelle pour un lecteur non-informaticien.
 
-**PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
-        Expose et confronte le consensus traditionnel dominant extra-coranique (Sunna, sira, hadiths, exégèses, etc.) de manière juste, ferme et sans torsion. Seule la cohérence déduite de ton analyse de la Phase 2 prime.
-        
+	**PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
+       🚨 [CIBLAGE SÉMANTIQUE EXPLICITE] : Tu DOIS traquer et exposer le réductionnisme historique. Identifie systématiquement si le consensus traditionnel dominant diverge drastiquement de ton analyse rationnelle déduite des phases précédentes.     
         🚨 [ALGORITHME CONDITIONNEL - EXÉCUTION STRICTE] :
         Vérifie le tableau généré à la Phase 1.
         IF (SI) les racines (R-S-L), (T-A-A.) ou (T-B-A.) sont EXPLICITEMENT affichées dans la colonne 'Racine' du tableau :
