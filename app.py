@@ -134,7 +134,7 @@ st.markdown("""
     h1, h2, h3 {color: #e0e1dd !important;}
     p, li, label {color: #b0c4de !important;}
     
-    /* --- CORRECTION DES TABLEAUX MARKDOWN (Celle qui te manquait) --- */
+    /* --- CORRECTION DES TABLEAUX MARKDOWN --- */
     div[data-testid="stMarkdownContainer"] table {
         width: 100%;
         border-collapse: collapse !important;
@@ -215,6 +215,7 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
+
 # ==============================================================================
 # 4. CHARGEMENT DES DONNÉES
 # ==============================================================================
@@ -224,7 +225,6 @@ def get_repo():
 
 repo = get_repo()
 exporter = ExportManager()
-
 
 # ==============================================================================
 # 5. SIDEBAR NAVIGATION (UNIFIÉE)
@@ -271,9 +271,8 @@ if mode == "VERSE INTERPRETER":
         verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: ...بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ...")
     
     with col2:
-        st.info("ℹ️ Le système scannera le verset et injectera uniquement les racines actives en mémoire tampon pour optimiser le protocole et réduire la latence.")
+        st.info("ℹ️ Le système scannera le verset et injectera la base compressée en mémoire tampon pour optimiser le protocole et réduire la latence.")
 
-    # 👇 CORRECTION ICI : Le bouton est maintenant correctement indenté à l'intérieur du "if mode"
     if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
         if verse_input:
             status_container = st.status("System processing...", expanded=True)
@@ -281,12 +280,11 @@ if mode == "VERSE INTERPRETER":
             status_container.write("📂 Injecting Full Minified Lexicon...")
             
             # 1. Extraction Totale & Minification Extrême (Bypass du filtre défaillant)
-            # On récupère TOUTE la base, mais on la compresse au maximum pour éviter l'erreur 429
             all_roots = repo.get_all_roots()
             compressed_payload = json.dumps(
                 {"database": all_roots}, 
                 ensure_ascii=False, 
-                separators=(',', ':') # Supprime tous les espaces inutiles (Minification)
+                separators=(',', ':')
             )
 
             # 2. Appel au Moteur IA
@@ -313,7 +311,6 @@ elif mode == "LOGIC SEQUENCER":
     
     c1, c2 = st.columns([4, 1])
     with c1:
-        # DEFAULT: BASMALAH COMPLETE
         input_seq = st.text_input("ROOT SEQUENCE", "B-S-M A-L-H R-H.-M-N R-H.-Y-M")
     with c2:
         st.write("")
@@ -323,7 +320,6 @@ elif mode == "LOGIC SEQUENCER":
     if run_btn or input_seq:
         tokens = input_seq.split()
         
-        # INIT GRAPHVIZ
         graph = graphviz.Digraph()
         graph.attr(rankdir='LR', bgcolor='#0d1b2a')
         graph.attr('node', shape='box', style='filled', fontname='Segoe UI', margin='0.2')
@@ -332,7 +328,6 @@ elif mode == "LOGIC SEQUENCER":
         console_logs = []
         previous_node = None
         
-        # SÉCURITÉ : Pas de colonnes vides
         if not tokens:
             st.warning("Sequence empty.")
             st.stop()
@@ -340,10 +335,7 @@ elif mode == "LOGIC SEQUENCER":
         cols = st.columns(len(tokens))
         
         for i, token in enumerate(tokens):
-            # A. DETECTION MORPHOLOGIQUE
             extracted_root, morph_data = morpho.process(token)
-            
-            # B. RECHERCHE DE LA RACINE
             data = repo.find_root(extracted_root)
             
             if data:
@@ -352,28 +344,23 @@ elif mode == "LOGIC SEQUENCER":
                 binary = data.get('binary_pair', 'N/A')
                 description_short = data['description'][:60] + "..."
                 
-                # C. CONSTRUCTION DU NOEUD GRAPHIQUE
                 if morph_data:
-                    # MODE WRAPPER
                     final_func = f"{morph_data['logic_mod']} \n>> {base_func}"
                     node_color = morph_data['color']
                     fill_color = "#2a2a2a"
                     label = f"<{token}<BR/><FONT POINT-SIZE='9'>{final_func}</FONT>>"
                     console_logs.append(f"[MORPHO] Wrapper <b>{morph_data['logic_mod']}</b> applied on <b>{extracted_root}</b>")
                 else:
-                    # MODE RACINE
                     final_func = base_func
                     node_color = "#00ff41"
                     fill_color = "#1b263b"
                     label = f"<{token}<BR/><FONT POINT-SIZE='10'>{final_func}</FONT>>"
                     console_logs.append(f"[ROOT] Loaded <b>{extracted_root}</b>")
 
-                # AJOUT NOEUD
                 node_id = f"node_{i}"
                 penwidth = '2.0' if morph_data else '1.0'
                 graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#e0e1dd', penwidth=penwidth)
                 
-                # AJOUT NOEUD REJETÉ (GHOST)
                 if binary and binary != "N/A":
                     ghost_id = f"ghost_{i}"
                     graph.node(ghost_id, label=f"NOT {binary}", color='#772222', fontcolor='#ff9e9e', style='dashed, filled', fillcolor='#2a0a0a', fontsize='9')
@@ -383,23 +370,18 @@ elif mode == "LOGIC SEQUENCER":
                         s.node(ghost_id)
                         s.edge(node_id, ghost_id, style='invis')
 
-                # LIEN
                 if previous_node:
                     graph.edge(previous_node, node_id, color='#e0e1dd')
                 previous_node = node_id
                 
-                # D. AFFICHAGE DE LA CARTE (HTML FIXE)
                 with cols[i]:
                     border_color = morph_data['color'] if morph_data else "#00ff41"
-                    
-                    # Préparation des fragments HTML
                     morph_html = ""
                     if morph_data:
                         morph_html = f"<div style='margin-top:5px;'><span class='morph-tag' style='background:{border_color};'>{morph_data['logic_mod']}</span></div>"
                     
                     morph_desc_text = morph_data['desc_mod'] if morph_data else "Fonction native : "
 
-                    # BLOC HTML SANS INDENTATION (CRITIQUE POUR STREAMLIT MARKDOWN)
                     html_card = f"""<div class='metric-card' style='border-top: 3px solid {border_color};'>
 <div style='color:#e0e1dd; font-weight:bold; font-size:18px;'>{token}</div>
 <div style='color:#ffd700; font-size:24px; direction:rtl;'>{arabic}</div>
@@ -414,16 +396,13 @@ elif mode == "LOGIC SEQUENCER":
 </div>"""
                     st.markdown(html_card, unsafe_allow_html=True)
             else:
-                # ERREUR
                 graph.node(f"node_{i}", label=f"{token} (?)", color='#ff0000')
                 with cols[i]:
                     st.error(f"{extracted_root} ?")
                     st.caption(f"Raw: {token}")
 
-        # RENDERING
         st.graphviz_chart(graph, use_container_width=True)
         st.markdown(f"<div class='console-log'>" + "<br>".join([f"<div>> {l}</div>" for l in console_logs]) + "</div>", unsafe_allow_html=True)
-
 
 # ==============================================================================
 # MODULE: ROOT SCANNER
@@ -431,7 +410,6 @@ elif mode == "LOGIC SEQUENCER":
 elif mode == "ROOT SCANNER":
     st.title("🔍 ROOT SCANNER")
     
-    # LISTE DÉROULANTE (PANDAS CORRECT)
     all_roots_list = df_roots['root'].tolist() if not df_roots.empty else []
     all_roots_list.sort()
     
@@ -452,7 +430,6 @@ elif mode == "ROOT SCANNER":
             col_main, col_detail = st.columns([1, 2])
             
             with col_main:
-                # HTML SANS INDENTATION
                 st.markdown(f"""<div class='metric-card'>
 <div class='arabic-display'>{result['arabic']}</div>
 <div class='root-title'>{result['root']}</div>
@@ -461,7 +438,6 @@ elif mode == "ROOT SCANNER":
 </div>
 </div>""", unsafe_allow_html=True)
                 
-                # SWITCH BINAIRE
                 if result.get('binary_pair') and result['binary_pair'] != "N/A":
                     st.caption("BINARY SWITCH")
                     raw_pair = result['binary_pair']
@@ -480,27 +456,22 @@ elif mode == "ROOT SCANNER":
                     json_data = exporter.generate_json(result)
                     st.download_button("📥 EXPORT JSON PACKET", json_data, f"{result['root']}.json", "application/json", use_container_width=True)
 
-
 # ==============================================================================
 # MODULE: GOVERNANCE MAP (ADMIN/DAEMON RESTORED)
 # ==============================================================================
 elif mode == "GOVERNANCE MAP":
     st.title("👑 GOVERNANCE TOPOLOGY")
     
-    # CODE GRAPHVIZ COMPLET (NON-COMPRESSÉ)
     gov_code = """
     digraph G {
         bgcolor="#0d1b2a"
         rankdir=TB
         
-        # STYLES GLOBAUX
         node [style=filled, fontname="Segoe UI", shape=box, fontcolor=white, color="#444", fillcolor="#1b263b"]
         edge [color="#888", fontname="Consolas", fontsize=10, fontcolor="#b0c4de"]
         
-        # ROOT NODE
         ROOT [label="ROOT (ALLAH)\\n[Source of Command]", color="#FFD700", fontcolor="black", fillcolor="#FFD700", shape=doubleoctagon, height=1.2]
         
-        # ZONE 1: ADMINS (LIBRE ARBITRE)
         subgraph cluster_admins {
             label = "ZONE: SYS_ADMINS (R-K-A.)"; 
             style=dashed; 
@@ -511,7 +482,6 @@ elif mode == "GOVERNANCE MAP":
             DJINN [label="JINN (Hidden)\\n<TYPE: ADMIN>\\n[Rational Force]", color="#00aa00", fontcolor="black", fillcolor="#00aa00"]
         }
         
-        # ZONE 2: DAEMONS (AUTOMATES)
         subgraph cluster_automata {
             label = "ZONE: SYSTEM_DAEMONS (S-J-D)"; 
             style=dashed; 
@@ -522,18 +492,15 @@ elif mode == "GOVERNANCE MAP":
             NATURE [label="PHYSICS ENGINE\\n<TYPE: KERNEL>\\n[Hard-Coded Laws]", color="#222", fontcolor="white", fillcolor="#222"]
         }
         
-        # FLUX DE COMMANDE
         ROOT -> KHALIFA [label="AMANAH (Sudo Access)"]
         ROOT -> ANGELS [label="A-M-R (Command)"]
         ROOT -> NATURE [label="Q-D-R (Measure)"]
         
-        # INTERACTIONS
         KHALIFA -> NATURE [style=dotted]
         ANGELS -> NATURE [style=dotted]
     }
     """
     st.graphviz_chart(gov_code, use_container_width=True)
-
 
 # ==============================================================================
 # MODULE: MATRIX VIEW
