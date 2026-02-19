@@ -262,7 +262,7 @@ with st.sidebar:
 # ==============================================================================
 if mode == "VERSE INTERPRETER":
     st.title("📖 VERSE INTERPRETER NODE")
-    st.markdown("Protocole de décompilation IA sous contrainte Lexicale (Gemini 1.5 Pro).")
+    st.markdown("Protocole de décompilation IA sous contrainte Lexicale (Gemini).")
     st.markdown("---")
 
     col1, col2 = st.columns([2, 1])
@@ -271,26 +271,38 @@ if mode == "VERSE INTERPRETER":
         verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: ...بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ...")
     
     with col2:
-        st.info("ℹ️ Le système va charger l'intégralité du Lexicon v22.2.1 en mémoire tampon pour garantir une conformité totale au protocole.")
+        st.info("ℹ️ Le système scannera le verset et injectera uniquement les racines actives en mémoire tampon pour optimiser le protocole et réduire la latence.")
 
     if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
         if verse_input:
-            # 1. Chargement du Lexicon Brut
-            try:
-                with open('LEXICON.json', 'r', encoding='utf-8') as f:
-                    full_lexicon_str = f.read()
-            except FileNotFoundError:
-                st.error("FATAL: LEXICON.json introuvable.")
-                st.stop()
+            status_container = st.status("System processing...", expanded=True)
+            status_container.write("🔌 Initializing connection to Gemini Core...")
+            status_container.write("🔍 Scanning input for active roots...")
+            
+            # 1. Extraction et Filtrage Dynamique (OPTIMISATION MÉMOIRE)
+            tokens = verse_input.split()
+            active_roots_data = []
+            found_roots = set()
+            
+            for token in tokens:
+                extracted_root, morph_data = morpho.process(token)
+                root_data = repo.find_root(extracted_root)
+                # Sécurité anti-doublons avec le set()
+                if root_data and root_data['root'] not in found_roots:
+                    active_roots_data.append(root_data)
+                    found_roots.add(root_data['root'])
+            
+            # Formattage du Payload Dynamique
+            if active_roots_data:
+                filtered_lexicon_str = json.dumps({"universal_functions": active_roots_data}, ensure_ascii=False, indent=2)
+                status_container.write(f"📂 Injecting Optimized Payload ({len(active_roots_data)} roots detected)...")
+            else:
+                filtered_lexicon_str = "[]"
+                status_container.write("⚠️ No registered roots detected. Proceeding with minimal payload...")
 
             # 2. Appel au Moteur IA
             ai_engine = VeritasAI()
-            
-            status_container = st.status("System processing...", expanded=True)
-            status_container.write("🔌 Initializing connection to Gemini Core...")
-            status_container.write("📂 Injecting Lexicon Payload (Context Window)...")
-            
-            result = ai_engine.generate_systemic_translation(verse_input, full_lexicon_str)
+            result = ai_engine.generate_systemic_translation(verse_input, filtered_lexicon_str)
             
             status_container.update(label="Compilation Complete", state="complete", expanded=False)
 
@@ -301,7 +313,6 @@ if mode == "VERSE INTERPRETER":
             
         else:
             st.warning("AWAITING SIGNAL...")
-
 
 # ==============================================================================
 # MODULE: LOGIC SEQUENCER (AVEC MORPHOLOGIE)

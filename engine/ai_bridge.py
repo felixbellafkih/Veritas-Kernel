@@ -16,7 +16,7 @@ class VeritasAI:
             genai.configure(api_key=api_key)
             
             # 2. CIBLAGE UNIQUE (STRICT)
-            target_model_id = 'models/gemini-flash-lite-latest'
+            target_model_id = 'models/gemini-2.0-flash'
             
             try:
                 self.model = genai.GenerativeModel(target_model_id)
@@ -54,23 +54,23 @@ class VeritasAI:
 
 	1. LISTE NOIRE DES SYMBOLES INTERDITS (BANNED) :
 	Il est formellement INTERDIT d'utiliser les combinaisons de lettres suivantes pour identifier 	ou transcrire une racine :
-	- KH (خ) : À bannir. 
-	- GH (غ) : À bannir.
-	- SH (ش) : À bannir.
 	- DH (ذ/ض/ظ) : À bannir.
-	- TH (ث) : À bannir.
 	- Toute utilisation d'apostrophes (') ou de chiffres (3, 7, 9, 6) pour représenter des lettres arabes.
 
 	2. LE CODE UNIQUE VERITAS (AUTHORIZED ONLY) :
-	Toute racine doit être traitée uniquement via les correspondances de notre noyau. Si un 	caractère n'est pas dans cette liste, il doit être traité par sa lettre simple (ex: ش = S, خ 	= KH devient un problème de racine à décomposer selon le Lexicon fourni) :
-	- ع = A. (Jamais GH)
-	- ح = H. (Jamais 7 ou KH)
-	- ص = S. (Jamais 9 ou SH)
-	- ط = T. (Jamais 6)
-	- ظ = Z. (Jamais DH)
-	- ض = D. (Jamais DH)
- 	- أ = A. (Jamais ' ou 2)
-       
+	Toute racine doit être traitée uniquement via les correspondances de notre noyau. Si un caractère n'est pas dans cette liste, il doit être traité par ses lettre conventionnelles (ex: ش = SH , خ= KH) :
+	- ع = A. 
+ 	- أ = A
+	- ح = H.
+        - ه = H
+	- ص = S. 
+        - س = S
+	- ط = T. 
+	- ت = T
+	- ظ = Z.
+        - ز = Z
+	- ض = D.
+        - د = D
 
         **RÈGLE DE DÉRIVATION :**
         Isole la racine trilitère stricte (Noyau). Ignore les suffixes/préfixes de conjugaison.
@@ -80,7 +80,7 @@ class VeritasAI:
 
 	1. **NEUTRALISATION DES PARTICULES DE LIAISON :**
 	   - Tu dois impérativement distinguer les "Mots-Outils" des "Mots-Racines".
-	   - Les pronoms relatifs comme "Lladhi" (الذي), "Lladhina" (الذين), ou les prépositions comme "Bi" (ب), "Li" (ل), "Min" (من) ne possèdent pas de racines trilitères au sens systémique Veritas.
+	   - Les pronoms relatifs comme "Lladhi" (الذي), "Lladhina" (الذين), ou les prépositions comme "Bi" (ب), "Li" (ل), "Min" (من), etc, ne possèdent pas de racines trilitères au sens systémique Veritas.
 	   - INTERDICTION de leur inventer une racine (ex: Pas de DH-L-Y pour Lladhi).
 	   - Dans la Phase 1 (Décompilation), classe-ces particules comme [OUTIL DE LIAISON] sans racine.
 

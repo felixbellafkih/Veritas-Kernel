@@ -578,13 +578,6 @@
             "binary_pair": "KH-F-Y"
         },
         {
-            "root": "B-G-H",
-            "arabic": "بغى",
-            "logic_function": "Unauthorized_Overrun",
-            "description": "Dépassement de privilèges ou agression sur un autre nœud (Injustice/Excès).",
-            "binary_pair": null
-        },
-        {
             "root": "B-GH-Y",
             "arabic": "بغي",
             "logic_function": "PRIVILEGE_ESCALATION // OVERRUN",
@@ -991,11 +984,11 @@
             "binary_pair": null
         },
         {
-            "root": "F-A.-D",
+            "root": "F-A-D",
             "arabic": "فؤاد",
-            "logic_function": "Volatile_Processor_Core",
-            "description": "Centre de traitement des données à haute vitesse, sensible au bruit (Cœur).",
-            "binary_pair": null
+            "logic_function": "CRITICAL_SENSOR // CORE",
+            "description": "Zone de haute intensité du traitement responsable de la validation finale des inputs.",
+            "binary_pair": "B-L-D"
         },
         {
             "root": "F-A.-L",
@@ -1003,13 +996,6 @@
             "logic_function": "ACTIVE_FUNCTION // EXECUTION",
             "description": "Déclenchement d'une action directe sur une cible. Exécution physique d'une tâche logicielle.",
             "binary_pair": null
-        },
-        {
-            "root": "F-A-D",
-            "arabic": "فؤاد",
-            "logic_function": "CRITICAL_SENSOR // CORE",
-            "description": "Zone de haute intensité du traitement responsable de la validation finale des inputs.",
-            "binary_pair": "B-L-D"
         },
         {
             "root": "F-D.-D.",
@@ -1021,7 +1007,7 @@
         {
             "root": "F-D.-L",
             "arabic": "فضل",
-            "logic_function": "RESOURCE_SURPLUS // PRIORITY",
+            "logic_function": "RESOURCE_ADVANTAGING // PRIORITY",
             "description": "Allocation de ressources supplémentaires ou privilège accordé à un nœud spécifique par le système.",
             "binary_pair": null
         },
@@ -1913,13 +1899,6 @@
             "logic_function": "PRIVILEGE_OVERRIDE // MAGNITUDE",
             "description": "Tentative d'un processus de s'élever artificiellement dans la hiérarchie ou de dépasser sa taille allouée.",
             "binary_pair": "S.-GH-R"
-        },
-        {
-            "root": "K-DH-B",
-            "arabic": "كذب",
-            "logic_function": "False_Positive",
-            "description": "Signal de sortie contradictoire avec la réalité interne du noyau (Bruit).",
-            "binary_pair": null
         },
         {
             "root": "K-DH-B",
