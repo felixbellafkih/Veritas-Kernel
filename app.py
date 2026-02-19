@@ -273,7 +273,8 @@ if mode == "VERSE INTERPRETER":
     with col2:
         st.info("ℹ️ Le système scannera le verset et injectera uniquement les racines actives en mémoire tampon pour optimiser le protocole et réduire la latence.")
 
-if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
+    # 👇 CORRECTION ICI : Le bouton est maintenant correctement indenté à l'intérieur du "if mode"
+    if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
         if verse_input:
             status_container = st.status("System processing...", expanded=True)
             status_container.write("🔌 Initializing connection to Gemini Core...")
@@ -302,6 +303,7 @@ if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
             
         else:
             st.warning("AWAITING SIGNAL...")
+
 # ==============================================================================
 # MODULE: LOGIC SEQUENCER (AVEC MORPHOLOGIE)
 # ==============================================================================
