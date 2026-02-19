@@ -273,36 +273,25 @@ if mode == "VERSE INTERPRETER":
     with col2:
         st.info("ℹ️ Le système scannera le verset et injectera uniquement les racines actives en mémoire tampon pour optimiser le protocole et réduire la latence.")
 
-    if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
+if st.button("🚀 EXECUTE SYSTEMIC DECOMPILATION"):
         if verse_input:
             status_container = st.status("System processing...", expanded=True)
             status_container.write("🔌 Initializing connection to Gemini Core...")
-            status_container.write("🔍 Scanning input for active roots...")
+            status_container.write("📂 Injecting Full Minified Lexicon...")
             
-            # 1. Extraction et Filtrage Dynamique (OPTIMISATION MÉMOIRE)
-            tokens = verse_input.split()
-            active_roots_data = []
-            found_roots = set()
-            
-            for token in tokens:
-                extracted_root, morph_data = morpho.process(token)
-                root_data = repo.find_root(extracted_root)
-                # Sécurité anti-doublons avec le set()
-                if root_data and root_data['root'] not in found_roots:
-                    active_roots_data.append(root_data)
-                    found_roots.add(root_data['root'])
-            
-            # Formattage du Payload Dynamique
-            if active_roots_data:
-                filtered_lexicon_str = json.dumps({"universal_functions": active_roots_data}, ensure_ascii=False, indent=2)
-                status_container.write(f"📂 Injecting Optimized Payload ({len(active_roots_data)} roots detected)...")
-            else:
-                filtered_lexicon_str = "[]"
-                status_container.write("⚠️ No registered roots detected. Proceeding with minimal payload...")
+            # 1. Extraction Totale & Minification Extrême (Bypass du filtre défaillant)
+            # On récupère TOUTE la base, mais on la compresse au maximum pour éviter l'erreur 429
+            all_roots = repo.get_all_roots()
+            compressed_payload = json.dumps(
+                {"database": all_roots}, 
+                ensure_ascii=False, 
+                separators=(',', ':') # Supprime tous les espaces inutiles (Minification)
+            )
 
             # 2. Appel au Moteur IA
+            status_container.write("🧠 Executing Systemic Parsing...")
             ai_engine = VeritasAI()
-            result = ai_engine.generate_systemic_translation(verse_input, filtered_lexicon_str)
+            result = ai_engine.generate_systemic_translation(verse_input, compressed_payload)
             
             status_container.update(label="Compilation Complete", state="complete", expanded=False)
 
@@ -313,7 +302,6 @@ if mode == "VERSE INTERPRETER":
             
         else:
             st.warning("AWAITING SIGNAL...")
-
 # ==============================================================================
 # MODULE: LOGIC SEQUENCER (AVEC MORPHOLOGIE)
 # ==============================================================================
