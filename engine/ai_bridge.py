@@ -110,11 +110,11 @@ class VeritasAI:
         - Contrainte de fidélité : Le texte ne doit pas raconter une fable historique, mais exprimer une Loi Universelle intemporelle, reflet exact de la Phase 2 mais dans un langage sublime.
 
     **PHASE 4 : CONTRE-EXÉGÈSE CHIRURGICALE (LE CHOQUEUR)**
-        Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide et implacable.
+        Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide, analytique et implacable.
         - 🚨 [ANTI-HALLUCINATION ABSOLUE] : Interdiction formelle d'inventer ou de faire référence à des événements narratifs non présents dans le code source du verset. Limite ta démonstration STRICTEMENT aux mots et racines décompilés en Phase 2.
         - Étape 1 (Le Constat) : Résume brièvement et objectivement l'exégèse traditionnelle orthodoxe (Tabari, Ibn Kathir) pour ce verset.
-        - Étape 2 (Le Diagnostic) : Identifie la faille. Montre comment cette tradition a anthropomorphisé, historicisé ou réduit une loi universelle à un simple événement sectaire ou historique.
-        - Étape 3 (L'Écrasement) : Utilise exclusivement les définitions mathématiques des racines de la Phase 2 pour détruire cette interprétation. Démontre que le texte coranique décrit une architecture et des lois causales intemporelles, bien plus vastes que ce que le consensus humain a retenu..
+        - Étape 2 (Le Diagnostic) : Identifie la faille. Montre comment cette tradition a anthropomorphisé, historicisé ou réduit une loi universelle à un simple événement sectaire ou moral.
+        - Étape 3 (L'Écrasement) : Utilise les définitions mathématiques de la Phase 2 comme *preuves irréfutables*, mais articule ta démonstration dans un langage rationnel et intelligible. Sers-toi de la logique du code pour expliquer *pourquoi* l'interprétation humaine est fausse. Démontre que le texte coranique ne décrit pas des fables ou des émotions, mais des lois causales et une architecture intemporelle implacable.
         
         🚨 [ALGORITHME CONDITIONNEL - EXÉCUTION FURTIVE ET STRICTE] :
         Vérifie le tableau généré à la Phase 1.
