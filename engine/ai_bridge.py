@@ -102,14 +102,19 @@ class VeritasAI:
         En te basant sur les résultats de la Phase 1, fais une analyse architecturale fluide. Ton magistral, froid, analytique.
         Utilise impérativement les sens Racinaux du Lexique récuperé dans la phase 1 (exemple : Salat = Connexion et NON prière). Explique la LOGIQUE SOUS-JACENTE de l'opération.
 
-        **PHASE 3 : TRADUCTION LITTÉRAIRE CONTEXTUELLE**
-        Traduire la logique froide de la Phase 2 en un langage humain, accessible et élégant. Pas de ton informatique ici.
-        - Contexte : Raconte la lecture du verset dans le cadre de la révélation (versets d'Allah révélés à Son messager Mohammad) et non dans un contexte de système informatique. Le sens final doit absolument etre en accord avec l'analyse de la Phase 2 
-        - 🚨 RÈGLE : Ne désigne pas Dieu par une fonction systémique (ex: n'utilise pas la racine A-L-H pour Le décrire). Appelle-Le "Allah" ou "Dieu".
-        - Objectif : Rendre le vrai sens du verset compréhensible de manière naturelle pour un lecteur non-informaticien.
+        **PHASE 3 : TRADUCTION PHILOSOPHIQUE ET UNIVERSELLE**
+        Objectif : Traduire la mécanique de la Phase 2 en une prose humaine majestueuse, profonde et spirituellement puissante.
+        - 🚨 RÈGLE DE PURGE : Interdiction absolue d'utiliser le vocabulaire informatique ou technique (ne dis pas "processus", "nœud", "root", "système").
+        - 🚨 RÈGLE D'ÉLÉVATION : Ne "raconte" pas une histoire historique. Exprime le sens du verset comme une Loi Universelle et intemporelle. Transforme la froideur de l'algorithme en sagesse théologique accessible.
+        - 🚨 RÈGLE D'IDENTITÉ : Ne désigne pas Dieu par une fonction. Utilise exclusivement "Allah", "Dieu" ou "Le Créateur".
+        - Contrainte de fidélité : Le sens final doit être le reflet littéraire exact et rigoureux des interactions définies dans la Phase 2, sans rien ajouter de plus.
 
-	**PHASE 4 : CONFRONTATION (LE CHOQUEUR)**
-        🚨 [CIBLAGE SÉMANTIQUE EXPLICITE ET SOURCES] : Extrais mentalement l'exégèse traditionnelle orthodoxe (Tafsir Ibn Kathir, Tabari, Qurtubi) concernant ce verset. Identifie si ce consensus traditionnel (Sunna) réduit ton analyse rationnelle universelle à un événement historique isolé, à une jurisprudence sectaire ou à des groupes spécifiques. Démontre l'étroitesse de cette exégèse classique et détruis ce réductionnisme de manière chirurgicale grâce à ton analyse de la Phase 2.
+    **PHASE 4 : CONTRE-EXÉGÈSE CHIRURGICALE (LE CHOQUEUR)**
+        Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide et implacable.
+        - 🚨 [ANTI-HALLUCINATION ABSOLUE] : Interdiction formelle d'inventer ou de faire référence à des événements narratifs non présents dans le code source du verset. Limite ta démonstration STRICTEMENT aux mots et racines décompilés en Phase 2.
+        - Étape 1 (Le Constat) : Résume brièvement et objectivement l'exégèse traditionnelle orthodoxe (Tabari, Ibn Kathir) pour ce verset.
+        - Étape 2 (Le Diagnostic) : Identifie la faille. Montre comment cette tradition a anthropomorphisé, historicisé ou réduit une loi universelle à un simple événement sectaire ou historique.
+        - Étape 3 (L'Écrasement) : Utilise exclusivement les définitions mathématiques des racines de la Phase 2 pour détruire cette interprétation. Démontre que le texte coranique décrit une architecture et des lois causales intemporelles, bien plus vastes que ce que le consensus humain a retenu..
         
         🚨 [ALGORITHME CONDITIONNEL - EXÉCUTION FURTIVE ET STRICTE] :
         Vérifie le tableau généré à la Phase 1.
