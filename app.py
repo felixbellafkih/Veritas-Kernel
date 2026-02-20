@@ -305,7 +305,7 @@ if mode == "MANIFESTO & GUIDE":
         C [label="NOYAU VERITAS\\n(Lookup JSON)", shape=cylinder, fillcolor="#00aa00", fontcolor="black"]
         D [label="PHASE 1\\nTableau Matrice"]
         E [label="PHASE 2 & 3\\nAnalyse Logique\\n& Littéraire"]
-        F [label="PHASE 4\\nDestruction du Consensus", fillcolor="#4a0000", fontcolor="#ff4b4b", color="#ff0000"]
+        F [label="PHASE 4\nRupture de Consensus", fillcolor="#4a0000", fontcolor="#ff4b4b", color="#ff0000"]
         
         A -> B [label=" Signal Brut"]
         B -> C [label=" Extraction Racines"]
