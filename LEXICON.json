@@ -3959,6 +3959,13 @@
             "binary_pair": null
         },
         {
+            "root": "S-T.-H.",
+            "arabic": "سطح",
+            "logic_function": "INTERFACE_LEVELING // SURFACE_EXPANSION",
+            "description": "Action de neutraliser la complexité topographique pour créer une surface d'interaction fonctionnelle et accessible pour les instances.",
+            "binary_pair": null
+        },
+        {
             "root": "S-W-A",
             "arabic": "سوء",
             "logic_function": "BAD_SECTOR // MALFUNCTION",
@@ -4159,13 +4166,6 @@
             "arabic": "صراط",
             "logic_function": "DATA_BACKBONE // HIGHWAY",
             "description": "Canal de transmission principal garantissant un débit maximal sans goulot d'étranglement.",
-            "binary_pair": null
-        },
-        {
-            "root": "S.-T.-H.",
-            "arabic": "سطح",
-            "logic_function": "INTERFACE_LEVELING // SURFACE_EXPANSION",
-            "description": "Action de neutraliser la complexité topographique pour créer une surface d'interaction fonctionnelle et accessible pour les instances.",
             "binary_pair": null
         },
         {
