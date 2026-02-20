@@ -2163,7 +2163,8 @@
             "root": "KH-D.-A.",
             "arabic": "خضع",
             "logic_function": "COMPELLED_SUBMISSION // CONSTRAINT",
-            "description": "État de soumission forcée par la pression structurelle du système ou une loi hard-codée."
+            "description": "État de soumission forcée par la pression structurelle du système ou une loi hard-codée.",
+            "binary_pair": null
         },
         {
             "root": "KH-D.-R",
@@ -3681,7 +3682,7 @@
             "root": "S-B-Q",
             "arabic": "سبق",
             "logic_function": "RACE_CONDITION_PRIORITY",
-            "description": "Compétition entre processus pour l'accès aux ressources. Tentative d'exécution prioritaire (Anticipation).",
+            "description": "Compétition entre processus pour l'accès aux resources. Tentative d'exécution prioritaire (Anticipation).",
             "binary_pair": "A-KH-R"
         },
         {
