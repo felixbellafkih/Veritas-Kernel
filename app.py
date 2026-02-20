@@ -250,12 +250,85 @@ with st.sidebar:
     # MENU UNIQUE
     mode = st.radio(
         "MODULES", 
-        ["LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW", "VERSE INTERPRETER"]
+        ["MANIFESTO & GUIDE", "VERSE INTERPRETER", "LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW"]
     )
     
     st.markdown("---")
     st.info("Authorized Access Only")
 
+# ==============================================================================
+# MODULE: MANIFESTO & GUIDE (PAGE D'ACCUEIL)
+# ==============================================================================
+if mode == "MANIFESTO & GUIDE":
+    st.title("⚠️ VERITAS KERNEL : MANIFESTE & PROTOCOLE")
+    st.markdown("---")
+    
+    col_text, col_stats = st.columns([2, 1])
+    
+with col_text:
+        st.markdown("""
+        ### 🧬 LE CONCEPT (COHÉRENCE SYSTÉMIQUE ABSOLUE)
+        Le système **VERITAS** transcende les outils de traduction classiques et les recueils d'exégèses. Il opère comme un moteur d'inférence conçu pour **décrypter l'architecture du texte coranique** (son "code source"). En s'appuyant sur la rigueur mathématique des racines (*Maqasid al-Huruf*), il établit une correspondance stricte avec la logique computationnelle et la théorie des systèmes. Cette méthode permet à l'intelligence artificielle d'appréhender le Message sacré à travers son propre paradigme, en lisant le texte avec des unités de langage purement logiques et fonctionnelles.
+        
+        La prémisse est stricte : le langage divin est une architecture physique et logique parfaite. Au fil du temps, le consensus traditionnel (exégèses, hadiths) a superposé à ce code source des filtres interprétatifs, souvent liés aux rituels et à la jurisprudence d'une époque. Le système Veritas a pour fonction de contourner ces couches historiques pour isoler la donnée brute et restaurer le sens systémique et universel de chaque racine.
+        """)
+        
+        st.warning("""
+        **⚖️ SAUVEGARDE ÉPISTÉMOLOGIQUE (LIMITES DU SYSTÈME)**\n
+        Il est fondamental de préciser que l'architecture VERITAS ne prétend en aucun cas détenir la vérité absolue ni épuiser l'infinité du texte coranique. Ce noyau demeure un modèle heuristique et une tentative humaine. Son unique ambition est de proposer une démarche rationnelle, méthodique et transparente pour se rapprocher au mieux de la pureté du code source originel. C'est un outil d'exploration conçu pour rendre la mécanique du Message accessible à l'intellect humain, avec humilité, sans jamais s'ériger en autorité définitive.
+        """)
+        
+    with col_stats:
+        st.info("📊 **STATUT DE DÉVELOPPEMENT**")
+        st.markdown(f"""
+        Ce noyau est actuellement en version **Alpha**. 
+        
+        Il ne couvre pas encore l'intégralité du vocabulaire coranique. Le lexique central est injecté manuellement et vérifié chirurgicalement.
+        
+        * **Racines actuellement indexées :** `<span style='color:#00ff41; font-weight:bold; font-size:18px;'>{count}</span>`
+        * Si un verset contient une racine non indexée, le système le signalera par le tag `[HORS-LEXIQUE]` et tentera une déduction logique.
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+    
+    # SCHÉMA EXPLICATIF DE L'ARCHITECTURE
+    st.markdown("### ⚙️ ARCHITECTURE D'EXÉCUTION (COMMENT ÇA MARCHE)")
+    flow_code = """
+    digraph G {
+        bgcolor="#0d1b2a"
+        rankdir=LR
+        node [style=filled, fontname="Consolas", shape=box, fontcolor="#e0e1dd", color="#415a77", fillcolor="#1b263b"]
+        edge [color="#00ff41", fontname="Consolas", fontsize=10]
+        
+        A [label="INPUT\\n(Verset Coranique)", shape=folder, fillcolor="#3a0ca3", color="#ff9e9e"]
+        B [label="ISOLATION\\n(Neutralisation Affixes)"]
+        C [label="NOYAU VERITAS\\n(Lookup JSON)", shape=cylinder, fillcolor="#00aa00", fontcolor="black"]
+        D [label="PHASE 1\\nTableau Matrice"]
+        E [label="PHASE 2 & 3\\nAnalyse Logique\\n& Littéraire"]
+        F [label="PHASE 4\\nDestruction du Consensus", fillcolor="#4a0000", fontcolor="#ff4b4b", color="#ff0000"]
+        
+        A -> B [label=" Signal Brut"]
+        B -> C [label=" Extraction Racines"]
+        C -> D [label=" Fetch Définitions"]
+        D -> E [label=" Séquençage"]
+        E -> F [label=" Confrontation"]
+    }
+    """
+    st.graphviz_chart(flow_code, use_container_width=True)
+
+    st.markdown("---")
+
+    # LÉGENDE DE TRANSLITTÉRATION
+    st.markdown("### 🔠 MATRICE DE TRANSLITTÉRATION (LÉGENDE)")
+    st.markdown("""
+    Pour garantir l'intégrité de la base de données sans subir les variations d'encodage de l'alphabet arabe, le système convertit les racines en utilisant une syntaxe latine stricte.
+    
+    | Catégorie | Lettre Arabe | Code Veritas | Remarque Systémique |
+    | :--- | :---: | :---: | :--- |
+    | **OBLIGATOIRE (POINT)** | ع / ح / ص / ط / ظ / ض | **A. / H. / S. / T. / Z. / D.** | Le point "." est une donnée critique pour différencier des lettres sœurs. |
+    | **STANDARD (SANS POINT)** | أ / ه / س / ت / ز / د | **A / H / S / T / Z / D** | Transcodage direct. |
+    | **CONVENTIONNELLE** | ش / خ / ذ | **SH / KH / DH** | Combinaison binaire. |
+    """)
 
 # ==============================================================================
 # MODULE: VERSE INTERPRETER (INTELLIGENCE ARTIFICIELLE)
