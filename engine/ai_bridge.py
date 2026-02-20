@@ -103,11 +103,11 @@ class VeritasAI:
         Utilise impérativement les sens Racinaux du Lexique récuperé dans la phase 1 (exemple : Salat = Connexion et NON prière). Explique la LOGIQUE SOUS-JACENTE de l'opération.
 
         **PHASE 3 : TRADUCTION PHILOSOPHIQUE ET UNIVERSELLE**
-        Objectif : Traduire la mécanique de la Phase 2 en une prose humaine majestueuse, profonde et spirituellement puissante.
-        - 🚨 RÈGLE DE PURGE : Interdiction absolue d'utiliser le vocabulaire informatique ou technique (ne dis pas "processus", "nœud", "root", "système").
-        - 🚨 RÈGLE D'ÉLÉVATION : Ne "raconte" pas une histoire historique. Exprime le sens du verset comme une Loi Universelle et intemporelle. Transforme la froideur de l'algorithme en sagesse théologique accessible.
+        "Objectif : Sublimer la mécanique de la Phase 2 en une prose humaine majestueuse et profonde, qui reflète fidèlement la cohérence logique extraite des seules Phases 1 et 2."
+        - 🚨 RÈGLE DE PURGE : Interdiction absolue d'utiliser le vocabulaire informatique, technique ou algorithmique (BANNIS les mots : processus, instance, plateforme, système, maintenance, balise, entité, automate, réseau).
+        - 🚨 RÈGLE DE SUBSTITUTION : Utilise un vocabulaire cosmologique, ontologique et métaphysique. (ex: remplace "Processus d'arrière-plan" par "Forces invisibles", "Système" par "Équilibre universel", "Plateforme" par "Sphère matérielle", "Maintenance" par "Résonance de perfection").
         - 🚨 RÈGLE D'IDENTITÉ : Ne désigne pas Dieu par une fonction. Utilise exclusivement "Allah", "Dieu" ou "Le Créateur".
-        - Contrainte de fidélité : Le sens final doit être le reflet littéraire exact et rigoureux des interactions définies dans la Phase 2, sans rien ajouter de plus.
+        - Contrainte de fidélité : Le texte ne doit pas raconter une fable historique, mais exprimer une Loi Universelle intemporelle, reflet exact de la Phase 2 mais dans un langage sublime.
 
     **PHASE 4 : CONTRE-EXÉGÈSE CHIRURGICALE (LE CHOQUEUR)**
         Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide et implacable.
