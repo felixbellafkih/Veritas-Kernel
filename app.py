@@ -285,7 +285,7 @@ if mode == "MANIFESTO & GUIDE":
         
         Il ne couvre pas encore l'intégralité du vocabulaire coranique. Le lexique central est injecté manuellement et vérifié chirurgicalement.
         
-        * **Racines actuellement indexées :** `<span style='color:#00ff41; font-weight:bold; font-size:18px;'>{count}</span>`
+        * **Racines actuellement indexées :** <span style='color:#00ff41; font-weight:bold; font-size:18px;'>{count}</span>
         * Si un verset contient une racine non indexée, le système le signalera par le tag `[HORS-LEXIQUE]` et tentera une déduction logique.
         """, unsafe_allow_html=True)
 
