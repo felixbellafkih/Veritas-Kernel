@@ -571,13 +571,6 @@
             "binary_pair": "A.-W-D"
         },
         {
-            "root": "B-D-A.",
-            "arabic": "بدأ",
-            "logic_function": "PROCESS_START // NEW_INSTANCE",
-            "description": "Initialisation d'une nouvelle instance ou d'un processus inédit dans le runtime.",
-            "binary_pair": "A.-W-D"
-        },
-        {
             "root": "B-D-L",
             "arabic": "بدل",
             "logic_function": "VARIABLE_SWAP // ALTERATION",
