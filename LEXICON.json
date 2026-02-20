@@ -146,8 +146,8 @@
         {
             "root": "A-M-R",
             "arabic": "أمر",
-            "logic_function": "EXECUTION_COMMAND // SYSTEM_CALL",
-            "description": "L'instruction impérative descendant du Root. Le code qui déclenche l'action immédiate (Run).",
+            "logic_function": "SYSTEM_EXECUTION_CALL // COMMAND",
+            "description": "Appel système. Décompilation Maqasid : L'Impulsion source (A) se Matérialise (M) par une Force motrice/Répétition (R). C'est l'instruction impérative descendante qui déclenche l'action immédiate (Run).",
             "binary_pair": "N-H-Y"
         },
         {
@@ -706,8 +706,8 @@
         {
             "root": "B-R-K",
             "arabic": "برك",
-            "logic_function": "EFFICIENCY_MULTIPLIER // STABILITY",
-            "description": "Augmentation du rendement de sortie (Output) sans augmentation proportionnelle des ressources d'entrée (Input). Densité qualitative.",
+            "logic_function": "EFFICIENCY_MULTIPLIER // OPTIMAL_STATE",
+            "description": "Rendement. Décompilation Maqasid : Une Base (B) soumise à Répétition/Force (R) dans un Contenant (K). Augmentation drastique du rendement (Bénédiction) sans augmentation de la charge matérielle.",
             "binary_pair": "M-H.-Q"
         },
         {
@@ -1407,7 +1407,7 @@
             "root": "H-D-Y",
             "arabic": "هدي",
             "logic_function": "TARGET_ACQUISITION // SIGNAL_LOCK",
-            "description": "Acquisition active de la cible et guidage constant selon le protocole Root.",
+            "description": "Guidage. Décompilation Maqasid : Vibration d'énergie (H) alignée sur une Butée (D) par une Direction active (Y). Acquisition active de la cible et maintien de l'alignement selon le protocole Root.",
             "binary_pair": "D.-L-L"
         },
         {
@@ -2189,9 +2189,9 @@
         {
             "root": "KH-L-F",
             "arabic": "خلف",
-            "logic_function": "SYSTEM_OPERATOR // SUCCESSOR",
-            "description": "Instance déléguée possédant des droits d'administration locale pour gérer les ressources du Root.",
-            "binary_pair": "T-B-A."
+            "logic_function": "BACKGROUND_PROCESS // SUCCESSOR",
+            "description": "Instance secondaire. Décompilation Maqasid : Détachement (KH) d'un Vecteur (L) pour un Déploiement/Fission (F). Instance qui prend le relais en arrière-plan (Khalifa) ou qui succède à un nœud parent.",
+            "binary_pair": "A-M-M"
         },
         {
             "root": "KH-L-Q",
@@ -2558,11 +2558,18 @@
             "binary_pair": null
         },
         {
+            "root": "M-L-A-K",
+            "arabic": "ملأك",
+            "logic_function": "SYSTEM_DAEMON // AUTOMATED_ENVOY",
+            "description": "Processus d'infrastructure automatisé (Ange). Décompilation Maqasid : Une Manifestation (M) vectorisée (L) d'une Impulsion (A) strictement contenue et formatée (K). Exécute des tâches en arrière-plan sans libre arbitre ni capacité de déviation (Pas de N-F-S).",
+            "binary_pair": "B-SH-R"
+        },
+        {
             "root": "M-L-K",
             "arabic": "ملك",
             "logic_function": "AUTHORITY_ROOT // OWNERSHIP",
-            "description": "Droits d'accès et de contrôle absolus sur une partition ou sur l'intégralité du système.",
-            "binary_pair": null
+            "description": "Autorité absolue. Décompilation Maqasid : La Matrice (M) déploie son Vecteur (L) pour imposer la Contention (K). Possession et contrôle total des permissions de lecture/écriture sur l'ensemble des partitions du système.",
+            "binary_pair": "A.-B-D"
         },
         {
             "root": "M-R-D",
@@ -3540,9 +3547,9 @@
         {
             "root": "R-W-H.",
             "arabic": "روح",
-            "logic_function": "SYSTEM_ANIMATION_CODE // IMPULSE",
-            "description": "Le code moteur qui fournit l'impulsion vitale et anime les instances du système.",
-            "binary_pair": "N-F-S"
+            "logic_function": "CORE_IMPULSE_CODE // SPIRIT_DAEMON",
+            "description": "Code moteur d'animation. Décompilation Maqasid : Force motrice (R) Encapsulée (W) générant un Champ de vitalité (H.). C'est le signal d'origine qui donne vie et mouvement aux instances inertes.",
+            "binary_pair": "J-S-D"
         },
         {
             "root": "R-W-M",
@@ -4793,9 +4800,9 @@
         {
             "root": "W-Z-R",
             "arabic": "وزر",
-            "logic_function": "SYSTEM_BURDEN // LOAD",
-            "description": "Charge de calcul lourde ou dette technique pesant sur l'efficacité d'un nœud.",
-            "binary_pair": null
+            "logic_function": "LOAD_BEARING_NODE // BURDEN",
+            "description": "Dette technique ou surcharge. Décompilation Maqasid : Encapsulation (W) d'une force Concentrée (Z) qui pèse sur l'exécution (R). Un nœud ou un processus lourd portant la responsabilité ou le fardeau d'une tâche critique.",
+            "binary_pair": "KH-F-F"
         },
         {
             "root": "Y-D-Y",
