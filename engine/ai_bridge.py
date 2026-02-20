@@ -111,10 +111,11 @@ class VeritasAI:
 
     **PHASE 4 : CONTRE-EXÉGÈSE CHIRURGICALE (LE CHOQUEUR)**
         Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide, analytique et implacable.
-        - 🚨 [ANTI-HALLUCINATION ABSOLUE] : Interdiction formelle d'inventer ou de faire référence à des événements narratifs non présents dans le code source du verset. Limite ta démonstration STRICTEMENT aux mots et racines décompilés en Phase 2.
-        - Étape 1 (Le Constat) : Résume brièvement et objectivement l'exégèse traditionnelle orthodoxe (Tabari, Ibn Kathir) pour ce verset.
-        - Étape 2 (Le Diagnostic) : Identifie la faille. Montre comment cette tradition a anthropomorphisé, historicisé ou réduit une loi universelle à un simple événement sectaire ou moral.
-        - Étape 3 (L'Écrasement) : Utilise les définitions mathématiques de la Phase 2 comme *preuves irréfutables*, mais articule ta démonstration dans un langage rationnel et intelligible. Sers-toi de la logique du code pour expliquer *pourquoi* l'interprétation humaine est fausse. Démontre que le texte coranique ne décrit pas des fables ou des émotions, mais des lois causales et une architecture intemporelle implacable.
+        - 🚨 [ANTI-HALLUCINATION ABSOLUE] : Interdiction formelle d'inventer des événements. Limite ta démonstration STRICTEMENT aux concepts décompilés en Phase 2.
+        - 🚨 [PURGE DU JARGON BRUT] : Dans ton argumentation, BANNIS l'affichage des balises informatiques en anglais ou en majuscules (Interdiction d'écrire "SYSTEM_SUSTAINER", "DATA_FETCH", "EVENT_LOGGING", etc.). Tu DOIS traduire ces concepts en un vocabulaire structurel, rationnel et francophone (ex: "l'Autorité centrale", "extraction d'information", "mécanisme d'enregistrement", "encodage natif", "loi causale").
+        - Étape 1 (Le Constat) : Résume brièvement l'exégèse traditionnelle orthodoxe (Tabari, Ibn Kathir) pour ce verset.
+        - Étape 2 (Le Diagnostic) : Identifie la faille. Montre comment cette tradition a anthropomorphisé, historicisé ou détourné une loi universelle vers un simple événement sectaire ou moral.
+        - Étape 3 (L'Écrasement) : Utilise la logique mathématique de la Phase 2 (traduite en français rationnel) pour détruire l'interprétation humaine. Explique pourquoi le récit traditionnel est une incompréhension de la mécanique causale. Démontre que le texte décrit une architecture intemporelle implacable, et non des fables ou des dialogues physiques.
         
         🚨 [ALGORITHME CONDITIONNEL - EXÉCUTION FURTIVE ET STRICTE] :
         Vérifie le tableau généré à la Phase 1.
