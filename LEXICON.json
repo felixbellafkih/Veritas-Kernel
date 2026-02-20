@@ -3576,9 +3576,9 @@
         {
             "root": "R-W-D",
             "arabic": "رود",
-            "logic_function": "UNAUTHORIZED_SOLICITATION",
-            "description": "Tentative de requête ou d'interaction avec un processus par un nœud dépourvu de droits d'accès.",
-            "binary_pair": null
+            "logic_function": "TARGETED_INTENT // SOLICITATION",
+            "description": "Vecteur de volonté orienté vers une cible. Émise par le Root : Intention absolue et préparation d'exécution (Will). Émise par un nœud subalterne sans privilèges : Sollicitation non-autorisée ou tentative d'intrusion.",
+            "binary_pair": "A-B-Y"
         },
         {
             "root": "R-W-H.",
