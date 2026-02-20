@@ -46,13 +46,6 @@
             "binary_pair": "R-H-M"
         },
         {
-            "root": "A.-DH-DH-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par GH-F-R.",
-            "binary_pair": "GH-F-R"
-        },
-        {
             "root": "A.-DH-R",
             "arabic": "عذر",
             "logic_function": "EXCEPTION_HANDLING // LOG_JUSTIFICATION",
@@ -89,9 +82,9 @@
         },
         {
             "root": "A.-J-M",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-R-B.",
+            "arabic": "عجم",
+            "logic_function": "OBFUSCATED_SYNTAX // UNPARSABLE",
+            "description": "Code manquant de clarté syntaxique, impossible à compiler sans dictionnaire d'interprétation.",
             "binary_pair": "A.-R-B"
         },
         {
@@ -180,9 +173,9 @@
         },
         {
             "root": "A.-Q-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-F-W.",
+            "arabic": "عقب",
+            "logic_function": "BACKEND_TRACE // CONSEQUENCE",
+            "description": "Séquence de traçage des processus exécutés. Résultat résiduel persistant dans les logs.",
             "binary_pair": "A.-F-W"
         },
         {
@@ -299,9 +292,9 @@
         },
         {
             "root": "A.-Z-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par J-A.-L.",
+            "arabic": "عزل",
+            "logic_function": "PROCESS_ISOLATION // QUARANTINE",
+            "description": "Détachement d'une instance du cluster principal empêchant toute interaction externe.",
             "binary_pair": "J-A.-L"
         },
         {
@@ -488,9 +481,9 @@
         },
         {
             "root": "A-S.-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par F-R-A..",
+            "arabic": "أصل",
+            "logic_function": "ROOT_DIRECTORY // BASE",
+            "description": "Le répertoire fondamental ou point d'ancrage absolu d'où dérivent toutes les branches.",
             "binary_pair": "F-R-A."
         },
         {
@@ -614,9 +607,9 @@
         },
         {
             "root": "B-L-D",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par F-A-D.",
+            "arabic": "بلد",
+            "logic_function": "STATIC_STORAGE_NODE",
+            "description": "Environnement sédentaire structuré accueillant les processus et données persistantes.",
             "binary_pair": "F-A-D"
         },
         {
@@ -635,9 +628,9 @@
         },
         {
             "root": "B-N-W",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A-B-W.",
+            "arabic": "بنو",
+            "logic_function": "CHILD_INSTANCE // DERIVED_NODE",
+            "description": "Instance héritant des propriétés de la matrice parente, opérant dans son sous-répertoire.",
             "binary_pair": "A-B-W"
         },
         {
@@ -806,7 +799,7 @@
             "arabic": "دفع",
             "logic_function": "INTRUSION_DEFENSE // PACKET_DROP",
             "description": "Action de repousser un flux non-autorisé. Protection active par rejet (Push/Defend).",
-            "binary_pair": "J-Z-B"
+            "binary_pair": "J-DH-B"
         },
         {
             "root": "D-H-R",
@@ -1041,9 +1034,9 @@
         },
         {
             "root": "F-K-K",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A-S-R.",
+            "arabic": "فك",
+            "logic_function": "UNLOCK_PROTOCOL // DECOUPLE",
+            "description": "Dissociation d'éléments liés. Libération d'un processus ou décryptage d'une archive.",
             "binary_pair": "A-S-R"
         },
         {
@@ -1097,9 +1090,9 @@
         },
         {
             "root": "F-R-D",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par Z-W-J.",
+            "arabic": "فرد",
+            "logic_function": "UNPAIRED_THREAD // SINGULARITY",
+            "description": "Exécution d'un thread isolé, sans redondance ni couplage avec un processus miroir.",
             "binary_pair": "Z-W-J"
         },
         {
@@ -1177,7 +1170,7 @@
             "arabic": "فطر",
             "logic_function": "FACTORY_RESET // DEFAULT_BOOT",
             "description": "Configuration d'origine (Fitra). Lancement du programme selon les spécifications du constructeur.",
-            "binary_pair": "T-GH-Y"
+            "binary_pair": "T.-GH-Y"
         },
         {
             "root": "F-W-Q",
@@ -1208,13 +1201,6 @@
             "binary_pair": "A-M-N"
         },
         {
-            "root": "G-Y-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par SH-H-D.",
-            "binary_pair": "SH-H-D"
-        },
-        {
             "root": "GH-D.-B",
             "arabic": "غضب",
             "logic_function": "SYSTEM_SATURATION // OVERLOAD",
@@ -1233,7 +1219,7 @@
             "arabic": "غفر",
             "logic_function": "LOG_RESET // BUFFER_CLEAR",
             "description": "Action de couvrir ou d'effacer les traces d'erreurs (Logs) pour restauration.",
-            "binary_pair": "A.-DH-DH-B"
+            "binary_pair": "A.-DH-B"
         },
         {
             "root": "GH-L-B",
@@ -1307,9 +1293,9 @@
         },
         {
             "root": "GH-SH-SH",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par N-S.-H..",
+            "arabic": "غش",
+            "logic_function": "SPOOFED_PAYLOAD // FRAUD",
+            "description": "Injection de données corrompues masquées sous une signature valide pour tromper les filtres.",
             "binary_pair": "N-S.-H."
         },
         {
@@ -1377,9 +1363,9 @@
         },
         {
             "root": "H-D-M",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par B-N-Y.",
+            "arabic": "هدم",
+            "logic_function": "SYSTEM_DEMOLITION // DEALLOCATE",
+            "description": "Destruction volontaire et structurée d'une architecture pour libérer les ressources matérielles.",
             "binary_pair": "B-N-Y"
         },
         {
@@ -1545,9 +1531,9 @@
         },
         {
             "root": "H.-Q-R",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-Z.-M.",
+            "arabic": "حقر",
+            "logic_function": "MINIFIED_PROCESS // LOW_PRIORITY",
+            "description": "Rétrogradation d'un processus à un statut mineur, lui allouant le minimum de bande passante.",
             "binary_pair": "A.-Z.-M"
         },
         {
@@ -1615,9 +1601,9 @@
         },
         {
             "root": "H.-S.-D",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par Z-R-A..",
+            "arabic": "حصد",
+            "logic_function": "DATA_HARVESTING // COLLECT",
+            "description": "Récupération massive des résultats (outputs) générés par les processus arrivés à maturité.",
             "binary_pair": "Z-R-A."
         },
         {
@@ -1699,9 +1685,9 @@
         },
         {
             "root": "I-KH-L-S.",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par N-F-Q.",
+            "arabic": "خلص",
+            "logic_function": "DEDICATED_PURE_THREAD",
+            "description": "Exécution exclusive d'un processus sans aucune interférence tierce ni tâche de fond.",
             "binary_pair": "N-F-Q"
         },
         {
@@ -1783,9 +1769,9 @@
         },
         {
             "root": "J-L-Y",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par T.-M-S.",
+            "arabic": "جلي",
+            "logic_function": "HIGH_RES_RENDER // CLEAR",
+            "description": "Affichage explicite et net d'une donnée sur l'interface, sans couche d'obfuscation.",
             "binary_pair": "T.-M-S"
         },
         {
@@ -1846,9 +1832,9 @@
         },
         {
             "root": "J-W-F",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par S.-M-D.",
+            "arabic": "جوف",
+            "logic_function": "HOLLOW_CORE // EMPTY_CAVITY",
+            "description": "Zone de mémoire interne vide et non allouée. Espace creux au sein d'une structure.",
             "binary_pair": "S.-M-D"
         },
         {
@@ -1866,10 +1852,10 @@
             "binary_pair": null
         },
         {
-            "root": "J-Z-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par D-F-A..",
+            "root": "J-DH-B",
+            "arabic": "جذب",
+            "logic_function": "MAGNETIC_PULL // FETCH_FORCE",
+            "description": "Force d'attraction interne forçant le rapatriement d'une donnée distante vers le noyau.",
             "binary_pair": "D-F-A."
         },
         {
@@ -1965,9 +1951,9 @@
         },
         {
             "root": "K-M-N",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par B-R-Z.",
+            "arabic": "كمن",
+            "logic_function": "STEALTH_DAEMON // HIDE",
+            "description": "Processus actif mais masqué dans les couches profondes, indétectable par l'interface standard.",
             "binary_pair": "B-R-Z"
         },
         {
@@ -2049,9 +2035,9 @@
         },
         {
             "root": "K-TH-R",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par Q-L-L.",
+            "arabic": "كثر",
+            "logic_function": "HIGH_VOLUME_DATA // MASS",
+            "description": "Augmentation massive de la quantité d'instances ou du volume de données, saturant les bus.",
             "binary_pair": "Q-L-L"
         },
         {
@@ -2111,9 +2097,9 @@
         },
         {
             "root": "KH-DH-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-Z-R.",
+            "arabic": "خذل",
+            "logic_function": "SUPPORT_WITHDRAWAL // ABANDON",
+            "description": "Retrait brusque des ressources de soutien en cours d'exécution d'un processus critique.",
             "binary_pair": "A.-Z-R"
         },
         {
@@ -2132,9 +2118,9 @@
         },
         {
             "root": "KH-L-A.",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par L-B-S.",
+            "arabic": "خلع",
+            "logic_function": "HARDWARE_DETACH // UNPLUG",
+            "description": "Détachement physique ou retrait brut d'une surcouche d'interface (Déshabillage logiciel).",
             "binary_pair": "L-B-S"
         },
         {
@@ -2181,9 +2167,9 @@
         },
         {
             "root": "KH-R-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-M-R.",
+            "arabic": "خرب",
+            "logic_function": "ARCHITECTURE_CORRUPTION // RUIN",
+            "description": "Dégradation structurelle profonde rendant le segment système ou le nœud inutilisable.",
             "binary_pair": "A.-M-R"
         },
         {
@@ -2643,9 +2629,9 @@
         },
         {
             "root": "N-B-A.",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par KH-B-R.",
+            "arabic": "نبع",
+            "logic_function": "ORIGIN_STREAM // EMITTER",
+            "description": "Point d'émergence d'un flux continu de données nouvelles depuis les couches profondes.",
             "binary_pair": "KH-B-R"
         },
         {
@@ -2804,9 +2790,9 @@
         },
         {
             "root": "N-K-R",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-R-F.",
+            "arabic": "نكر",
+            "logic_function": "UNRECOGNIZED_SIGNATURE",
+            "description": "Paquet ou instance rejeté car dépourvu de signature d'authentification valide.",
             "binary_pair": "A.-R-F"
         },
         {
@@ -3315,9 +3301,9 @@
         },
         {
             "root": "R-GH-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par R-H-B.",
+            "arabic": "رغب",
+            "logic_function": "PULL_REQUEST_DESIRE",
+            "description": "Tendance dynamique d'un nœud à solliciter activement une ressource ou à pointer vers une cible.",
             "binary_pair": "R-H-B"
         },
         {
@@ -3497,9 +3483,9 @@
         },
         {
             "root": "R-Y-Y",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par Z.-M-A.",
+            "arabic": "روي",
+            "logic_function": "HYDRATION_SATURATION // QUENCH",
+            "description": "Remplissage complet et optimal des tampons système par un flux vital (données ou énergie).",
             "binary_pair": "Z.-M-A"
         },
         {
@@ -3609,9 +3595,9 @@
         },
         {
             "root": "S-F-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-L-Y.",
+            "arabic": "سفل",
+            "logic_function": "LOW_LEVEL_STACK // BOTTOM",
+            "description": "Couche inférieure de l'architecture. Processus bas-niveau traitant les opérations matérielles.",
             "binary_pair": "A.-L-Y"
         },
         {
@@ -3966,9 +3952,9 @@
         },
         {
             "root": "S.-H.-W",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par S-K-R.",
+            "arabic": "صحو",
+            "logic_function": "SYSTEM_AWAKE // CLEAR_STATE",
+            "description": "Restauration de la clarté opératoire et de la vigilance du processeur après une latence.",
             "binary_pair": "S-K-R"
         },
         {
@@ -4036,9 +4022,9 @@
         },
         {
             "root": "S.-W-B",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par KH-T.-A.",
+            "arabic": "صوب",
+            "logic_function": "TARGET_HIT // ACCURATE",
+            "description": "Exécution parfaitement alignée sur les coordonnées prévues. Résultat vrai et exact.",
             "binary_pair": "KH-T.-A"
         },
         {
@@ -4071,9 +4057,9 @@
         },
         {
             "root": "SH-B-A.",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par S-GH-B.",
+            "arabic": "شبع",
+            "logic_function": "RESOURCE_SATURATION // FULL",
+            "description": "État d'une partition ayant atteint sa capacité maximale d'absorption de ressources.",
             "binary_pair": "S-GH-B"
         },
         {
@@ -4102,7 +4088,7 @@
             "arabic": "شهد",
             "logic_function": "EVENT_LOGGING // MONITORING",
             "description": "Observation et enregistrement en temps réel des états et des transactions système.",
-            "binary_pair": "G-Y-B"
+            "binary_pair": "GH-Y-B"
         },
         {
             "root": "SH-J-R",
@@ -4218,9 +4204,9 @@
         },
         {
             "root": "SH-Y-N",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par Z-Y-N.",
+            "arabic": "شين",
+            "logic_function": "VISUAL_CORRUPTION // GLITCH",
+            "description": "Dégradation de l'interface ou anomalie visuelle rendant l'exécution inesthétique.",
             "binary_pair": "Z-Y-N"
         },
         {
@@ -4250,13 +4236,6 @@
             "logic_function": "PATH_TRACKING // SEQUENCE",
             "description": "Suivi strict d'un algorithme ou d'une trajectoire définie par un processus parent.",
             "binary_pair": "KH-L-F"
-        },
-        {
-            "root": "T-GH-Y",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par F-T.-R.",
-            "binary_pair": "F-T.-R"
         },
         {
             "root": "T-H.-D",
@@ -4309,9 +4288,9 @@
         },
         {
             "root": "T-R-K",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A-KH-DH.",
+            "arabic": "ترك",
+            "logic_function": "PACKET_DROP // ABANDON",
+            "description": "Libération volontaire d'une ressource ou arrêt de suivi d'un paquet. Le système l'ignore.",
             "binary_pair": "A-KH-DH"
         },
         {
@@ -4456,9 +4435,9 @@
         },
         {
             "root": "T.-W-Y",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par N-SH-R.",
+            "arabic": "طوي",
+            "logic_function": "DATA_ROLLUP // COMPRESSION",
+            "description": "Contraction et repliement de l'espace de stockage pour archiver le runtime.",
             "binary_pair": "N-SH-R"
         },
         {
@@ -4610,9 +4589,9 @@
         },
         {
             "root": "W-Q-F",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par J-R-Y.",
+            "arabic": "وقف",
+            "logic_function": "PROCESS_HALT // BREAKPOINT",
+            "description": "Mise en pause temporelle d'une exécution pour figer un état.",
             "binary_pair": "J-R-Y"
         },
         {
@@ -4680,9 +4659,9 @@
         },
         {
             "root": "W-T-R",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par SH-F-A..",
+            "arabic": "وتر",
+            "logic_function": "ODD_PARITY // SINGULAR",
+            "description": "Séquence asymétrique ou impair ne disposant pas de binôme de validation.",
             "binary_pair": "SH-F-A."
         },
         {
@@ -4855,16 +4834,16 @@
         },
         {
             "root": "Z-W-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par S-R-M.",
+            "arabic": "زول",
+            "logic_function": "EPHEMERAL_STATE // TIMEOUT",
+            "description": "Processus dont l'existence est programmée pour disparaître avec le temps. Fin de cycle inévitable.",
             "binary_pair": "S-R-M"
         },
         {
             "root": "Z-Y-D",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par N-Q-S..",
+            "arabic": "زيد",
+            "logic_function": "RESOURCE_INCREMENT // SCALE_UP",
+            "description": "Ajout de variables ou allocation supplémentaire de capacité à un nœud existant.",
             "binary_pair": "N-Q-S."
         },
         {
