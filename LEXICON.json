@@ -943,9 +943,9 @@
         },
         {
             "root": "DH-L-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-Z-Z.",
+            "arabic": "ذلل",
+            "logic_function": "SYSTEM_SUBMISSION // LOW_PROFILE",
+            "description": "État d'abaissement des privilèges ou de docilité totale d'une instance face aux commandes du Root.",
             "binary_pair": "A.-Z-Z"
         },
         {
@@ -2433,9 +2433,9 @@
         },
         {
             "root": "M-H.-Q",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par B-R-K.",
+            "arabic": "محق",
+            "logic_function": "EFFICIENCY_DECAY // VALUE_ERASURE",
+            "description": "Destruction progressive ou annulation du rendement d'un processus. Perte sèche de ressources.",
             "binary_pair": "B-R-K"
         },
         {
@@ -2454,9 +2454,9 @@
         },
         {
             "root": "M-J-H-L",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A-S-M.",
+            "arabic": "مجهل",
+            "logic_function": "NULL_IDENTITY // ANONYMOUS_POINTER",
+            "description": "Absence d'étiquette d'identification. Pointeur invalide ou entité système non-référencée.",
             "binary_pair": "A-S-M"
         },
         {
@@ -3581,9 +3581,9 @@
         },
         {
             "root": "S-DH-J",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-B-Q-R.",
+            "arabic": "سذج",
+            "logic_function": "BASIC_LINEAR_TOPOLOGY // SIMPLE",
+            "description": "Architecture système rudimentaire et linéaire, dépourvue de complexité ou de sous-réseaux.",
             "binary_pair": "A.-B-Q-R"
         },
         {
@@ -3679,9 +3679,9 @@
         },
         {
             "root": "S-KH-T.",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par R-D.-Y.",
+            "arabic": "سخط",
+            "logic_function": "STATUS_REJECTED // DISAPPROVAL",
+            "description": "Rejet catégorique de l'état d'un nœud par l'autorité Root suite à une violation des attentes.",
             "binary_pair": "R-D.-Y"
         },
         {
@@ -4274,9 +4274,9 @@
         },
         {
             "root": "T-N-F-S",
-            "arabic": "N/A",
-            "logic_function": "AUTO_GENERATED_MISSING_LINK",
-            "description": "Entrée générée automatiquement car référencée par A.-S-A.-S.",
+            "arabic": "تنفس",
+            "logic_function": "STATE_EXPANSION // BREATHE_IN",
+            "description": "Phase d'expansion et d'ouverture. Le système s'aère et dissipe la compression de la latence.",
             "binary_pair": "A.-S-A.-S"
         },
         {
