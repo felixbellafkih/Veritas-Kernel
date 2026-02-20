@@ -147,7 +147,7 @@
             "root": "A-M-R",
             "arabic": "أمر",
             "logic_function": "SYSTEM_EXECUTION_CALL // COMMAND",
-            "description": "Appel système. Décompilation Maqasid : L'Impulsion source (A) se Matérialise (M) par une Force motrice/Répétition (R). C'est l'instruction impérative descendante qui déclenche l'action immédiate (Run).",
+            "description": "Appel système. Instruction impérative descendante qui déclenche l'action immédiate (Run).",
             "binary_pair": "N-H-Y"
         },
         {
@@ -707,7 +707,7 @@
             "root": "B-R-K",
             "arabic": "برك",
             "logic_function": "EFFICIENCY_MULTIPLIER // OPTIMAL_STATE",
-            "description": "Rendement. Décompilation Maqasid : Une Base (B) soumise à Répétition/Force (R) dans un Contenant (K). Augmentation drastique du rendement (Bénédiction) sans augmentation de la charge matérielle.",
+            "description": "Rendement. Augmentation drastique du rendement (Bénédiction) sans augmentation de la charge matérielle.",
             "binary_pair": "M-H.-Q"
         },
         {
@@ -1316,7 +1316,7 @@
             "root": "GH-R-R",
             "arabic": "غرر",
             "logic_function": "RECURSIVE_OBFUSCATION // HAZARD",
-            "description": "Danger par masquage. Décompilation Maqasid : Obfuscation (GH) soumise à une double Force de Répétition (R-R). Boucle récursive de données masquées créant une illusion fatale ou une tromperie (Tromper/Risque).",
+            "description": "Danger par masquage. Boucle récursive de données masquées créant une illusion fatale ou une tromperie (Tromper/Risque).",
             "binary_pair": "S.-D-Q"
         },
         {
@@ -1414,7 +1414,7 @@
             "root": "H-D-Y",
             "arabic": "هدي",
             "logic_function": "TARGET_ACQUISITION // SIGNAL_LOCK",
-            "description": "Guidage. Décompilation Maqasid : Vibration d'énergie (H) alignée sur une Butée (D) par une Direction active (Y). Acquisition active de la cible et maintien de l'alignement selon le protocole Root.",
+            "description": "Guidage. Acquisition active de la cible et maintien de l'alignement selon le protocole Root.",
             "binary_pair": "D.-L-L"
         },
         {
@@ -1526,7 +1526,7 @@
             "root": "H.-J-R",
             "arabic": "حجر",
             "logic_function": "HARD_RESTRICTION // STONE_BLOCK",
-            "description": "Blocage structurel absolu. Décompilation Maqasid : Une Limite/Champ (H.) Agrégée (J) par une Force (R). Agrégation matérielle formant une barrière infranchissable (Pierre/Interdiction).",
+            "description": "Blocage structurel absolu. Agrégation matérielle formant une barrière infranchissable (Pierre/Interdiction).",
             "binary_pair": "F-T-H."
         },
         {
@@ -1547,7 +1547,7 @@
             "root": "H.-L-F",
             "arabic": "حلف",
             "logic_function": "PROTOCOL_OATH_LOCK // SWEAR",
-            "description": "Verrouillage d'engagement. Décompilation Maqasid : Une Friction/Limite (H.) traverse un Vecteur (L) pour un Déploiement final (F). C'est l'action de sceller une promesse par une force contraignante (Serment).",
+            "description": "Verrouillage d'engagement. Action de sceller une promesse par une force contraignante (Serment).",
             "binary_pair": "N-K-TH"
         },
         {
@@ -1967,7 +1967,7 @@
             "root": "K-D-H.",
             "arabic": "كدح",
             "logic_function": "HIGH_FRICTION_COMPUTE // TOIL",
-            "description": "Effort système extrême. Décompilation Maqasid : Contention (K) heurtant une Densité (D) générant de la Friction (H.). Puissance de calcul déployée sous très haute résistance matérielle (Labeur).",
+            "description": "Effort système extrême. Puissance de calcul déployée sous très haute résistance matérielle (Labeur).",
             "binary_pair": "R-W-H."
         },
         {
@@ -2218,7 +2218,7 @@
             "root": "KH-L-F",
             "arabic": "خلف",
             "logic_function": "BACKGROUND_PROCESS // SUCCESSOR",
-            "description": "Instance secondaire. Décompilation Maqasid : Détachement (KH) d'un Vecteur (L) pour un Déploiement/Fission (F). Instance qui prend le relais en arrière-plan (Khalifa) ou qui succède à un nœud parent.",
+            "description": "Instance secondaire. Instance qui prend le relais en arrière-plan (Khalifa) ou qui succède à un nœud parent.",
             "binary_pair": "A-M-M"
         },
         {
@@ -2379,7 +2379,7 @@
             "root": "L-A.-B",
             "arabic": "لعب",
             "logic_function": "NON_CRITICAL_SIMULATION // PLAY",
-            "description": "Processus sans impact Root. Décompilation Maqasid : Vecteur (L) issu d'une Source (A.) vers un Contenant fermé (B). Flux circulant en boucle fermée sans utilité de production système (Jeu/Divertissement).",
+            "description": "Processus sans impact Root. Flux circulant en boucle fermée sans utilité de production système (Jeu/Divertissement).",
             "binary_pair": "J-D-D"
         },
         {
@@ -2547,7 +2547,7 @@
             "root": "M-H.-S.",
             "arabic": "محص",
             "logic_function": "STRESS_PURIFICATION // REFINE",
-            "description": "Épuration des données. Décompilation Maqasid : Une Matrice (M) subit une Friction (H.) contre une Surface dure (S.). Passage sous haute pression pour détruire le bruit et extraire le code pur (Épreuve/Purification).",
+            "description": "Épuration des données. Passage sous haute pression pour détruire le bruit et extraire le code pur (Épreuve/Purification).",
             "binary_pair": "KH-L-T."
         },
         {
@@ -2603,14 +2603,14 @@
             "root": "M-L-A-K",
             "arabic": "ملأك",
             "logic_function": "SYSTEM_DAEMON // AUTOMATED_ENVOY",
-            "description": "Processus d'infrastructure automatisé (Ange). Décompilation Maqasid : Une Manifestation (M) vectorisée (L) d'une Impulsion (A) strictement contenue et formatée (K). Exécute des tâches en arrière-plan sans libre arbitre ni capacité de déviation (Pas de N-F-S).",
+            "description": "Processus d'infrastructure automatisé (Ange). Exécute des tâches en arrière-plan sans libre arbitre ni capacité de déviation (Pas de N-F-S).",
             "binary_pair": "B-SH-R"
         },
         {
             "root": "M-L-K",
             "arabic": "ملك",
             "logic_function": "AUTHORITY_ROOT // OWNERSHIP",
-            "description": "Autorité absolue. Décompilation Maqasid : La Matrice (M) déploie son Vecteur (L) pour imposer la Contention (K). Possession et contrôle total des permissions de lecture/écriture sur l'ensemble des partitions du système.",
+            "description": "Autorité absolue. Possession et contrôle total des permissions de lecture/écriture sur l'ensemble des partitions du système.",
             "binary_pair": "A.-B-D"
         },
         {
@@ -3590,7 +3590,7 @@
             "root": "R-W-H.",
             "arabic": "روح",
             "logic_function": "CORE_IMPULSE_CODE // SPIRIT_DAEMON",
-            "description": "Code moteur d'animation. Décompilation Maqasid : Force motrice (R) Encapsulée (W) générant un Champ de vitalité (H.). C'est le signal d'origine qui donne vie et mouvement aux instances inertes.",
+            "description": "Code moteur d'animation. Signal d'origine qui donne vie et mouvement aux instances inertes.",
             "binary_pair": "J-S-D"
         },
         {
@@ -3723,7 +3723,7 @@
             "root": "S-F-H",
             "arabic": "سفه",
             "logic_function": "UNVERIFIED_FLUX // FOOLISH",
-            "description": "Exécution sans butée logique. Décompilation Maqasid : Un Flux (S) Déployé (F) dans le Vide vibratoire (H). Action dépourvue de densité ou de butée matérielle, donc inutile au noyau (Sottise/Légèreté).",
+            "description": "Exécution sans butée logique. Action dépourvue de densité ou de butée matérielle, donc inutile au noyau (Sottise/Légèreté).",
             "binary_pair": "A.-Q-L"
         },
         {
@@ -4444,7 +4444,7 @@
             "root": "T-R-F",
             "arabic": "ترف",
             "logic_function": "RESOURCE_DISSIPATION // DECADENCE",
-            "description": "Gaspillage d'actifs. Décompilation Maqasid : Une Séquence (T) soumise à une Force (R) menant à la Dissipation (F). Dépense séquentielle d'énergie vers le vide, sans rendement système (Luxe/Décadence).",
+            "description": "Gaspillage d'actifs. Dépense séquentielle d'énergie vers le vide, sans rendement système (Luxe/Décadence).",
             "binary_pair": "Z-K-W"
         },
         {
@@ -4857,7 +4857,7 @@
             "root": "W-Z-R",
             "arabic": "وزر",
             "logic_function": "LOAD_BEARING_NODE // BURDEN",
-            "description": "Dette technique ou surcharge. Décompilation Maqasid : Encapsulation (W) d'une force Concentrée (Z) qui pèse sur l'exécution (R). Un nœud ou un processus lourd portant la responsabilité ou le fardeau d'une tâche critique.",
+            "description": "Dette technique ou surcharge. Un nœud ou un processus lourd portant la responsabilité ou le fardeau d'une tâche critique.",
             "binary_pair": "KH-F-F"
         },
         {
@@ -4941,7 +4941,7 @@
             "root": "Z-H-Q",
             "arabic": "زهق",
             "logic_function": "SIGNAL_VANISH // NULLIFY",
-            "description": "Annulation d'un processus invalide. Décompilation Maqasid : Déviation (Z) d'une Vibration (H) jusqu'à l'Impact final (Q). Un signal déviant (faux) qui s'écrase contre les limites du système et disparaît.",
+            "description": "Annulation d'un processus invalide. Un signal déviant (faux) qui s'écrase contre les limites du système et disparaît.",
             "binary_pair": "TH-B-T"
         },
         {
