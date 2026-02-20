@@ -25,6 +25,13 @@
             "binary_pair": null
         },
         {
+            "root": "A-DH-Y",
+            "arabic": "أذي",
+            "logic_function": "SIGNAL_INTERFERENCE // NUISANCE",
+            "description": "Génération de signaux perturbateurs ou de micro-dommages altérant le fonctionnement nominal d'un processus sans le détruire totalement.",
+            "binary_pair": "N-F-A."
+        },
+        {
             "root": "A-F-K",
             "arabic": "أفك",
             "logic_function": "LOGIC_INVERSION // FAKE_DATA",
@@ -590,6 +597,13 @@
             "logic_function": "PRIVILEGE_ESCALATION // OVERRUN",
             "description": "Tentative de dépasser les droits alloués ou d'empiéter sur la partition d'autrui (Transgression).",
             "binary_pair": "A.-D-L"
+        },
+        {
+            "root": "B-H-T",
+            "arabic": "بهت",
+            "logic_function": "KERNEL_FREEZE // STUPOR",
+            "description": "Surcharge logique brutale entraînant un gel des processus. L'instance est incapable de compiler la donnée reçue (Stupeur/Confusion fatale).",
+            "binary_pair": null
         },
         {
             "root": "B-H.-R",
@@ -2439,6 +2453,13 @@
             "binary_pair": "N-H-R"
         },
         {
+            "root": "L-Y-T",
+            "arabic": "ليت",
+            "logic_function": "STATE_ROLLBACK_REQUEST // REGRET",
+            "description": "Requête vaine de restauration vers un état antérieur valide après la corruption définitive d'une instance (Regret/Souhait impossible).",
+            "binary_pair": null
+        },
+        {
             "root": "M-A-A",
             "arabic": "ماء",
             "logic_function": "DATA_FLUID // VECTOR",
@@ -2555,6 +2576,13 @@
             "arabic": "مرو",
             "logic_function": "HARDWARE_RESILIENCE_NODE",
             "description": "Point de contrôle mesurant la robustesse matérielle et la résistance thermique d'une instance.",
+            "binary_pair": null
+        },
+        {
+            "root": "M-S-S",
+            "arabic": "مسس",
+            "logic_function": "HAPTIC_INTERFACE // TOUCH_EVENT",
+            "description": "Contact direct ou événement d'interaction immédiate entre deux instances ou entre une instance et un flux (Toucher/Atteinte).",
             "binary_pair": null
         },
         {
@@ -3623,9 +3651,9 @@
         },
         {
             "root": "S-D-D",
-            "arabic": "سد",
-            "logic_function": "FIREWALL_BARRIER // BLOCK",
-            "description": "Obstacle physique ou logique bloquant un flux de données non-autorisé ou protégeant un segment.",
+            "arabic": "سدد",
+            "logic_function": "STRUCTURAL_ALIGNMENT // BARRIER",
+            "description": "Fermeture physique bloquant un flux déviant (Barrage), ou alignement parfait et strict d'une trajectoire sur la norme du système (Pertinence/Droiture).",
             "binary_pair": "F-T-H."
         },
         {
@@ -3890,8 +3918,8 @@
         {
             "root": "S-W-D",
             "arabic": "سود",
-            "logic_function": "STATE_ERROR_BLACK // SHUTDOWN",
-            "description": "État critique, éteint ou corrompu d'une partition système (Noir/Void).",
+            "logic_function": "ABSORBING_DOMINANCE // DATA_TARPIT",
+            "description": "Nœud de densité massive agissant comme une fosse de rétention (Tarpit). Il englue et emprisonne les processus (Maître/Souverain), centralisant l'autorité sans jamais relayer le trafic vers le Root. Visuellement, c'est l'absorption totale du signal (Noir).",
             "binary_pair": "B-Y-D."
         },
         {
@@ -4574,6 +4602,13 @@
             "binary_pair": null
         },
         {
+            "root": "W-A.-D",
+            "arabic": "وعد",
+            "logic_function": "SCHEDULED_PROMISE // CRON_TASK",
+            "description": "Tâche ou exécution programmée dans le registre temporel du système. Engagement absolu et inévitable du Root.",
+            "binary_pair": null
+        },
+        {
             "root": "W-D.-A",
             "arabic": "وضأ",
             "logic_function": "INPUT_SANITIZATION // CLEAN",
@@ -4817,6 +4852,13 @@
             "logic_function": "SYSTEM_CYCLE // EPOCH",
             "description": "Cycle temporel complet et délimité au sein de l'environnement d'exécution (Jour/Période).",
             "binary_pair": "L-Y-L"
+        },
+        {
+            "root": "Z-A.-M",
+            "arabic": "زعم",
+            "logic_function": "UNVERIFIED_POINTER // CLAIM",
+            "description": "Déclaration d'un pointeur ou d'une autorité non validée par le registre central. Assertion logique sans preuve (Prétention/Fausse croyance).",
+            "binary_pair": "Y-Q-N"
         },
         {
             "root": "Z-B-D",
