@@ -268,7 +268,13 @@ if mode == "VERSE INTERPRETER":
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        verse_input = st.text_area("SIGNAL INPUT (ARABIC)", height=150, placeholder="Ex: ...بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ...")
+        # Sécurité matérielle : Blocage strict à 1500 caractères (Frontend)
+        verse_input = st.text_area(
+            "SIGNAL INPUT (ARABIC)", 
+            height=150, 
+            max_chars=1500, 
+            placeholder="Ex: ...بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ..."
+        )
     
     with col2:
         st.info("ℹ️ Le système scannera le verset et injectera la base compressée en mémoire tampon pour optimiser le protocole et réduire la latence.")
