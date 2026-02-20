@@ -265,7 +265,7 @@ if mode == "MANIFESTO & GUIDE":
     
     col_text, col_stats = st.columns([2, 1])
     
-with col_text:
+    with col_text:
         st.markdown("""
         ### 🧬 LE CONCEPT (COHÉRENCE SYSTÉMIQUE ABSOLUE)
         Le système **VERITAS** transcende les outils de traduction classiques et les recueils d'exégèses. Il opère comme un moteur d'inférence conçu pour **décrypter l'architecture du texte coranique** (son "code source"). En s'appuyant sur la rigueur mathématique des racines (*Maqasid al-Huruf*), il établit une correspondance stricte avec la logique computationnelle et la théorie des systèmes. Cette méthode permet à l'intelligence artificielle d'appréhender le Message sacré à travers son propre paradigme, en lisant le texte avec des unités de langage purement logiques et fonctionnelles.
@@ -277,7 +277,7 @@ with col_text:
         **⚖️ SAUVEGARDE ÉPISTÉMOLOGIQUE (LIMITES DU SYSTÈME)**\n
         Il est fondamental de préciser que l'architecture VERITAS ne prétend en aucun cas détenir la vérité absolue ni épuiser l'infinité du texte coranique. Ce noyau demeure un modèle heuristique et une tentative humaine. Son unique ambition est de proposer une démarche rationnelle, méthodique et transparente pour se rapprocher au mieux de la pureté du code source originel. C'est un outil d'exploration conçu pour rendre la mécanique du Message accessible à l'intellect humain, avec humilité, sans jamais s'ériger en autorité définitive.
         """)
-        
+
     with col_stats:
         st.info("📊 **STATUT DE DÉVELOPPEMENT**")
         st.markdown(f"""
