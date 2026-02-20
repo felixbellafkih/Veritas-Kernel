@@ -1313,6 +1313,13 @@
             "binary_pair": "N-J-Y"
         },
         {
+            "root": "GH-R-R",
+            "arabic": "غرر",
+            "logic_function": "RECURSIVE_OBFUSCATION // HAZARD",
+            "description": "Danger par masquage. Décompilation Maqasid : Obfuscation (GH) soumise à une double Force de Répétition (R-R). Boucle récursive de données masquées créant une illusion fatale ou une tromperie (Tromper/Risque).",
+            "binary_pair": "S.-D-Q"
+        },
+        {
             "root": "GH-S-L-N",
             "arabic": "غسلن",
             "logic_function": "CORRUPTED_OUTPUT // RESIDUE",
@@ -1516,6 +1523,13 @@
             "binary_pair": null
         },
         {
+            "root": "H.-J-R",
+            "arabic": "حجر",
+            "logic_function": "HARD_RESTRICTION // STONE_BLOCK",
+            "description": "Blocage structurel absolu. Décompilation Maqasid : Une Limite/Champ (H.) Agrégée (J) par une Force (R). Agrégation matérielle formant une barrière infranchissable (Pierre/Interdiction).",
+            "binary_pair": "F-T-H."
+        },
+        {
             "root": "H.-J-Z",
             "arabic": "حجز",
             "logic_function": "PROCESS_ISOLATION // SANDBOX",
@@ -1528,6 +1542,13 @@
             "logic_function": "DECISION_LOGIC_UNIT // GATE",
             "description": "Exécution d'une instruction basée sur la résolution binaire d'une condition système.",
             "binary_pair": null
+        },
+        {
+            "root": "H.-L-F",
+            "arabic": "حلف",
+            "logic_function": "PROTOCOL_OATH_LOCK // SWEAR",
+            "description": "Verrouillage d'engagement. Décompilation Maqasid : Une Friction/Limite (H.) traverse un Vecteur (L) pour un Déploiement final (F). C'est l'action de sceller une promesse par une force contraignante (Serment).",
+            "binary_pair": "N-K-TH"
         },
         {
             "root": "H.-L-L",
@@ -1943,6 +1964,13 @@
             "binary_pair": "S.-GH-R"
         },
         {
+            "root": "K-D-H.",
+            "arabic": "كدح",
+            "logic_function": "HIGH_FRICTION_COMPUTE // TOIL",
+            "description": "Effort système extrême. Décompilation Maqasid : Contention (K) heurtant une Densité (D) générant de la Friction (H.). Puissance de calcul déployée sous très haute résistance matérielle (Labeur).",
+            "binary_pair": "R-W-H."
+        },
+        {
             "root": "K-DH-B",
             "arabic": "كذب",
             "logic_function": "BOOLEAN_FALSE // FALSIFICATION",
@@ -2348,6 +2376,13 @@
             "binary_pair": null
         },
         {
+            "root": "L-A.-B",
+            "arabic": "لعب",
+            "logic_function": "NON_CRITICAL_SIMULATION // PLAY",
+            "description": "Processus sans impact Root. Décompilation Maqasid : Vecteur (L) issu d'une Source (A.) vers un Contenant fermé (B). Flux circulant en boucle fermée sans utilité de production système (Jeu/Divertissement).",
+            "binary_pair": "J-D-D"
+        },
+        {
             "root": "L-A.-L",
             "arabic": "لؤل",
             "logic_function": "ENCAPSULATED_DATA_PEARL",
@@ -2507,6 +2542,13 @@
             "logic_function": "EFFICIENCY_DECAY // VALUE_ERASURE",
             "description": "Destruction progressive ou annulation du rendement d'un processus. Perte sèche de ressources.",
             "binary_pair": "B-R-K"
+        },
+        {
+            "root": "M-H.-S.",
+            "arabic": "محص",
+            "logic_function": "STRESS_PURIFICATION // REFINE",
+            "description": "Épuration des données. Décompilation Maqasid : Une Matrice (M) subit une Friction (H.) contre une Surface dure (S.). Passage sous haute pression pour détruire le bruit et extraire le code pur (Épreuve/Purification).",
+            "binary_pair": "KH-L-T."
         },
         {
             "root": "M-H.-W",
@@ -3678,6 +3720,13 @@
             "binary_pair": "A.-B-Q-R"
         },
         {
+            "root": "S-F-H",
+            "arabic": "سفه",
+            "logic_function": "UNVERIFIED_FLUX // FOOLISH",
+            "description": "Exécution sans butée logique. Décompilation Maqasid : Un Flux (S) Déployé (F) dans le Vide vibratoire (H). Action dépourvue de densité ou de butée matérielle, donc inutile au noyau (Sottise/Légèreté).",
+            "binary_pair": "A.-Q-L"
+        },
+        {
             "root": "S-F-K",
             "arabic": "سفك",
             "logic_function": "DATA_LEAKAGE // SPILL",
@@ -4392,6 +4441,13 @@
             "binary_pair": null
         },
         {
+            "root": "T-R-F",
+            "arabic": "ترف",
+            "logic_function": "RESOURCE_DISSIPATION // DECADENCE",
+            "description": "Gaspillage d'actifs. Décompilation Maqasid : Une Séquence (T) soumise à une Force (R) menant à la Dissipation (F). Dépense séquentielle d'énergie vers le vide, sans rendement système (Luxe/Décadence).",
+            "binary_pair": "Z-K-W"
+        },
+        {
             "root": "T-R-K",
             "arabic": "ترك",
             "logic_function": "PACKET_DROP // ABANDON",
@@ -4880,6 +4936,13 @@
             "logic_function": "HARDWARE_BLOCK // IRON",
             "description": "Unités de matériel brut utilisées pour renforcer massivement l'infrastructure physique.",
             "binary_pair": null
+        },
+        {
+            "root": "Z-H-Q",
+            "arabic": "زهق",
+            "logic_function": "SIGNAL_VANISH // NULLIFY",
+            "description": "Annulation d'un processus invalide. Décompilation Maqasid : Déviation (Z) d'une Vibration (H) jusqu'à l'Impact final (Q). Un signal déviant (faux) qui s'écrase contre les limites du système et disparaît.",
+            "binary_pair": "TH-B-T"
         },
         {
             "root": "Z-H-Z-H",
