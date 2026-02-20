@@ -5077,6 +5077,20 @@
             "logic_function": "PROBABILISTIC_INFERENCE // FUZZY",
             "description": "Traitement basé sur une probabilité ou une spéculation, non sur une certitude absolue.",
             "binary_pair": "Y-Q-N"
+        },
+        {
+            "root": "K-Y-F",
+            "arabic": "كيف",
+            "logic_function": "PROCESS_CONFIGURATION // MECHANISM_QUERY",
+            "description": "Identification des paramètres et protocoles spécifiques par lesquels un état est instancié.",
+            "binary_pair": null
+        },
+        {
+            "root": "S.-T.-H.",
+            "arabic": "سطح",
+            "logic_function": "INTERFACE_LEVELING // SURFACE_EXPANSION",
+            "description": "Action de neutraliser la complexité topographique pour créer une surface d'interaction fonctionnelle et accessible pour les instances.",
+            "binary_pair": null
         }
     ]
 }
