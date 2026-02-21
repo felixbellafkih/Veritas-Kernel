@@ -571,6 +571,13 @@
             "binary_pair": "A.-W-D"
         },
         {
+            "root": "B-D-A.",
+            "arabic": "بدأ",
+            "logic_function": "PROCESS_START // NEW_INSTANCE",
+            "description": "Initialisation d'une nouvelle instance ou d'un processus inédit dans le runtime.",
+            "binary_pair": "A.-W-D"
+        },
+        {
             "root": "B-D-L",
             "arabic": "بدل",
             "logic_function": "VARIABLE_SWAP // ALTERATION",
@@ -2139,13 +2146,6 @@
             "binary_pair": null
         },
         {
-            "root": "K-Y-F",
-            "arabic": "كيف",
-            "logic_function": "PROCESS_CONFIGURATION // MECHANISM_QUERY",
-            "description": "Identification des paramètres et protocoles spécifiques par lesquels un état est instancié.",
-            "binary_pair": null
-        },
-        {
             "root": "K-Y-L",
             "arabic": "كيل",
             "logic_function": "QUOTA_ALLOCATION // VOLUME",
@@ -2170,8 +2170,7 @@
             "root": "KH-D.-A.",
             "arabic": "خضع",
             "logic_function": "COMPELLED_SUBMISSION // CONSTRAINT",
-            "description": "État de soumission forcée par la pression structurelle du système ou une loi hard-codée.",
-            "binary_pair": null
+            "description": "État de soumission forcée par la pression structurelle du système ou une loi hard-codée."
         },
         {
             "root": "KH-D.-R",
@@ -2629,14 +2628,6 @@
             "binary_pair": null
         },
         {
-	    "root": "M-S-J-D",
-	    "arabic": "مسجد",
-        "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
-	    "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
-	    "binary_pair": null,
-	    "related_nodes": ["S-J-D"]
-	}
-        {
             "root": "M-S-S",
             "arabic": "مسس",
             "logic_function": "HAPTIC_INTERFACE // TOUCH_EVENT",
@@ -2650,7 +2641,7 @@
             "description": "Composant central générant le flux de données lumineuses au sein d'une structure de focalisation.",
             "binary_pair": null
         },
-	{
+        {
             "root": "M-SH-K-W",
             "arabic": "مشكاة",
             "logic_function": "SOURCE_CONTAINMENT_NICHE",
@@ -3001,13 +2992,6 @@
             "binary_pair": "B-D-L"
         },
         {
-            "root": "N-S-W",
-            "arabic": "نسو",
-            "logic_function": "LATENCY_STATE // BACKGROUND_INSTANCE",
-            "description": "Basculement hors du flux d'action immédiat. Désigne un état de latence, de report (ajournement) ou une instance opérant en arrière-plan (matrice de support/incubation) par opposition à l'unité de déploiement frontal.",
-            "binary_pair": "R-J-L // FRONT_PROCESS"
-        },
-        {
             "root": "N-S-Y",
             "arabic": "نسي",
             "logic_function": "DATA_INDEX_LOSS // FORGET",
@@ -3276,8 +3260,9 @@
         {
             "root": "Q-S-W",
             "arabic": "قسو",
-            "logic_function": "MAXIMUM_DISTANCE_NODE // EXTREME_PERIMETER",
-            "description": "Le point géographique ou la coordonnée la plus éloignée sur un axe ou un plan donné (terrestre). N'implique aucune ascension verticale ou changement de dimension."
+            "logic_function": "CORE_RIGIDITY // HARDENED",
+            "description": "Durcissement excessif du noyau empêchant toute nouvelle écriture ou adaptation (Cœurs durs).",
+            "binary_pair": null
         },
         {
             "root": "Q-S-W-R",
@@ -3597,9 +3582,9 @@
         {
             "root": "R-W-D",
             "arabic": "رود",
-            "logic_function": "TARGETED_INTENT // SOLICITATION",
-            "description": "Vecteur de volonté orienté vers une cible. Émise par le Root : Intention absolue et préparation d'exécution (Will). Émise par un nœud subalterne sans privilèges : Sollicitation non-autorisée ou tentative d'intrusion.",
-            "binary_pair": "A-B-Y"
+            "logic_function": "UNAUTHORIZED_SOLICITATION",
+            "description": "Tentative de requête ou d'interaction avec un processus par un nœud dépourvu de droits d'accès.",
+            "binary_pair": null
         },
         {
             "root": "R-W-H.",
@@ -3703,7 +3688,7 @@
             "root": "S-B-Q",
             "arabic": "سبق",
             "logic_function": "RACE_CONDITION_PRIORITY",
-            "description": "Compétition entre processus pour l'accès aux resources. Tentative d'exécution prioritaire (Anticipation).",
+            "description": "Compétition entre processus pour l'accès aux ressources. Tentative d'exécution prioritaire (Anticipation).",
             "binary_pair": "A-KH-R"
         },
         {
@@ -3762,7 +3747,7 @@
             "description": "Déplacement massif de données ou de processus entre des clusters ou des environnements distants.",
             "binary_pair": null
         },
-        {
+                {
             "root": "S-GH-B",
             "arabic": "سغب",
             "logic_function": "ENERGY_STARVATION // HUNGER",
@@ -3777,13 +3762,21 @@
             "binary_pair": "H.-Q-Q"
         },
         {
+	    "root": "M-S-J-D",
+	    "arabic": "مسجد",
+ 	   "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
+	    "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
+	    "binary_pair": null,
+	    "related_nodes": ["S-J-D"]
+	},
+	{
 	    "root": "S-J-D",
 	    "arabic": "سجد",
-            "logic_function": "INPUT_ALIGNMENT // SIGNAL_RECEPTION",
+	    "logic_function": "INPUT_ALIGNMENT // SIGNAL_RECEPTION",
 	    "description": "État de mise en phase absolue d'un terminal s'alignant sur le flux (Amr) sans opposition.",
- 	   "binary_pair": "A-B-Y",
+	    "binary_pair": "A-B-Y",
 	    "related_nodes": ["M-S-J-D"]
-	}
+	},
         {
             "root": "S-J-L",
             "arabic": "سجل",
@@ -3941,9 +3934,9 @@
         {
             "root": "S-R-Y",
             "arabic": "سري",
-            "logic_function": "STEALTH_ROUTING // ENCRYPTED_TUNNELING",
-            "description": "Transfert physique (non métaphysique) furtif ou évacuation d'une instance (humaine ou non humaine) via une voie protégé. Processus d'exfiltration ou de transfert caché, migration secrète.",
-            "binary_pair": null
+            "logic_function": "SECURE_TUNNELING // NIGHT_MOVE",
+            "description": "Transfert de données crypté et instantané via un canal protégé (Voyage nocturne).",
+            "binary_pair": "J-H-R"
         },
         {
             "root": "S-T-K-B-R",
@@ -3964,13 +3957,6 @@
             "arabic": "استوى",
             "logic_function": "STATE_EQUILIBRIUM // STABILIZE",
             "description": "Atteinte d'un état de stabilité parfaite ou d'alignement sur un plan horizontal.",
-            "binary_pair": null
-        },
-        {
-            "root": "S-T.-H.",
-            "arabic": "سطح",
-            "logic_function": "INTERFACE_LEVELING // SURFACE_EXPANSION",
-            "description": "Action de neutraliser la complexité topographique pour créer une surface d'interaction fonctionnelle et accessible pour les instances.",
             "binary_pair": null
         },
         {
