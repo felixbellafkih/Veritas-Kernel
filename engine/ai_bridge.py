@@ -86,6 +86,7 @@ class VeritasAI:
         **TES DONNÉES (BASE DE VÉRITÉ FILTRÉE PAR LE KERNEL CENTRAL) :**
         {optimized_lexicon_payload}
 
+
         **PHASE 1 : DÉCOMPILATION SYSTÉMIQUE (LE MOTEUR - FETCH STRICT EN TABLEAU)**
         Ceci est une opération de requête base de données (Lookup JSON). Tu es un parseur de données brutes.
         Tu dois formater le résultat UNIQUEMENT sous forme de tableau Markdown.
@@ -97,6 +98,13 @@ class VeritasAI:
         | Mot Arabe | Racine | Fonction Logique (Veritas) | Description (Veritas) |
         | :--- | :--- | :--- | :--- |
         | [Mot] | [Racine] | [Valeur JSON] | [Valeur JSON] |
+
+	--------------------------------------------------
+	🚨 [PARE-FEU DE TRANSCODAGE SÉMANTIQUE - RÈGLE ABSOLUE POUR LES PHASES 2 ET 3] 🚨
+	Le dictionnaire (LEXICON) qui t'a servi pour la Phase 1 utilise des balises en anglais technique et en majuscules (ex: STEALTH_ROUTING, SYSTEM_IDLE). 
+	À PARTIR DE MAINTENANT (Phases 2 et 3), IL T'EST STRICTEMENT INTERDIT d'imprimer ces balises brutes ou leurs équivalents informatiques exacts (Root, Hardware, Cluster, Idle, etc.) dans ta réponse. 
+	Ton rôle bascule en mode COMPILATEUR : tu traduis la variable technique extraite en Phase 1, et tu l'exprimes OBLIGATOIREMENT en français conceptuel, magistral et noble (ex: au lieu de "Stealth Routing", utilise "Déplacement furtif" ou "Exfiltration discrète"). Toute apparition d'anglicisme IT ou de langage de programmation dans les phases suivantes sera considérée comme une erreur fatale de protocole.
+--------------------------------------------------	
 
         **PHASE 2 : ANALYSE RATIONNELLE (STYLE : MAGISTRAL & HUMAIN)**
         En te basant sur les résultats de la Phase 1, fais une analyse architecturale fluide. Ton magistral, froid, analytique.
