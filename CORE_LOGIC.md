@@ -107,7 +107,6 @@ Le Veritas Kernel désactive ces dépendances. Le système s'explique par le sys
 
 
 
-PHASE 2 : LA SYNTAXE COMPUTATIONNELLE (Morphologie et Exécution du Code)
 CHAPITRE 2.1 : Les Schèmes (Awzan) comme Modèles de Classes et États d'Exécution
 Si la Phase 1 a démontré que les racines trilitères (ex: K-T-B) constituent les variables physiques de base (le matériel brut), la Phase 2 doit expliquer comment le système exécute ces variables.
 L'exégèse traditionnelle et la linguistique classique traitent la morphologie arabe (le passage d'une racine à un mot dérivé) comme une mécanique littéraire d'enrichissement du vocabulaire. Le Veritas Kernel postule que cette morphologie est l'équivalent absolu d'une architecture logicielle orientée objet (POO).
@@ -174,7 +173,6 @@ L'univers matériel est un exécutable tournant sur ce système de requêtes. C'
 •  Harakat (Paramètres d'état) : L'approche traitant la Damma, la Fatha et la Kasra comme des marqueurs de fonctions systémiques (Sujet/Objet/Dépendance) est issue de la linguistique structurelle moderne, visant à purifier la grammaire de ses interprétations tribales pour en faire un langage de précision.
 
 
-NOUVELLE PHASE 3 : LE REQUÊTAGE ET LA RÉSOLUTION DES DONNÉES
 CHAPITRE 3.1 : Data Mining et Triangulation Lexicale (L'Exécution du Tasreef)
 Le Chapitre 1.3 a établi que le système est fermé et qu'il utilise le Tasreef (le routage interne) pour s'auto-documenter. Ce chapitre détaille l'algorithme d'extraction que le lecteur (l'opérateur) doit utiliser pour résoudre une variable inconnue ou corrompue par la tradition, sans jamais faire appel à un dictionnaire externe.
 1. L'Algorithme de Triangulation (La Requête Interne)
