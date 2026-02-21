@@ -3941,7 +3941,7 @@
 	    "root": "S-R-Y",
 	    "arabic": "سري",
 	    "logic_function": "STEALTH_ROUTING // ENCRYPTED_TUNNELING",
-	    "description": "Transfert furtif ou encapsulation d'une instance/information via un canal protégé. Processus d'exfiltration ou de déplacement indétectable par le réseau public, garantissant l'intégrité du signal de sa source à sa destination.",
+	    "description": "Transfert furtif ou évacuation d'une instance (humaine ou non humaine) via un canal protégé. Processus d'exfiltration ou de déplacement indétectable par le réseau public, migration secrète.",
 	    "binary_pair": null
 	},
         {
