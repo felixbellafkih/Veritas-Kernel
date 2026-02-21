@@ -13,6 +13,15 @@ language: [ar, fr, en]
 
 ---
 
+## 📚 THÈSE : L'ARCHITECTURE DU SYSTÈME
+La documentation complète du projet Veritas Kernel est disponible ici :
+
+* [**Phase 1 : Le Bootstrap**](./thesis/PHASE_1.md) - Fondations logiques et Matrice Lexicale.
+* [**Phase 2 : La Syntaxe Computationnelle**](./thesis/PHASE_2.md) - POO et Contrôle de Flux.
+* [**Phase 3 : Le Requêtage**](./thesis/PHASE_3.md) - Triangulation et Tasreef.
+
+---
+
 ## 1. Philosophie du Noyau : Ghayr dhi 'iwaj (Non-Tordu)
 
 Le projet repose sur une cohérence systémique absolue. La logique est ici traitée comme une signature d'intégrité.
