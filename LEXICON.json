@@ -2629,13 +2629,13 @@
             "binary_pair": null
         },
         {
-            "root": "M-S-J-D",
+	    "root": "M-S-J-D",
 	    "arabic": "مسجد",
-            "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
-            "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
-	    "binary_pair": null
-            "related_nodes": "S-J-D"
-	},
+        "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
+	    "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
+	    "binary_pair": null,
+	    "related_nodes": ["S-J-D"]
+	}
         {
             "root": "M-S-S",
             "arabic": "مسس",
@@ -3777,13 +3777,13 @@
             "binary_pair": "H.-Q-Q"
         },
         {
-            "root": "S-J-D",
-            "arabic": "سجد",
-            "logic_function": "INPUT_READY // DATA_RECEPTION",
-            "description": "État de réceptivité absolue d'un terminal prêt à accepter le flux (Amr) sans filtrage ni opposition. [POINTEUR DÉRIVÉ : voir nœud M-S-J-D pour le périmètre d'exécution].",
-            "binary_pair": "A-B-Y"
-            "related_node": "M-S-J-D"
-        },
+	    "root": "S-J-D",
+	    "arabic": "سجد",
+            "logic_function": "INPUT_ALIGNMENT // SIGNAL_RECEPTION",
+	    "description": "État de mise en phase absolue d'un terminal s'alignant sur le flux (Amr) sans opposition.",
+ 	   "binary_pair": "A-B-Y",
+	    "related_nodes": ["M-S-J-D"]
+	}
         {
             "root": "S-J-L",
             "arabic": "سجل",
