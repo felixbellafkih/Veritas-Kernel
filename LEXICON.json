@@ -2995,9 +2995,9 @@
         {
             "root": "N-S-W",
             "arabic": "نسو",
-            "logic_function": "LATENT_MATRIX // COMPLEMENTARY_RETENTION",
-            "description": "N (Latence/Encapsulation) + S (Flux interne) + W (Liaison/Continuité). Vecteur de polarité réceptive. Instance conçue pour stocker, incuber et lier les flux d'informations afin d'assurer la réplication et la continuité du système. S'oppose fonctionnellement au processeur actif motrice.",
-            "binary_pair": "R-J-L"
+            "logic_function": "LATENCY_STATE // BACKGROUND_INSTANCE",
+            "description": "Basculement hors du flux d'action immédiat. Désigne un état de latence, de report (ajournement) ou une instance opérant en arrière-plan (matrice de support/incubation) par opposition à l'unité de déploiement frontal.",
+            "binary_pair": "R-J-L // FRONT_PROCESS"
         },
         {
             "root": "N-S-Y",
