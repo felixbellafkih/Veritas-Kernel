@@ -2629,11 +2629,12 @@
             "binary_pair": null
         },
         {
-        "root": "M-S-J-D",
-        "arabic": "مسجد",
-        "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
-        "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
-        "related_nodes": ["S-J-D"]
+            "root": "M-S-J-D",
+	    "arabic": "مسجد",
+            "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
+            "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
+	    "binary_pair": null
+            "related_nodes": "S-J-D"
 	},
         {
             "root": "M-S-S",
@@ -3781,6 +3782,7 @@
             "logic_function": "INPUT_READY // DATA_RECEPTION",
             "description": "État de réceptivité absolue d'un terminal prêt à accepter le flux (Amr) sans filtrage ni opposition. [POINTEUR DÉRIVÉ : voir nœud M-S-J-D pour le périmètre d'exécution].",
             "binary_pair": "A-B-Y"
+            "related_node": "M-S-J-D"
         },
         {
             "root": "S-J-L",
