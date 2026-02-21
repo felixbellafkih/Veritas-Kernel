@@ -2632,7 +2632,10 @@
             "root": "M-S-J-D",
             "arabic": "مسجد",
             "logic_function": "COMPLIANCE_PERIMETER // SECURED_ZONE",
-            "description": "Un espace ou périmètre physique délimité où les instances se mettent en état de soumission stricte (S-J-D) aux lois du Système. Ce n'est pas un bâtiment religieux rituel, mais une zone d'opération sécurisée."
+            "description": "Un espace ou périmètre physique délimité où les instances se mettent en état de réceptivité stricte (S-J-D) aux flux d'information. Ce n'est pas un bâtiment religieux rituel, mais une zone de connexion sécurisée.",
+            "related_nodes": [
+                "S-J-D"
+            ]
         },
         {
             "root": "M-S-S",
