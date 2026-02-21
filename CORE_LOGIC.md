@@ -104,11 +104,8 @@ Le Veritas Kernel désactive ces dépendances. Le système s'explique par le sys
 
 
 
-
-
-
 CHAPITRE 2.1 : Les Schèmes (Awzan) comme Modèles de Classes et États d'Exécution
-Si la Phase 1 a démontré que les racines trilitères (ex: K-T-B) constituent les variables physiques de base (le matériel brut), la Phase 2 doit expliquer comment le système exécute ces variables.
+Si le chapitre 1 a démontré que les racines trilitères (ex: K-T-B) constituent les variables physiques de base (le matériel brut), le chapitre 2 doit expliquer comment le système exécute ces variables.
 L'exégèse traditionnelle et la linguistique classique traitent la morphologie arabe (le passage d'une racine à un mot dérivé) comme une mécanique littéraire d'enrichissement du vocabulaire. Le Veritas Kernel postule que cette morphologie est l'équivalent absolu d'une architecture logicielle orientée objet (POO).
 1. La Racine comme "Classe Abstraite"
 En programmation orientée objet, une "Classe Abstraite" (Abstract Class) est un plan de construction qui contient des propriétés fondamentales, mais qui ne peut pas être exécutée (instanciée) telle quelle dans la mémoire du système. La racine trilitère arabe fonctionne exactement ainsi. La racine pure K-T-B (Capacité + Séquence + Interface) est une équation latente. Pour qu'elle s'exécute dans la réalité matérielle (le texte), elle doit être coulée dans un moule morphologique : un schème (Wazn).
@@ -139,13 +136,6 @@ L'innovation majeure de la syntaxe computationnelle réside dans le traitement d
 •	L'État Cible - Nasb (Fatha / َ ) : Assigne le statut de Nœud Cible (Output/Target). L'objet portant la Fatha est celui qui subit la modification d'état ou vers lequel le flux de l'exécuteur est dirigé.
 •	L'État de Dépendance - Jarr (Kasra / ِ ) : Assigne le statut de Nœud Imbriqué (Nested Object) ou de dépendance. L'objet est encapsulé ou subordonné à l'environnement d'une autre variable (comme un fichier dans un dossier).
 •	L'État d'Interruption - Jazm (Sukun / ْ ) : L'absence de voyelle n'est pas un silence, c'est l'instruction système HALT ou la terminaison nulle (Null Termination). Elle fige la variable, arrête le flux cinétique sur ce nœud pour clôturer un processus ou préparer une boucle conditionnelle.
-
-
-
-
-
-
-
 
 CHAPITRE 2.3 : Les Boucles Conditionnelles et l'Arborescence (In, Idha, Law)
 Dans l'exégèse classique, l'utilisation de telle ou telle particule conditionnelle est souvent perçue comme un choix de style littéraire. En ingénierie logicielle, intervertir un IF (Conditionnel), un ON_EVENT (Déclencheur) et un TRY/CATCH (Simulation) provoque un crash immédiat de l'architecture. Le code source coranique utilise trois portes logiques fondamentales pour gérer ses embranchements causaux.
