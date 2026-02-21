@@ -250,7 +250,7 @@ with st.sidebar:
     # MENU UNIQUE
     mode = st.radio(
         "MODULES", 
-        ["MANIFESTO & GUIDE", "VERSE INTERPRETER", "LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW"]
+        ["MANIFESTO & GUIDE", "THESIS DOCUMENTATION", "VERSE INTERPRETER", "LOGIC SEQUENCER", "ROOT SCANNER", "GOVERNANCE MAP", "MATRIX VIEW"]
     )
     
     st.markdown("---")
@@ -329,6 +329,34 @@ if mode == "MANIFESTO & GUIDE":
     | **STANDARD (SANS POINT)** | أ / ه / س / ت / ز / د | **A / H / S / T / Z / D** | Transcodage direct. |
     | **CONVENTIONNELLE** | ش / خ / ذ | **SH / KH / DH** | Combinaison binaire. |
     """)
+
+
+# ==============================================================================
+# MODULE: THESIS DOCUMENTATION
+# ==============================================================================
+elif mode == "THESIS DOCUMENTATION":
+    st.title("🧠 VERITAS KERNEL : L'Architecture")
+    st.markdown("Documentation complète du noyau théorique et de la méthode d'ingénierie inverse.")
+    st.markdown("---")
+    
+    # Création de 3 onglets pour naviguer facilement sans surcharger la page
+    tab1, tab2, tab3 = st.tabs(["Phase 1 : Le Bootstrap", "Phase 2 : La Syntaxe", "Phase 3 : Le Requêtage"])
+    
+    # Fonction sécurisée de lecture
+    def lire_fichier_markdown(chemin):
+        try:
+            with open(chemin, 'r', encoding='utf-8') as f:
+                return f.read()
+        except FileNotFoundError:
+            return f"<div style='color: #ff4b4b; padding: 20px; border: 1px solid #ff4b4b;'>⚠️ ERREUR : Le fichier <b>{chemin}</b> est introuvable. Vérifiez qu'il est bien placé dans le dossier 'thesis/'.</div>"
+
+    # Affichage dans les onglets avec le rendu HTML autorisé
+    with tab1:
+        st.markdown(lire_fichier_markdown("thesis/PHASE_1.md"), unsafe_allow_html=True)
+    with tab2:
+        st.markdown(lire_fichier_markdown("thesis/PHASE_2.md"), unsafe_allow_html=True)
+    with tab3:
+        st.markdown(lire_fichier_markdown("thesis/PHASE_3.md"), unsafe_allow_html=True)
 
 # ==============================================================================
 # MODULE: VERSE INTERPRETER (INTELLIGENCE ARTIFICIELLE)
