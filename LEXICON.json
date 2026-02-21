@@ -3786,7 +3786,10 @@
             "arabic": "سجد",
             "logic_function": "INPUT_READY // DATA_RECEPTION",
             "description": "État de réceptivité absolue d'un terminal prêt à accepter le flux (Amr) sans filtrage ni opposition.",
-            "binary_pair": "A-B-Y"
+            "binary_pair": "A-B-Y",
+            "related_nodes": [
+                "M-S-J-D"
+            ]
         },
         {
             "root": "S-J-L",
