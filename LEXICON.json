@@ -3935,7 +3935,7 @@
             "root": "S-R-Y",
             "arabic": "سري",
             "logic_function": "SECURE_TRAVELING // NIGHT_MOVE",
-            "description": "Exfiltration cachée via un canal protégé (Ex : Voyage nocturne d'un point A vers un point B).",
+            "description": "Processus d'évacuation du sujet d'un point A vers un point B.",
             "binary_pair": null
         },
         {
