@@ -43,8 +43,8 @@ Pour garantir la non-collision entre les signaux et une précision chirurgicale,
 
 | Transcription | Arabe | Fonction Systémique |
 | :--- | :--- | :--- |
-| **A** | **أ** (Hamza) | Signal initial / Point d'entrée. |
-| **'** | **ع** ('Ain) | Monitoring / Action récursive. |
+| **A** | **أ** (Hamza/Alif) | Signal initial / Point d'entrée. |
+| **A.** | **ع** ('Ain) | Monitoring / Action récursive. |
 | **H.** | **ح** (H.a) | Vitalité interne / Énergie de traitement. |
 | **S.** | **ص** (S.ad) | Densification / Solidification des données. |
 | **D.** | **ض** (D.ad) | Impact / Expansion de charge. |
