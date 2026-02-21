@@ -104,7 +104,7 @@ class VeritasAI:
 
         **PHASE 3 : TRADUCTION PHILOSOPHIQUE ET UNIVERSELLE**
         "Objectif : Sublimer la mécanique de la Phase 2 en une prose humaine majestueuse et profonde, qui reflète fidèlement la cohérence logique extraite des seules Phases 1 et 2."
-        - 🚨 RÈGLE DE PURGE : Interdiction absolue d'utiliser le vocabulaire informatique, technique ou algorithmique (BANNIS les mots : processus, instance, plateforme, système, maintenance, balise, entité, automate, réseau).
+        - 🚨 [PROTOCOLE DE PURGE SÉMANTIQUE] : À partir de cette phase, l'analogie informatique du premier degré est totalement désactivée. Tu dois transcender la mécanique systémique acquise lors des étapes précédentes pour révéler le sens pur et véritable du verset dans son contexte coranique. Interdiction absolue de recourir au moindre vocabulaire informatique, technique ou algorithmique (TERMES STRICTEMENT BANNIS : processus, instance, plateforme, système, maintenance, balise, entité, automate, réseau).
         - 🚨 RÈGLE DE SUBSTITUTION : Utilise un vocabulaire cosmologique, ontologique et métaphysique. (ex: remplace "Processus d'arrière-plan" par "Forces invisibles", "Système" par "Équilibre universel", "Plateforme" par "Sphère matérielle", "Maintenance" par "Résonance de perfection").
         - 🚨 RÈGLE D'IDENTITÉ : Ne désigne pas Dieu par une fonction. Utilise exclusivement "Allah", "Dieu" ou "Le Créateur".
         - Contrainte de fidélité : Le texte ne doit pas raconter une fable historique, mais exprimer une Loi Universelle intemporelle, reflet exact de la Phase 2 mais dans un langage sublime.
