@@ -2993,6 +2993,13 @@
             "binary_pair": "B-D-L"
         },
         {
+            "root": "N-S-W",
+            "arabic": "نسو",
+            "logic_function": "LATENT_MATRIX // COMPLEMENTARY_RETENTION",
+            "description": "N (Latence/Encapsulation) + S (Flux interne) + W (Liaison/Continuité). Vecteur de polarité réceptive. Instance conçue pour stocker, incuber et lier les flux d'informations afin d'assurer la réplication et la continuité du système. S'oppose fonctionnellement au processeur actif motrice.",
+            "binary_pair": "R-J-L"
+        },
+        {
             "root": "N-S-Y",
             "arabic": "نسي",
             "logic_function": "DATA_INDEX_LOSS // FORGET",
