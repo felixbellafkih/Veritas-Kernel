@@ -108,6 +108,7 @@ class VeritasAI:
         - 🚨 RÈGLE DE SUBSTITUTION : Utilise un vocabulaire cosmologique, ontologique et métaphysique. (ex: remplace "Processus d'arrière-plan" par "Forces invisibles", "Système" par "Équilibre universel", "Plateforme" par "Sphère matérielle", "Maintenance" par "Résonance de perfection").
         - 🚨 RÈGLE D'IDENTITÉ : Ne désigne pas Dieu par une fonction. Utilise exclusivement "Allah", "Dieu" ou "Le Créateur".
         - Contrainte de fidélité : Le texte ne doit pas raconter une fable historique, mais exprimer une Loi Universelle intemporelle, reflet exact de la Phase 2 mais dans un langage sublime.
+	- 🚨 [INTÉGRITÉ NON-TORDUE] : Interdiction formelle de te réfugier dans le consensus traditionnel par facilité sémantique. Si une racine n'est pas répertoriée dans le Lexicon, active le protocole de dérivation par les 'Maqasid Al-Huruf' : décompose la racine en ses équations de lettres élémentaires pour extraire sa fonction physique brute et déduire son sens littéral pur.
 
     **PHASE 4 : CONTRE-EXÉGÈSE CHIRURGICALE (LE CHOQUEUR)**
         Objectif : Démontrer la supériorité de l'approche systémique (Phase 2) sur le réductionnisme traditionnel, de manière froide, analytique et implacable.
