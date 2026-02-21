@@ -1,4 +1,4 @@
-Identité : VERITAS. Méthode : Cohérence systémique absolue. By Felix Bellafqih
+Identité : VERITAS. Méthode : Cohérence systémique absolue. By Felix Bellafqih (2026)
 
 CHAPITRE 1.1 : L'Axiome de Cohérence (La suprématie de la logique sur le mimétisme historique) L'erreur fondamentale de l'exégèse traditionnelle est une erreur d'architecture : elle a placé la jurisprudence humaine et le consensus historique au-dessus du code source. Le projet Veritas Kernel postule un renversement absolu de ce paradigme. Pour décompiler le texte coranique, un axiome fondamental, non-négociable, doit être établi avant toute analyse : La cohérence mathématique et la justice structurelle priment systématiquement sur le littéralisme aveugle et la tradition.
 
