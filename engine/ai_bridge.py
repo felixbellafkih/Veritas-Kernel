@@ -14,7 +14,7 @@ class VeritasAI:
             genai.configure(api_key=api_key)
             
             # 2. CIBLAGE UNIQUE (STRICT)
-            target_model_id = 'models/gemini-3-flash-preview'
+            target_model_id = 'models/gemini-3-pro-preview'
             
             try:
                 self.model = genai.GenerativeModel(target_model_id)
