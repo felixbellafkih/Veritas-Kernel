@@ -15,61 +15,33 @@ La Table d'Allocation Fondamentale (L'Alphabet Veritas) Pour exécuter une déco
 <div align="left" dir="ltr">
   
 Lettre (Système)	Fonction Système	Propriété Physique
-
 A (أ)	Initialisation	Point zéro / Source
-
 B (ب)	Interface	Conteneur / Enveloppe
-
 T (ت)	Trajectoire	Séquence / Vecteur temporel
-
 TH (ث)	Dispersion	Multiplicité / Expansion
-
 J (ج)	Agrégation	Centre de gravité / Assemblage
-
 H. (ح)	Limite	Compression / Friction
-
 KH (خ)	Extraction	Vide / Soustraction
-
 D (د)	Exécution	Poussée / Impulsion
-
 DH (ذ)	Fréquence	Oscillation / Vibration
-
 R (ر)	Routage	Flux continu / Boucle
-
 Z (ز)	Momentum	Séparation / Force centrifuge
-
 S (س)	Stream	Flux glissant / Transmission
-
 SH (ش)	Réseau	Déploiement / Arborescence
-
 S. (ص)	Résonance	Structure dure / Écho
-
 D. (ض)	Impact	Pression / Collision
-
 T. (ط)	Matrice	Encapsulation / Stratification
-
 Z. (ظ)	Projection	Superposition / Ombre
-
 A. (ع)	Core	Nœud central / Perception
-
 GH (غ)	Obfuscation	Couche cachée / Encryption
-
 F (ف)	Breakout	Ramification / Rupture
-
 Q (ق)	Output	Calibration / Mesure
-
 K (ك)	Volume	Capacité / Attribution
-
 L (ل)	Extension	Lien élastique / Continuité
-
 M (م)	Donnée	Matérialisation / Substance
-
 N (ن)	Mobilité	Énergie cinétique / Fluctuation
-
 H (ه)	Latence	Vide / Souffle
-
 W (و)	Liaison	Conjonction / Addition
-
 Y (ي)	Pointer	Appel système / Interaction
 
 </div>
