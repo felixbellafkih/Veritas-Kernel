@@ -79,4 +79,10 @@ Le noyau déploie le lexique sur 5 couches d'infrastructure :
 - **Intégrité Binaire :** 100% (Boucles binaires fermées).
 - **Masse Critique :** ~720 Racines calibrées.
 
-**PIXIE HALIMA TIKKI.**
+
+**Felix Bellafkih (2026)**
+
+---
+
+## ⚙️ Environnement Technique
+**Environnement de développement et de compilation :** Cette architecture a été structurée et compilée avec l'assistance linguistique et algorithmique de l'IA Gemini.
