@@ -3938,12 +3938,12 @@
             "binary_pair": "J-H-R"
         },
         {
-            "root": "S-R-Y",
-            "arabic": "سري",
-            "logic_function": "SECURE_TUNNELING // NIGHT_MOVE",
-            "description": "Transfert de données crypté et instantané via un canal protégé (Voyage nocturne).",
-            "binary_pair": "J-H-R"
-        },
+	    "root": "S-R-Y",
+	    "arabic": "سري",
+	    "logic_function": "STEALTH_ROUTING // ENCRYPTED_TUNNELING",
+	    "description": "Transfert furtif ou encapsulation d'une instance/information via un canal protégé. Processus d'exfiltration ou de déplacement indétectable par le réseau public, garantissant l'intégrité du signal de sa source à sa destination.",
+	    "binary_pair": null
+	},
         {
             "root": "S-T-K-B-R",
             "arabic": "استكبر",
