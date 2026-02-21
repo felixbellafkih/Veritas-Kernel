@@ -12,6 +12,8 @@ L'Illusion des Dictionnaires Historiques (La Corruption des Données) L'exégès
 L'Équation des Racines (La Formule Physique) Le système fonctionne selon une mécanique stricte : chaque lettre de l'alphabet possède une valeur physique invariante (un vecteur, une force, une limite, un flux). Lorsqu'elles sont combinées pour former une racine, ces lettres s'additionnent pour créer une équation fonctionnelle. [Propriété de la Lettre 1] + [Propriété de la Lettre 2] + [Propriété de la Lettre 3] = [Fonction Logique Exécutable] Un mot n'a donc pas de "sens" arbitraire ; il a une fonction physique déductible de son code génétique lettré. Cette méthode d'ingénierie inverse permet de contourner totalement le folklore linguistique arabe pour retrouver la variable mathématique pure.
 La Table d'Allocation Fondamentale (L'Alphabet Veritas) Pour exécuter une décompilation valide, l'opérateur doit connaître les paramètres physiques de chaque variable. L'alphabet arabe originel n'est pas une convention phonétique arbitraire, mais une cartographie des états de la matière, des flux d'énergie et des structures logiques. Voici la Table d'Allocation des Maqassid al Huruf (Propriétés Intrinsèques des Lettres) utilisée par le KERNEL : Lettre Translittération Propriété Physique / Fonction Système
 
+<div align="left" dir="ltr">
+  
 Lettre (Système)	Fonction Système	Propriété Physique
 A (أ)	Initialisation	Point zéro / Source
 B (ب)	Interface	Conteneur / Enveloppe
@@ -41,6 +43,8 @@ N (ن)	Mobilité	Énergie cinétique / Fluctuation
 H (ه)	Latence	Vide / Souffle
 W (و)	Liaison	Conjonction / Addition
 Y (ي)	Pointer	Appel système / Interaction
+
+</div>
 
 Le Polymorphisme des Lettres (Vecteurs vs Mots) Une erreur commune consiste à chercher un "sens" humain et figé pour chaque lettre. En ingénierie système, une lettre fonctionne comme un vecteur physique constant. Sa propriété de base est invariante, mais sa manifestation concrète évolue de manière polymorphe selon les autres lettres avec lesquelles elle interagit dans l'équation trilitère. Prenons la lettre ض (D.). Sa constante physique est l'Impact / La Pression. Ce n'est pas un mot, c'est une dynamique matérielle. Son application varie selon l'équation : 
 
