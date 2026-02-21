@@ -2629,6 +2629,12 @@
             "binary_pair": null
         },
         {
+            "root": "M-S-J-D",
+            "arabic": "مسجد",
+            "logic_function": "COMPLIANCE_PERIMETER // SECURED_ZONE",
+            "description": "Un espace ou périmètre physique délimité où les instances se mettent en état de soumission stricte (S-J-D) aux lois du Système. Ce n'est pas un bâtiment religieux rituel, mais une zone d'opération sécurisée."
+        },
+        {
             "root": "M-S-S",
             "arabic": "مسس",
             "logic_function": "HAPTIC_INTERFACE // TOUCH_EVENT",
@@ -3268,9 +3274,8 @@
         {
             "root": "Q-S-W",
             "arabic": "قسو",
-            "logic_function": "CORE_RIGIDITY // HARDENED",
-            "description": "Durcissement excessif du noyau empêchant toute nouvelle écriture ou adaptation (Cœurs durs).",
-            "binary_pair": null
+            "logic_function": "MAXIMUM_DISTANCE_NODE // EXTREME_PERIMETER",
+            "description": "Le point géographique ou la coordonnée la plus éloignée sur un axe ou un plan donné (terrestre). N'implique aucune ascension verticale ou changement de dimension."
         },
         {
             "root": "Q-S-W-R",
@@ -3938,12 +3943,12 @@
             "binary_pair": "J-H-R"
         },
         {
-	    "root": "S-R-Y",
-	    "arabic": "سري",
-	    "logic_function": "STEALTH_ROUTING // ENCRYPTED_TUNNELING",
-	    "description": "Transfert physique (non métaphysique) furtif ou évacuation d'une instance (humaine ou non humaine) via une voie protégé. Processus d'exfiltration ou de transfert caché, migration secrète.",
-	    "binary_pair": null
-	},
+            "root": "S-R-Y",
+            "arabic": "سري",
+            "logic_function": "STEALTH_ROUTING // ENCRYPTED_TUNNELING",
+            "description": "Transfert physique (non métaphysique) furtif ou évacuation d'une instance (humaine ou non humaine) via une voie protégé. Processus d'exfiltration ou de transfert caché, migration secrète.",
+            "binary_pair": null
+        },
         {
             "root": "S-T-K-B-R",
             "arabic": "استكبر",
