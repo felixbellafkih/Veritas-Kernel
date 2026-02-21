@@ -2629,14 +2629,12 @@
             "binary_pair": null
         },
         {
-            "root": "M-S-J-D",
-            "arabic": "مسجد",
-            "logic_function": "COMPLIANCE_PERIMETER // SECURED_ZONE",
-            "description": "Un espace ou périmètre physique délimité où les instances se mettent en état de réceptivité stricte (S-J-D) aux flux d'information. Ce n'est pas un bâtiment religieux rituel, mais une zone de connexion sécurisée.",
-            "related_nodes": [
-                "S-J-D"
-            ]
-        },
+        "root": "M-S-J-D",
+        "arabic": "مسجد",
+        "logic_function": "ALIGNMENT_PERIMETER // SECURED_ZONE",
+        "description": "Périmètre physique délimité où les instances maintiennent leur alignement (S-J-D) sur les flux d'information de l'Autorité.",
+        "related_nodes": ["S-J-D"]
+	},
         {
             "root": "M-S-S",
             "arabic": "مسس",
@@ -2651,7 +2649,7 @@
             "description": "Composant central générant le flux de données lumineuses au sein d'une structure de focalisation.",
             "binary_pair": null
         },
-        {
+	{
             "root": "M-SH-K-W",
             "arabic": "مشكاة",
             "logic_function": "SOURCE_CONTAINMENT_NICHE",
@@ -3764,13 +3762,6 @@
             "binary_pair": null
         },
         {
-            "root": "S-G-D",
-            "arabic": "سجد",
-            "logic_function": "HARDWARE_SUBMISSION // ALIGN",
-            "description": "Alignement total des ressources matérielles sur les exigences du noyau (Prosternation système).",
-            "binary_pair": "A-B-Y"
-        },
-        {
             "root": "S-GH-B",
             "arabic": "سغب",
             "logic_function": "ENERGY_STARVATION // HUNGER",
@@ -3788,11 +3779,8 @@
             "root": "S-J-D",
             "arabic": "سجد",
             "logic_function": "INPUT_READY // DATA_RECEPTION",
-            "description": "État de réceptivité absolue d'un terminal prêt à accepter le flux (Amr) sans filtrage ni opposition.",
-            "binary_pair": "A-B-Y",
-            "related_nodes": [
-                "M-S-J-D"
-            ]
+            "description": "État de réceptivité absolue d'un terminal prêt à accepter le flux (Amr) sans filtrage ni opposition. [POINTEUR DÉRIVÉ : voir nœud M-S-J-D pour le périmètre d'exécution].",
+            "binary_pair": "A-B-Y"
         },
         {
             "root": "S-J-L",
