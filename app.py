@@ -66,25 +66,28 @@ class MorphologyEngine:
         if len(parts) == 3:
             return latin_str
             
-        # RÉDUCTION DES GABARITS À 4 LETTRES (Ex: Fa'eel, Fa'laan, Maf'al)
+        # RÉDUCTION 4 LETTRES (Ex: N-A.-B-D, R-H.-Y-M)
         if len(parts) == 4:
-            # Ex: R-H.-Y-M -> Enlève le Y (Infixe de constance)
-            if parts[2] == 'Y' or parts[2] == 'W':
-                return f"{parts[0]}-{parts[1]}-{parts[3]}"
-            # Ex: R-H.-M-N -> Enlève le N (Suffixe d'amplitude)
-            elif parts[3] == 'N':
-                return f"{parts[0]}-{parts[1]}-{parts[2]}"
-            # Ex: M-K-T-B -> Enlève le M (Préfixe d'outil/lieu)
-            elif parts[0] == 'M':
-                return f"{parts[1]}-{parts[2]}-{parts[3]}"
-            # Ex: Y-A.-L-M -> Enlève la lettre de conjugaison (Y, T, A, N)
-            elif parts[0] in ['Y', 'T', 'A', 'N']: 
-                return f"{parts[1]}-{parts[2]}-{parts[3]}"
+            if parts[2] in ['Y', 'W']: return f"{parts[0]}-{parts[1]}-{parts[3]}"
+            elif parts[3] == 'N': return f"{parts[0]}-{parts[1]}-{parts[2]}"
+            elif parts[0] == 'M': return f"{parts[1]}-{parts[2]}-{parts[3]}"
+            elif parts[0] in ['Y', 'T', 'A', 'N']: return f"{parts[1]}-{parts[2]}-{parts[3]}"
                 
-        # RÉDUCTION DES GABARITS À 5 LETTRES (Ex: Maf'ool = M-K-T-W-B)
+        # RÉDUCTION 5 LETTRES (Ex: M-K-T-W-B)
         if len(parts) == 5:
-            if parts[0] == 'M' and parts[3] == 'W':
-                return f"{parts[1]}-{parts[2]}-{parts[4]}"
+            if parts[0] == 'M' and parts[3] == 'W': return f"{parts[1]}-{parts[2]}-{parts[4]}"
+            if parts[3] == 'A' and parts[4] == 'N': return f"{parts[0]}-{parts[1]}-{parts[2]}"
+
+        # RÉDUCTION 6 LETTRES (Forme X) - Ex: N-S-T-A.-Y-N (نستعين)
+        if len(parts) == 6:
+            # Détection du bloc de requête (A/N/Y/T + S + T)
+            if parts[0] in ['A', 'N', 'Y', 'T'] and parts[1] == 'S' and parts[2] == 'T':
+                r1 = parts[3]
+                # RETRO-INGÉNIERIE: Les racines creuses (Ajwaf) voient leur 'W' muter en 'Y'.
+                # On force la restauration mathématique de la constante W pour la DB (A.-W-N).
+                r2 = 'W' if parts[4] == 'Y' else parts[4] 
+                r3 = parts[5]
+                return f"{r1}-{r2}-{r3}"
                 
         return latin_str
 
