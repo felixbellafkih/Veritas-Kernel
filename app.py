@@ -1,3 +1,4 @@
+import re
 import json
 import streamlit as st
 import graphviz
@@ -7,78 +8,84 @@ from core.config import config
 from export.manager import ExportManager
 from engine.ai_bridge import VeritasAI  # Import du Pont IA
 
+
 # ==============================================================================
-# 1. MOTEUR MORPHOLOGIQUE (SYSTEME DE DÉTECTION DES FORMES)
+# 1. MOTEUR MORPHOLOGIQUE (TRANSLITTÉRATEUR & DÉTECTION DES FORMES)
 # ==============================================================================
 class MorphologyEngine:
     def __init__(self):
+        # Matrice de translittération stricte Veritas
+        self.veritas_trans_matrix = {
+            'ا':'A', 'أ':'A', 'إ':'A', 'آ':'A', 'ء':'A', 'ٱ':'A', 'ى':'Y',
+            'ب':'B', 'ت':'T', 'ث':'TH', 'ج':'J',
+            'ح':'H.', 'خ':'KH', 'د':'D', 'ذ':'DH',
+            'ر':'R', 'ز':'Z', 'س':'S', 'ش':'SH',
+            'ص':'S.', 'ض':'D.', 'ط':'T.', 'ظ':'Z.',
+            'ع':'A.', 'غ':'GH', 'ف':'F', 'ق':'Q',
+            'ك':'K', 'ل':'L', 'م':'M', 'ن':'N',
+            'ه':'H', 'و':'W', 'ي':'Y', 'ة':'T'
+        }
+        
+        # Anciens patterns latins conservés pour la compatibilité
         self.patterns = [
-            # FORM X: I-S-T (Demande/Requête)
-            {
-                "prefix": "I-S-T-A.", 
-                "suffix": "",
-                "logic_mod": "REQUEST_PROTOCOL", 
-                "color": "#FF00FF", # Magenta
-                "desc_mod": "Tentative d'initialiser ou de demander la fonction : "
-            },
-            # FORM IV: A- (Causal/Transitif)
-            {
-                "prefix": "A-A.", 
-                "suffix": "",
-                "logic_mod": "CAUSAL_OUTPUT", 
-                "color": "#FFA500", # Orange
-                "desc_mod": "Exécution transitive vers l'extérieur de : "
-            },
-            # PLURIEL: -WN (Agents multiples)
-            {
-                "prefix": "", 
-                "suffix": "-W-N",
-                "logic_mod": "ACTIVE_CLUSTER", 
-                "color": "#00FFFF", # Cyan
-                "desc_mod": "Groupe d'instances exécutant la fonction : "
-            },
-             # MAF'UL: M- (Passif/Objet)
-            {
-                "prefix": "M-A.", 
-                "suffix": "",
-                "logic_mod": "PASSIVE_OBJECT", 
-                "color": "#FFFF00", # Jaune
-                "desc_mod": "Objet résultant du traitement : "
-            }
+            {"prefix": "I-S-T-A.", "suffix": "", "logic_mod": "REQUEST_PROTOCOL", "color": "#FF00FF", "desc_mod": "Tentative de demander la fonction : "},
+            {"prefix": "A-A.", "suffix": "", "logic_mod": "CAUSAL_OUTPUT", "color": "#FFA500", "desc_mod": "Exécution transitive vers l'extérieur : "},
+            {"prefix": "", "suffix": "-W-N", "logic_mod": "ACTIVE_CLUSTER", "color": "#00FFFF", "desc_mod": "Groupe d'instances exécutant la fonction : "},
+            {"prefix": "M-A.", "suffix": "", "logic_mod": "PASSIVE_OBJECT", "color": "#FFFF00", "desc_mod": "Objet résultant du traitement : "}
         ]
+
+    def clean_arabic(self, text: str) -> str:
+        """Nettoie les diacritiques et normalise la chaîne arabe."""
+        text = re.sub(r'[\u0617-\u061A\u064B-\u0652\u0670]', '', text) # Enlève Tashkeel + Alif Khanjareeya
+        
+        # Supprime l'article défini "Al-" (ال) en début de mot
+        if text.startswith('ال') or text.startswith('ٱل'):
+            text = text[2:]
+            
+        return text
+
+    def to_veritas_latin(self, arabic_text: str) -> str:
+        """Convertit l'arabe nettoyé en syntaxe latine (ex: ر ح م -> R-H.-M)."""
+        latin_chars = []
+        for char in arabic_text:
+            if char in self.veritas_trans_matrix:
+                latin_chars.append(self.veritas_trans_matrix[char])
+        return "-".join(latin_chars)
 
     def process(self, token):
         """
-        Analyse un token pour extraire la racine et le pattern.
-        Gère l'exception des racines courtes (ex: A-L-H).
+        Analyse un token hybride. S'il est en arabe, le traduit.
+        S'il est en latin, applique les filtres de préfixes.
         """
-        token = token.upper().strip()
+        # Détection si le mot contient de l'arabe
+        is_arabic = bool(re.search(r'[\u0600-\u06FF]', token))
         
+        if is_arabic:
+            clean_ar = self.clean_arabic(token)
+            translated_root = self.to_veritas_latin(clean_ar)
+            # Pour l'instant, on renvoie la translittération pure. 
+            # Le tasreef_engine s'occupera des états morphologiques.
+            return translated_root, None
+            
+        # --- BLOC DE COMPATIBILITÉ LATIN ---
+        token_upper = token.upper().strip()
         for p in self.patterns:
-            match_prefix = token.startswith(p["prefix"]) if p["prefix"] else True
-            match_suffix = token.endswith(p["suffix"]) if p["suffix"] else True
+            match_prefix = token_upper.startswith(p["prefix"]) if p["prefix"] else True
+            match_suffix = token_upper.endswith(p["suffix"]) if p["suffix"] else True
             
             if match_prefix and match_suffix:
-                # Calcul des indices de découpe
                 start = len(p["prefix"])
-                end = len(token) - len(p["suffix"])
-                potential_root = token[start:end]
-                
-                # NETTOYAGE CRITIQUE : 
-                # On enlève les tirets pour compter les vraies lettres.
-                # Cela empêche de couper A-L-H (qui deviendrait L-H, 2 lettres).
+                end = len(token_upper) - len(p["suffix"])
+                potential_root = token_upper[start:end]
                 clean_root_chars = potential_root.replace("-", "")
 
-                # SÉCURITÉ : On ne valide la coupe que s'il reste 3 lettres ou plus
                 if len(clean_root_chars) >= 3:
                     return potential_root.strip("-"), p
-        
-        # Si aucun pattern, on retourne le token brut
-        return token, None
+                    
+        return token_upper, None
 
 # Instanciation globale
 morpho = MorphologyEngine()
-
 
 # ==============================================================================
 # 2. CONFIGURATION STREAMLIT
