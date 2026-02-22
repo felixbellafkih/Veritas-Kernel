@@ -10,11 +10,11 @@ from engine.ai_bridge import VeritasAI  # Import du Pont IA
 
 
 # ==============================================================================
-# 1. MOTEUR MORPHOLOGIQUE (TRANSLITTÉRATEUR & DÉTECTION DES FORMES)
+# 1. MOTEUR MORPHOLOGIQUE (STEMMER & RÉSOLUTION DES CONSTANTES)
 # ==============================================================================
 class MorphologyEngine:
     def __init__(self):
-        # Matrice de translittération stricte Veritas
+        # Matrice de translittération stricte
         self.veritas_trans_matrix = {
             'ا':'A', 'أ':'A', 'إ':'A', 'آ':'A', 'ء':'A', 'ٱ':'A', 'ى':'Y',
             'ب':'B', 'ت':'T', 'ث':'TH', 'ج':'J',
@@ -26,62 +26,94 @@ class MorphologyEngine:
             'ه':'H', 'و':'W', 'ي':'Y', 'ة':'T'
         }
         
-        # Anciens patterns latins conservés pour la compatibilité
+        # TABLE DES CONSTANTES SYSTÉMIQUES (Anomalies morphologiques pures)
+        self.systemic_constants = {
+            'سم': 'S-M-W',     # Ism (Nom/Pointeur) - Racine amputée du Waw
+            'اسم': 'S-M-W',
+            'له': 'A-L-H',     # Allah - Après suppression de l'article Al-
+            'لله': 'A-L-H',    # Lillah (A-L-H)
+            'الله': 'A-L-H',   # Allah brut
+            'اله': 'A-L-H'
+        }
+        
+        # Patterns de repli (Compatibilité Latin)
         self.patterns = [
-            {"prefix": "I-S-T-A.", "suffix": "", "logic_mod": "REQUEST_PROTOCOL", "color": "#FF00FF", "desc_mod": "Tentative de demander la fonction : "},
-            {"prefix": "A-A.", "suffix": "", "logic_mod": "CAUSAL_OUTPUT", "color": "#FFA500", "desc_mod": "Exécution transitive vers l'extérieur : "},
-            {"prefix": "", "suffix": "-W-N", "logic_mod": "ACTIVE_CLUSTER", "color": "#00FFFF", "desc_mod": "Groupe d'instances exécutant la fonction : "},
-            {"prefix": "M-A.", "suffix": "", "logic_mod": "PASSIVE_OBJECT", "color": "#FFFF00", "desc_mod": "Objet résultant du traitement : "}
+            {"prefix": "I-S-T-A.", "suffix": "", "logic_mod": "REQUEST_PROTOCOL", "color": "#FF00FF"},
+            {"prefix": "A-A.", "suffix": "", "logic_mod": "CAUSAL_OUTPUT", "color": "#FFA500"},
+            {"prefix": "M-A.", "suffix": "", "logic_mod": "PASSIVE_OBJECT", "color": "#FFFF00"}
         ]
 
     def clean_arabic(self, text: str) -> str:
-        """Nettoie les diacritiques et normalise la chaîne arabe."""
-        text = re.sub(r'[\u0617-\u061A\u064B-\u0652\u0670]', '', text) # Enlève Tashkeel + Alif Khanjareeya
-        
-        # Supprime l'article défini "Al-" (ال) en début de mot
+        """Dépouille le texte source de son bruit (Tashkeel, Articles)."""
+        text = re.sub(r'[\u0617-\u061A\u064B-\u0652\u0670]', '', text)
         if text.startswith('ال') or text.startswith('ٱل'):
             text = text[2:]
-            
         return text
 
     def to_veritas_latin(self, arabic_text: str) -> str:
-        """Convertit l'arabe nettoyé en syntaxe latine (ex: ر ح م -> R-H.-M)."""
-        latin_chars = []
-        for char in arabic_text:
-            if char in self.veritas_trans_matrix:
-                latin_chars.append(self.veritas_trans_matrix[char])
+        """Convertit l'arabe en tableau de caractères Veritas."""
+        latin_chars = [self.veritas_trans_matrix[char] for char in arabic_text if char in self.veritas_trans_matrix]
         return "-".join(latin_chars)
 
+    def stem_latin_root(self, latin_str: str) -> str:
+        """
+        Algorithme de réduction trilitère (Ghayr dhi 'iwaj).
+        Ampute les modificateurs morphologiques pour isoler le noyau absolu.
+        """
+        parts = latin_str.split('-')
+        
+        # Si la racine est déjà trilitère, elle est pure.
+        if len(parts) == 3:
+            return latin_str
+            
+        # RÉDUCTION DES GABARITS À 4 LETTRES (Ex: Fa'eel, Fa'laan, Maf'al)
+        if len(parts) == 4:
+            # Ex: R-H.-Y-M -> Enlève le Y (Infixe de constance)
+            if parts[2] == 'Y' or parts[2] == 'W':
+                return f"{parts[0]}-{parts[1]}-{parts[3]}"
+            # Ex: R-H.-M-N -> Enlève le N (Suffixe d'amplitude)
+            elif parts[3] == 'N':
+                return f"{parts[0]}-{parts[1]}-{parts[2]}"
+            # Ex: M-K-T-B -> Enlève le M (Préfixe d'outil/lieu)
+            elif parts[0] == 'M':
+                return f"{parts[1]}-{parts[2]}-{parts[3]}"
+            # Ex: Y-A.-L-M -> Enlève la lettre de conjugaison (Y, T, A, N)
+            elif parts[0] in ['Y', 'T', 'A', 'N']: 
+                return f"{parts[1]}-{parts[2]}-{parts[3]}"
+                
+        # RÉDUCTION DES GABARITS À 5 LETTRES (Ex: Maf'ool = M-K-T-W-B)
+        if len(parts) == 5:
+            if parts[0] == 'M' and parts[3] == 'W':
+                return f"{parts[1]}-{parts[2]}-{parts[4]}"
+                
+        return latin_str
+
     def process(self, token):
-        """
-        Analyse un token hybride. S'il est en arabe, le traduit.
-        S'il est en latin, applique les filtres de préfixes.
-        """
-        # Détection si le mot contient de l'arabe
+        """Moteur d'inférence principal."""
         is_arabic = bool(re.search(r'[\u0600-\u06FF]', token))
         
         if is_arabic:
             clean_ar = self.clean_arabic(token)
-            translated_root = self.to_veritas_latin(clean_ar)
-            # Pour l'instant, on renvoie la translittération pure. 
-            # Le tasreef_engine s'occupera des états morphologiques.
-            return translated_root, None
             
-        # --- BLOC DE COMPATIBILITÉ LATIN ---
+            # 1. OVERRIDE : Résolution immédiate des anomalies connues (S-M-W, A-L-H)
+            if clean_ar in self.systemic_constants:
+                return self.systemic_constants[clean_ar], None
+                
+            # 2. TRANSLITTÉRATION : Conversion en code source
+            raw_latin = self.to_veritas_latin(clean_ar)
+            
+            # 3. STEMMING : Amputation vers la racine trilitère
+            pure_root = self.stem_latin_root(raw_latin)
+            
+            return pure_root, None
+            
+        # Bloc Latin pour la compatibilité avec l'ancien système manuel
         token_upper = token.upper().strip()
         for p in self.patterns:
-            match_prefix = token_upper.startswith(p["prefix"]) if p["prefix"] else True
-            match_suffix = token_upper.endswith(p["suffix"]) if p["suffix"] else True
-            
-            if match_prefix and match_suffix:
-                start = len(p["prefix"])
-                end = len(token_upper) - len(p["suffix"])
-                potential_root = token_upper[start:end]
-                clean_root_chars = potential_root.replace("-", "")
-
+            if token_upper.startswith(p["prefix"]):
+                clean_root_chars = token_upper[len(p["prefix"]):].replace("-", "")
                 if len(clean_root_chars) >= 3:
-                    return potential_root.strip("-"), p
-                    
+                    return token_upper[len(p["prefix"]):].strip("-"), p
         return token_upper, None
 
 # Instanciation globale
