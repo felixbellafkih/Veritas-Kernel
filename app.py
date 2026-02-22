@@ -414,111 +414,110 @@ if mode == "VERSE INTERPRETER":
 # ==============================================================================
 elif mode == "LOGIC SEQUENCER":
     st.title("⛓️ LOGIC SEQUENCER")
-    st.markdown("Moteur de compilation syntaxique. Vérification stricte de l'intégrité causale (Ghayr dhi 'iwaj).")
+    st.markdown("Compilation syntaxique totale. Détection des opérateurs (Lexer), des états de surface (Tasreef) et extraction des racines systémiques.")
     
+    # Importation sécurisée des moteurs d'arrière-plan
+    try:
+        from engine import veritas_lexer
+        from engine import tasreef_engine
+    except ImportError:
+        st.error("SYSTEM FAULT: Les modules 'veritas_lexer.py' et/ou 'tasreef_engine.py' sont introuvables. Vérifiez leur présence dans le répertoire.")
+        st.stop()
+
     c1, c2 = st.columns([4, 1])
     with c1:
-        input_seq = st.text_input("ROOT SEQUENCE", "B-S-M A-L-H R-H.-M-N R-H.-Y-M")
+        input_seq = st.text_input("SOURCE SEQUENCE (ARABIC)", "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ")
     with c2:
         st.write("")
         st.write("")
-        run_btn = st.button("▶ EXECUTE SEQUENCE", type="primary", use_container_width=True)
+        run_btn = st.button("▶ COMPILE SEQUENCE", type="primary", use_container_width=True)
 
     if run_btn or input_seq:
-        tokens = input_seq.split()
-        if not tokens:
+        if not input_seq.strip():
             st.warning("SYSTEM FAULT: Sequence empty.")
             st.stop()
+            
+        # 1. ANALYSE LEXICALE (BACKGROUND)
+        lexed_tokens = veritas_lexer.lex_verse(input_seq)
         
         # Initialisation du Graphe Systémique
         graph = graphviz.Digraph()
         graph.attr(rankdir='LR', bgcolor='#0d1b2a', compound='true')
-        graph.attr('node', shape='box', style='filled, rounded', fontname='Segoe UI', margin='0.2')
+        graph.attr('node', fontname='Segoe UI', margin='0.2')
         graph.attr('edge', fontname='Consolas', fontsize='10', color='#888', penwidth='1.5')
 
         console_logs = []
         previous_node = None
         
-        # Traqueur d'intégrité systémique
-        system_status = "VALID"
-        active_rejections = set() # Stocke les binaires rejetés pour détecter les contradictions
-        
         st.markdown("### SYSTEM EXECUTION LOG")
         log_container = st.empty()
         
-        for i, token in enumerate(tokens):
-            extracted_root, morph_data = morpho.process(token)
-            data = repo.find_root(extracted_root)
-            
+        # 2. TRAITEMENT DE LA MATRICE LEXICALE
+        for i, item in enumerate(lexed_tokens):
             node_id = f"node_{i}"
             
-            if data:
-                base_func = data.get('logic_function', 'UNDEFINED').split("//")[0].strip()
-                binary = data.get('binary_pair', 'N/A')
+            if item["type"] == "OPERATOR":
+                op_tag = item["tag"]
+                op_arabic = item["arabic"]
                 
-                # 1. VÉRIFICATION D'INTÉGRITÉ (CONTRADICTION BINAIRE)
-                is_conflict = extracted_root in active_rejections
-                if is_conflict:
-                    system_status = "FATAL ERROR: LOGICAL CONTRADICTION"
-                    console_logs.append(f"<span style='color:#ff0000;'>[FATAL] Contradiction détectée : {extracted_root} a été précédemment rejeté par le système.</span>")
-                    node_color = "#ff0000"
-                    fill_color = "#4a0000"
-                else:
-                    # 2. APPLICATION DES MODIFICATEURS MORPHOLOGIQUES (WRAPPERS)
-                    if morph_data:
-                        logic_mod = morph_data.get('logic_mod', 'MODIFIER')
-                        node_color = morph_data.get('color', '#00ff41')
-                        fill_color = "#2a2a2a"
-                        label = f"<{token}<BR/><FONT POINT-SIZE='9' COLOR='#aaaaaa'>{logic_mod}</FONT><BR/><FONT POINT-SIZE='10'>{base_func}</FONT>>"
-                        console_logs.append(f"[EXEC] Wrap morphologique <b>{logic_mod}</b> appliqué sur <b>{extracted_root}</b>.")
-                    else:
-                        node_color = "#00ff41"
-                        fill_color = "#1b263b"
-                        label = f"<{token}<BR/><FONT POINT-SIZE='10'>{base_func}</FONT>>"
-                        console_logs.append(f"[EXEC] Racine <b>{extracted_root}</b> instanciée. Fonction : {base_func}.")
-
-                # Enregistrement des rejets pour les itérations futures (Règles strictes)
-                if binary and binary != "N/A":
-                    if "/" in binary:
-                        for op in binary.split("/"):
-                            active_rejections.add(op.strip())
-                    else:
-                        active_rejections.add(binary.strip())
-                    console_logs.append(f"       ↳ Verrouillage binaire : {binary} est désormais interdit dans cette séquence.")
-
-                # Création du nœud
-                penwidth = '3.0' if morph_data else '1.0'
-                if is_conflict:
-                    graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#ffffff', penwidth='3.0', style='filled, bold')
-                else:
-                    graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#e0e1dd', penwidth=penwidth)
-
-                # 3. CHAÎNAGE CAUSAL DYNAMIQUE
+                # Nœud Opérateur (Forme géométrique distincte)
+                label = f"<{op_arabic}<BR/><FONT POINT-SIZE='9' COLOR='#ffd700'>{op_tag}</FONT>>"
+                graph.node(node_id, label=label, shape='circle', style='filled', fillcolor='#415a77', color='#ffd700', fontcolor='#ffffff')
+                
+                console_logs.append(f"[LEXER] Opérateur : {op_arabic} -> {op_tag}")
+                
                 if previous_node:
-                    edge_color = '#ff0000' if is_conflict else '#e0e1dd'
-                    edge_label = ' CONTRADICTS ' if is_conflict else ' yields '
-                    graph.edge(previous_node, node_id, color=edge_color, label=edge_label, fontcolor=edge_color)
-                
+                    graph.edge(previous_node, node_id, color='#ffd700', style='dashed')
                 previous_node = node_id
+                
+            elif item["type"] == "VARIABLE":
+                raw_word = item["arabic"]
+                
+                # Analyse de l'état (Tasreef)
+                tasreef_data = tasreef_engine.analyze_pattern(raw_word, raw_word)
+                quantifiers = tasreef_engine.extract_quantifiers(raw_word)
+                
+                t_tag = tasreef_data["tag"]
+                t_logic = tasreef_data["logic_mod"]
+                
+                # Tentative d'extraction brute pour la recherche DB
+                # Note: Dans une version future, un extracteur de racine pur remplacera raw_word
+                # Ici, on passe le mot brut au repo, ou on applique ton morpho s'il gère l'arabe
+                extracted_root, morph_data = morpho.process(raw_word) 
+                data = repo.find_root(extracted_root) # Ou repo.find_root(raw_word) selon ta DB
+                
+                if data:
+                    base_func = data.get('logic_function', 'UNDEFINED').split("//")[0].strip()
+                    root_disp = data.get('root', extracted_root)
+                    
+                    label = f"<{raw_word}<BR/><FONT POINT-SIZE='11' COLOR='#00ff41'>{root_disp}</FONT><BR/><FONT POINT-SIZE='9' COLOR='#aaaaaa'>{t_logic}</FONT><BR/><FONT POINT-SIZE='10'>{base_func}</FONT>>"
+                    graph.node(node_id, label=label, shape='box', style='filled, rounded', fillcolor='#1b263b', color='#00ff41', fontcolor='#e0e1dd', penwidth='2.0')
+                    
+                    console_logs.append(f"[SYSTEM] Variable : {raw_word} -> Racine [{root_disp}] | État : {t_logic}")
+                else:
+                    label = f"<{raw_word}<BR/><FONT POINT-SIZE='9' COLOR='#ff9e9e'>UNMAPPED ROOT</FONT><BR/><FONT POINT-SIZE='9' COLOR='#aaaaaa'>{t_logic}</FONT>>"
+                    graph.node(node_id, label=label, shape='box', style='filled, rounded', fillcolor='#3a0000', color='#ff0000', fontcolor='#ff9e9e')
+                    console_logs.append(f"<span style='color:#ffaa00;'>[WARNING] Variable : {raw_word} -> Racine inconnue en base. État estimé : {t_logic}</span>")
 
-            else:
-                # Gestion des racines inconnues
-                graph.node(node_id, label=f"{token}\n(UNMAPPED)", color='#ffaa00', fillcolor='#3a2a00')
-                console_logs.append(f"<span style='color:#ffaa00;'>[WARNING] Racine {extracted_root} absente de la base de données. Bypass.</span>")
+                # Traitement des quantificateurs (Pluriel/Duel)
+                if quantifiers:
+                    q_labels = " + ".join([q["logic_mod"] for q in quantifiers])
+                    console_logs.append(f"       ↳ Modificateur de quantité détecté : {q_labels}")
+
                 if previous_node:
-                    graph.edge(previous_node, node_id, color='#ffaa00', style='dashed')
+                    graph.edge(previous_node, node_id, color='#e0e1dd')
                 previous_node = node_id
 
         # Rendu des logs dynamiques
-        log_html = "<div class='console-log' style='font-family: monospace; background: #0d1b2a; padding: 15px; border-radius: 5px; color: #00ff41;'>"
-        log_html += f"<div style='color: {'#00ff41' if system_status == 'VALID' else '#ff0000'}; font-weight: bold; margin-bottom: 10px;'>[STATUS] {system_status}</div>"
+        log_html = "<div class='console-log' style='font-family: monospace; background: #0d1b2a; padding: 15px; border-radius: 5px; color: #00ff41; height: 200px; overflow-y: auto;'>"
         log_html += "<br>".join([f"<div>> {l}</div>" for l in console_logs])
         log_html += "</div>"
         log_container.markdown(log_html, unsafe_allow_html=True)
 
         # Rendu du Graphe Causal
-        st.markdown("### CAUSAL GRAPH")
+        st.markdown("### CAUSAL SYSTEM GRAPH")
         st.graphviz_chart(graph, use_container_width=True)
+
 # ==============================================================================
 # MODULE: ROOT SCANNER
 # ==============================================================================
