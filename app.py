@@ -410,11 +410,11 @@ if mode == "VERSE INTERPRETER":
             st.warning("AWAITING SIGNAL...")
 
 # ==============================================================================
-# MODULE: LOGIC SEQUENCER (AVEC MORPHOLOGIE)
+# MODULE: LOGIC SEQUENCER (MOTEUR DE COMPILATION CAUSALE)
 # ==============================================================================
 elif mode == "LOGIC SEQUENCER":
     st.title("⛓️ LOGIC SEQUENCER")
-    st.markdown("Construct causal chains. Supports Morphological Wrappers (IST-, A-, M-).")
+    st.markdown("Moteur de compilation syntaxique. Vérification stricte de l'intégrité causale (Ghayr dhi 'iwaj).")
     
     c1, c2 = st.columns([4, 1])
     with c1:
@@ -422,95 +422,103 @@ elif mode == "LOGIC SEQUENCER":
     with c2:
         st.write("")
         st.write("")
-        run_btn = st.button("▶ EXECUTE", type="primary", use_container_width=True)
+        run_btn = st.button("▶ EXECUTE SEQUENCE", type="primary", use_container_width=True)
 
     if run_btn or input_seq:
         tokens = input_seq.split()
+        if not tokens:
+            st.warning("SYSTEM FAULT: Sequence empty.")
+            st.stop()
         
+        # Initialisation du Graphe Systémique
         graph = graphviz.Digraph()
-        graph.attr(rankdir='LR', bgcolor='#0d1b2a')
-        graph.attr('node', shape='box', style='filled', fontname='Segoe UI', margin='0.2')
-        graph.attr('edge', fontname='Consolas', fontsize='10', color='#888')
+        graph.attr(rankdir='LR', bgcolor='#0d1b2a', compound='true')
+        graph.attr('node', shape='box', style='filled, rounded', fontname='Segoe UI', margin='0.2')
+        graph.attr('edge', fontname='Consolas', fontsize='10', color='#888', penwidth='1.5')
 
         console_logs = []
         previous_node = None
         
-        if not tokens:
-            st.warning("Sequence empty.")
-            st.stop()
-            
-        cols = st.columns(len(tokens))
+        # Traqueur d'intégrité systémique
+        system_status = "VALID"
+        active_rejections = set() # Stocke les binaires rejetés pour détecter les contradictions
+        
+        st.markdown("### SYSTEM EXECUTION LOG")
+        log_container = st.empty()
         
         for i, token in enumerate(tokens):
             extracted_root, morph_data = morpho.process(token)
             data = repo.find_root(extracted_root)
             
+            node_id = f"node_{i}"
+            
             if data:
-                base_func = data['logic_function'].split("//")[0].strip()
-                arabic = data['arabic']
+                base_func = data.get('logic_function', 'UNDEFINED').split("//")[0].strip()
                 binary = data.get('binary_pair', 'N/A')
-                description_short = data['description'][:60] + "..."
                 
-                if morph_data:
-                    final_func = f"{morph_data['logic_mod']} \n>> {base_func}"
-                    node_color = morph_data['color']
-                    fill_color = "#2a2a2a"
-                    label = f"<{token}<BR/><FONT POINT-SIZE='9'>{final_func}</FONT>>"
-                    console_logs.append(f"[MORPHO] Wrapper <b>{morph_data['logic_mod']}</b> applied on <b>{extracted_root}</b>")
+                # 1. VÉRIFICATION D'INTÉGRITÉ (CONTRADICTION BINAIRE)
+                is_conflict = extracted_root in active_rejections
+                if is_conflict:
+                    system_status = "FATAL ERROR: LOGICAL CONTRADICTION"
+                    console_logs.append(f"<span style='color:#ff0000;'>[FATAL] Contradiction détectée : {extracted_root} a été précédemment rejeté par le système.</span>")
+                    node_color = "#ff0000"
+                    fill_color = "#4a0000"
                 else:
-                    final_func = base_func
-                    node_color = "#00ff41"
-                    fill_color = "#1b263b"
-                    label = f"<{token}<BR/><FONT POINT-SIZE='10'>{final_func}</FONT>>"
-                    console_logs.append(f"[ROOT] Loaded <b>{extracted_root}</b>")
-
-                node_id = f"node_{i}"
-                penwidth = '2.0' if morph_data else '1.0'
-                graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#e0e1dd', penwidth=penwidth)
-                
-                if binary and binary != "N/A":
-                    ghost_id = f"ghost_{i}"
-                    graph.node(ghost_id, label=f"NOT {binary}", color='#772222', fontcolor='#ff9e9e', style='dashed, filled', fillcolor='#2a0a0a', fontsize='9')
-                    with graph.subgraph() as s:
-                        s.attr(rank='same')
-                        s.node(node_id)
-                        s.node(ghost_id)
-                        s.edge(node_id, ghost_id, style='invis')
-
-                if previous_node:
-                    graph.edge(previous_node, node_id, color='#e0e1dd')
-                previous_node = node_id
-                
-                with cols[i]:
-                    border_color = morph_data['color'] if morph_data else "#00ff41"
-                    morph_html = ""
+                    # 2. APPLICATION DES MODIFICATEURS MORPHOLOGIQUES (WRAPPERS)
                     if morph_data:
-                        morph_html = f"<div style='margin-top:5px;'><span class='morph-tag' style='background:{border_color};'>{morph_data['logic_mod']}</span></div>"
-                    
-                    morph_desc_text = morph_data['desc_mod'] if morph_data else "Fonction native : "
+                        logic_mod = morph_data.get('logic_mod', 'MODIFIER')
+                        node_color = morph_data.get('color', '#00ff41')
+                        fill_color = "#2a2a2a"
+                        label = f"<{token}<BR/><FONT POINT-SIZE='9' COLOR='#aaaaaa'>{logic_mod}</FONT><BR/><FONT POINT-SIZE='10'>{base_func}</FONT>>"
+                        console_logs.append(f"[EXEC] Wrap morphologique <b>{logic_mod}</b> appliqué sur <b>{extracted_root}</b>.")
+                    else:
+                        node_color = "#00ff41"
+                        fill_color = "#1b263b"
+                        label = f"<{token}<BR/><FONT POINT-SIZE='10'>{base_func}</FONT>>"
+                        console_logs.append(f"[EXEC] Racine <b>{extracted_root}</b> instanciée. Fonction : {base_func}.")
 
-                    html_card = f"""<div class='metric-card' style='border-top: 3px solid {border_color};'>
-<div style='color:#e0e1dd; font-weight:bold; font-size:18px;'>{token}</div>
-<div style='color:#ffd700; font-size:24px; direction:rtl;'>{arabic}</div>
-{morph_html}
-<div style='font-size:12px; color:#b0c4de; margin-top:5px;'>
-{morph_desc_text}<br>
-<i>{description_short}</i>
-</div>
-<div style='font-size:11px; color:#ff9e9e; margin-top:8px; border-top:1px solid #415a77; padding-top:4px;'>
-⛔ REJECTS: {binary}
-</div>
-</div>"""
-                    st.markdown(html_card, unsafe_allow_html=True)
+                # Enregistrement des rejets pour les itérations futures (Règles strictes)
+                if binary and binary != "N/A":
+                    if "/" in binary:
+                        for op in binary.split("/"):
+                            active_rejections.add(op.strip())
+                    else:
+                        active_rejections.add(binary.strip())
+                    console_logs.append(f"       ↳ Verrouillage binaire : {binary} est désormais interdit dans cette séquence.")
+
+                # Création du nœud
+                penwidth = '3.0' if morph_data else '1.0'
+                if is_conflict:
+                    graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#ffffff', penwidth='3.0', style='filled, bold')
+                else:
+                    graph.node(node_id, label=label, color=node_color, fillcolor=fill_color, fontcolor='#e0e1dd', penwidth=penwidth)
+
+                # 3. CHAÎNAGE CAUSAL DYNAMIQUE
+                if previous_node:
+                    edge_color = '#ff0000' if is_conflict else '#e0e1dd'
+                    edge_label = ' CONTRADICTS ' if is_conflict else ' yields '
+                    graph.edge(previous_node, node_id, color=edge_color, label=edge_label, fontcolor=edge_color)
+                
+                previous_node = node_id
+
             else:
-                graph.node(f"node_{i}", label=f"{token} (?)", color='#ff0000')
-                with cols[i]:
-                    st.error(f"{extracted_root} ?")
-                    st.caption(f"Raw: {token}")
+                # Gestion des racines inconnues
+                graph.node(node_id, label=f"{token}\n(UNMAPPED)", color='#ffaa00', fillcolor='#3a2a00')
+                console_logs.append(f"<span style='color:#ffaa00;'>[WARNING] Racine {extracted_root} absente de la base de données. Bypass.</span>")
+                if previous_node:
+                    graph.edge(previous_node, node_id, color='#ffaa00', style='dashed')
+                previous_node = node_id
 
+        # Rendu des logs dynamiques
+        log_html = "<div class='console-log' style='font-family: monospace; background: #0d1b2a; padding: 15px; border-radius: 5px; color: #00ff41;'>"
+        log_html += f"<div style='color: {'#00ff41' if system_status == 'VALID' else '#ff0000'}; font-weight: bold; margin-bottom: 10px;'>[STATUS] {system_status}</div>"
+        log_html += "<br>".join([f"<div>> {l}</div>" for l in console_logs])
+        log_html += "</div>"
+        log_container.markdown(log_html, unsafe_allow_html=True)
+
+        # Rendu du Graphe Causal
+        st.markdown("### CAUSAL GRAPH")
         st.graphviz_chart(graph, use_container_width=True)
-        st.markdown(f"<div class='console-log'>" + "<br>".join([f"<div>> {l}</div>" for l in console_logs]) + "</div>", unsafe_allow_html=True)
-
 # ==============================================================================
 # MODULE: ROOT SCANNER
 # ==============================================================================
