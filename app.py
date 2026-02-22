@@ -517,18 +517,39 @@ elif mode == "LOGIC SEQUENCER":
 elif mode == "ROOT SCANNER":
     st.title("🔍 ROOT SCANNER")
     
-    all_roots_list = df_roots['root'].tolist() if not df_roots.empty else []
+    # 1. Sécurisation de la liste des racines
+    all_roots_list = df_roots['root'].tolist() if (not df_roots.empty and 'root' in df_roots.columns) else []
     all_roots_list.sort()
     
+    # 2. Gestion stricte de l'état (Évite le blocage des inputs)
+    if "search_input" not in st.session_state:
+        st.session_state["search_input"] = ""
+    if "select_input" not in st.session_state:
+        st.session_state["select_input"] = ""
+
+    def sync_from_text():
+        st.session_state["select_input"] = ""
+
+    def sync_from_select():
+        st.session_state["search_input"] = st.session_state["select_input"]
+
     c1, c2 = st.columns([2, 1])
     with c1:
-        if "search_input" not in st.session_state:
-            st.session_state["search_input"] = ""
-        query_text = st.text_input("TYPE SIGNAL", key="search_input").strip()
+        query_text = st.text_input(
+            "TYPE SIGNAL", 
+            key="search_input", 
+            on_change=sync_from_text
+        ).strip()
     with c2:
-        selected_root = st.selectbox("OR SELECT FROM DB", [""] + all_roots_list)
+        selected_root = st.selectbox(
+            "OR SELECT FROM DB", 
+            [""] + all_roots_list, 
+            key="select_input", 
+            on_change=sync_from_select
+        )
     
-    final_query = selected_root if selected_root else query_text
+    # La variable maître est désormais unifiée
+    final_query = query_text if query_text else selected_root
     
     if final_query:
         result = repo.find_root(final_query)
@@ -537,78 +558,53 @@ elif mode == "ROOT SCANNER":
             col_main, col_detail = st.columns([1, 2])
             
             with col_main:
+                # 3. Accès sécurisé aux données (Prévention des KeyError)
+                arabic_disp = result.get('arabic', 'N/A')
+                root_disp = result.get('root', 'UNKNOWN')
+                logic_disp = result.get('logic_function', 'UNDEFINED')
+                
                 st.markdown(f"""<div class='metric-card'>
-<div class='arabic-display'>{result['arabic']}</div>
-<div class='root-title'>{result['root']}</div>
+<div class='arabic-display'>{arabic_disp}</div>
+<div class='root-title'>{root_disp}</div>
 <div style='margin-top:15px;'>
-<span class='logic-func'>{result['logic_function']}</span>
+<span class='logic-func'>{logic_disp}</span>
 </div>
 </div>""", unsafe_allow_html=True)
                 
-                if result.get('binary_pair') and result['binary_pair'] != "N/A":
+                binary_pair = result.get('binary_pair')
+                if binary_pair and binary_pair != "N/A":
                     st.caption("BINARY SWITCH")
-                    raw_pair = result['binary_pair']
-                    if "/" in raw_pair:
-                        for op in raw_pair.split("/"):
-                            st.button(f"⇄ {op.strip()}", key=f"btn_{op}", on_click=update_search, args=(op.strip(),), use_container_width=True)
+                    if "/" in binary_pair:
+                        for op in binary_pair.split("/"):
+                            clean_op = op.strip()
+                            # Clé sécurisée
+                            st.button(f"⇄ {clean_op}", key=f"btn_split_{clean_op}", on_click=update_search, args=(clean_op,), use_container_width=True)
                     else:
-                        st.button(f"⇄ {raw_pair}", on_click=update_search, args=(raw_pair,), use_container_width=True)
+                        # 4. Ajout de la clé manquante
+                        st.button(f"⇄ {binary_pair}", key=f"btn_single_{binary_pair}", on_click=update_search, args=(binary_pair,), use_container_width=True)
             
             with col_detail:
                 st.markdown("#### SYSTEM DEFINITION")
-                st.info(result['description'])
+                st.info(result.get('description', 'No definition found in system.'))
                 
                 st.markdown("#### ACTIONS")
-                if config['modules']['enable_export']:
+                if config.get('modules', {}).get('enable_export', False):
+                    # 5. Sécurisation de la sérialisation JSON
+                    import json
                     json_data = exporter.generate_json(result)
-                    st.download_button("📥 EXPORT JSON PACKET", json_data, f"{result['root']}.json", "application/json", use_container_width=True)
-
-# ==============================================================================
-# MODULE: GOVERNANCE MAP (ADMIN/DAEMON RESTORED)
-# ==============================================================================
-elif mode == "GOVERNANCE MAP":
-    st.title("👑 GOVERNANCE TOPOLOGY")
-    
-    gov_code = """
-    digraph G {
-        bgcolor="#0d1b2a"
-        rankdir=TB
-        
-        node [style=filled, fontname="Segoe UI", shape=box, fontcolor=white, color="#444", fillcolor="#1b263b"]
-        edge [color="#888", fontname="Consolas", fontsize=10, fontcolor="#b0c4de"]
-        
-        ROOT [label="ROOT (ALLAH)\\n[Source of Command]", color="#FFD700", fontcolor="black", fillcolor="#FFD700", shape=doubleoctagon, height=1.2]
-        
-        subgraph cluster_admins {
-            label = "ZONE: SYS_ADMINS (R-K-A.)"; 
-            style=dashed; 
-            color="#00ff41"; 
-            fontcolor="#00ff41"
-            
-            KHALIFA [label="INSAN (User)\\n<TYPE: ADMIN>\\n[Voluntary Sync]", color="#00ff41", fontcolor="black", fillcolor="#00ff41"]
-            DJINN [label="JINN (Hidden)\\n<TYPE: ADMIN>\\n[Rational Force]", color="#00aa00", fontcolor="black", fillcolor="#00aa00"]
-        }
-        
-        subgraph cluster_automata {
-            label = "ZONE: SYSTEM_DAEMONS (S-J-D)"; 
-            style=dashed; 
-            color="#ff4b4b"; 
-            fontcolor="#ff4b4b"
-            
-            ANGELS [label="MALA'IKA\\n<TYPE: DAEMON>\\n[Exec Function]", color="#aaaaaa", fontcolor="black", fillcolor="#aaaaaa"]
-            NATURE [label="PHYSICS ENGINE\\n<TYPE: KERNEL>\\n[Hard-Coded Laws]", color="#222", fontcolor="white", fillcolor="#222"]
-        }
-        
-        ROOT -> KHALIFA [label="AMANAH (Sudo Access)"]
-        ROOT -> ANGELS [label="A-M-R (Command)"]
-        ROOT -> NATURE [label="Q-D-R (Measure)"]
-        
-        KHALIFA -> NATURE [style=dotted]
-        ANGELS -> NATURE [style=dotted]
-    }
-    """
-    st.graphviz_chart(gov_code, use_container_width=True)
-
+                    
+                    # Force la conversion en string si la fonction renvoie un dict
+                    if isinstance(json_data, dict):
+                        json_data = json.dumps(json_data, ensure_ascii=False, indent=4)
+                        
+                    st.download_button(
+                        label="📥 EXPORT JSON PACKET", 
+                        data=json_data, 
+                        file_name=f"{root_disp}.json", 
+                        mime="application/json", 
+                        use_container_width=True,
+                        key=f"export_{root_disp}"
+                    )
 # ==============================================================================
 # MODULE: MATRIX VIEW
 # ==============================================================================
