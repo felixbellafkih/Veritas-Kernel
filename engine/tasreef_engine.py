@@ -13,15 +13,29 @@ def clean_skeleton(raw_word: str) -> str:
 
 def analyze_pattern(raw_word: str, fallback_root: str = "") -> dict:
     """
-    Détecte la fonction d'état (Tasreef) en analysant la géométrie du squelette arabe.
-    Identifie l'opérateur morphologique indépendamment de la racine.
+    Détecte la fonction d'état (Tasreef). Gère les gabarits et les constantes absolues.
     """
     skeleton = clean_skeleton(raw_word)
     length = len(skeleton)
 
-    # 1. CONSTANTES & RACINES PURES (3 lettres ou moins)
+    # 0. OVERRIDE : CONSTANTES SYSTÉMIQUES ABSOLUES
+    # Remplacement du [RAW_DATA] par des états fonctionnels précis
+    systemic_overrides = {
+        'سم': {"tag": "SYS_PTR", "logic_mod": "[SYSTEM_POINTER]", "desc": "Pointeur d'instanciation (Ism)"},
+        'اسم': {"tag": "SYS_PTR", "logic_mod": "[SYSTEM_POINTER]", "desc": "Pointeur d'instanciation (Ism)"},
+        'له': {"tag": "SYS_CORE", "logic_mod": "[ABSOLUTE_CONSTANT]", "desc": "Autorité Racine (Allah)"},
+        'الله': {"tag": "SYS_CORE", "logic_mod": "[ABSOLUTE_CONSTANT]", "desc": "Autorité Racine (Allah)"},
+        'لله': {"tag": "SYS_CORE", "logic_mod": "[ABSOLUTE_CONSTANT]", "desc": "Autorité Racine (Allah)"},
+        'اله': {"tag": "SYS_CORE", "logic_mod": "[ABSOLUTE_CONSTANT]", "desc": "Autorité Racine (Allah)"}
+    }
+    
+    if skeleton in systemic_overrides:
+        return systemic_overrides[skeleton]
+
+    # 1. RACINES PURES (3 lettres ou moins)
     if length <= 3:
-        return {"tag": "SYS_BASE", "logic_mod": "[RAW_DATA]", "desc": "Noyau fondamental non modifié"}
+        # On remplace RAW_DATA par BASE_VARIABLE pour un rendu plus propre
+        return {"tag": "SYS_BASE", "logic_mod": "[BASE_VARIABLE]", "desc": "Noyau fondamental non modifié"}
 
     # 2. GABARITS À 4 LETTRES (Les plus fréquents)
     if length == 4:
@@ -52,7 +66,7 @@ def analyze_pattern(raw_word: str, fallback_root: str = "") -> dict:
             return {"tag": "SYS_GLOBAL", "logic_mod": "[SYSTEM_ARCHITECTURE]", "desc": "Structure englobante ou saturation (Fa'laan)"}
 
     # Fallback si le gabarit n'est pas mathématiquement reconnu
-    return {"tag": "SYS_BASE", "logic_mod": "[RAW_DATA]", "desc": "État complexe ou racine non standard"}
+    return {"tag": "SYS_BASE", "logic_mod": "[BASE_VARIABLE]", "desc": "État complexe ou racine non standard"}   
 
 def extract_quantifiers(raw_word: str) -> list:
     """Détecte les états duels ou pluriels à la fin du mot."""
